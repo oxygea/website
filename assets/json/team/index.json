@@ -1,0 +1,62 @@
+[
+  {
+    "img": "ArturFaria",
+    "name": "Artur Faria",
+    "job": "CEO",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "BrunoBueno",
+    "name": "Bruno Bueno",
+    "job": "TECH",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "BrunoWittmaack",
+    "name": "Bruno Wittmaack",
+    "job": "FINANCE",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "FernandoUbiali",
+    "name": "Fernando Ubiali",
+    "job": "BUSINESS",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "LíviaHallak",
+    "name": "Lívia Hallak",
+    "job": "PORTFOLIO",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "MarcusFichman",
+    "name": "Marcus Fichman",
+    "job": "BPO",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "PauloEmediato",
+    "name": "Paulo Emediato",
+    "job": "MKT & ECOSYSTEM ",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "RafaelaMarques",
+    "name": "Rafaela Marques",
+    "job": "PEOPLE",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "RenataAstroven",
+    "name": "Renata Astroven",
+    "job": "LEGAL",
+    "linkedin": "https://linkedin.com/in/"
+  },
+  {
+    "img": "VitorMoreira",
+    "name": "Vitor Moreira",
+    "job": "VENTURES",
+    "linkedin": "https://linkedin.com/in/"
+  }
+]

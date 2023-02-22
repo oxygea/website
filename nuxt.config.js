@@ -21,10 +21,13 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css'],
+  css: [
+    '@/assets/css/main.css',
+    'vue-slick-carousel/dist/vue-slick-carousel.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-slick-carousel.js' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -38,6 +41,19 @@ export default {
     '@nuxt/image',
     '@nuxtjs/svg-sprite',
   ],
+
+  image: {
+    dir: 'assets/img',
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+    },
+  },
 
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
