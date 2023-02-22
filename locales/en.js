@@ -1,10 +1,9 @@
 export default {
   menu: {
-    about: 'About Oxygea',
-    startups: 'Startups',
-    partners: 'Partners',
-    mentors: 'Mentors',
-    founders: 'Founders',
+    future: 'The future is collective',
+    acceleration: 'Acceleration and Investment',
+    ecosystem: 'Ecosystem and Collaboration',
+    about: 'We are Oxygea',
     contact: 'Contact',
   },
 }

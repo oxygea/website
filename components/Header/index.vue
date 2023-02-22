@@ -1,6 +1,6 @@
 <template>
   <header
-    class="header fixed transition-all left-0 top-0 w-full z-40 duration-300 flex items-center justify-between px-4 xs:px-10 header"
+    class="header sticky transition-all left-0 top-0 w-full h-full z-40 duration-300 lg:flex items-center justify-between lg:px-4 xs:px-10 header"
     :class="[
       {
         fixed: notTop && lastScrollPosition > 80,
@@ -8,17 +8,46 @@
       },
     ]"
   >
-    <div class="container flex flex-row justify-between items-center h-[88px]">
+    <div
+      class="container flex flex-row justify-between items-center h-[64px]"
+      :class="[
+        {
+          'bg-white': showMenu,
+        },
+      ]"
+    >
       <!-- logo -->
       <n-link :to="localePath('/')" title="Oxygea">
         <svg-icon
           name="logo"
           class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
+          :class="{ hidden: showMenu }"
+        />
+        <svg-icon
+          name="logoDark"
+          class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
+          :class="{ hidden: !showMenu }"
         />
       </n-link>
 
-      <!-- menu -->
-      <div class="h-full flex justify-center items-center">
+      <span
+        class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center lg:hidden"
+        @click.prevent="showMenu = !showMenu"
+      >
+        <svg-icon
+          name="hamburger"
+          :class="{ hidden: showMenu }"
+          class="w-32 h-32"
+        />
+        <svg-icon
+          name="close"
+          :class="{ hidden: !showMenu }"
+          class="w-[20px] h-[20px] text-white"
+        />
+      </span>
+
+      <!-- menu desktop-->
+      <div class="h-full lg:flex justify-center items-center hidden">
         <nav class="text-white flex flex-row gap-10 pt-4">
           <AnchorMenu :url="'#'" :title="$t('menu.about')">
             {{ $t('menu.about') }}
@@ -61,13 +90,96 @@
         </nav>
       </div>
     </div>
+
+    <!-- menu mobile -->
+    <transition name="slide-fade">
+      <nav
+        v-if="showMenu"
+        class="h-full w-full lg:pt-0 bg-white lg:hidden container"
+      >
+        <div class="lg:mt-0 bg-white pt-[72px]">
+          <div class="flex flex-col h-full items-start">
+            <AnchorMenu
+              :url="'#'"
+              :title="$t('menu.future')"
+              class="text-black"
+            >
+              {{ $t('menu.future') }}
+            </AnchorMenu>
+            <AnchorMenu
+              :url="'#'"
+              :title="$t('menu.acceleration')"
+              class="text-black"
+            >
+              {{ $t('menu.acceleration') }}
+            </AnchorMenu>
+            <AnchorMenu
+              :url="'#'"
+              :title="$t('menu.ecosystem')"
+              class="text-black"
+            >
+              {{ $t('menu.ecosystem') }}
+            </AnchorMenu>
+            <AnchorMenu :url="'#'" :title="$t('menu.about')" class="text-black">
+              {{ $t('menu.about') }}
+            </AnchorMenu>
+            <AnchorMenu
+              :url="'#'"
+              :title="$t('menu.contact')"
+              class="text-black"
+            >
+              {{ $t('menu.contact') }}
+            </AnchorMenu>
+
+            <div
+              class="flex justify-center items-center rounded-full bg-green w-[159px] h-12 mt-6 mb-[51px]"
+              @click="closeMenu()"
+            >
+              <nuxt-link
+                v-show="$i18n.locale !== 'pt'"
+                :to="switchLocalePath('pt')"
+                class="font-bold text-xs"
+                @click="onSelectLanguage('pt')"
+              >
+                Portuguese version
+              </nuxt-link>
+              <nuxt-link
+                v-show="$i18n.locale !== 'en'"
+                :to="switchLocalePath('en')"
+                class="font-bold text-xs"
+                @click="onSelectLanguage('en')"
+              >
+                Versão em inglês
+              </nuxt-link>
+            </div>
+          </div>
+
+          <div class="lg:hidden ml-2">
+            <div class="flex">
+              <svg-icon
+                name="linkedin"
+                class="w-6 h-6 relative text-yellow mr-4"
+              />
+              <svg-icon
+                name="instagram"
+                class="w-6 h-6 relative text-yellow mr-4"
+              />
+              <svg-icon
+                name="youtube"
+                class="w-6 h-6 relative text-yellow mr-4"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </transition>
   </header>
 </template>
 
 <script>
 import AnchorMenu from '@/components/Anchor/Button'
 export default {
-  name: 'HeaderTop',
+  name: 'HeaderDefault',
   components: {
     AnchorMenu,
   },

@@ -21,7 +21,7 @@ module.exports = {
         violet: '#8282EB',
         green: '#2DE6C8',
         error: '#FF2E00',
-        gray: '#141414',
+        gray: '#EDEDEF',
       },
     },
   },
