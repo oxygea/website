@@ -64,7 +64,7 @@ input :focus {
 .container {
   width: 100%;
   max-width: 1210px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
   &--small {
     max-width: 1110px;
