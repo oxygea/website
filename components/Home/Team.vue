@@ -44,6 +44,7 @@ export default {
       teamData: TeamJSON,
       slickOptions: {
         dots: false,
+        arrows: false,
         slidesToShow: 2.65,
         slidesToScroll: 2,
         infinite: false,
