@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green container !py-10">
+  <section id="acceleration" class="bg-green container !py-10">
     <h2 class="pb-4 font-bold text-2xl">Onde investimos</h2>
     <div class="flex flex-wrap pt-10 gap-8">
       <div>

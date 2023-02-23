@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white !pt-10 !pb-5">
+  <section id="ecosystem" class="bg-white !pt-10 !pb-5">
     <h2 class="pb-4 font-bold text-2xl container">Programas</h2>
     <VueSlickCarousel
       v-bind="slickOptions"

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-black !py-10">
+  <section id="about" class="bg-black !py-10">
     <h2 class="pb-4 font-bold text-2xl text-white container">Time Oxygea</h2>
     <p class="font-normal text-xs leading-4 pb-10 text-white container">
       Estamos com você para cocriar novos caminhos para um futuro sustentável.
