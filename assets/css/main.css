@@ -73,3 +73,16 @@ input :focus {
     max-width: 888px;
   }
 }
+
+.section-hero {
+  height: calc(100vh - 68px);
+
+  .slick-next {
+    position: absolute;
+    opacity: 0;
+    bottom: 104px;
+    right: 20px;
+    width: 32px;
+    border-radius: 100%;
+  }
+}

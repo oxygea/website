@@ -22,6 +22,7 @@ module.exports = {
         green: '#2DE6C8',
         error: '#FF2E00',
         gray: '#EDEDEF',
+        grayDark: '#141414',
       },
     },
   },
