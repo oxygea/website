@@ -16,26 +16,61 @@
     >
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
+        :class="[
+          {
+            'bg-black': selectFilter === 'All',
+            'text-white': selectFilter === 'All',
+          },
+        ]"
+        @click.prevent="selectFilter = 'All'"
       >
         Todos
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
+        :class="[
+          {
+            'bg-black': selectFilter === 'Sustainability',
+            'text-white': selectFilter === 'Sustainability',
+          },
+        ]"
+        @click.prevent="selectFilter = 'Sustainability'"
       >
         Sustentabilidade
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
+        :class="[
+          {
+            'bg-black': selectFilter === 'Technology',
+            'text-white': selectFilter === 'Technology',
+          },
+        ]"
+        @click.prevent="selectFilter = 'Technology'"
       >
         Tecnologia
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
+        :class="[
+          {
+            'bg-black': selectFilter === 'Biochemistry',
+            'text-white': selectFilter === 'Biochemistry',
+          },
+        ]"
+        @click.prevent="selectFilter = 'Biochemistry'"
       >
         Bioquímica
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
+        :class="[
+          {
+            'bg-black': selectFilter === 'HumanResources',
+            'text-white': selectFilter === 'HumanResources',
+          },
+        ]"
+        @click.prevent="selectFilter = 'HumanResources'"
       >
         Recursos Humanos
       </div>
@@ -79,6 +114,7 @@ export default {
         infinite: false,
         arrows: false,
       },
+      selectFilter: 'All',
     }
   },
 }
