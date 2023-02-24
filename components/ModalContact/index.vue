@@ -82,7 +82,6 @@ export default {
 
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateX(100%);
   opacity: 0;
 }
 </style>

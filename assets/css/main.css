@@ -74,15 +74,74 @@ input :focus {
   }
 }
 
-.section-hero {
-  height: calc(100vh - 68px);
+.slick-prev {
+  display: none !important;
+}
 
-  .slick-next {
-    position: absolute;
+.slick-slide {
+  position: relative;
+}
+
+.header-open {
+  height: calc(100vh - 64px);
+}
+
+.fadeIn {
+  animation: fadeIn 500ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    bottom: 104px;
-    right: 20px;
-    width: 32px;
-    border-radius: 100%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation {
+  position: relative;
+  left: 100%;
+  opacity: 0;
+  animation: slide-in 700ms linear forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+.animation-line {
+  animation: stretch 4500ms linear;
+}
+
+@keyframes stretch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animation-footer {
+  opacity: 0;
+  animation: footer 4500ms ease-out;
+}
+
+@keyframes footer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

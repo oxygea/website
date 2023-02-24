@@ -29,9 +29,14 @@
       </label>
       <p class="font-normal text-xs pt-6">
         Ao assinar a newsletter, você concorda com os
-        <strong>Termos e Condições de Uso</strong>
-        e a nossa <strong>Política de Privacidade.</strong> Nós tratamos sua
-        informação com responsabilidade.
+        <strong @click="$nuxt.$emit('openModalTerms')"
+          >Termos e Condições de Uso</strong
+        >
+        e a nossa
+        <strong @click="$nuxt.$emit('openModalPrivacy')"
+          >Política de Privacidade.</strong
+        >
+        Nós tratamos sua informação com responsabilidade.
       </p>
     </div>
     <div class="flex justify-between items-center pt-14">

@@ -6,21 +6,27 @@
       class="mt-10 pl-5 flex items-center"
     >
       <div
-        class="w-full max-w-[200px] h-auto min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-300s ease-linear"
+        class="w-full max-w-[200px] h-auto min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear"
         :class="[
           {
             '!bg-green': showMenu1,
           },
         ]"
       >
-        <div class="w-full" :class="{ hidden: showMenu1 }">
+        <div
+          class="w-full transition-all duration-300 ease-linear"
+          :class="{ hidden: showMenu1 }"
+        >
           <h4 class="font-medium text-xl text-white">Incubação</h4>
           <p class="font-normal text-xs text-white leading-4">
             Startups que validaram seu mercado, definiram a primeira versão do
             seu produto e estão prontas para tirar o MVP do papel.
           </p>
         </div>
-        <div class="w-full" :class="{ hidden: !showMenu1 }">
+        <div
+          class="w-full transition-all duration-300 ease-linear"
+          :class="{ hidden: !showMenu1 }"
+        >
           <h4 class="font-medium text-xl">Benefícios</h4>
           <ul
             class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
@@ -37,7 +43,14 @@
           </ul>
         </div>
         <svg-icon
+          :class="{ hidden: showMenu1 }"
           name="circle"
+          class="w-10 h-10 mt-5"
+          @click.prevent="showMenu1 = !showMenu1"
+        />
+        <svg-icon
+          :class="{ hidden: !showMenu1 }"
+          name="buttonCircle"
           class="w-10 h-10 mt-5"
           @click.prevent="showMenu1 = !showMenu1"
         />
