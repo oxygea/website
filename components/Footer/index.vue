@@ -23,7 +23,7 @@
           </p>
           <label
             for="email"
-            class="flex w-ful justify-between items-center pt-10 pb-4 border-b-[1px] border-black"
+            class="flex w-ful justify-between items-center pt-10 pb-4 lg:border-b-[1px] lg:border-black"
           >
             <input
               type="email"
