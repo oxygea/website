@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#EDEDEF]">
-    <section class="container pt-10 pb-5 lg:py-20">
+  <div class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20">
+    <section class="container">
       <h2 class="pb-4 font-bold text-2xl">Portfolio de empresas</h2>
       <p
         class="font-normal text-xs leading-4 pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base"
