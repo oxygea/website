@@ -1,8 +1,10 @@
 <template>
   <section id="about" class="bg-black !py-10">
-    <h2 class="pb-4 font-bold text-2xl text-white container">Time Oxygea</h2>
+    <h2 class="pb-4 font-bold text-2xl text-white container">
+      {{ $t('team.title') }}
+    </h2>
     <p class="font-normal text-xs leading-4 pb-10 text-white container">
-      Estamos com você para cocriar novos caminhos para um futuro sustentável.
+      {{ $t('team.desc') }}
     </p>
     <VueSlickCarousel v-bind="slickOptions" class="mt-10 pl-[20px]">
       <div

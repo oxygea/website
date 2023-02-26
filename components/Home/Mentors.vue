@@ -1,14 +1,15 @@
 <template>
   <section class="bg-white !py-10">
     <div class="container">
-      <h2 class="pb-4 font-bold text-2xl">Mentores</h2>
+      <h2 class="pb-4 font-bold text-2xl">
+        {{ $t('mentors.title') }}
+      </h2>
       <p class="font-normal text-xs leading-4 pb-10">
-        Especialistas reconhecidos em diversos campos do conhecimento colaboram
-        com a gente. Referências da indústria, da ciência, da pesquisa, da
-        inovação e da sustentabilidade, com a missão de oferecer a profundidade
-        necessária para mudar o mercado.
+        {{ $t('mentors.desc') }}
       </p>
-      <p class="font-bold text-xs">FILTRAR POR</p>
+      <p class="font-bold text-xs">
+        {{ $t('mentors.filter.title') }}
+      </p>
     </div>
     <VueSlickCarousel
       v-bind="slickOptions"
@@ -24,7 +25,7 @@
         ]"
         @click.prevent="selectFilter = 'All'"
       >
-        Todos
+        {{ $t('mentors.filter.all') }}
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
@@ -36,7 +37,7 @@
         ]"
         @click.prevent="selectFilter = 'Sustainability'"
       >
-        Sustentabilidade
+        {{ $t('mentors.filter.sustainability') }}
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
@@ -48,7 +49,7 @@
         ]"
         @click.prevent="selectFilter = 'Technology'"
       >
-        Tecnologia
+        {{ $t('mentors.filter.technology') }}
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
@@ -60,7 +61,7 @@
         ]"
         @click.prevent="selectFilter = 'Biochemistry'"
       >
-        Bioquímica
+        {{ $t('mentors.filter.biochemistry') }}
       </div>
       <div
         class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
@@ -72,7 +73,7 @@
         ]"
         @click.prevent="selectFilter = 'HumanResources'"
       >
-        Recursos Humanos
+        {{ $t('mentors.filter.humanResources') }}
       </div>
     </VueSlickCarousel>
     <div class="w-full flex flex-wrap container">
@@ -95,7 +96,7 @@
         <div
           class="flex justify-between items-center min-w-max gap-2 cursor-pointer"
         >
-          <p class="font-bold text-sm">VER MAIS</p>
+          <p class="font-bold text-sm">{{ $t('mentors.filter.more') }}</p>
           <svg-icon name="arrowCircle" class="w-6 h-6" />
         </div>
       </div>

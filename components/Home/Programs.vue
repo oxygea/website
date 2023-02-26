@@ -1,6 +1,8 @@
 <template>
   <section id="ecosystem" class="bg-white !pt-10 !pb-5">
-    <h2 class="pb-4 font-bold text-2xl container">Programas</h2>
+    <h2 class="pb-4 font-bold text-2xl container">
+      {{ $t('programs.title') }}
+    </h2>
     <VueSlickCarousel
       v-bind="slickOptions"
       class="mt-10 pl-5 flex items-center"
@@ -17,29 +19,27 @@
           class="w-full transition-all duration-300 ease-linear"
           :class="{ hidden: showMenu1 }"
         >
-          <h4 class="font-medium text-xl text-white">Incubação</h4>
+          <h4 class="font-medium text-xl text-white">
+            {{ $t('programs.card1.title') }}
+          </h4>
           <p class="font-normal text-xs text-white leading-4">
-            Startups que validaram seu mercado, definiram a primeira versão do
-            seu produto e estão prontas para tirar o MVP do papel.
+            {{ $t('programs.card1.desc') }}
           </p>
         </div>
         <div
           class="w-full transition-all duration-300 ease-linear"
           :class="{ hidden: !showMenu1 }"
         >
-          <h4 class="font-medium text-xl">Benefícios</h4>
+          <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
           <ul
             class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
           >
-            <li>
-              Assessment de riscos do negócio e proposição de plano de melhorias
-              personalizado
-            </li>
-            <li>Investimento de até BRL 700 mil para desenvolvimento do MVP</li>
-            <li>Acesso à rede de mentores altamente qualificados</li>
-            <li>Assessment do Modelo de Negócio e Solução</li>
-            <li>Suporte no Desenvolvimento de MVP e Produtos</li>
-            <li>Suporte Jurídico, Tecnológico e de Compliance</li>
+            <li>{{ $t('programs.card1.benefits.t1') }}</li>
+            <li>{{ $t('programs.card1.benefits.t2') }}</li>
+            <li>{{ $t('programs.card1.benefits.t3') }}</li>
+            <li>{{ $t('programs.card1.benefits.t4') }}</li>
+            <li>{{ $t('programs.card1.benefits.t5') }}</li>
+            <li>{{ $t('programs.card1.benefits.t6') }}</li>
           </ul>
         </div>
         <svg-icon
@@ -67,32 +67,27 @@
           class="w-full transition-all duration-300s"
           :class="{ hidden: showMenu2 }"
         >
-          <h4 class="font-medium text-xl text-white">Aceleração</h4>
+          <h4 class="font-medium text-xl text-white">
+            {{ $t('programs.card2.title') }}
+          </h4>
           <p class="font-normal text-xs text-white leading-4">
-            Startups que desenvolveram um produto e estão prontas para ir a
-            mercado.
+            {{ $t('programs.card2.desc') }}
           </p>
         </div>
         <div
           class="w-full transition-all duration-300s"
           :class="{ hidden: !showMenu2 }"
         >
-          <h4 class="font-medium text-xl">Benefícios</h4>
+          <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
           <ul
             class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
           >
-            <li>
-              Assessment de riscos do negócio e proposição de plano de melhorias
-              personalizado
-            </li>
-            <li>
-              Investimento de BRL 250K no início do programa e até R$ 1,5 Milhão
-              para Startups selecionadas
-            </li>
-            <li>Acesso a rede de mentores altamente qualificados</li>
-            <li>Acesso ao Network de Parceiros</li>
-            <li>Suporte na Definição da Estratégia do Negócio</li>
-            <li>Suporte na Definição da Estratégia de Marketing</li>
+            <li>{{ $t('programs.card2.benefits.t1') }}</li>
+            <li>{{ $t('programs.card2.benefits.t2') }}</li>
+            <li>{{ $t('programs.card2.benefits.t3') }}</li>
+            <li>{{ $t('programs.card2.benefits.t4') }}</li>
+            <li>{{ $t('programs.card2.benefits.t5') }}</li>
+            <li>{{ $t('programs.card2.benefits.t6') }}</li>
           </ul>
         </div>
         <svg-icon
@@ -113,25 +108,27 @@
           class="w-full transition-all duration-300s"
           :class="{ hidden: showMenu3 }"
         >
-          <h4 class="font-medium text-xl text-white">Investimento</h4>
+          <h4 class="font-medium text-xl text-white">
+            {{ $t('programs.card3.title') }}
+          </h4>
           <p class="font-normal text-xs text-white leading-4">
-            Startups que já têm um negócio promissor e querem acelerar seu
-            crescimento
+            {{ $t('programs.card3.desc') }}
           </p>
         </div>
         <div
           class="w-full transition-all duration-300s"
           :class="{ hidden: !showMenu3 }"
         >
-          <h4 class="font-medium text-xl">Benefícios</h4>
+          <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
           <ul
             class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
           >
-            <li>Acesso à rede de experts e advisors altamente qualificados</li>
-            <li>Acesso ao Network de Parceiros</li>
-            <li>Acesso aos canais de distribuição</li>
-            <li>Acesso a dados e informações de mercado</li>
-            <li>Acesso às capabilities e expertise para escalar negócios</li>
+            <li>{{ $t('programs.card3.benefits.t1') }}</li>
+            <li>{{ $t('programs.card3.benefits.t2') }}</li>
+            <li>{{ $t('programs.card3.benefits.t3') }}</li>
+            <li>{{ $t('programs.card3.benefits.t4') }}</li>
+            <li>{{ $t('programs.card3.benefits.t5') }}</li>
+            <li>{{ $t('programs.card3.benefits.t6') }}</li>
           </ul>
         </div>
         <svg-icon
@@ -152,25 +149,25 @@
           class="w-full transition-all duration-300s"
           :class="{ hidden: showMenu4 }"
         >
-          <h4 class="font-medium text-xl text-white">Suporte In House</h4>
+          <h4 class="font-medium text-xl text-white">
+            {{ $t('programs.card4.title') }}
+          </h4>
           <p class="font-normal text-xs text-white leading-4">
-            Não importa o estágio de maturidade, todas as empresas do nosso
-            portfolio sempre terão acesso às principais capabilities de
-            desenvolvimento.
+            {{ $t('programs.card4.desc') }}
           </p>
         </div>
         <div
           class="w-full transition-all duration-300s"
           :class="{ hidden: !showMenu4 }"
         >
-          <h4 class="font-medium text-xl">Benefícios</h4>
+          <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
           <ul
             class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
           >
-            <li>Mentoria de Experts</li>
-            <li>Acesso e conhecimento/base de dados</li>
-            <li>Acesso a laboratórios, centros de pesquisa e plantas piloto</li>
-            <li>Espaço Físico e Serviços Compartilhados</li>
+            <li>{{ $t('programs.card4.benefits.t1') }}</li>
+            <li>{{ $t('programs.card4.benefits.t2') }}</li>
+            <li>{{ $t('programs.card4.benefits.t3') }}</li>
+            <li>{{ $t('programs.card4.benefits.t4') }}</li>
           </ul>
         </div>
         <svg-icon

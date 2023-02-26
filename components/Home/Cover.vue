@@ -14,11 +14,10 @@
     />
     <div class="container !py-10">
       <p class="font-normal text-[28px] leading-8 pb-6 text-white">
-        Nos conectamos com parceiros de referência global e mentores
-        especializados -
+        {{ $t('cover.connect') }}
       </p>
       <p class="font-bold text-xl text-white leading-6">
-        gente que acorda e dorme pensando inovação, como você.
+        {{ $t('cover.innovation') }}
       </p>
     </div>
   </section>

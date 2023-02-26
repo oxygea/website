@@ -14,9 +14,9 @@
     />
     <div class="container !py-10">
       <p class="font-normal text-[28px] leading-8 pb-6">
-        Entre nossos programas, um deles é pra você.
+        {{ $t('startup.title') }}
       </p>
-      <p class="font-bold text-xl">Conheça e faça parte.</p>
+      <p class="font-bold text-xl">{{ $t('startup.desc') }}</p>
     </div>
   </section>
 </template>
