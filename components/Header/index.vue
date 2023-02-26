@@ -51,20 +51,17 @@
       <!-- menu desktop-->
       <div class="h-full lg:flex justify-center items-center hidden">
         <nav class="text-white flex flex-row gap-10 pt-4">
+          <AnchorMenu :url="'#'" :title="$t('menu.future')">
+            {{ $t('menu.future') }}
+          </AnchorMenu>
+          <AnchorMenu :url="'#'" :title="$t('menu.acceleration')">
+            {{ $t('menu.acceleration') }}
+          </AnchorMenu>
+          <AnchorMenu :url="'#'" :title="$t('menu.ecosystem')">
+            {{ $t('menu.ecosystem') }}
+          </AnchorMenu>
           <AnchorMenu :url="'#'" :title="$t('menu.about')">
             {{ $t('menu.about') }}
-          </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.startups')">
-            {{ $t('menu.startups') }}
-          </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.partners')">
-            {{ $t('menu.partners') }}
-          </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.mentors')">
-            {{ $t('menu.mentors') }}
-          </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.founders')">
-            {{ $t('menu.founders') }}
           </AnchorMenu>
           <AnchorMenu :url="'#'" :title="$t('menu.contact')">
             {{ $t('menu.contact') }}
