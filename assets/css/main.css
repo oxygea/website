@@ -87,10 +87,23 @@ input :focus {
 }
 
 .fadeIn {
-  animation: fadeIn 500ms ease-in-out;
+  animation: fadeIn 100ms ease-in-out;
 }
 
 @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn2 {
+  animation: fadeIn2 700ms ease-in-out;
+}
+
+@keyframes fadeIn2 {
   0% {
     opacity: 0;
   }
