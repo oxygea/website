@@ -1,5 +1,5 @@
 <template>
-  <section id="acceleration" class="bg-green !py-10">
+  <section id="acceleration" class="bg-green py-10 lg:py-20">
     <div class="container">
       <h2 class="pb-4 font-bold text-2xl lg:text-[42px]">
         {{ $t('invest.title') }}
@@ -47,7 +47,7 @@ export default {
             this.$t('invest.card1.info'),
             this.$t('invest.card1.info2'),
           ],
-          titleClassNames: 'max-w-[200px]',
+          titleClassNames: 'lg:max-w-[200px]',
         },
         {
           icon: 'fintech',
@@ -62,7 +62,7 @@ export default {
           icon: 'carbonNeutrality',
           title: this.$t('invest.card3.title'),
           descriptions: [this.$t('invest.card3.info')],
-          titleClassNames: 'max-w-[180px]',
+          titleClassNames: 'lg:max-w-[180px]',
         },
         {
           icon: 'biotechnology',
@@ -81,13 +81,13 @@ export default {
             this.$t('invest.card5.info2'),
             this.$t('invest.card5.info3'),
           ],
-          titleClassNames: 'max-w-[150px]',
+          titleClassNames: 'lg:max-w-[150px]',
         },
         {
           icon: 'biochemicals',
           title: this.$t('invest.card6.title'),
           descriptions: [this.$t('invest.card6.info')],
-          titleClassNames: 'max-w-[150px]',
+          titleClassNames: 'lg:max-w-[150px]',
         },
       ],
     }
