@@ -45,13 +45,13 @@
           class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px] mr-2"
           :class="[
             {
-              'bg-black': selectFilter === item.value,
-              'text-white': selectFilter === item.value,
+              'bg-black': selectFilter === item,
+              'text-white': selectFilter === item,
             },
           ]"
-          @click.prevent="selectFilter = item.value"
+          @click.prevent="selectFilter = item"
         >
-          {item.label}
+          {{ $t(`mentors.filter.${item}`) }}
         </div>
       </VueSlickCarousel>
     </div>
