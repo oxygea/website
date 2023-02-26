@@ -1,14 +1,13 @@
 <template>
   <section class="bg-[#EDEDEF] py-10 lg:py-20">
     <div class="container">
-      <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">Parceiros</h2>
+      <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">
+        {{ $t('partners.title') }}
+      </h2>
       <p
         class="font-normal text-xs leading-4 pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base"
       >
-        O fazer junto potencializa resultados. Nos conectamos tanto com as
-        instituições locais, quanto com as mundialmente renomadas. São conexões
-        que compartilham expertise e proporcionam o que as startups mais
-        precisam.
+        {{ $t('partners.desc') }}
       </p>
     </div>
 

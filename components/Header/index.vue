@@ -6,7 +6,7 @@
         fixed: notTop && lastScrollPosition > 80,
         'opacity-0': !showNavbar && lastScrollPosition > 100,
         'header-open': showMenu,
-        fadeIn: showMenu,
+        fadeIn2: showMenu,
       },
     ]"
   >

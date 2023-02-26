@@ -2,12 +2,12 @@
   <div class="container">
     <section id="about" class="bg-black py-10 lg:pt-20 lg:pb-[115px]">
       <h2 class="pb-4 font-bold text-2xl text-white lg:text-[42px]">
-        Time Oxygea
+        {{ $t('team.title') }}
       </h2>
       <p
         class="font-normal text-xs leading-4 pb-10 text-white lg:max-w-[530px] lg:ml-[110px] lg:text-base"
       >
-        Estamos com você para cocriar novos caminhos para um futuro sustentável.
+        {{ $t('team.desc') }}
       </p>
 
       <ul
@@ -27,8 +27,8 @@
               quality="100"
               loading="lazy"
               sizes="100px sm:100vw lg:300px"
-              :alt="`Imagem team ${c}`"
-              :title="`Team ${c}`"
+              :alt="item.name"
+              :title="item.name"
               class="w-[164px] h-[164px]"
             />
             <p class="text-white font-normal text-base pt-4 pb-1">
@@ -54,8 +54,8 @@
               quality="100"
               loading="lazy"
               sizes="100px sm:100vw lg:300px"
-              :alt="`Imagem team ${c}`"
-              :title="`Team ${c}`"
+              :alt="item.name"
+              :title="item.name"
               class="w-[100px] h-[100px]"
             />
             <p class="text-white font-normal text-xs pt-4 pb-1">
