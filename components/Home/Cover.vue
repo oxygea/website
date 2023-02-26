@@ -15,7 +15,7 @@
       class="w-full h-auto"
     />
 
-    <div class="container !py-10">
+    <div class="container !py-10 lg:ml-[30px]">
       <p
         class="font-normal text-[28px] leading-8 pb-6 text-white lg:max-w-[418px] lg:text-5xl"
       >
