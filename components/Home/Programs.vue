@@ -94,15 +94,4 @@ export default {
   display: flex;
   align-items: center;
 }
-
-.height-transition-enter-active,
-.height-transition-leave-active {
-  transition: height 0.5s ease;
-}
-
-.height-transition-enter,
-.height-transition-leave-to {
-  height: 0;
-  overflow: hidden;
-}
 </style>

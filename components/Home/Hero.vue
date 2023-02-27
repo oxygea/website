@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero"
+    class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero"
   >
     <VueSlickCarousel
       v-bind="slickOptions"
@@ -12,6 +12,11 @@
         v-for="(item, index) of itens"
         :key="index"
         class="w-full !flex flex-col relative pt-16 slick-slide"
+        :class="[
+          {
+            'opacity-0': index !== 0,
+          },
+        ]"
       >
         <p
           class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-[48px] lg:leading-[56px]"
@@ -54,6 +59,7 @@ export default {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 8000,
+        infinite: false,
       },
       sliderPageIndex: 1,
       itens: [1, 2, 3, 4],

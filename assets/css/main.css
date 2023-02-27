@@ -90,6 +90,7 @@ input :focus {
     right: 0;
     width: 21px;
     z-index: 20;
+    opacity: 0;
   }
 }
 
@@ -98,6 +99,10 @@ input :focus {
 }
 
 .header-open {
+  height: calc(100vh - 64px);
+}
+
+.hero {
   height: calc(100vh - 64px);
 }
 
@@ -147,7 +152,7 @@ input :focus {
 }
 
 .animation-line {
-  animation: stretch 4500ms linear;
+  animation: stretch 8000ms linear;
 }
 
 @keyframes stretch {
@@ -161,7 +166,7 @@ input :focus {
 
 .animation-footer {
   opacity: 0;
-  animation: footer 4500ms ease-out;
+  animation: footer 8000ms ease-out;
 }
 
 @keyframes footer {
