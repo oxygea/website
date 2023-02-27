@@ -101,7 +101,7 @@ export default {
 
 <style lang="postcss" scoped>
 .slick-track {
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 </style>

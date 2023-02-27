@@ -59,14 +59,15 @@ export default {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 8000,
-        infinite: false,
+        infinite: true,
+        slickGoTo: 1,
       },
       sliderPageIndex: 1,
       itens: [1, 2, 3, 4],
     }
   },
   methods: {
-    onBeforeChange() {
+    onBeforeChange(event) {
       const activeSlide = document.querySelector('.slick-active')
       const activeSlideContent = activeSlide.querySelector('.slick-slide')
       activeSlideContent.classList.remove('animation')
@@ -76,6 +77,10 @@ export default {
 
       const footer = document.querySelector('#footer')
       footer.classList.remove('animation-footer')
+
+      if (this.sliderPageIndex === 4) {
+        this.$refs.carousel.slickGoTo(1)
+      }
     },
     onSlideChange(event) {
       this.sliderPageIndex = event + 1

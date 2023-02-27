@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div
-      class="container flex flex-col items-center justify-center pt-10 lg:flex-row lg:items-center lg:py-20"
+      class="container flex flex-col items-center justify-center !pt-10 lg:flex-row lg:items-center lg:py-20"
     >
       <div
         class="custom-border w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 xl:max-w-[310px] xl:h-[310px]"
