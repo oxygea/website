@@ -59,8 +59,7 @@ export default {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 8000,
-        infinite: true,
-        slickGoTo: 1,
+        infinite: false,
       },
       sliderPageIndex: 1,
       itens: [1, 2, 3, 4],
@@ -77,10 +76,6 @@ export default {
 
       const footer = document.querySelector('#footer')
       footer.classList.remove('animation-footer')
-
-      if (this.sliderPageIndex === 4) {
-        this.$refs.carousel.slickGoTo(1)
-      }
     },
     onSlideChange(event) {
       this.sliderPageIndex = event + 1
