@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero"
+    class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <VueSlickCarousel
       v-bind="slickOptions"
@@ -11,7 +11,7 @@
       <div
         v-for="(item, index) of itens"
         :key="index"
-        class="w-full !flex flex-col relative pt-16 slick-slide"
+        class="w-full !flex flex-col relative slick-slide"
         :class="[
           {
             'opacity-0': index !== 0,
@@ -31,12 +31,15 @@
     </VueSlickCarousel>
 
     <div
-      id="footer"
-      class="w-[197px] flex items-center gap-4 ml-auto pb-[22px] animation-footer opacity-0"
+      class="w-[197px] flex items-center gap-4 ml-auto pt-20 pb-5 lg:pb-20 lg:w-[250px]"
     >
-      <p class="text-white">0{{ sliderPageIndex }}</p>
+      <p class="text-white font-bold text-base">0{{ sliderPageIndex }}</p>
       <hr class="text-white w-full" />
-      <svg-icon name="arrowCircleRight" class="w-[32px] h-[32px]" />
+      <svg-icon
+        name="arrowCircleRight"
+        class="w-[32px] h-[32px] cursor-pointer"
+        @click="nextSlide"
+      />
     </div>
 
     <hr
@@ -73,9 +76,6 @@ export default {
 
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
-
-      const footer = document.querySelector('#footer')
-      footer.classList.remove('animation-footer')
     },
     onSlideChange(event) {
       this.sliderPageIndex = event + 1
@@ -83,12 +83,12 @@ export default {
       const line = document.querySelector('#line')
       line.classList.add('animation-line')
 
-      const footer = document.querySelector('#footer')
-      footer.classList.add('animation-footer')
-
       const activeSlide = document.querySelector('.slick-active')
       const activeSlideContent = activeSlide.querySelector('.slick-slide')
       activeSlideContent.classList.add('animation')
+    },
+    nextSlide() {
+      this.$refs.carousel.next()
     },
   },
 }

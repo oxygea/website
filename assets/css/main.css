@@ -102,10 +102,6 @@ input :focus {
   height: calc(100vh - 64px);
 }
 
-.hero {
-  height: calc(100vh - 64px);
-}
-
 .fadeIn {
   animation: fadeIn 100ms ease-in-out;
 }
