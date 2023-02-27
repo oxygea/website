@@ -21,6 +21,7 @@ module.exports = {
       '2xl': ['24px', { lineHeight: '32px' }],
       '3xl': ['30px', { lineHeight: '36px' }],
       '4xl': ['36px', { lineHeight: '40px' }],
+      '5xl': ['42px', { lineHeight: '56px' }],
     },
     fill: {
       current: 'currentColor',
