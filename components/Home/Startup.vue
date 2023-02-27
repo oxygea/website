@@ -11,7 +11,7 @@
         sizes="83px sm:166px lg:720px"
         :alt="`Imagem startup`"
         :title="`Startup`"
-        class="w-full h-auto"
+        class="w-full h-auto grayscale"
       />
 
       <div class="container !py-10 lg:ml-[30px]">
