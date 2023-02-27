@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-black">
+  <section
+    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto lg:px-[70px]"
+  >
     <nuxt-img
       preload
       :src="`cover.png`"
@@ -12,11 +14,16 @@
       :title="`Cover`"
       class="w-full h-auto"
     />
-    <div class="container !py-10">
-      <p class="font-normal text-[28px] leading-8 pb-6 text-white">
+
+    <div class="container !py-10 lg:ml-[30px]">
+      <p
+        class="font-normal text-[28px] leading-8 pb-6 text-white lg:max-w-[418px] lg:text-5xl"
+      >
         {{ $t('cover.connect') }}
       </p>
-      <p class="font-bold text-xl text-white leading-6">
+      <p
+        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px]"
+      >
         {{ $t('cover.innovation') }}
       </p>
     </div>

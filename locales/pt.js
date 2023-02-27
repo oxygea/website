@@ -46,7 +46,8 @@ export default {
     },
     card3: {
       title: 'Neutralidade de Carbono',
-      info: 'Captura, armazenamento, utilização de carbono. Outras tecnologias do mercado de carbono.',
+      info: 'Captura, armazenamento, utilização de carbono.',
+      info2: 'Outras tecnologias do mercado de carbono.',
     },
     card4: {
       title: 'Biotecnologia & Nanotecnologia',

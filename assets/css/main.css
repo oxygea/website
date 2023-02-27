@@ -72,6 +72,11 @@ input :focus {
   &--thin {
     max-width: 888px;
   }
+
+  @media (min-width: 1024px) {
+    padding: 0px 70px;
+    max-width: 1440px;
+  }
 }
 
 .slick-prev {

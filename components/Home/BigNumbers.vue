@@ -1,38 +1,51 @@
 <template>
-  <section
-    class="container bg-white flex flex-wrap items-center justify-center !pt-10"
-  >
+  <section class="bg-white">
     <div
-      class="w-full max-w-[180px] h-[180px] rounded-full border-2 border-violet flex flex-col gap-2 items-center justify-center text-center"
+      class="container flex flex-col items-center justify-center pt-10 lg:flex-row lg:items-center lg:py-20"
     >
-      <p class="text-violet text-[28px] font-normal">U$150MM</p>
-      <p class="text-violet text-[12px] max-w-[91px] font-normal leading-4">
-        {{ $t('numbers.capital') }}
-      </p>
-    </div>
-    <div
-      class="relative -top-5 w-full max-w-[140px] h-[140px] rounded-full bg-gray flex flex-col gap-2 items-center justify-center text-center"
-    >
-      <p class="text-violet text-[28px] font-normal">4</p>
-      <p class="text-violet text-[12px] font-normal leading-4 max-w-[128px]">
-        {{ $t('numbers.companies') }}
-      </p>
-    </div>
-    <div
-      class="relative -top-10 w-full max-w-[180px] h-[180px] rounded-full border-2 border-violet flex flex-col gap-2 items-center justify-center text-center"
-    >
-      <p class="text-violet text-[28px] font-normal">7</p>
-      <p
-        class="text-violet text-[12px] font-normal leading-4 max-w-[128px]"
-      ></p>
-    </div>
-    <div
-      class="relative -top-[60px] w-full max-w-[140px] h-[140px] rounded-full border-2 border-gray flex flex-col gap-2 items-center justify-center text-center"
-    >
-      <p class="text-violet text-[28px] font-normal">7</p>
-      <p class="text-violet text-[12px] font-normal leading-4 max-w-[128px]">
-        {{ $t('numbers.plants') }}
-      </p>
+      <div
+        class="custom-border w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 xl:max-w-[310px] xl:h-[310px]"
+      >
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">U$150MM</p>
+        <p
+          class="text-violet text-[12px] max-w-[91px] font-normal leading-4 xl:text-base"
+        >
+          {{ $t('numbers.capital') }}
+        </p>
+      </div>
+
+      <div
+        class="custom-background relative -top-5 w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-3 xl:max-w-[213px] xl:h-[213px]"
+      >
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">4</p>
+        <p
+          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base"
+        >
+          {{ $t('numbers.companies') }}
+        </p>
+      </div>
+
+      <div
+        class="custom-border relative -top-10 w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-5 xl:max-w-[310px] xl:h-[310px]"
+      >
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
+        <p
+          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base"
+        >
+          {{ $t('numbers.search') }}
+        </p>
+      </div>
+
+      <div
+        class="custom-border custom-border--gray relative -top-[60px] w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-7 xl:max-w-[213px] xl:h-[213px]"
+      >
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
+        <p
+          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base"
+        >
+          {{ $t('numbers.plants') }}
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -41,3 +54,56 @@ export default {
   name: 'HomeBigNumbers',
 }
 </script>
+
+<style lang="postcss" scoped>
+.custom-border {
+  position: relative;
+
+  &::before {
+    @apply transition-transform;
+    @apply rounded-full;
+    @apply border-2;
+    @apply border-violet;
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &--gray::before {
+    @apply border-gray;
+  }
+
+  &:hover::before {
+    @apply scale-110;
+  }
+}
+
+.custom-background {
+  position: relative;
+
+  p {
+    z-index: 2;
+  }
+
+  &::before {
+    @apply transition-transform;
+    @apply rounded-full;
+    @apply bg-gray;
+
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    @apply scale-110;
+  }
+}
+</style>
