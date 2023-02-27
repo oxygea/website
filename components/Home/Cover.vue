@@ -12,7 +12,7 @@
       sizes="83px sm:166px lg:720px"
       :alt="`Imagem cover`"
       :title="`Cover`"
-      class="w-full h-auto"
+      class="w-full h-auto grayscale"
     />
 
     <div class="container !py-10 lg:ml-[30px]">
@@ -22,7 +22,7 @@
         {{ $t('cover.connect') }}
       </p>
       <p
-        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px]"
+        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px] lg:font-medium"
       >
         {{ $t('cover.innovation') }}
       </p>
