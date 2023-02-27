@@ -78,6 +78,16 @@ input :focus {
   display: none !important;
 }
 
+.slick-next-hero {
+  .slick-next {
+    position: absolute;
+    bottom: -68px;
+    right: 0;
+    width: 21px;
+    z-index: 20;
+  }
+}
+
 .slick-slide {
   position: relative;
 }

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black w-full section-hero relative container flex flex-col justify-between overflow-hidden"
+    class="bg-black w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero"
   >
     <VueSlickCarousel
       v-bind="slickOptions"
@@ -8,7 +8,7 @@
       @beforeChange="onBeforeChange"
       @afterChange="onSlideChange"
     >
-      <div class="w-full !flex flex-col relative pt-16 slick-slide">
+      <div class="w-full !flex flex-col relative pt-16 slick-slide animation">
         <p
           class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight"
         >
@@ -84,7 +84,7 @@ export default {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 8000,
       },
       sliderPageIndex: 1,
     }

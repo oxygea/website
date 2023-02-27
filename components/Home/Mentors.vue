@@ -11,69 +11,76 @@
         {{ $t('mentors.filter.title') }}
       </p>
     </div>
-    <VueSlickCarousel
-      v-bind="slickOptions"
-      class="pl-5 pb-10 pt-2 flex items-center w-full"
-    >
-      <div
-        class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
-        :class="[
-          {
-            'bg-black': selectFilter === 'All',
-            'text-white': selectFilter === 'All',
-          },
-        ]"
-        @click.prevent="selectFilter = 'All'"
-      >
-        {{ $t('mentors.filter.all') }}
+    <VueSlickCarousel v-bind="slickOptions" class="pl-5 pb-10 pt-2 mentors">
+      <div>
+        <p
+          class="border-solid max-w-max min-w-max border border-black py-2 px-4 text-xs font-bold rounded-[100px]"
+          :class="[
+            {
+              'bg-black': selectFilter === 'All',
+              'text-white': selectFilter === 'All',
+            },
+          ]"
+          @click.prevent="selectFilter = 'All'"
+        >
+          {{ $t('mentors.filter.all') }}
+        </p>
       </div>
-      <div
-        class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
-        :class="[
-          {
-            'bg-black': selectFilter === 'Sustainability',
-            'text-white': selectFilter === 'Sustainability',
-          },
-        ]"
-        @click.prevent="selectFilter = 'Sustainability'"
-      >
-        {{ $t('mentors.filter.sustainability') }}
+      <div>
+        <p
+          class="max-w-max min-w-max border-solid border border-black py-2 px-4 text-xs font-bold rounded-[100px]"
+          :class="[
+            {
+              'bg-black': selectFilter === 'Sustainability',
+              'text-white': selectFilter === 'Sustainability',
+            },
+          ]"
+          @click.prevent="selectFilter = 'Sustainability'"
+        >
+          {{ $t('mentors.filter.sustainability') }}
+        </p>
       </div>
-      <div
-        class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
-        :class="[
-          {
-            'bg-black': selectFilter === 'Technology',
-            'text-white': selectFilter === 'Technology',
-          },
-        ]"
-        @click.prevent="selectFilter = 'Technology'"
-      >
-        {{ $t('mentors.filter.technology') }}
+      <div>
+        <p
+          class="max-w-max min-w-max border-solid border border-black py-2 px-4 text-xs font-bold rounded-[100px]"
+          :class="[
+            {
+              'bg-black': selectFilter === 'Technology',
+              'text-white': selectFilter === 'Technology',
+            },
+          ]"
+          @click.prevent="selectFilter = 'Technology'"
+        >
+          {{ $t('mentors.filter.technology') }}
+        </p>
       </div>
-      <div
-        class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
-        :class="[
-          {
-            'bg-black': selectFilter === 'Biochemistry',
-            'text-white': selectFilter === 'Biochemistry',
-          },
-        ]"
-        @click.prevent="selectFilter = 'Biochemistry'"
-      >
-        {{ $t('mentors.filter.biochemistry') }}
+      <div>
+        <p
+          class="max-w-max min-w-max border-solid border border-black py-2 px-4 text-xs font-bold rounded-[100px]"
+          :class="[
+            {
+              'bg-black': selectFilter === 'Biochemistry',
+              'text-white': selectFilter === 'Biochemistry',
+            },
+          ]"
+          @click.prevent="selectFilter = 'Biochemistry'"
+        >
+          {{ $t('mentors.filter.biochemistry') }}
+        </p>
       </div>
-      <div
-        class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px]"
-        :class="[
-          {
-            'bg-black': selectFilter === 'HumanResources',
-            'text-white': selectFilter === 'HumanResources',
-          },
-        ]"
-        @click.prevent="selectFilter = 'HumanResources'"
-      >
-        {{ $t('mentors.filter.humanResources') }}
+      <div>
+        <p
+          class="max-w-max min-w-max border-solid border border-black py-2 px-4 text-xs font-bold rounded-[100px]"
+          :class="[
+            {
+              'bg-black': selectFilter === 'HumanResources',
+              'text-white': selectFilter === 'HumanResources',
+            },
+          ]"
+          @click.prevent="selectFilter = 'HumanResources'"
+        >
+          {{ $t('mentors.filter.humanResources') }}
+        </p>
       </div>
     </VueSlickCarousel>
     <div class="w-full flex flex-wrap container">
@@ -110,7 +117,7 @@ export default {
     return {
       slickOptions: {
         dots: false,
-        slidesToShow: 2.7,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
         arrows: false,
