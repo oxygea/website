@@ -165,10 +165,12 @@ export default {
   footer: {
     conect:
       'Conexão com o ecossistema de startups para acelerar e investir em um futuro sustentável.',
-    address:
-      'Estamos localizados no Cubo by Itaú Alameda Vicente Pinzon 54, 11º andar. Vila Olímpia, SP. CEP 04547-130',
+    address1: 'Estamos localizados no Cubo by Itaú',
+    address2: ' Alameda Vicente Pinzon 54, 11º andar.',
+    address3: 'Vila Olímpia, SP. CEP 04547-130',
     singup:
       'Inscreva-se e fique por dentro do que acontece em nosso ecossistema.',
+    signupPlaceholder: 'Insira seu e-mail',
     signit: 'Ao assinar a newsletter, você concorda com os',
     terms: 'Termos e Condições de Uso',
     terms2: 'e a nossa',
