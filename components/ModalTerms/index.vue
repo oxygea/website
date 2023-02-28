@@ -122,6 +122,91 @@
             Os dados coletados variam de acordo com as seguintes categorias:
           </p>
 
+          <table>
+            <tbody>
+              <tr>
+                <th>Startups</th>
+                <th>Parceiros</th>
+                <th>Mentores</th>
+                <th>Founders</th>
+              </tr>
+              <tr>
+                <td>
+                  Dados do Usuário:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>E-mail;</li>
+                    <li>LinkedIn;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados do Usuário:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>E-mail;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados do Usuário:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>E-mail;</li>
+                    <li>LinkedIn;</li>
+                    <li>Mini bio;;</li>
+                    <li>Área de especialidade;;</li>
+                    <li>Sinergias a serem exploradas;;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados do Usuário:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>Áreas de interesse;</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Dados da Startup:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>Site;</li>
+                    <li>Participação em rodadas de investimentos (sim/não);</li>
+                    <li>Vertical da Oxygea em que se encaixa;</li>
+                    <li>O que espera da Oxygea;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados da Empresa:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>Site;</li>
+                    <li>Tipo de parceria de interesse;</li>
+                    <li>Sinergias a serem exploradas;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados do Usuário:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>E-mail;</li>
+                    <li>LinkedIn;</li>
+                    <li>Mini bio;</li>
+                    <li>Área de especialidade;</li>
+                    <li>Sinergias a serem exploradas;</li>
+                  </ul>
+                </td>
+                <td>
+                  Dados da Empresa:
+                  <ul>
+                    <li>Nome;</li>
+                    <li>Tipo da empresa;</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
           <p>
             Há ainda a seção “Entre em Contato” em nosso Site (www.oxygea.com),
             na qual são coletados os seguintes dados:

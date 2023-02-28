@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       showModal: false,
-      showModalPrivacy: true,
+      showModalPrivacy: false,
       showModalTerms: false,
       showModalCookies: false,
       acceptedCookies: false,
