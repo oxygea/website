@@ -1,9 +1,8 @@
-<!-- FIXME: adjust spaces -->
 <!-- TODO: add animations -->
 <!-- TODO: add filter -->
 
 <template>
-  <section class="bg-white !py-10">
+  <section class="bg-white py-10 lg:py-20">
     <div class="container">
       <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">
         {{ $t('mentors.title') }}
@@ -19,7 +18,7 @@
     </div>
 
     <div class="hidden lg:flex container items-center !pb-10">
-      <p class="font-bold text-xs ml-[110px] w-full mr-6 min-w-max">
+      <p class="font-bold text-base ml-[110px] w-full mr-6 min-w-max">
         {{ $t('mentors.filter.title') }}
       </p>
 
@@ -27,7 +26,7 @@
         <div
           v-for="(item, index) of filters"
           :key="index"
-          class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px] mr-2 cursor-pointer"
+          class="border-solid border border-black py-2 px-4 text-base font-bold min-w-max max-w-max rounded-[100px] mr-2 cursor-pointer"
           :class="[
             {
               'bg-black': selectFilter === item,
@@ -61,19 +60,22 @@
     </div>
 
     <div class="container">
-      <div class="lg:ml-[110px]">
+      <div
+        class="relative lg:ml-[110px] h-[324px] overflow-hidden lg:h-[284px]"
+      >
         <div
           v-for="(mentor, index) of mentors"
           :key="index"
-          class="relative mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%]"
+          class="transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%]"
           @click="($event) => setSelectedMentor(mentor.id)"
           @mouseenter="($event) => setSelectedMentor(mentor.id)"
         >
           <p
-            class="font-medium text-xs lg:min-w-[200px]"
+            class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
             :class="[
               {
                 'text-[#9D9D9D]': mentor.id !== selectedMentor,
+                'lg:!font-bold': mentor.id === selectedMentor,
               },
             ]"
           >
@@ -81,7 +83,7 @@
           </p>
 
           <p
-            class="hidden font-medium text-xs lg:block"
+            class="transition-all duration-300 hidden text-base lg:block"
             :class="[
               {
                 'text-[#9D9D9D]': mentor.id !== selectedMentor,
@@ -91,28 +93,25 @@
             {{ $t(`mentors.filter.${mentor.vertical}`) }}
           </p>
 
-          <nuxt-img
-            preload
-            :src="`mentors/${mentor.image}`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            aria-hidden
-            class="w-16 h-16 lg:absolute lg:w-[180px] lg:h-[220px] z-10 right-[15%]"
-            :class="[
-              {
-                hidden: mentor.id !== selectedMentor,
-              },
-            ]"
-          />
+          <transition name="fade">
+            <nuxt-img
+              v-show="mentor.id === selectedMentor"
+              preload
+              :src="`mentors/${mentor.image}`"
+              format="webp"
+              fit="fill"
+              quality="100"
+              loading="lazy"
+              sizes="100px sm:100vw lg:300px"
+              class="w-16 h-16 lg:absolute lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[15%] lg:top-1/2 lg:-translate-y-1/2"
+            />
+          </transition>
 
           <a
-            class="flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+            class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
             :class="[
               {
-                hidden: mentor.id !== selectedMentor,
+                'opacity-100': mentor.id === selectedMentor,
                 'color-[#9D9D9D]': mentor.id !== selectedMentor,
               },
             ]"
@@ -159,13 +158,27 @@ export default {
         },
         {
           id: 2,
-          name: 'Jorge Soto',
+          name: 'Lorem Ipsum',
           image: 'jorge-soto.png',
           vertical: 'sustainability',
           link: '',
         },
         {
           id: 3,
+          name: 'Jorge Soto',
+          image: 'jorge-soto.png',
+          vertical: 'sustainability',
+          link: '',
+        },
+        {
+          id: 4,
+          name: 'Lorem Ipsum',
+          image: 'jorge-soto.png',
+          vertical: 'sustainability',
+          link: '',
+        },
+        {
+          id: 5,
           name: 'Lorem Ipsum',
           image: 'jorge-soto.png',
           vertical: 'sustainability',
