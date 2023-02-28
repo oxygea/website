@@ -11,33 +11,104 @@
           @click="$emit('close-modal')"
         />
       </div>
-      <div class="pt-4 pb-10">
-        <h3 class="font-bold text-[28px] pb-6">AVISO DE COOKIES</h3>
-        <p class="font-medium text-xs pb-2">
-          Nós, da OXYGEA (BRASKEM VENTURES LTDA, inscrita no CNPJ sob o nº.
-          46.356.778/0001-39), desejamos manter uma relação de confiança,
-          respeito e transparência junto a todos os titulares que tenham seus
-          dados pessoais eventualmente tratados durante a condução de nossas
-          atividades empresariais.
-        </p>
-        <p class="font-medium text-xs pb-2">
-          Temos como prioridade zelar pela privacidade e segurança dos seus
-          Dados Pessoais. Dessa forma, reforçamos que qualquer Dado Pessoal
-          tratado pela OXYGEA seguirá as diretrizes e disposições aplicáveis
-          previstas nesse Aviso, especialmente na Lei Federal nº 13.709/2018 –
-          Lei Geral de Proteção de Dados (“LGPD”).
-        </p>
-        <p class="font-medium text-xs pb-2">
-          Como utilizamos cookies para melhorar sua experiência a cada visita em
-          nosso website e nos preocupamos com a sua segurança e privacidade,
-          desenvolvemos esse Aviso de Cookies (“Aviso”) para que você saiba
-          quais são utilizados, para quais finalidades e como desabilitá-los.
-        </p>
-        <p class="font-medium text-xs pb-2">
-          Caso ainda tenha alguma dúvida, sugestão ou queira exercer algum dos
-          seus direitos como titular de dados pessoais, por favor, entre em
-          contato conosco por meio de nosso website www.oxygea.com.
-        </p>
+      <div class="pt-4 pb-10 modal-texts">
+        <h1>{{ $t('modals.cookies.h1') }}</h1>
+
+        <div>
+          <p>{{ $t('modals.cookies.el1.p1') }}</p>
+          <p>{{ $t('modals.cookies.el1.p2') }}</p>
+          <p>{{ $t('modals.cookies.el1.p3') }}</p>
+          <p>{{ $t('modals.cookies.el1.p4') }}</p>
+        </div>
+
+        <div>
+          <h2>{{ $t('modals.cookies.el2.h2') }}</h2>
+          <p>
+            {{ $t('modals.cookies.el2.p1') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el2.p2') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el2.p3') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el2.p4') }}
+          </p>
+        </div>
+
+        <div>
+          <h2>{{ $t('modals.cookies.el3.h2') }}</h2>
+          <p>
+            {{ $t('modals.cookies.el3.p1') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el3.p2') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el3.p3') }}
+          </p>
+        </div>
+
+        <div>
+          <h2>{{ $t('modals.cookies.el4.h2') }}</h2>
+
+          <p>
+            {{ $t('modals.cookies.el4.p1') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el4.p2') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el4.p3') }}
+          </p>
+        </div>
+
+        <div>
+          <h2>{{ $t('modals.cookies.el5.h2') }}</h2>
+
+          <p>
+            {{ $t('modals.cookies.el5.p1') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p2') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p3') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p4') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p5') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p6') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p7') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el5.p8') }}
+          </p>
+        </div>
+
+        <div>
+          <h2>{{ $t('modals.cookies.el6.h2') }}</h2>
+
+          <p>
+            {{ $t('modals.cookies.el6.p1') }}
+          </p>
+          <p>
+            {{ $t('modals.cookies.el6.p2') }}
+          </p>
+        </div>
+
+        <div class="text-right pt-[64px]">
+          <span>{{ $t('modals.cookies.footer.span1') }}</span>
+          <span>{{ $t('modals.cookies.footer.span2') }}</span>
+          <span>{{ $t('modals.cookies.footer.span3') }}</span>
+        </div>
       </div>
     </div>
   </transition>

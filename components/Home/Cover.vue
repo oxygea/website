@@ -11,7 +11,7 @@
       fit="fill"
       quality="100"
       loading="lazy"
-      sizes="83px sm:166px md:300px lg:300px xl:720px"
+      sizes="320px sm:320px md:300px lg:300px xl:720px"
       :alt="`Imagem cover`"
       :title="`Cover`"
       class="w-full h-auto grayscale"

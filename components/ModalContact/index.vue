@@ -27,24 +27,13 @@
           class="w-full bg-transparent border-b border-black py-[25px] my-6 text-black placeholder-black"
         />
 
-        <div class="pb-[34px] relative w-full">
-          <label for="area" class="w-full pb-4 block">Área de interesse</label>
-          <select
-            name="area"
-            placeholder="Área de interesse"
-            class="w-full py-[18px] px-4 pr-8 border border-[#9D9D9D] appearance-none"
-          >
-            <option disabled selected>Selecione uma área</option>
-            <option value="setes">testes</option>
-            <option value="setes">testes</option>
-            <option value="setes">testes</option>
-            <option value="setes">testes</option>
-          </select>
-          <svg-icon
-            name="arrowDown"
-            class="w-[16px] h-[6px] absolute right-4 bottom-[60px]"
-          />
-        </div>
+        <CustomSelect
+          v-model="selectedOptionId"
+          label="Escolha uma teste"
+          placeholder="name"
+          :options="options"
+        />
+
         <textarea
           class="w-full min-h-[132px] mb-10 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black"
           placeholder="Como podemos te ajudar?"
@@ -63,10 +52,29 @@
 </template>
 
 <script>
+import CustomSelect from '../../components/Select'
 export default {
   name: 'ModalContact',
+  components: {
+    CustomSelect,
+  },
   props: {
     show: Boolean,
+  },
+  data() {
+    return {
+      options: [
+        { id: 1, name: 'Option 1' },
+        { id: 2, name: 'Option 2' },
+        { id: 3, name: 'Option 3' },
+        { id: 3, name: 'Option 3' },
+        { id: 3, name: 'Option 3' },
+        { id: 3, name: 'Option 3' },
+        { id: 3, name: 'Option 3' },
+        { id: 3, name: 'Option 3' },
+      ],
+      selectedOptionId: null,
+    }
   },
 }
 </script>
