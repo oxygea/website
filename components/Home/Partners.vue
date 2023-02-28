@@ -16,42 +16,48 @@
         v-bind="slickOptions"
         class="flex items-center lg:pl-[180px]"
       >
-        <nuxt-img
-          preload
-          :src="`partners/01.png`"
-          format="webp"
-          fit="fill"
-          quality="100"
-          loading="lazy"
-          sizes="83px sm:166px lg:300px"
-          :alt="`Imagem partners 1`"
-          :title="`Partners 1`"
-          class="max-w-[83px] h-[43px] mr-10 lg:mr-[120px]"
-        />
-        <nuxt-img
-          preload
-          :src="`partners/02.png`"
-          format="webp"
-          fit="fill"
-          quality="100"
-          loading="lazy"
-          sizes="100px sm:100vw lg:300px"
-          :alt="`Imagem partners 2`"
-          :title="`Partners 2`"
-          class="max-w-[83px] h-[28px] mr-10 lg:mr-[120px]"
-        />
-        <nuxt-img
-          preload
-          :src="`partners/03.png`"
-          format="webp"
-          fit="fill"
-          quality="100"
-          loading="lazy"
-          sizes="100px sm:100vw lg:300px"
-          :alt="`Imagem partners 3`"
-          :title="`Partners 3`"
-          class="max-w-[110px] h-[26px] mr-10 lg:mr-[120px]"
-        />
+        <NuxtLink to="https://www.acecortex.com.br/">
+          <nuxt-img
+            preload
+            :src="`partners/01.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[83px] h-[43px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
+        <NuxtLink to="https://cubo.network/">
+          <nuxt-img
+            preload
+            :src="`partners/02.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="100px sm:100vw lg:300px"
+            :alt="`Imagem partners 2`"
+            :title="`Partners 2`"
+            class="max-w-[83px] h-[28px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
+        <NuxtLink to="https://www.cazoololab.com.br/">
+          <nuxt-img
+            preload
+            :src="`partners/03.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="100px sm:100vw lg:300px"
+            :alt="`Imagem partners 3`"
+            :title="`Partners 3`"
+            class="max-w-[110px] h-[26px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
         <nuxt-img
           preload
           :src="`partners/04.png`"
@@ -64,6 +70,7 @@
           :title="`Partners 4`"
           class="max-w-[41px] h-[48px] mr-10 lg:mr-[120px]"
         />
+
         <nuxt-img
           preload
           :src="`partners/05.png`"

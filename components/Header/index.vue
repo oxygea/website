@@ -69,7 +69,7 @@
             v-if="$i18n.locale !== 'pt'"
             title="Ver em  Português"
             :to="switchLocalePath('pt')"
-            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1"
+            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1 hover:bg-[#18A790] transition-all duration-300"
             @click="onSelectLanguage('pt')"
           >
             <span class="relative z-[2]"> PT </span>
@@ -79,7 +79,7 @@
             v-else
             title="Select English"
             :to="switchLocalePath('en')"
-            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1"
+            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1 hover:bg-[#18A790] transition-all duration-300"
             @click="onSelectLanguage('en')"
           >
             <span class="relative z-[2]"> EN </span>
