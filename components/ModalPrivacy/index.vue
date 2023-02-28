@@ -331,114 +331,75 @@
         </div>
 
         <div>
-          <h2>6. DADOS PESSOAIS SENSÍVEIS</h2>
+          <h2>{{ $t('modals.privacy.el11.h2') }}</h2>
 
-          <p>
-            Não realizamos operações de tratamento envolvendo Dados Pessoais
-            considerados sensíveis pela LGPD, sendo certo que, nas remotas e
-            específicas hipóteses em que possamos fazê-lo, o tratamento se
-            fundamentará em termos específicos previamente disponibilizados aos
-            titulares, mediante seu consentimento específico ou com fundamento
-            em base legal prevista pela LGPD.
-          </p>
+          <p>{{ $t('modals.privacy.el11.p1') }}</p>
         </div>
 
         <div>
-          <h2>7. QUAIS SÃO SEUS DIREITOS E COMO EXERCÊ-LOS?</h2>
+          <h2>{{ $t('modals.privacy.el12.h2') }}</h2>
 
           <p>
-            Sempre que realizarmos o tratamento de Dados Pessoais na posição de
-            “Controladora”, respeitaremos e garantiremos o exercício de seus
-            direitos, conforme rol a seguir:
+            {{ $t('modals.privacy.el12.p1') }}
           </p>
           <ul>
-            <li>Saber se tratamos algum Dado Pessoal seu;</li>
-            <li>Saber quais Dados Pessoais seus são tratados por nós;</li>
+            <li>{{ $t('modals.privacy.el12.li1') }}</li>
+            <li>{{ $t('modals.privacy.el12.li2') }}</li>
             <li>
-              Corrigir Dados incompletos, inexatos ou desatualizados, pelos
-              meios exigidos pela regulamentação específica, quando necessário;
+              {{ $t('modals.privacy.el12.li3') }}
             </li>
             <li>
-              Solicitar a anonimização, bloqueio ou eliminação de Dados
-              desnecessários, excessivos ou que, porventura, tenham sido
-              tratados em desconformidade com a lei;
+              {{ $t('modals.privacy.el12.li4') }}
             </li>
             <li>
-              Solicitar a portabilidade dos Dados a outro fornecedor de serviço
-              ou produto;
+              {{ $t('modals.privacy.el12.li5') }}
             </li>
             <li>
-              Solicitar a eliminação dos Dados tratados com ou sem o seu
-              consentimento;
+              {{ $t('modals.privacy.el12.li6') }}
             </li>
             <li>
-              Obter informações sobre as entidades públicas ou privadas com as
-              quais compartilhamos os seus Dados;
+              {{ $t('modals.privacy.el12.li7') }}
             </li>
             <li>
-              Quando a atividade de tratamento necessitar do seu consentimento,
-              você pode se negar a consentir. Nesse caso, iremos lhe informar
-              sobre as consequências da falta do seu consentimento;
+              {{ $t('modals.privacy.el12.li8') }}
             </li>
             <li>
-              Quando a atividade de tratamento necessitar do seu consentimento,
-              a qualquer momento você poderá revogá-lo.
+              {{ $t('modals.privacy.el12.li9') }}
             </li>
           </ul>
           <p>
-            Para acessar, obter cópia, corrigir, atualizar e/ou completar os
-            seus Dados Pessoais, bem como exercer quaisquer outros direitos,
-            você deve enviar e-mail para privacy@oxygea.com.
+            {{ $t('modals.privacy.el12.p2') }}
           </p>
           <p>
-            Em casos específicos, é possível que a sua requisição não seja
-            atendida. Nestas situações, nós explicaremos os motivos que
-            justificaram o não atendimento, nos termos da Legislação Aplicável.
-            Além disso, você fica ciente que em caso de eliminação dos Dados
-            Pessoais implicará no término de seu cadastro, e exclusão no banco
-            de dados, com consequente cancelamento do acesso aos
-            serviços/soluções da OXYGEA.
+            {{ $t('modals.privacy.el12.p3') }}
           </p>
           <p>
-            Requisições que envolvam Dados Pessoais e/ou documentos de outros
-            titulares não serão atendidas, exceto mediante procuração, poder
-            parental ou outra hipótese que autorize o exercício do direito de
-            outro titular por você.
+            {{ $t('modals.privacy.el12.p4') }}
           </p>
         </div>
 
         <div>
-          <h2>8. ALTERAÇÕES NESSE AVISO</h2>
+          <h2>{{ $t('modals.privacy.el13.h2') }}</h2>
 
           <p>
-            A OXYGEA reserva-se ao direito de alterar este Aviso a qualquer
-            momento. Em caso de alterações substanciais, informaremos a você.
+            {{ $t('modals.privacy.el13.p') }}
           </p>
         </div>
 
         <div>
-          <h2>9. QUAL O FORO E LEI APLICÁVEL A ESSE AVISO?</h2>
+          <h2>{{ $t('modals.privacy.el14.h2') }}</h2>
 
           <p>
-            A OXYGEA empenhará seus melhores esforços para que eventuais
-            controvérsias sejam resolvidas extrajudicialmente por meios de
-            resolução pacíficos e consensuais. Assim, estamos sempre à
-            disposição para ouvi-lo, no que for necessário, e encontrar o melhor
-            caminho para solucionarmos sua solicitação no seguinte e-mail:
-            privacy@oxygea.com.
+            {{ $t('modals.privacy.el14.p1') }}
           </p>
           <p>
-            Não sendo possível uma resolução amigável, informamos que este Aviso
-            será regido, interpretado e executado de acordo com as Leis da
-            República Federativa do Brasil, sendo competente o foro de domicílio
-            do titular para dirimir quaisquer solicitações decorrentes deste
-            documento.
+            {{ $t('modals.privacy.el14.p2') }}
           </p>
         </div>
         <div class="text-right pt-[64px]">
-          <span>Este Aviso foi alterado pela última vez e </span>
-          <span>publicado em nosso website em: </span>
-          <span>Janeiro/2023</span>
+          <span>{{ $t('modals.privacy.footer.span1') }}</span>
+          <span>{{ $t('modals.privacy.footer.span2') }}</span>
+          <span>{{ $t('modals.privacy.footer.span3') }}</span>
         </div>
       </div>
     </div>
