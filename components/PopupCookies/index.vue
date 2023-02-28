@@ -6,18 +6,16 @@
     >
       <div class="w-full max-w-[171px]">
         <p class="font-medium text-[10px] leading-[14px]">
-          Quando você acessa este site, podem vir a ser coletados alguns dados
-          relacionados ao seu dispositivo. Para saber mais sobre cookies acesse
-          a nossa
-          <strong @click="$nuxt.$emit('openModalCookies')"
-            >Política de Cookies.</strong
-          >
+          {{ $t('popups.cookies.p') }}
+          <strong @click="$nuxt.$emit('openModalCookies')">{{
+            $t('popups.cookies.strong')
+          }}</strong>
         </p>
       </div>
       <span
         class="py-2 px-4 bg-green font-medium text-[10px] rounded-full h-max"
         @click="$nuxt.$emit('saveAcceptedCookies')"
-        >Aceitar</span
+        >{{ $t('popups.cookies.cta') }}</span
       >
     </div>
   </transition>
