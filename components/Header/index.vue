@@ -37,7 +37,7 @@
         <svg-icon
           name="hamburger"
           :class="{ hidden: showMenu }"
-          class="w-8 h-8"
+          class="w-[18px] h-[16px]"
         />
         <svg-icon
           name="close"
