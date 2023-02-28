@@ -66,6 +66,72 @@
             proteção de dados pessoais” que poderão ser mencionados neste
             documento:
           </p>
+
+          <table>
+            <tbody>
+              <tr>
+                <th>Termo</th>
+                <th>Definição</th>
+              </tr>
+              <tr>
+                <td>Controlador</td>
+                <td>
+                  Pessoa natural ou jurídica, de direito público ou privado, a
+                  quem competem as decisões referentes ao tratamento de dados
+                  pessoais.
+                </td>
+              </tr>
+              <tr>
+                <td>Controlador</td>
+                <td>
+                  Qualquer informação relacionada à pessoa natural, direta ou
+                  indiretamente, que possa identificá-la ou torná-la
+                  identificável. Exemplos: nome, CPF, endereço, log de acesso,
+                  IP, geolocalização, dados de navegação e dispositivo, entre
+                  outros.
+                </td>
+              </tr>
+              <tr>
+                <td>Dado pessoal sensível</td>
+                <td>
+                  Categoria especial de dados pessoais referentes à origem
+                  racial ou étnica, convicção religiosa, opinião política,
+                  filiação a sindicato ou a organização de caráter religioso,
+                  filosófico ou político, referentes à saúde ou à vida sexual,
+                  dados genéticos ou biométricos relativos à pessoa natural.
+                </td>
+              </tr>
+              <tr>
+                <td>Operador</td>
+                <td>
+                  Pessoa natural ou jurídica, de direito público ou privado, que
+                  realiza o tratamento de dados pessoais em nome do controlador.
+                </td>
+              </tr>
+              <tr>
+                <td>Titular</td>
+                <td>Pessoa natural a quem se referem os dados pessoais.</td>
+              </tr>
+              <tr>
+                <td>Tratamento</td>
+                <td>
+                  Toda operação realizada com dados pessoais, como as que se
+                  referem: a coleta, produção, recepção, classificação,
+                  utilização, acesso, reprodução, transmissão, distribuição,
+                  processamento, arquivamento, armazenamento, eliminação,
+                  avaliação ou controle da informação, modificação, comunicação,
+                  transferência, difusão ou extração.
+                </td>
+              </tr>
+              <tr>
+                <td>Base Legal</td>
+                <td>
+                  Fundamentação legal, nos termos da LGPD, que torna legítimo o
+                  tratamento de dados pessoais para uma determinada finalidade.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div>
@@ -76,11 +142,172 @@
             seguinte maneira:
           </p>
 
+          <table>
+            <tbody>
+              <tr>
+                <th>Categoria dos Dados</th>
+                <th>Exemplos</th>
+              </tr>
+              <tr>
+                <td>Biométricos</td>
+                <td>Impressões digitais e reconhecimento facial.</td>
+              </tr>
+              <tr>
+                <td>Características Físicas</td>
+                <td>
+                  Idade, sexo, altura, peso, cor do cabelo, cor dos olhos,
+                  características distintivas.
+                </td>
+              </tr>
+              <tr>
+                <td>Dados Cadastrais</td>
+                <td>
+                  Nome, endereço residência, data de nascimento, local de
+                  nascimento, estado civil, nacionalidade, histórico de
+                  endereços anteriores, CPF RG, CNH, número celular pessoal,
+                  e-mail pessoal, entre outros.
+                </td>
+              </tr>
+              <tr>
+                <td>Dados Comportamentais</td>
+                <td>
+                  Hábitos de consumo (incluindo dieta alimentar, uso de tabaco e
+                  álcool). Estilo de vida, informações sobre o uso de
+                  bens/serviços, comportamentos, viagens/ deslocamentos.
+                </td>
+              </tr>
+              <tr>
+                <td>Dados de Identificação Digital</td>
+                <td>
+                  Endereços IP, cookies, conexão, dados de comunicação de torres
+                  de celulares, dados de geolocalização, entre outros.
+                </td>
+              </tr>
+              <tr>
+                <td>Dados Financeiros</td>
+                <td>
+                  Números de: identificação, contas bancárias, cartões de
+                  crédito ou débito; códigos secretos, renda, posses,
+                  investimentos, renda total, renda profissional, poupança,
+                  datas de início e término dos investimentos, dívidas sobre
+                  ativos.
+                </td>
+              </tr>
+              <tr>
+                <td>Dados Profissionais / Acadêmicos</td>
+                <td>
+                  Dados acadêmicos/escolares (diplomas, certificados, resultados
+                  de exames, histórico escolar, grau de formação). Qualificação
+                  e Experiência profissional (certificações, interesses
+                  profissionais, acadêmicos e de pesquisa, experiência de
+                  ensino). Empregador, descrição do cargo e função, antiguidade,
+                  data de recrutamento. Detalhes sobre o visto, autorização de
+                  trabalho, limitações de residência ou movimentação, condições
+                  especiais relacionadas à autorização de residência.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Dados Relacionados a Investigações e Processos Judiciais /
+                  Administrativos
+                </td>
+                <td>
+                  Suspeitas de violações, conexões com criminosos; Inquéritos ou
+                  ações judiciais empreendidas por um ou contra o titular dos
+                  dados, multas, processo disciplinar e/ou advertências.
+                </td>
+              </tr>
+              <tr>
+                <td>Filiação a Organização Filosófica/Política/Religiosa</td>
+                <td>
+                  Filiação a entidade que representa determinada convicção
+                  filosófica, política ou religiosa (exceto partidos políticos),
+                  que possa gerar algum tipo de preconceito ou discriminação.
+                </td>
+              </tr>
+              <tr>
+                <td>Imagens - Vídeos - Voz</td>
+                <td>
+                  Arquivos/Registros de vídeos, fotos digitais, imagens e/ou
+                  vídeos de câmeras de segurança, arquivos/Registros digitais de
+                  voz, dados de imagem e voz independentemente do suporte, entre
+                  outros.
+                </td>
+              </tr>
+              <tr>
+                <td>Opinião Política</td>
+                <td>
+                  Candidato preferido, posicionamento sobre ideologia política,
+                  opinião sobre partidos políticos.
+                </td>
+              </tr>
+              <tr>
+                <td>Origem racial ou étnica</td>
+                <td>
+                  Raça, origem nacional ou étnica, línguas faladas, dialetos,
+                  sotaques.
+                </td>
+              </tr>
+              <tr>
+                <td>Relacionados à Vida Sexual</td>
+                <td>
+                  Identidade de gênero, preferências, inclinações, fetiches,
+                  história ou informações que descrevam a vida sexual de um
+                  indivíduo.
+                </td>
+              </tr>
+              <tr>
+                <td>Religião</td>
+                <td>Crenças religiosas, crenças filosóficas, pensamentos.</td>
+              </tr>
+            </tbody>
+          </table>
+
           <p>
             No caso específico da OXYGEA e dos seus Dados Pessoais, as seguintes
             Categorias de Dados Pessoais serão tratadas, para as finalidades e
             bases legais a seguir dispostas:
           </p>
+
+          <table>
+            <tbody>
+              <tr>
+                <th>Finalidade para o Tratamento</th>
+                <th>Categorias de Dados Pessoais Utilizados</th>
+                <th>Bases Legais para o Tratamento de Dados</th>
+              </tr>
+              <tr>
+                <td>
+                  Cadastro de Usuários em Sites, plataformas e/ou aplicativos
+                </td>
+                <td>Dados Cadastrais</td>
+                <td>
+                  Execução de procedimentos preliminares ou relação contratual
+                  formalizada com você (ou com a Startup em que atua) e/ou
+                  fornecer as funcionalidades do site/plataforma da OXYGEA
+                </td>
+              </tr>
+              <tr>
+                <td>Comercial/Contratos</td>
+                <td>Dados Cadastrais</td>
+                <td>
+                  Execução de relação contratual formalizada com você (ou com a
+                  Startup em que atua) e/ou fornecer as soluções da OXYGEA
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Envio de dados pessoais para órgãos governamentais (Ex:
+                  E-social/INSS/Receita Federal/Prefeituras/etc)
+                </td>
+                <td>Dados Cadastrais</td>
+                <td>
+                  Cumprimento de obrigação legal ou regulatória das legislações
+                  vigentes no Brasil;
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
           <p>
             A OXYGEA declara que poderá tratar seus dados para outros fins
@@ -157,6 +384,46 @@
             os Dados Pessoais coletados, em geral, para as seguintes categorias
             de terceiros:
           </p>
+
+          <table>
+            <tbody>
+              <tr>
+                <th>Tipos de Compartilhamento</th>
+                <th>Categorias de Dados Compartilhados</th>
+              </tr>
+              <tr>
+                <td>
+                  com bancos/instituições financeiras para a realização de
+                  pagamentos
+                </td>
+                <td>Dados Cadastrais</td>
+              </tr>
+              <tr>
+                <td>
+                  com fornecedores de marketing/publicidade que nos apoiam com
+                  nossos clientes e interessados em nossos produtos/serviços, em
+                  campanhas, por exemplo
+                </td>
+                <td>Dados Cadastrais</td>
+              </tr>
+              <tr>
+                <td>
+                  com empresas do mesmo grupo (mesma direção, controle ou
+                  administração, atuando em buscas de interesses em comum)
+                </td>
+                <td>Dados Cadastrais</td>
+              </tr>
+              <tr>
+                <td>
+                  Com auditores, autoridades nacionais de supervisão de dados
+                  pessoais e quaisquer tribunais e autoridades judiciárias[MC1]
+                  [MC1]Informação mencionada no Aviso de Privacidade. Por favor,
+                  confirmar se deve ser mantido aqui.
+                </td>
+                <td>Dados Cadastrais</td>
+              </tr>
+            </tbody>
+          </table>
 
           <p>
             Também poderemos compartilhar Dados Pessoais para outros países
