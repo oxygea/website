@@ -11,12 +11,7 @@
       <div
         v-for="(item, index) of itens"
         :key="index"
-        class="w-full !flex flex-col relative slick-slide"
-        :class="[
-          {
-            'opacity-0': index !== 0,
-          },
-        ]"
+        class="w-full !flex flex-col relative"
       >
         <p
           class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-[48px] lg:leading-[56px]"
@@ -62,7 +57,7 @@ export default {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 8000,
-        infinite: false,
+        loop: true,
       },
       sliderPageIndex: 1,
       itens: [1, 2, 3, 4],
@@ -70,10 +65,6 @@ export default {
   },
   methods: {
     onBeforeChange() {
-      const activeSlide = document.querySelector('.slick-active')
-      const activeSlideContent = activeSlide.querySelector('.slick-slide')
-      activeSlideContent.classList.remove('animation')
-
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
     },
@@ -82,10 +73,6 @@ export default {
 
       const line = document.querySelector('#line')
       line.classList.add('animation-line')
-
-      const activeSlide = document.querySelector('.slick-active')
-      const activeSlideContent = activeSlide.querySelector('.slick-slide')
-      activeSlideContent.classList.add('animation')
     },
     nextSlide() {
       this.$refs.carousel.next()
