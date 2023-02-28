@@ -201,27 +201,27 @@
               </tr>
               <tr>
                 <td>
-                  {{ $t('modals.privacy.table3.tr2.th1') }}
+                  {{ $t('modals.privacy.table3.tr2.td1') }}
                 </td>
-                <td>{{ $t('modals.privacy.table3.tr2.th2') }}</td>
+                <td>{{ $t('modals.privacy.table3.tr2.td2') }}</td>
                 <td>
-                  {{ $t('modals.privacy.table3.tr2.th3') }}
-                </td>
-              </tr>
-              <tr>
-                <td>{{ $t('modals.privacy.table3.tr3.th1') }}</td>
-                <td>{{ $t('modals.privacy.table3.tr3.th2') }}</td>
-                <td>
-                  {{ $t('modals.privacy.table3.tr3.th3') }}
+                  {{ $t('modals.privacy.table3.tr2.td3') }}
                 </td>
               </tr>
               <tr>
+                <td>{{ $t('modals.privacy.table3.tr3.td1') }}</td>
+                <td>{{ $t('modals.privacy.table3.tr3.td2') }}</td>
                 <td>
-                  {{ $t('modals.privacy.table3.tr4.th1') }}
+                  {{ $t('modals.privacy.table3.tr3.td3') }}
                 </td>
-                <td>{{ $t('modals.privacy.table3.tr4.th2') }}</td>
+              </tr>
+              <tr>
                 <td>
-                  {{ $t('modals.privacy.table3.tr4.th3') }}
+                  {{ $t('modals.privacy.table3.tr4.td1') }}
+                </td>
+                <td>{{ $t('modals.privacy.table3.tr4.td2') }}</td>
+                <td>
+                  {{ $t('modals.privacy.table3.tr4.td3') }}
                 </td>
               </tr>
             </tbody>
