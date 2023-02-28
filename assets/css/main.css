@@ -219,4 +219,32 @@ input :focus {
     line-height: 14px;
     color: #000000;
   }
+
+  ol {
+    padding-top: 24px;
+    padding-left: 16px;
+
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+  ul {
+    padding-top: 24px;
+    padding-left: 16px;
+
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    padding-bottom: 8px;
+  }
 }

@@ -43,7 +43,7 @@ export default {
     return {
       showModal: false,
       showModalPrivacy: false,
-      showModalTerms: false,
+      showModalTerms: true,
       showModalCookies: false,
       acceptedCookies: false,
     }
