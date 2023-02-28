@@ -1,3 +1,5 @@
+<!-- FIXME: adjust spaces -->
+
 <template>
   <section class="bg-[#EDEDEF]">
     <div

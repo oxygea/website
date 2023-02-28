@@ -1,3 +1,5 @@
+<!-- TODO: add animation -->
+
 <template>
   <section
     class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"

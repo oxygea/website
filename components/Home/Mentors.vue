@@ -1,3 +1,7 @@
+<!-- FIXME: adjust spaces -->
+<!-- TODO: add animations -->
+<!-- TODO: add filter -->
+
 <template>
   <section class="bg-white !py-10">
     <div class="container">
