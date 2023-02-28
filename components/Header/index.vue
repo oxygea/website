@@ -1,10 +1,8 @@
 <template>
   <header
-    class="header sticky left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10"
+    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:pb-4"
     :class="[
       {
-        fixed: notTop && lastScrollPosition > 80,
-        'opacity-0': !showNavbar && lastScrollPosition > 100,
         'header-open': showMenu,
         fadeIn2: showMenu,
       },
@@ -39,7 +37,7 @@
         <svg-icon
           name="hamburger"
           :class="{ hidden: showMenu }"
-          class="w-32 h-32"
+          class="w-[18px] h-[16px]"
         />
         <svg-icon
           name="close"
@@ -71,7 +69,7 @@
             v-if="$i18n.locale !== 'pt'"
             title="Ver em  Português"
             :to="switchLocalePath('pt')"
-            class="text-white w-[38px] h-10 border border-white border-solid text-base font-medium flex justify-center items-center mt-2 relative after:w-0 after:h-full after:bg-white after:absolute after:top-0 after:right-0 after:transition-all after:duration-300 after:ease-out lg:hover:text-black hover:after:left-0 hover:after:w-full hover:after:right-auto"
+            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1"
             @click="onSelectLanguage('pt')"
           >
             <span class="relative z-[2]"> PT </span>
@@ -81,11 +79,17 @@
             v-else
             title="Select English"
             :to="switchLocalePath('en')"
-            class="text-white w-[38px] h-10 border border-white border-solid text-base font-medium flex justify-center items-center mt-2 relative after:w-0 after:h-full after:bg-white after:absolute after:top-0 after:right-0 after:transition-all after:duration-300 after:ease-out lg:hover:text-black hover:after:left-0 hover:after:w-full hover:after:right-auto"
+            class="rounded-[100px] bg-green text-black font-medium self-center px-4 py-1"
             @click="onSelectLanguage('en')"
           >
             <span class="relative z-[2]"> EN </span>
           </n-link>
+
+          <div class="flex items-center gap-4">
+            <svg-icon name="linkedin-white" class="w-6 h-6 relative" />
+            <svg-icon name="instagram-white" class="w-6 h-6 relative" />
+            <svg-icon name="youtube-white" class="w-6 h-6 relative" />
+          </div>
         </nav>
       </div>
     </div>
@@ -240,6 +244,10 @@ export default {
 .header {
   backdrop-filter: blur(8px);
   background-color: rgb(0 0 0 / 80%);
+
+  @media (min-width: 1024px) {
+    background-color: #000;
+  }
 }
 
 .slide-fade-enter-active {

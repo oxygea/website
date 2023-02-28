@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <section id="about" class="bg-black py-10 lg:pt-20 lg:pb-[115px]">
-      <h2 class="pb-4 font-bold text-2xl text-white lg:text-[42px]">
+    <section id="about" class="bg-black py-10 lg:pt-20 lg:pb-[90px]">
+      <h2 class="pb-4 font-bold text-2xl text-white lg:text-[42px] lg:pb-6">
         {{ $t('team.title') }}
       </h2>
       <p
@@ -11,12 +11,12 @@
       </p>
 
       <ul
-        class="flex-wrap hidden lg:flex lg:ml-[110px] gap-x-[40px] gap-y-[75px]"
+        class="flex-wrap hidden lg:flex lg:ml-[110px] gap-x-[40px] gap-y-[40px]"
       >
         <li
           v-for="(item, index) in teamData"
           :key="index"
-          class="flex flex-col justify-between w-full max-w-[164px] list-none"
+          class="team-mate flex flex-col justify-between w-full max-w-[164px] list-none grayscale hover:grayscale-0 transition-all duration-300 ease-linear"
         >
           <div>
             <nuxt-img
@@ -31,10 +31,16 @@
               :title="item.name"
               class="w-[164px] h-[164px]"
             />
-            <p class="text-white font-normal text-base pt-4 pb-1">
+            <p class="text-white font-normal text-xs lg:text-base pt-4 pb-1">
               {{ item.name }}
             </p>
-            <p class="text-white font-bold text-base">{{ item.job }}</p>
+            <p class="text-white font-bold text-xxs lg:text-xs">
+              {{ item.job }}
+            </p>
+            <svg-icon
+              name="linkedin2"
+              class="w-[18px] h-[18px] mt-4 opacity-0"
+            />
           </div>
         </li>
       </ul>
@@ -56,7 +62,7 @@
               sizes="100px sm:100vw lg:300px"
               :alt="item.name"
               :title="item.name"
-              class="w-[100px] h-[100px]"
+              class="w-[100px] h-[100px] grayscale"
             />
             <p class="text-white font-normal text-xs pt-4 pb-1">
               {{ item.name }}
@@ -90,3 +96,15 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+.team-mate {
+  svg {
+    transition: opacity 300ms linear;
+  }
+
+  &:hover svg {
+    opacity: 1;
+  }
+}
+</style>

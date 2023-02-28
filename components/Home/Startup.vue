@@ -1,6 +1,10 @@
+<!-- FIXME: adjust spaces -->
+
 <template>
   <section class="bg-[#EDEDEF]">
-    <div class="md:flex items-center lg:max-w-[1440px] lg:mx-auto lg:px-[70px]">
+    <div
+      class="md:flex items-center lg:max-w-[1440px] lg:mx-auto 2xl:px-[70px]"
+    >
       <nuxt-img
         preload
         :src="`startup.png`"
@@ -8,10 +12,10 @@
         fit="fill"
         quality="100"
         loading="lazy"
-        sizes="320px sm:320px lg:720px"
+        sizes="320px sm:320px md:300px lg:300px xl:720px"
         :alt="`Imagem startup`"
         :title="`Startup`"
-        class="w-full h-auto"
+        class="w-full h-auto grayscale"
       />
 
       <div class="container !py-10 lg:ml-[30px]">

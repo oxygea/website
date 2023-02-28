@@ -1,6 +1,8 @@
+<!-- FIXME: adjust spaces -->
+
 <template>
   <section
-    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto lg:px-[70px]"
+    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto 2xl:px-[70px]"
   >
     <nuxt-img
       preload
@@ -9,10 +11,10 @@
       fit="fill"
       quality="100"
       loading="lazy"
-      sizes="320px sm:320px lg:720px"
+      sizes="320px sm:320px md:300px lg:300px xl:720px"
       :alt="`Imagem cover`"
       :title="`Cover`"
-      class="w-full h-auto"
+      class="w-full h-auto grayscale"
     />
 
     <div class="container !py-10 lg:ml-[30px]">
@@ -22,7 +24,7 @@
         {{ $t('cover.connect') }}
       </p>
       <p
-        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px]"
+        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px] lg:font-medium"
       >
         {{ $t('cover.innovation') }}
       </p>
