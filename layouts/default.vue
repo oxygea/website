@@ -42,8 +42,8 @@ export default {
   data() {
     return {
       showModal: false,
-      showModalPrivacy: false,
-      showModalTerms: true,
+      showModalPrivacy: true,
+      showModalTerms: false,
       showModalCookies: false,
       acceptedCookies: false,
     }

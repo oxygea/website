@@ -201,6 +201,16 @@ input :focus {
     padding-top: 64px;
   }
 
+  h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding: 8px 0;
+  }
+
   p {
     font-family: 'Poppins';
     font-style: normal;

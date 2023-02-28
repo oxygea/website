@@ -12,7 +12,7 @@
         />
       </div>
       <div class="pt-4 pb-10 modal-texts">
-        <h1 class="font-bold text-[28px] pb-6">TERMOS E CONDIÇÕES DE USO</h1>
+        <h1>TERMOS E CONDIÇÕES DE USO</h1>
 
         <div>
           <p>
