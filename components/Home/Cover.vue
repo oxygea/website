@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto lg:px-[70px]"
+    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto 2xl:px-[70px]"
   >
     <nuxt-img
       preload
@@ -9,7 +9,7 @@
       fit="fill"
       quality="100"
       loading="lazy"
-      sizes="83px sm:166px lg:720px"
+      sizes="83px sm:166px md:300px lg:300px xl:720px"
       :alt="`Imagem cover`"
       :title="`Cover`"
       class="w-full h-auto grayscale"
