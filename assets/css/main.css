@@ -184,6 +184,12 @@ input :focus {
     letter-spacing: -0.03em;
     color: #000000;
     padding-bottom: 24px;
+
+    @media (min-width: 992px) {
+      font-size: 42px;
+      line-height: 56px;
+      letter-spacing: -0.03em;
+    }
   }
 
   h2 {
@@ -195,6 +201,11 @@ input :focus {
     color: #000000;
     padding-bottom: 24px;
     padding-top: 64px;
+
+    @media (min-width: 992px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   h3 {
@@ -215,6 +226,11 @@ input :focus {
     line-height: 14px;
     color: #000000;
     padding-bottom: 8px;
+
+    @media (min-width: 992px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   span {

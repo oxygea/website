@@ -2,9 +2,9 @@
   <transition name="slide-fade">
     <div
       v-if="show"
-      class="h-full container bg-gray overflow-auto transition-all duration-500 fixed w-full flex flex-col z-50 lg:flex-row lg:h-screen"
+      class="h-full container bg-gray overflow-auto transition-all duration-500 fixed w-full flex flex-col z-50 lg:h-screen"
     >
-      <div class="flex justify-end pt-4 lg:hidden">
+      <div class="flex justify-end pt-4">
         <svg-icon
           name="close2"
           class="w-[32px] h-[32px] cursor-pointer"
