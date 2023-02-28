@@ -57,29 +57,67 @@
     </div>
 
     <div class="container">
-      <div class="w-full flex flex-wrap">
+      <div class="lg:ml-[110px]">
         <div
-          class="grid grid-cols-3 w-full items-center py-4 border-y border-gray"
+          v-for="(mentor, index) of mentors"
+          :key="index"
+          class="relative mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%]"
+          @click="($event) => setSelectedMentor(mentor.id)"
+          @mouseenter="($event) => setSelectedMentor(mentor.id)"
         >
-          <p class="font-medium text-xs">Jorge Soto</p>
+          <p
+            class="font-medium text-xs lg:min-w-[200px]"
+            :class="[
+              {
+                'text-[#9D9D9D]': mentor.id !== selectedMentor,
+              },
+            ]"
+          >
+            {{ mentor.name }}
+          </p>
+
+          <p
+            class="hidden font-medium text-xs lg:block"
+            :class="[
+              {
+                'text-[#9D9D9D]': mentor.id !== selectedMentor,
+              },
+            ]"
+          >
+            {{ $t(`mentors.filter.${mentor.vertical}`) }}
+          </p>
+
           <nuxt-img
             preload
-            :src="`defaultMentor.png`"
+            :src="`mentors/${mentor.image}`"
             format="webp"
             fit="fill"
             quality="100"
             loading="lazy"
             sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem team ${c}`"
-            :title="`Team ${c}`"
-            class="w-16 h-16 m-auto"
+            aria-hidden
+            class="w-16 h-16 lg:absolute lg:w-[180px] lg:h-[220px] z-10 right-[15%]"
+            :class="[
+              {
+                hidden: mentor.id !== selectedMentor,
+              },
+            ]"
           />
-          <div
-            class="flex justify-between items-center min-w-max gap-2 cursor-pointer"
+
+          <a
+            class="flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+            :class="[
+              {
+                hidden: mentor.id !== selectedMentor,
+                'color-[#9D9D9D]': mentor.id !== selectedMentor,
+              },
+            ]"
           >
-            <p class="font-bold text-sm">{{ $t('mentors.filter.more') }}</p>
+            <span class="font-bold text-sm">{{
+              $t('mentors.filter.more')
+            }}</span>
             <svg-icon name="arrowCircle" class="w-6 h-6" />
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -106,7 +144,46 @@ export default {
         'biochemistry',
         'humanResources',
       ],
+      selectedMentor: 2,
+      mentors: [
+        {
+          id: 1,
+          name: 'Lorem Ipsum',
+          image: 'jorge-soto.png',
+          vertical: 'sustainability',
+          link: '',
+        },
+        {
+          id: 2,
+          name: 'Jorge Soto',
+          image: 'jorge-soto.png',
+          vertical: 'sustainability',
+          link: '',
+        },
+        {
+          id: 3,
+          name: 'Lorem Ipsum',
+          image: 'jorge-soto.png',
+          vertical: 'sustainability',
+          link: '',
+        },
+      ],
     }
+  },
+  methods: {
+    setSelectedMentor(name) {
+      this.selectedMentor = name
+    },
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+.mentor {
+  @apply border-b border-gray;
+
+  &:last-of-type {
+    @apply border-none;
+  }
+}
+</style>
