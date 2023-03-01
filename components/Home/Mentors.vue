@@ -2,7 +2,7 @@
 <!-- TODO: add filter -->
 
 <template>
-  <section class="bg-white py-10 lg:py-20">
+  <section class="bg-white py-10 lg:py-20 mentors-section">
     <div class="container">
       <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">
         {{ $t('mentors.title') }}
@@ -22,7 +22,7 @@
         {{ $t('mentors.filter.title') }}
       </p>
 
-      <VueSlickCarousel v-bind="slickOptions" class="flex items-center w-full">
+      <VueSlickCarousel v-bind="options.slick" class="flex items-center w-full">
         <div
           v-for="(item, index) of filters"
           :key="index"
@@ -41,7 +41,7 @@
     </div>
 
     <div class="container !pr-0 !pb-10 !pt-2 lg:hidden">
-      <VueSlickCarousel v-bind="slickOptions" class="flex items-center w-full">
+      <VueSlickCarousel v-bind="options.slick" class="flex items-center w-full">
         <div
           v-for="(item, index) of filters"
           :key="index"
@@ -60,79 +60,105 @@
     </div>
 
     <div class="container">
-      <div class="lg:ml-[110px] h-[324px] overflow-hidden lg:h-[284px]">
-        <div id="mentors-list" class="transition-all duration-300">
-          <div
-            v-for="(mentor, index) of mentors"
-            :key="index"
-            class="relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:min-h-0"
-            :class="[
-              {
-                'min-h-[97px]': mentor.slug === selectedMentor,
-              },
-            ]"
-            @click="($event) => setSelectedMentor(mentor.slug)"
-          >
-            <p
-              class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
+      <div class="lg:ml-[110px] lg:flex lg:gap-4">
+        <vue-slider
+          v-model="sliderValue"
+          adsorb="true"
+          width="2px"
+          tooltip="none"
+          min="0"
+          :max="sliderMaxValue"
+          direction="ttb"
+          class="hidden lg:block"
+          v-bind="options.desktopSlider"
+        ></vue-slider>
+
+        <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1">
+          <div id="mentors-list" class="transition-all duration-300">
+            <div
+              v-for="(mentor, index) of mentors"
+              :id="`mentor-${index}`"
+              :key="index"
+              class="min-h-[57px] relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
               :class="[
                 {
-                  'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                  'lg:!font-bold': mentor.slug === selectedMentor,
-                  'lg:text-lg': mentor.slug === selectedMentor,
+                  '!min-h-[97px]': mentor.slug === selectedMentor,
                 },
               ]"
             >
-              {{ mentor.name }}
-            </p>
+              <p
+                class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
+                :class="[
+                  {
+                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                    'lg:!font-bold': mentor.slug === selectedMentor,
+                    'lg:text-lg': mentor.slug === selectedMentor,
+                    'text-sm': mentor.slug === selectedMentor,
+                  },
+                ]"
+              >
+                {{ mentor.name }}
+              </p>
 
-            <p
-              class="transition-all duration-300 hidden text-base lg:block"
-              :class="[
-                {
-                  'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                  'lg:text-lg': mentor.slug === selectedMentor,
-                },
-              ]"
-            >
-              {{ $t(`mentors.filter.${mentor.vertical}`) }}
-            </p>
+              <p
+                class="transition-all duration-300 hidden text-base lg:block"
+                :class="[
+                  {
+                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                    'lg:text-lg': mentor.slug === selectedMentor,
+                  },
+                ]"
+              >
+                {{ $t(`mentors.filter.${mentor.vertical}`) }}
+              </p>
 
-            <transition>
-              <nuxt-img
-                preload
-                :src="`mentors/${mentor.image}`"
-                format="webp"
-                fit="fill"
-                quality="100"
-                loading="lazy"
-                sizes="100px sm:100vw lg:300px"
-                class="w-16 h-16 absolute left-1/2 -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[15%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+              <transition>
+                <nuxt-img
+                  preload
+                  :src="`mentors/${mentor.image}`"
+                  format="webp"
+                  fit="fill"
+                  quality="100"
+                  loading="lazy"
+                  sizes="100px sm:100vw lg:300px"
+                  class="w-16 h-16 absolute left-1/2 -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[15%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                  :class="[
+                    {
+                      'opacity-100': mentor.slug === selectedMentor,
+                      'delay-300': mentor.slug === selectedMentor,
+                    },
+                  ]"
+                />
+              </transition>
+
+              <a
+                class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                 :class="[
                   {
                     'opacity-100': mentor.slug === selectedMentor,
-                    'delay-300': mentor.slug === selectedMentor,
+                    'color-[#9D9D9D]': mentor.slug !== selectedMentor,
                   },
                 ]"
-              />
-            </transition>
-
-            <a
-              class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
-              :class="[
-                {
-                  'opacity-100': mentor.slug === selectedMentor,
-                  'color-[#9D9D9D]': mentor.slug !== selectedMentor,
-                },
-              ]"
-            >
-              <span class="font-bold text-sm">{{
-                $t('mentors.filter.more')
-              }}</span>
-              <svg-icon name="arrowCircle" class="w-6 h-6" />
-            </a>
+              >
+                <span class="font-bold text-sm">{{
+                  $t('mentors.filter.more')
+                }}</span>
+                <svg-icon name="arrowCircle" class="w-6 h-6" />
+              </a>
+            </div>
           </div>
         </div>
+
+        <vue-slider
+          v-model="sliderValue"
+          adsorb="true"
+          height="2px"
+          tooltip="none"
+          min="0"
+          :max="sliderMaxValue"
+          class="mt-[10px] lg:hidden"
+          v-bind="options.mobileSlider"
+        ></vue-slider>
       </div>
     </div>
   </section>
@@ -142,13 +168,39 @@ export default {
   name: 'HomeMentors',
   data() {
     return {
-      slickOptions: {
-        dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: false,
-        variableWidth: true,
+      options: {
+        slick: {
+          dots: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          arrows: false,
+          variableWidth: true,
+        },
+
+        mobileSlider: {
+          dotOptions: [
+            {
+              style: {
+                width: '44px',
+                borderRadius: '100px',
+                boxShadow: 'none',
+              },
+            },
+          ],
+        },
+
+        desktopSlider: {
+          dotOptions: [
+            {
+              style: {
+                height: '44px',
+                borderRadius: '100px',
+                boxShadow: 'none',
+              },
+            },
+          ],
+        },
       },
       selectFilter: 'all',
       filters: [
@@ -159,7 +211,7 @@ export default {
         'humanResources',
       ],
       selectedMentor: 'jorge-soto',
-      selectedMentorIndex: 2,
+      selectedMentorIndex: 0,
       mentors: [
         {
           slug: 'jorge-soto',
@@ -204,15 +256,40 @@ export default {
           link: '',
         },
       ],
+      sliderValue: 0,
     }
   },
-  methods: {
-    setSelectedMentor(slug) {
-      this.selectedMentor = slug
+  computed: {
+    sliderMaxValue() {
+      return this.mentors.length - 1
+    },
+  },
+  watch: {
+    sliderValue() {
+      const nextIndex = this.sliderValue
+      const isMobile = window.innerWidth < 1024
 
-      const selectedIndex = this.mentors.findIndex(
-        ({ slug: mentorSlug }) => slug === mentorSlug
-      )
+      if (nextIndex === this.sliderMaxValue) {
+        document.querySelector('.vue-slider-dot').style[
+          isMobile ? 'width' : 'height'
+        ] = '85px'
+      } else {
+        document.querySelector('.vue-slider-dot').style[
+          isMobile ? 'width' : 'height'
+        ] = '14px'
+      }
+
+      const current = document.getElementById(`mentor-${nextIndex}`)
+
+      if (current) {
+        const nextSlug = this.mentors[nextIndex].slug
+        this.setSelectedMentor(nextSlug, nextIndex)
+      }
+    },
+  },
+  methods: {
+    setSelectedMentor(slug, selectedIndex) {
+      this.selectedMentor = slug
 
       const list = document.getElementById('mentors-list')
 
@@ -234,32 +311,40 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
-.mentor {
-  @apply border-b border-gray;
+<style lang="postcss">
+.mentors-section {
+  .mentor {
+    @apply border-b border-gray;
 
-  &:last-of-type {
-    @apply border-none;
+    &:last-of-type {
+      @apply border-none;
+    }
+
+    @media (min-width: 1024px) {
+      img {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(-n + 3) {
+        img {
+          top: 0;
+          transform: none;
+        }
+      }
+
+      &:last-child {
+        img {
+          top: 0;
+        }
+      }
+    }
   }
 
-  @media (min-width: 1024px) {
-    img {
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    &:nth-child(-n + 3) {
-      img {
-        top: 0;
-        transform: none;
-      }
-    }
-
-    &:last-child {
-      img {
-        top: 0;
-      }
-    }
+  .vue-slider-rail,
+  .vue-slider-process,
+  .vue-slider-dot-handle {
+    background-color: #000;
   }
 }
 </style>
