@@ -107,18 +107,24 @@
 
           <div class="lg:hidden ml-2">
             <div class="flex">
-              <svg-icon
-                name="linkedin"
-                class="w-6 h-6 relative text-yellow mr-4"
-              />
-              <svg-icon
-                name="instagram"
-                class="w-6 h-6 relative text-yellow mr-4"
-              />
-              <svg-icon
-                name="youtube"
-                class="w-6 h-6 relative text-yellow mr-4"
-              />
+              <nuxt-link :to="localePath('/')" title="Linkedin">
+                <svg-icon
+                  name="linkedin"
+                  class="w-6 h-6 relative text-yellow mr-4"
+                />
+              </nuxt-link>
+              <nuxt-link :to="localePath('/')" title="Instagram">
+                <svg-icon
+                  name="instagram"
+                  class="w-6 h-6 relative text-yellow mr-4"
+                />
+              </nuxt-link>
+              <nuxt-link :to="localePath('/')" title="Youtube">
+                <svg-icon
+                  name="youtube"
+                  class="w-6 h-6 relative text-yellow mr-4"
+                />
+              </nuxt-link>
             </div>
           </div>
         </div>

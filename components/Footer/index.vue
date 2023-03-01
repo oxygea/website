@@ -68,12 +68,22 @@
           {{ $t('footer.oxygea') }}
         </div>
         <div class="flex gap-5 items-center">
-          <svg-icon name="linkedin" class="w-[23px] h-[23px] cursor-pointer" />
-          <svg-icon name="instagram" class="w-6 h-6 cursor-pointer" />
-          <svg-icon
-            name="youtube"
-            class="w-[30px] h-[21px] -ml-1 cursor-pointer"
-          />
+          <nuxt-link :to="localePath('/')" title="Linkedin">
+            <svg-icon
+              name="linkedin"
+              class="w-[23px] h-[23px] cursor-pointer"
+            />
+          </nuxt-link>
+          <nuxt-link :to="localePath('/')" title="Instagram">
+            <svg-icon name="instagram" class="w-6 h-6 cursor-pointer" />
+          </nuxt-link>
+
+          <nuxt-link :to="localePath('/')" title="Youtube">
+            <svg-icon
+              name="youtube"
+              class="w-[30px] h-[21px] -ml-1 cursor-pointer"
+            />
+          </nuxt-link>
         </div>
       </div>
     </div>
