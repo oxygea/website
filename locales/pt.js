@@ -20,7 +20,7 @@ export default {
     card3: {
       title:
         'Investimos em startups para mudar o futuro da indústria, da tecnologia e da sustentabilidade.',
-      cta: 'Nossos mentores',
+      cta: 'Tese de investimento',
     },
     card4: {
       title:

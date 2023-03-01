@@ -44,11 +44,18 @@
           <p
             class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-[48px] lg:leading-[56px]"
           >
-            {{ $t(`hero.card${item}.title`) }}
+            {{ $t(`hero.card${item.value}.title`) }}
           </p>
-          <a
+          <nuxt-link
+            :to="
+              localeLocation({
+                name: 'index',
+                hash: `#${item.hash}`,
+                params: { offset: -80 },
+              })
+            "
             class="text-violet font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-            >{{ $t(`hero.card${item}.cta`) }}</a
+            >{{ $t(`hero.card${item.value}.cta`) }}</nuxt-link
           >
         </div>
       </VueSlickCarousel>
@@ -95,7 +102,15 @@ export default {
         pauseOnFocus: false,
       },
       sliderPageIndex: 1,
-      itens: [1, 2, 3, 4],
+      itens: [
+        {
+          value: 1,
+          hash: 'ecosystem',
+        },
+        { value: 2, hash: 'partners' },
+        { value: 3, hash: 'acceleration' },
+        { value: 4, hash: 'mentors' },
+      ],
     }
   },
   methods: {
