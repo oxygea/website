@@ -4,6 +4,7 @@
       class="container flex flex-col items-center justify-center lg:flex-row lg:items-center"
     >
       <div
+        data-aos="fade-right"
         class="custom-border w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 xl:max-w-[310px] xl:h-[310px]"
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">U$150MM</p>
@@ -15,6 +16,7 @@
       </div>
 
       <div
+        data-aos="fade-left"
         class="custom-background relative -top-5 w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-3 xl:max-w-[213px] xl:h-[213px]"
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">4</p>
@@ -26,6 +28,7 @@
       </div>
 
       <div
+        data-aos="fade-right"
         class="custom-border relative -top-10 w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-5 xl:max-w-[310px] xl:h-[310px]"
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
@@ -37,6 +40,7 @@
       </div>
 
       <div
+        data-aos="fade-left"
         class="custom-border custom-border--gray relative -top-[60px] w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-7 xl:max-w-[213px] xl:h-[213px]"
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>

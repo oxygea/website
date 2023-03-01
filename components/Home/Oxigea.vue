@@ -23,9 +23,10 @@
         loading="lazy"
         aria-hidden
         class="hidden md:block md:w-[300px] lg:w-full lg:max-w-[640px]"
+        data-aos="fade-in"
       />
 
-      <div class="w-full md:max-w-[418px] relative z-10">
+      <div class="w-full md:max-w-[418px] relative z-10" data-aos="fade-in">
         <h2 class="pb-5 font-normal text-[28px] lg:text-5xl">
           {{ $t('oxygea.title') }}
         </h2>

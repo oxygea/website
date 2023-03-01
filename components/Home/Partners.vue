@@ -1,11 +1,15 @@
 <template>
   <section class="bg-[#EDEDEF] py-10 lg:py-20">
     <div class="container">
-      <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">
+      <h2
+        class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6"
+        data-aos="fade-in"
+      >
         {{ $t('partners.title') }}
       </h2>
       <p
         class="font-normal text-xs leading-4 pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base"
+        data-aos="fade-right"
       >
         {{ $t('partners.desc') }}
       </p>

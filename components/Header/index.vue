@@ -49,21 +49,24 @@
       <!-- menu desktop-->
       <div class="h-full lg:flex justify-center items-center hidden">
         <nav class="text-white flex flex-row gap-10 pt-4">
-          <AnchorMenu :url="'#'" :title="$t('menu.future')">
+          <AnchorMenu :url="'#future'" :title="$t('menu.future')">
             {{ $t('menu.future') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.acceleration')">
+          <AnchorMenu :url="'#acceleration'" :title="$t('menu.acceleration')">
             {{ $t('menu.acceleration') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.ecosystem')">
+          <AnchorMenu :url="'#ecosystem'" :title="$t('menu.ecosystem')">
             {{ $t('menu.ecosystem') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.about')">
+          <AnchorMenu :url="'#about'" :title="$t('menu.about')">
             {{ $t('menu.about') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#'" :title="$t('menu.contact')">
+          <p
+            class="text-white relative h-[50px] flex justify-center items-center text-xs font-medium transition-colors hover:text-violet cursor-pointer"
+            @click="$nuxt.$emit('openModalContact')"
+          >
             {{ $t('menu.contact') }}
-          </AnchorMenu>
+          </p>
 
           <n-link
             v-if="$i18n.locale !== 'pt'"

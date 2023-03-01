@@ -40,6 +40,7 @@
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
