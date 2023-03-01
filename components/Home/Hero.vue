@@ -114,7 +114,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .next-slide {
   @apply transition-colors;
 
