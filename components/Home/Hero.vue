@@ -91,6 +91,8 @@ export default {
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
       },
       sliderPageIndex: 1,
       itens: [1, 2, 3, 4],
