@@ -149,7 +149,7 @@ input :focus {
 }
 
 .animation-line {
-  animation: stretch 8000ms linear;
+  animation: stretch 5000ms linear;
 }
 
 @keyframes stretch {
@@ -163,7 +163,7 @@ input :focus {
 
 .animation-footer {
   opacity: 0;
-  animation: footer 8000ms ease-out;
+  animation: footer 5000ms ease-out;
 }
 
 @keyframes footer {
