@@ -1,49 +1,20 @@
 <template>
   <header
     class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:pb-4"
-    :class="[
-      {
-        'header-open': showMenu,
-        fadeIn2: showMenu,
-      },
-    ]"
   >
-    <div
-      class="container flex flex-row justify-between items-center h-[64px]"
-      :class="[
-        {
-          'bg-white': showMenu,
-        },
-      ]"
-    >
-      <!-- logo -->
+    <div class="container flex flex-row justify-between items-center h-[64px]">
       <n-link :to="localePath('/')" title="Oxygea">
         <svg-icon
           name="logo"
           class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
-          :class="{ hidden: showMenu }"
-        />
-        <svg-icon
-          name="logoDark"
-          class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
-          :class="{ hidden: !showMenu }"
         />
       </n-link>
 
       <span
         class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center lg:hidden"
-        @click.prevent="showMenu = !showMenu"
+        @click="$nuxt.$emit('openMenuMobile')"
       >
-        <svg-icon
-          name="hamburger"
-          :class="{ hidden: showMenu }"
-          class="w-[18px] h-[16px]"
-        />
-        <svg-icon
-          name="close"
-          :class="{ hidden: !showMenu }"
-          class="w-[20px] h-[20px] text-white"
-        />
+        <svg-icon name="hamburger" class="w-[18px] h-[16px]" />
       </span>
 
       <!-- menu desktop-->
@@ -132,115 +103,6 @@
         </nav>
       </div>
     </div>
-
-    <!-- menu mobile -->
-    <nav
-      v-if="showMenu"
-      class="h-full w-full lg:pt-0 bg-white lg:hidden container fadeIn"
-    >
-      <div class="lg:mt-0 bg-white pt-[72px]">
-        <div class="flex flex-col h-full items-start">
-          <AnchorMenu
-            :url="
-              localeLocation({
-                name: 'index',
-                hash: '#future',
-                params: { offset: -64 },
-              })
-            "
-            :title="$t('menu.future')"
-            class="text-black"
-          >
-            {{ $t('menu.future') }}
-          </AnchorMenu>
-          <AnchorMenu
-            :url="
-              localeLocation({
-                name: 'index',
-                hash: '#acceleration',
-                params: { offset: -64 },
-              })
-            "
-            :title="$t('menu.acceleration')"
-            class="text-black"
-          >
-            {{ $t('menu.acceleration') }}
-          </AnchorMenu>
-          <AnchorMenu
-            :url="
-              localeLocation({
-                name: 'index',
-                hash: '#ecosystem',
-                params: { offset: -64 },
-              })
-            "
-            :title="$t('menu.ecosystem')"
-            class="text-black"
-          >
-            {{ $t('menu.ecosystem') }}
-          </AnchorMenu>
-          <AnchorMenu
-            :url="
-              localeLocation({
-                name: 'index',
-                hash: '#about',
-                params: { offset: -64 },
-              })
-            "
-            :title="$t('menu.about')"
-            class="text-black"
-          >
-            {{ $t('menu.about') }}
-          </AnchorMenu>
-
-          <p
-            class="text-base font-bold -tracking-[2%] h-[50px] flex justify-center items-center"
-            @click="$nuxt.$emit('openModalContact')"
-          >
-            {{ $t('menu.contact') }}
-          </p>
-
-          <div
-            class="flex justify-center items-center rounded-full bg-green w-[159px] h-12 mt-6 mb-[51px]"
-            @click="closeMenu()"
-          >
-            <nuxt-link
-              v-show="$i18n.locale !== 'pt'"
-              :to="switchLocalePath('pt')"
-              class="font-bold text-xs"
-              @click="onSelectLanguage('pt')"
-            >
-              Portuguese version
-            </nuxt-link>
-            <nuxt-link
-              v-show="$i18n.locale !== 'en'"
-              :to="switchLocalePath('en')"
-              class="font-bold text-xs"
-              @click="onSelectLanguage('en')"
-            >
-              Versão em inglês
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div class="lg:hidden ml-2">
-          <div class="flex">
-            <svg-icon
-              name="linkedin"
-              class="w-6 h-6 relative text-yellow mr-4"
-            />
-            <svg-icon
-              name="instagram"
-              class="w-6 h-6 relative text-yellow mr-4"
-            />
-            <svg-icon
-              name="youtube"
-              class="w-6 h-6 relative text-yellow mr-4"
-            />
-          </div>
-        </div>
-      </div>
-    </nav>
   </header>
 </template>
 
@@ -321,7 +183,7 @@ export default {
   transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
-.slide-fade-enter,
+.slide-fade-enter-from,
 .slide-fade-leave-to {
   transform: translateX(100%);
   opacity: 0;

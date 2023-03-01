@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MenuMobile :show="showMenu" @close-modal="showMenu = !showMenu" />
     <ModalContact :show="showModal" @close-modal="showModal = !showModal" />
     <ModalVideo
       :show="showModalVideo"
@@ -34,6 +35,7 @@ import ModalTerms from '../components/ModalTerms/index.vue'
 import ModalCookies from '../components/ModalCookies/index.vue'
 import PopupCookies from '../components/PopupCookies/index.vue'
 import ModalVideo from '../components/ModalVideo/index.vue'
+import MenuMobile from '../components/Header/MenuMobile/index.vue'
 
 export default {
   name: 'LayoutDefault',
@@ -44,9 +46,11 @@ export default {
     ModalVideo,
     ModalCookies,
     PopupCookies,
+    MenuMobile,
   },
   data() {
     return {
+      showMenu: false,
       showModal: false,
       showModalVideo: false,
       showModalPrivacy: false,
@@ -59,6 +63,7 @@ export default {
     return {
       htmlAttrs: {
         class:
+          this.showMenu ||
           this.showModal ||
           this.showModalVideo ||
           this.showModalPrivacy ||
@@ -71,6 +76,7 @@ export default {
     }
   },
   created() {
+    this.$nuxt.$on('openMenuMobile', () => this.openMenuMobile())
     this.$nuxt.$on('openModalContact', () => this.openModalContact())
     this.$nuxt.$on('openModalVideo', () => this.openModalVideo())
     this.$nuxt.$on('openModalPrivacy', () => this.openModalPrivacy())
@@ -87,6 +93,9 @@ export default {
     }
   },
   methods: {
+    openMenuMobile() {
+      this.showMenu = true
+    },
     openModalContact() {
       this.showModal = true
     },
