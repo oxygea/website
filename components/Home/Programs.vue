@@ -129,7 +129,6 @@ export default {
 .slide-enter-to,
 .slide-leave {
   overflow: hidden;
-  opacity: 1;
 }
 
 .slide-enter,
