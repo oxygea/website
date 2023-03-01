@@ -67,7 +67,7 @@ export default {
     },
   },
   numbers: {
-    capital: 'de capital comprometido',
+    capital: 'investimentos em inovação',
     companies: 'empresas no portfolio',
     search: 'centros de pesquisa, inovação e biotecnologia',
     plants: 'plantas piloto',

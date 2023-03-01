@@ -55,7 +55,6 @@
           v-for="(item, index) in teamData"
           :key="index"
           class="!flex flex-col justify-between h-[196px] w-full max-w-[100px] mr-4"
-          data-aos="fade-in"
         >
           <div>
             <nuxt-img
