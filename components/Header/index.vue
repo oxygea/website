@@ -49,16 +49,52 @@
       <!-- menu desktop-->
       <div class="h-full lg:flex justify-center items-center hidden">
         <nav class="text-white flex flex-row gap-10 pt-4">
-          <AnchorMenu :url="'#future'" :title="$t('menu.future')">
+          <AnchorMenu
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#future',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.future')"
+          >
             {{ $t('menu.future') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#acceleration'" :title="$t('menu.acceleration')">
+          <AnchorMenu
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#acceleration',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.acceleration')"
+          >
             {{ $t('menu.acceleration') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#ecosystem'" :title="$t('menu.ecosystem')">
+          <AnchorMenu
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#ecosystem',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.ecosystem')"
+          >
             {{ $t('menu.ecosystem') }}
           </AnchorMenu>
-          <AnchorMenu :url="'#about'" :title="$t('menu.about')">
+          <AnchorMenu
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#about',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.about')"
+          >
             {{ $t('menu.about') }}
           </AnchorMenu>
           <p
@@ -105,28 +141,52 @@
       <div class="lg:mt-0 bg-white pt-[72px]">
         <div class="flex flex-col h-full items-start">
           <AnchorMenu
-            :url="'#future'"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#future',
+                params: { offset: -64 },
+              })
+            "
             :title="$t('menu.future')"
             class="text-black"
           >
             {{ $t('menu.future') }}
           </AnchorMenu>
           <AnchorMenu
-            :url="'#acceleration'"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#acceleration',
+                params: { offset: -64 },
+              })
+            "
             :title="$t('menu.acceleration')"
             class="text-black"
           >
             {{ $t('menu.acceleration') }}
           </AnchorMenu>
           <AnchorMenu
-            :url="'#ecosystem'"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#ecosystem',
+                params: { offset: -64 },
+              })
+            "
             :title="$t('menu.ecosystem')"
             class="text-black"
           >
             {{ $t('menu.ecosystem') }}
           </AnchorMenu>
           <AnchorMenu
-            :url="'#about'"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#about',
+                params: { offset: -64 },
+              })
+            "
             :title="$t('menu.about')"
             class="text-black"
           >

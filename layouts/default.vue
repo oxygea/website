@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       showModal: false,
-      showModalVideo: true,
+      showModalVideo: false,
       showModalPrivacy: false,
       showModalTerms: false,
       showModalCookies: false,
