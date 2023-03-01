@@ -2,21 +2,25 @@
   <transition name="slide-fade">
     <div
       v-if="show"
-      class="container bottom-0 !py-5 bg-white transition-all duration-500 fixed w-full flex justify-between z-40"
+      class="bottom-0 !py-5 bg-white transition-all duration-500 fixed w-full z-40"
     >
-      <div class="w-full max-w-[171px]">
-        <p class="font-medium text-[10px] leading-[14px]">
-          {{ $t('popups.cookies.p') }}
-          <strong @click="$nuxt.$emit('openModalCookies')">{{
-            $t('popups.cookies.strong')
-          }}</strong>
-        </p>
+      <div class="container flex justify-between lg:items-center">
+        <div class="w-full max-w-[171px] lg:max-w-none">
+          <p class="font-medium text-[10px] lg:text-xs leading-[14px]">
+            {{ $t('popups.cookies.p') }}
+            <strong
+              class="cursor-pointer"
+              @click="$nuxt.$emit('openModalCookies')"
+              >{{ $t('popups.cookies.strong') }}</strong
+            >
+          </p>
+        </div>
+        <span
+          class="py-2 px-4 bg-green font-medium text-[10px] lg:text-sm rounded-full h-max cursor-pointer hover:bg-[#18A790] transition-all duration-300"
+          @click="$nuxt.$emit('saveAcceptedCookies')"
+          >{{ $t('popups.cookies.cta') }}</span
+        >
       </div>
-      <span
-        class="py-2 px-4 bg-green font-medium text-[10px] rounded-full h-max"
-        @click="$nuxt.$emit('saveAcceptedCookies')"
-        >{{ $t('popups.cookies.cta') }}</span
-      >
     </div>
   </transition>
 </template>

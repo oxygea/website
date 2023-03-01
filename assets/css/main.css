@@ -49,6 +49,7 @@ body {
   mix-blend-mode: normal;
   box-sizing: border-box;
   background-color: black;
+  scroll-behavior: smooth;
 
   @apply font-base;
 }

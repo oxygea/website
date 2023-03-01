@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="url"
-    class="text-white relative h-[50px] flex justify-center items-center text-xs font-medium transition-colors hover:text-violet"
+    class="text-white relative h-[50px] flex justify-center items-center lg:text-xs lg:font-medium transition-colors hover:text-violet text-base font-bold -tracking-[2%]"
     :title="$t('menu.about')"
   >
     <slot></slot>

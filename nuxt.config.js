@@ -32,10 +32,25 @@ export default {
     'vue-slick-carousel/dist/vue-slick-carousel.css',
   ],
 
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: to.params.offset
+            ? document.querySelector(to.hash).offsetTop + to.params.offset
+            : document.querySelector(to.hash).offsetTop,
+          behavior: 'smooth',
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-slick-carousel.js' },
-    { src: '~/plugins/vue-slider-component.js' },
+    { src: '~/plugins/aos.js', mode: 'client' },
+    { src: '~/plugins/aos.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
