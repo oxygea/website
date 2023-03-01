@@ -33,7 +33,9 @@
               :title="$t('menu.future')"
               class="text-black"
             >
-              {{ $t('menu.future') }}
+              <p @click="$emit('close-modal')">
+                {{ $t('menu.future') }}
+              </p>
             </AnchorMenu>
             <AnchorMenu
               :url="
@@ -46,7 +48,9 @@
               :title="$t('menu.acceleration')"
               class="text-black"
             >
-              {{ $t('menu.acceleration') }}
+              <p @click="$emit('close-modal')">
+                {{ $t('menu.acceleration') }}
+              </p>
             </AnchorMenu>
             <AnchorMenu
               :url="
@@ -59,7 +63,9 @@
               :title="$t('menu.ecosystem')"
               class="text-black"
             >
-              {{ $t('menu.ecosystem') }}
+              <p @click="$emit('close-modal')">
+                {{ $t('menu.ecosystem') }}
+              </p>
             </AnchorMenu>
             <AnchorMenu
               :url="
@@ -72,7 +78,9 @@
               :title="$t('menu.about')"
               class="text-black"
             >
-              {{ $t('menu.about') }}
+              <p @click="$emit('close-modal')">
+                {{ $t('menu.about') }}
+              </p>
             </AnchorMenu>
 
             <p
