@@ -414,6 +414,15 @@ export default {
   props: {
     show: Boolean,
   },
+  watch: {
+    show() {
+      if (this.show) {
+        document.querySelector('html').style.overflowY = 'hidden'
+      } else {
+        document.querySelector('html').style.overflowY = 'auto'
+      }
+    },
+  },
 }
 </script>
 
