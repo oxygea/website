@@ -4,27 +4,30 @@
   <section
     class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
-    <nuxt-img
-      preload
-      :src="`hero/bg-${sliderPageIndex}.png`"
-      format="webp"
-      fit="fill"
-      quality="100"
-      loading="lazy"
-      aria-hidden
-      class="hidden md:block absolute right-0"
-    />
-
-    <nuxt-img
-      preload
-      :src="`hero/bg-mobile-${sliderPageIndex}.png`"
-      format="webp"
-      fit="fill"
-      quality="100"
-      loading="lazy"
-      aria-hidden
-      class="absolute right-0 md:hidden"
-    />
+    <transition name="slide-fade">
+      <nuxt-img
+        preload
+        :src="`hero/bg-${sliderPageIndex}.png`"
+        format="webp"
+        fit="fill"
+        quality="100"
+        loading="lazy"
+        aria-hidden
+        class="hidden md:block absolute right-0"
+      />
+    </transition>
+    <transition name="slide-fade">
+      <nuxt-img
+        preload
+        :src="`hero/bg-mobile-${sliderPageIndex}.png`"
+        format="webp"
+        fit="fill"
+        quality="100"
+        loading="lazy"
+        aria-hidden
+        class="absolute right-0 md:hidden"
+      />
+    </transition>
 
     <div class="relative z-10">
       <VueSlickCarousel
@@ -111,7 +114,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 .next-slide {
   @apply transition-colors;
 
@@ -126,5 +129,18 @@ export default {
       @apply text-violet;
     }
   }
+}
+
+.slide-fade-enter-active {
+  transition: all 500ms ease-in-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 500ms cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0;
 }
 </style>
