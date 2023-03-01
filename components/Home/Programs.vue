@@ -1,12 +1,12 @@
 <template>
-  <section
-    id="ecosystem"
-    class="bg-white pt-10 pb-5 lg:py-20"
-    data-aos="fade-in"
-  >
-    <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
+  <section id="ecosystem" class="bg-white pt-10 pb-5 lg:py-20">
+    <h2
+      class="pb-4 font-bold text-2xl container lg:text-5xl"
+      data-aos="slide-right"
+    >
       {{ $t('programs.title') }}
     </h2>
+
     <VueSlickCarousel
       v-bind="slickOptions"
       class="mt-10 pl-5 flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
@@ -14,6 +14,7 @@
       <div
         v-for="(item, index) of programs"
         :key="`program=${index}`"
+        data-aos="fade-in"
         class="w-full max-w-[200px] h-auto min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-w-[277px]"
         :class="[
           {

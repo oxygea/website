@@ -16,6 +16,7 @@
 
       <ul
         class="flex-wrap hidden lg:flex lg:ml-[110px] gap-x-[40px] gap-y-[40px]"
+        data-aos="fade-left"
       >
         <li
           v-for="(item, index) in teamData"
@@ -54,6 +55,7 @@
           v-for="(item, index) in teamData"
           :key="index"
           class="!flex flex-col justify-between h-[196px] w-full max-w-[100px] mr-4"
+          data-aos="fade-in"
         >
           <div>
             <nuxt-img

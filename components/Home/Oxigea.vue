@@ -12,6 +12,7 @@
         loading="lazy"
         aria-hidden
         class="absolute left-0 bottom-0 md:hidden"
+        data-aos="fade-in"
       />
 
       <nuxt-img
@@ -26,11 +27,14 @@
         data-aos="fade-in"
       />
 
-      <div class="w-full md:max-w-[418px] relative z-10" data-aos="fade-in">
-        <h2 class="pb-5 font-normal text-[28px] lg:text-5xl">
+      <div class="w-full md:max-w-[418px] relative z-10">
+        <h2
+          class="pb-5 font-normal text-[28px] lg:text-5xl"
+          data-aos="slide-left"
+        >
           {{ $t('oxygea.title') }}
         </h2>
-        <p class="text-xs font-normal lg:text-base">
+        <p class="text-xs font-normal lg:text-base" data-aos="slide-right">
           {{ $t('oxygea.desc') }}
         </p>
       </div>
