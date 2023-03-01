@@ -96,9 +96,16 @@
           </n-link>
 
           <div class="flex items-center gap-4">
-            <svg-icon name="linkedin-white" class="w-6 h-6 relative" />
-            <svg-icon name="instagram-white" class="w-6 h-6 relative" />
-            <svg-icon name="youtube-white" class="w-6 h-6 relative" />
+            <nuxt-link :to="localePath('/')" title="Linkedin">
+              <svg-icon name="linkedin-white" class="w-6 h-6 relative" />
+            </nuxt-link>
+            <nuxt-link :to="localePath('/')" title="Instagram">
+              <svg-icon name="instagram-white" class="w-6 h-6 relative" />
+            </nuxt-link>
+
+            <nuxt-link :to="localePath('/')" title="Youtube">
+              <svg-icon name="youtube-white" class="w-6 h-6 relative" />
+            </nuxt-link>
           </div>
         </nav>
       </div>
