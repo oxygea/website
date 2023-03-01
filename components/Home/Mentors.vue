@@ -62,6 +62,7 @@
     <div class="container">
       <div class="lg:ml-[110px] lg:flex lg:gap-4">
         <vue-slider
+          v-if="filteredMentors.length > 1"
           v-model="sliderValue"
           adsorb="true"
           width="2px"
@@ -75,81 +76,84 @@
 
         <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1">
           <div id="mentors-list" class="transition-all duration-300">
-            <div
-              v-for="(mentor, index) of filteredMentors"
-              :id="`mentor-${index}`"
-              :key="index"
-              class="min-h-[57px] relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
-              :class="[
-                {
-                  '!min-h-[97px]': mentor.slug === selectedMentor,
-                },
-              ]"
-            >
-              <p
-                class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
+            <transition-group name="list">
+              <div
+                v-for="(mentor, index) of filteredMentors"
+                :id="`mentor-${index}`"
+                :key="index"
+                class="min-h-[57px] relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
                 :class="[
                   {
-                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                    'lg:!font-bold': mentor.slug === selectedMentor,
-                    'lg:text-lg': mentor.slug === selectedMentor,
-                    'text-sm': mentor.slug === selectedMentor,
+                    '!min-h-[97px]': mentor.slug === selectedMentor,
                   },
                 ]"
               >
-                {{ mentor.name }}
-              </p>
+                <p
+                  class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
+                  :class="[
+                    {
+                      'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                      'lg:!font-bold': mentor.slug === selectedMentor,
+                      'lg:text-lg': mentor.slug === selectedMentor,
+                      'text-sm': mentor.slug === selectedMentor,
+                    },
+                  ]"
+                >
+                  {{ mentor.name }}
+                </p>
 
-              <p
-                class="transition-all duration-300 hidden text-base lg:block"
-                :class="[
-                  {
-                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                    'lg:text-lg': mentor.slug === selectedMentor,
-                  },
-                ]"
-              >
-                {{ $t(`mentors.filter.${mentor.vertical}`) }}
-              </p>
+                <p
+                  class="transition-all duration-300 hidden text-base lg:block"
+                  :class="[
+                    {
+                      'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                      'lg:text-lg': mentor.slug === selectedMentor,
+                    },
+                  ]"
+                >
+                  {{ $t(`mentors.filter.${mentor.vertical}`) }}
+                </p>
 
-              <transition>
-                <nuxt-img
-                  preload
-                  :src="`mentors/${mentor.image}`"
-                  format="webp"
-                  fit="fill"
-                  quality="100"
-                  loading="lazy"
-                  sizes="100px sm:100vw lg:300px"
-                  class="w-16 h-16 absolute left-1/2 -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[15%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                <transition>
+                  <nuxt-img
+                    preload
+                    :src="`mentors/${mentor.image}`"
+                    format="webp"
+                    fit="fill"
+                    quality="100"
+                    loading="lazy"
+                    sizes="100px sm:100vw lg:300px"
+                    class="w-16 h-16 absolute left-1/2 -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                    :class="[
+                      {
+                        'opacity-100': mentor.slug === selectedMentor,
+                        'delay-300': mentor.slug === selectedMentor,
+                      },
+                    ]"
+                  />
+                </transition>
+
+                <a
+                  class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,
-                      'delay-300': mentor.slug === selectedMentor,
+                      'color-[#9D9D9D]': mentor.slug !== selectedMentor,
                     },
                   ]"
-                />
-              </transition>
-
-              <a
-                class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
-                :class="[
-                  {
-                    'opacity-100': mentor.slug === selectedMentor,
-                    'color-[#9D9D9D]': mentor.slug !== selectedMentor,
-                  },
-                ]"
-              >
-                <span class="font-bold text-sm">{{
-                  $t('mentors.filter.more')
-                }}</span>
-                <svg-icon name="arrowCircle" class="w-6 h-6" />
-              </a>
-            </div>
+                >
+                  <span class="font-bold text-sm">{{
+                    $t('mentors.filter.more')
+                  }}</span>
+                  <svg-icon name="arrowCircle" class="w-6 h-6" />
+                </a>
+              </div>
+            </transition-group>
           </div>
         </div>
 
         <vue-slider
+          v-if="filteredMentors.length > 1"
           v-model="sliderValue"
           adsorb="true"
           height="2px"
@@ -368,6 +372,26 @@ export default {
   .vue-slider-process,
   .vue-slider-dot-handle {
     background-color: #000;
+  }
+
+  .list-enter-active,
+  .list-leave-active {
+    transition: all 1s ease;
+  }
+
+  .list-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .list-enter {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .list-enter-to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
