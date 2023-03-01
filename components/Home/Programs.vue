@@ -15,7 +15,7 @@
       <div
         v-for="(item, index) of programs"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-h-[492px] lg:max-w-[277px] lg:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-h-[492px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],
@@ -129,6 +129,7 @@ export default {
 .slide-enter-to,
 .slide-leave {
   overflow: hidden;
+  opacity: 1;
 }
 
 .slide-enter,
