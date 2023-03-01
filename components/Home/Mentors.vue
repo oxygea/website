@@ -29,11 +29,11 @@
           class="border-solid border border-black py-2 px-4 text-base font-bold min-w-max max-w-max rounded-[100px] mr-2 cursor-pointer"
           :class="[
             {
-              'bg-black': selectFilter === item,
-              'text-white': selectFilter === item,
+              'bg-black': selectedFilter === item,
+              'text-white': selectedFilter === item,
             },
           ]"
-          @click.prevent="selectFilter = item"
+          @click.prevent="selectedFilter = item"
         >
           {{ $t(`mentors.filter.${item}`) }}
         </div>
@@ -48,11 +48,11 @@
           class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px] mr-2"
           :class="[
             {
-              'bg-black': selectFilter === item,
-              'text-white': selectFilter === item,
+              'bg-black': selectedFilter === item,
+              'text-white': selectedFilter === item,
             },
           ]"
-          @click.prevent="selectFilter = item"
+          @click.prevent="selectedFilter = item"
         >
           {{ $t(`mentors.filter.${item}`) }}
         </div>
@@ -76,7 +76,7 @@
         <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1">
           <div id="mentors-list" class="transition-all duration-300">
             <div
-              v-for="(mentor, index) of mentors"
+              v-for="(mentor, index) of filteredMentors"
               :id="`mentor-${index}`"
               :key="index"
               class="min-h-[57px] relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
@@ -202,7 +202,6 @@ export default {
           ],
         },
       },
-      selectFilter: 'all',
       filters: [
         'all',
         'sustainability',
@@ -210,8 +209,6 @@ export default {
         'biochemistry',
         'humanResources',
       ],
-      selectedMentor: 'jorge-soto',
-      selectedMentorIndex: 0,
       mentors: [
         {
           slug: 'jorge-soto',
@@ -224,21 +221,21 @@ export default {
           slug: 'lip-1',
           name: 'Lorem Ipsum',
           image: 'jorge-soto.png',
-          vertical: 'sustainability',
+          vertical: 'technology',
           link: '',
         },
         {
           slug: 'lip-2',
           name: 'Lorem Ipsum',
           image: 'jorge-soto.png',
-          vertical: 'sustainability',
+          vertical: 'biochemistry',
           link: '',
         },
         {
           slug: 'lip-3',
           name: 'Lorem Ipsum',
           image: 'jorge-soto.png',
-          vertical: 'sustainability',
+          vertical: 'humanResources',
           link: '',
         },
         {
@@ -256,12 +253,16 @@ export default {
           link: '',
         },
       ],
+      filteredMentors: [],
+      selectedMentor: '',
+      selectedMentorIndex: 0,
       sliderValue: 0,
+      selectedFilter: 'all',
     }
   },
   computed: {
     sliderMaxValue() {
-      return this.mentors.length - 1
+      return this.filteredMentors.length - 1
     },
   },
   watch: {
@@ -286,6 +287,28 @@ export default {
         this.setSelectedMentor(nextSlug, nextIndex)
       }
     },
+    selectedFilter() {
+      this.selectedMentorIndex = 0
+      this.sliderValue = 0
+
+      if (this.selectedFilter === 'all') {
+        this.filteredMentors = this.mentors
+        this.selectedMentor = this.mentors[0].slug
+
+        return
+      }
+
+      const filteredMentors = this.mentors.filter(
+        (mentor) => mentor.vertical === this.selectedFilter
+      )
+
+      this.filteredMentors = filteredMentors
+      this.selectedMentor = filteredMentors[0].slug
+    },
+  },
+  mounted() {
+    this.filteredMentors = this.mentors
+    this.selectedMentor = this.mentors[0].slug
   },
   methods: {
     setSelectedMentor(slug, selectedIndex) {
