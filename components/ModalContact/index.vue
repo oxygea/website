@@ -38,14 +38,51 @@
           />
 
           <textarea
-            class="w-full min-h-[132px] mb-10 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black"
+            id="textarea"
+            class="w-full min-h-[132px] mb-2 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black"
             placeholder="Como podemos te ajudar?"
-            maxlength="900"
+            maxlength="1000"
+            :class="[
+              {
+                'text-red-500': textLength > 900,
+              },
+            ]"
+            @keyup="onChange($event)"
           ></textarea>
+          <div
+            class="w-full flex justify-between items-center"
+            :class="[
+              {
+                '!justify-end': textLength <= 900,
+              },
+            ]"
+          >
+            <p
+              v-if="textLength > 900"
+              class="text-xs font-medium"
+              :class="[
+                {
+                  'text-red-500': textLength > 900,
+                },
+              ]"
+            >
+              Texto é muito longo
+            </p>
+            <p
+              class="text-xs font-medium"
+              :class="[
+                {
+                  'text-red-500': textLength > 900,
+                },
+              ]"
+            >
+              {{ textLength }}/900 caracteres
+            </p>
+          </div>
 
           <button
             type="submit"
-            class="text-violet mt-5 font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max"
+            class="text-violet mt-5 font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max hover:bg-violet hover:text-black"
           >
             Enviar mensagem
           </button>
@@ -78,6 +115,7 @@ export default {
         { id: 3, name: 'Option 3' },
       ],
       selectedOptionId: null,
+      textLength: 0,
     }
   },
   watch: {
@@ -87,6 +125,11 @@ export default {
       } else {
         document.querySelector('html').style.overflowY = 'auto'
       }
+    },
+  },
+  methods: {
+    onChange(event) {
+      this.textLength = event.target.textLength
     },
   },
 }

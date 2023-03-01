@@ -4,7 +4,7 @@
     <div class="relative inline-block text-left w-full bg-white">
       <button
         type="button"
-        class="w-full flex text-sm items-center font-medium justify-between text-black capitalize py-[18px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
+        class="w-full flex text-sm items-center font-medium justify-between text-black capitalize py-[16px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
         :class="[
           {
             'border-red-500 text-red-500': error,
@@ -23,13 +23,13 @@
         <svg-icon
           v-show="isOpen"
           name="arrowDown"
-          class="-mr-1 ml-2 h-[6px] w-[13px] rotate-180"
+          class="-mr-1 ml-2 h-[6px] w-[13px] rotate-180 stroke-black"
           :class="error && 'stroke-red-500'"
         />
       </button>
       <div
         v-show="isOpen"
-        class="max-h-[285px] overflow-auto w-full origin-top-right absolute top-[56px] right-0 border-l border-r border-b border-[#9D9D9D] bg-white"
+        class="max-h-[285px] overflow-auto w-full origin-top-right absolute top-[50px] right-0 border-l border-r border-b border-[#9D9D9D] bg-white"
       >
         <div
           class="py-1"
@@ -41,7 +41,7 @@
             v-for="option in options"
             :key="option.id"
             href="#"
-            class="block text-sm capitalize font-medium py-[18px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
+            class="block text-sm capitalize font-medium py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
             @click="selectOption(option)"
             >{{ option.name }}</a
