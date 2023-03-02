@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     fontFamily: {
       base: ['Acrom', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
     fontSize: {
       xxs: ['10px', { lineHeight: '14px' }],

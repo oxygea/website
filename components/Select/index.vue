@@ -1,10 +1,12 @@
 <template>
   <div class="pb-[34px] relative w-full">
-    <span class="w-full pb-4 block font-medium">{{ label }}</span>
+    <span class="w-full pb-4 block font-semibold text-xs font-poppins">{{
+      label
+    }}</span>
     <div class="relative inline-block text-left w-full bg-white">
       <button
         type="button"
-        class="w-full flex text-sm items-center font-medium justify-between text-black capitalize py-[16px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
+        class="w-full flex items-center font-poppins text-xs font-semibold justify-between text-black capitalize py-[16px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
         :class="[
           {
             'border-red-500 text-red-500': error,
@@ -29,7 +31,7 @@
       </button>
       <div
         v-show="isOpen"
-        class="max-h-[285px] overflow-auto w-full origin-top-right absolute top-[50px] right-0 border-l border-r border-b border-[#9D9D9D] bg-white"
+        class="max-h-[285px] overflow-auto w-full origin-top-right absolute top-[42px] right-0 border-l border-r border-b border-[#9D9D9D] bg-white"
       >
         <div
           class="py-1"
@@ -41,7 +43,7 @@
             v-for="option in options"
             :key="option.id"
             href="#"
-            class="block text-sm capitalize font-medium py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
+            class="block font-poppins text-xs font-semibold py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
             @click="selectOption(option)"
           >
@@ -51,7 +53,9 @@
       </div>
     </div>
 
-    <span v-if="error" class="font-medium text-sm text-red-500 pt-4"
+    <span
+      v-if="error"
+      class="font-semibold text-sm text-xs font-poppins text-red-500 pt-4"
       >Preenchimento obrigatório</span
     >
   </div>

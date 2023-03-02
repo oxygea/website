@@ -14,7 +14,7 @@
         </div>
         <div class="pt-4 pb-10">
           <h3 class="font-bold text-xl pb-2 lg:text-2xl">Entre em contato</h3>
-          <p class="font-medium text-xs lg:text-base">
+          <p class="font-semibold text-xs lg:text-base font-poppins">
             Queremos te ouvir! Fale com a gente.
           </p>
         </div>
@@ -22,12 +22,12 @@
           <input
             type="text"
             placeholder="Nome"
-            class="w-full bg-transparent border-b border-black py-[25px] text-black placeholder-black"
+            class="w-full text-xs bg-transparent border-b font-poppins border-black font-semibold py-[25px] text-black placeholder-black"
           />
           <input
             type="email"
             placeholder="E-mail"
-            class="w-full bg-transparent border-b border-black py-[25px] my-6 text-black placeholder-black"
+            class="w-full text-xs bg-transparent border-b font-poppins border-black font-semibold py-[25px] my-6 text-black placeholder-black"
           />
 
           <CustomSelect
@@ -37,13 +37,15 @@
             :options="options"
           />
 
-          <label for="message" class="w-full pb-4 block font-medium"
+          <label
+            for="message"
+            class="w-full pb-4 text-xs block font-semibold font-poppins"
             >Mensagem</label
           >
 
           <textarea
             id="message"
-            class="w-full min-h-[132px] mb-2 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black font-medium"
+            class="w-full min-h-[132px] text-xs mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-semibold"
             placeholder="Como podemos te ajudar?"
             maxlength="1000"
             :class="[
@@ -63,7 +65,7 @@
           >
             <p
               v-if="textLength > 900"
-              class="text-xs font-medium"
+              class="text-xs font-semibold font-poppins"
               :class="[
                 {
                   'text-red-500': textLength > 900,
@@ -73,7 +75,7 @@
               Texto é muito longo
             </p>
             <p
-              class="text-xs font-medium"
+              class="text-xs font-semibold font-poppins"
               :class="[
                 {
                   'text-red-500': textLength > 900,
@@ -86,7 +88,7 @@
 
           <button
             type="submit"
-            class="text-violet mt-5 font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max hover:bg-violet hover:text-black"
+            class="text-violet font-poppins mt-10 font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max hover:bg-violet hover:text-black"
           >
             Enviar mensagem
           </button>
