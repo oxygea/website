@@ -1,6 +1,6 @@
 <template>
   <div class="pb-[34px] relative w-full">
-    <span class="w-full pb-4 block">{{ label }}</span>
+    <span class="w-full pb-4 block font-medium">{{ label }}</span>
     <div class="relative inline-block text-left w-full bg-white">
       <button
         type="button"
@@ -37,15 +37,16 @@
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <a
+          <button
             v-for="option in options"
             :key="option.id"
             href="#"
             class="block text-sm capitalize font-medium py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
             @click="selectOption(option)"
-            >{{ option.name }}</a
           >
+            {{ option.name }}
+          </button>
         </div>
       </div>
     </div>
@@ -76,6 +77,7 @@ export default {
       required: true,
     },
     value: {
+      type: String,
       required: true,
     },
   },

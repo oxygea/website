@@ -13,8 +13,8 @@
           />
         </div>
         <div class="pt-4 pb-10">
-          <h3 class="font-bold text-xl pb-2">Entre em contato</h3>
-          <p class="font-medium text-xs">
+          <h3 class="font-bold text-xl pb-2 lg:text-2xl">Entre em contato</h3>
+          <p class="font-medium text-xs lg:text-base">
             Queremos te ouvir! Fale com a gente.
           </p>
         </div>
@@ -32,14 +32,18 @@
 
           <CustomSelect
             v-model="selectedOptionId"
-            label="Escolha uma teste"
-            placeholder="name"
+            label="Área de interesse"
+            placeholder="Selecione uma área"
             :options="options"
           />
 
+          <label for="message" class="w-full pb-4 block font-medium"
+            >Mensagem</label
+          >
+
           <textarea
-            id="textarea"
-            class="w-full min-h-[132px] mb-2 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black"
+            id="message"
+            class="w-full min-h-[132px] mb-2 bg-white border border-[#9D9D9D] p-4 text-black placeholder-black font-medium"
             placeholder="Como podemos te ajudar?"
             maxlength="1000"
             :class="[
@@ -105,14 +109,9 @@ export default {
   data() {
     return {
       options: [
-        { id: 1, name: 'Option 1' },
-        { id: 2, name: 'Option 2' },
-        { id: 3, name: 'Option 3' },
-        { id: 3, name: 'Option 3' },
-        { id: 3, name: 'Option 3' },
-        { id: 3, name: 'Option 3' },
-        { id: 3, name: 'Option 3' },
-        { id: 3, name: 'Option 3' },
+        { id: 1, name: 'Startup' },
+        { id: 2, name: 'Investor' },
+        { id: 3, name: 'Partner' },
       ],
       selectedOptionId: null,
       textLength: 0,
@@ -135,7 +134,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .slide-fade-enter-active {
   transition: all 0.25s ease-in-out;
 }
