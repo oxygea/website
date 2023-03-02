@@ -14,7 +14,7 @@ export default {
   props: {
     url: {
       default: '#',
-      type: String,
+      type: [String, Object],
     },
   },
 }
