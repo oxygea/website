@@ -432,7 +432,7 @@ export default {
 
       const list = document.getElementById('mentors-list')
 
-      const base = 20
+      const base = 47
       const forward = selectedIndex * base
       const backward = (this.selectedMentorIndex - selectedIndex) * base
 
@@ -465,7 +465,7 @@ export default {
         transform: translateY(-50%);
       }
 
-      &:nth-child(-n + 3) {
+      &:nth-child(-n + 10) {
         img {
           top: 0;
           transform: none;
