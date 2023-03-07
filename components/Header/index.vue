@@ -1,6 +1,6 @@
 <template>
   <header
-    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:pb-4"
+    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4"
   >
     <div class="container flex flex-row justify-between items-center h-[64px]">
       <n-link :to="localePath('/')" title="Oxygea">
@@ -69,7 +69,7 @@
             {{ $t('menu.about') }}
           </AnchorMenu>
           <p
-            class="text-white relative h-[50px] flex justify-center items-center text-xs font-medium transition-colors hover:text-violet cursor-pointer"
+            class="text-white relative h-[50px] flex justify-center items-center text-xs lg:text-sm font-medium transition-colors hover:text-violet cursor-pointer"
             @click="$nuxt.$emit('openModalContact')"
           >
             {{ $t('menu.contact') }}

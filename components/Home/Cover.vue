@@ -15,10 +15,10 @@
       :alt="`Imagem cover`"
       :title="`Cover`"
       class="w-full h-auto grayscale"
-      data-aos="fade-left"
+      data-aos="fade"
     />
 
-    <div class="container !py-10 lg:ml-[50px]" data-aos="fade-right">
+    <div class="container !py-10 lg:ml-[50px]" data-aos="fade">
       <p
         class="font-normal text-[28px] leading-8 pb-6 text-white lg:max-w-[400px] lg:text-5xl"
       >

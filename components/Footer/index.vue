@@ -2,7 +2,7 @@
   <footer class="bg-white py-10 lg:pt-16 lg:pb-12">
     <div class="container">
       <div class="lg:flex lg:justify-between">
-        <div class="lg:max-w-screen-sm" data-aos="fade-left">
+        <div class="lg:max-w-screen-sm">
           <div class="pb-10">
             <svg-icon
               name="logoDark2"
@@ -25,7 +25,7 @@
           </p>
         </div>
 
-        <div class="lg:max-w-[530px]" data-aos="fade-right">
+        <div class="lg:max-w-[530px]">
           <p class="font-normal text-xs lg:text-xl">
             {{ $t('footer.singup') }}
           </p>

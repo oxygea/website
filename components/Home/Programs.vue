@@ -1,9 +1,5 @@
 <template>
-  <section
-    id="ecosystem"
-    class="bg-white pt-10 pb-5 lg:py-20"
-    data-aos="fade-in"
-  >
+  <section id="ecosystem" class="bg-white pt-10 pb-5 lg:py-20" data-aos="fade">
     <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
       {{ $t('programs.title') }}
     </h2>

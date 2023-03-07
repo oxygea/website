@@ -1,13 +1,13 @@
 <template>
   <section id="acceleration" class="bg-green py-10 lg:py-20">
     <div class="container">
-      <h2 class="pb-4 font-bold text-2xl lg:text-[42px]" data-aos="fade-in">
+      <h2 class="pb-4 font-bold text-2xl lg:text-[42px]" data-aos="fade">
         {{ $t('invest.title') }}
       </h2>
 
       <div
         class="flex flex-wrap pt-10 gap-8 md:justify-between lg:ml-[110px] lg:pt-6"
-        data-aos="fade-left"
+        data-aos="fade"
       >
         <div
           v-for="(item, index) of itens"

@@ -140,7 +140,7 @@ export default {
     filter: {
       title: 'FILTRAR POR',
       all: 'Todos',
-      sustainability: 'Sustentabilidade',
+      VP: 'VP',
       technology: 'Tecnologia',
       biochemistry: 'Bioquímica',
       humanResources: 'Recursos Humanos',

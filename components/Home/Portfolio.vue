@@ -1,10 +1,7 @@
 <template>
   <div class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20">
     <section class="container">
-      <h2
-        class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-4"
-        data-aos="fade-in"
-      >
+      <h2 class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-4" data-aos="fade">
         {{ $t('portfolio.title') }}
       </h2>
 

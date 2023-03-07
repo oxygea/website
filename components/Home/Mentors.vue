@@ -207,13 +207,7 @@ export default {
           ],
         },
       },
-      filters: [
-        'all',
-        'sustainability',
-        'technology',
-        'biochemistry',
-        'humanResources',
-      ],
+      filters: ['all', 'VP', 'technology', 'biochemistry', 'humanResources'],
       mentors: [
         {
           slug: 'antonio-queiroz',

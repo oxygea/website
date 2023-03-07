@@ -16,10 +16,10 @@
         :alt="`Imagem startup`"
         :title="`Startup`"
         class="w-full h-auto grayscale"
-        data-aos="fade-left"
+        data-aos="fade"
       />
 
-      <div class="container !py-10 lg:ml-[50px]" data-aos="fade-right">
+      <div class="container !py-10 lg:ml-[50px]" data-aos="fade">
         <p
           class="font-normal text-[28px] leading-8 pb-6 lg:max-w-[418px] lg:text-5xl"
         >
