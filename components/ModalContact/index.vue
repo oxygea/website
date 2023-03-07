@@ -13,9 +13,11 @@
           />
         </div>
         <div class="pt-4 pb-10">
-          <h3 class="font-bold text-xl pb-2 lg:text-2xl">Entre em contato</h3>
+          <h3 class="font-bold text-xl pb-2 lg:text-2xl">
+            {{ $t('modals.contact.h3') }}
+          </h3>
           <p class="font-semibold text-xs lg:text-base font-poppins">
-            Queremos te ouvir! Fale com a gente.
+            {{ $t('modals.contact.p') }}
           </p>
         </div>
         <form class="flex flex-wrap justify-end pb-5">
@@ -40,7 +42,7 @@
           <label
             for="message"
             class="w-full pb-4 text-xs block font-semibold font-poppins"
-            >Mensagem</label
+            >{{ $t('modals.contact.l1') }}</label
           >
 
           <textarea
@@ -72,7 +74,7 @@
                 },
               ]"
             >
-              Texto é muito longo
+              {{ $t('modals.contact.l2') }}
             </p>
             <p
               class="text-xs font-semibold font-poppins"
@@ -82,7 +84,7 @@
                 },
               ]"
             >
-              {{ textLength }}/900 caracteres
+              {{ textLength }}/900 {{ $t('modals.contact.l3') }}
             </p>
           </div>
 
@@ -90,7 +92,7 @@
             type="submit"
             class="text-violet font-poppins mt-10 font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max hover:bg-violet hover:text-black"
           >
-            Enviar mensagem
+            {{ $t('modals.contact.btn') }}
           </button>
         </form>
       </div>

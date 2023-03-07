@@ -635,5 +635,13 @@ export default {
         span: 'Atualizado em Janeiro/2023',
       },
     },
+    contact: {
+      h3: 'Entre em contato',
+      p: 'Queremos te ouvir! Fale com a gente.',
+      l1: 'Mensagem',
+      l2: 'Texto é muito longo',
+      l3: 'caracteres',
+      btn: 'Enviar mensagem',
+    },
   },
 }
