@@ -123,7 +123,7 @@
                     quality="100"
                     loading="lazy"
                     sizes="100px sm:100vw lg:300px"
-                    class="w-16 h-16 absolute left-[60%] -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                    class="w-16 h-16 absolute left-[40%] lg:left-[60%] -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
                     :class="[
                       {
                         'opacity-100': mentor.slug === selectedMentor,
@@ -135,7 +135,7 @@
 
                 <a
                   :href="`${mentor.link}`"
-                  class="transition-all absolute left-[90%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+                  class="transition-all absolute left-[65%] lg:left-[90%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,
@@ -143,7 +143,7 @@
                     },
                   ]"
                 >
-                  <span class="font-bold text-sm">{{
+                  <span class="font-bold text-xs lg:text-sm">{{
                     $t('mentors.filter.more')
                   }}</span>
                   <svg-icon name="arrowCircle" class="w-6 h-6" />
@@ -463,6 +463,7 @@ export default {
   methods: {
     setSelectedMentor(slug, selectedIndex) {
       this.selectedMentor = slug
+      const isMobile = window.innerWidth < 1024
 
       const list = document.getElementById('mentors-list')
       const img = document.getElementById(`mentor-${selectedIndex}`).children[2]
@@ -471,9 +472,14 @@ export default {
 
       const base = 47
       const forward = selectedIndex * base
-      const forwardImage = forward + base
-      const forwardLink = forward + base * 3
+      let forwardImage = forward + base
+      let forwardLink = forward + base * 3
       const backward = (this.selectedMentorIndex - selectedIndex) * base
+
+      if (isMobile) {
+        forwardImage = forwardLink
+        forwardLink = forward + base * 3.3
+      }
 
       if (selectedIndex > this.selectedMentorIndex) {
         list.style.transform = `translateY(-${forward}px)`
@@ -510,11 +516,19 @@ export default {
 
     &:first-child {
       img {
-        transform: translateY(47px);
+        transform: translateY(141px);
+
+        @media (min-width: 1024px) {
+          transform: translateY(47px);
+        }
       }
 
       a {
-        transform: translateY(141px);
+        transform: translateY(162px);
+
+        @media (min-width: 1024px) {
+          transform: translateY(141px);
+        }
       }
     }
   }
