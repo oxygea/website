@@ -23,7 +23,7 @@
         <form class="flex flex-wrap justify-end pb-5">
           <input
             type="text"
-            placeholder="Nome"
+            :placeholder="`${$t('modals.contact.plc1')}`"
             class="w-full text-xs bg-transparent border-b font-poppins border-black font-semibold py-[25px] text-black placeholder-black"
           />
           <input
@@ -34,8 +34,8 @@
 
           <CustomSelect
             v-model="selectedOptionId"
-            label="Área de interesse"
-            placeholder="Selecione uma área"
+            :label="`${$t('modals.contact.lb1')}`"
+            :placeholder="`${$t('modals.contact.plc2')}`"
             :options="options"
           />
 
@@ -48,7 +48,7 @@
           <textarea
             id="message"
             class="w-full min-h-[132px] text-xs mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-semibold"
-            placeholder="Como podemos te ajudar?"
+            :placeholder="`${$t('modals.contact.plc3')}`"
             maxlength="1000"
             :class="[
               {

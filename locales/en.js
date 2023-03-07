@@ -641,6 +641,10 @@ export default {
       l2: 'Text is too long',
       l3: 'caracters',
       btn: 'Send message',
+      plc1: 'Name',
+      plc2: 'Select an area',
+      plc3: 'How can we help you?',
+      lb1: 'Area of interest',
     },
   },
 }
