@@ -74,14 +74,14 @@
           v-bind="options.desktopSlider"
         ></vue-slider>
 
-        <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1">
-          <div id="mentors-list" class="transition-all duration-300">
+        <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1 relative">
+          <div id="mentors-list" class="transition-all relative duration-300">
             <transition-group name="list">
               <div
                 v-for="(mentor, index) of filteredMentors"
                 :id="`mentor-${index}`"
                 :key="index"
-                class="min-h-[57px] relative transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
+                class="min-h-[57px] transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
                 :class="[
                   {
                     '!min-h-[97px]': mentor.slug === selectedMentor,
@@ -123,7 +123,7 @@
                     quality="100"
                     loading="lazy"
                     sizes="100px sm:100vw lg:300px"
-                    class="w-16 h-16 absolute left-1/2 -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                    class="w-16 h-16 absolute left-[60%] -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
                     :class="[
                       {
                         'opacity-100': mentor.slug === selectedMentor,
@@ -135,7 +135,7 @@
 
                 <a
                   :href="`${mentor.link}`"
-                  class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+                  class="transition-all absolute left-[90%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,
@@ -465,13 +465,20 @@ export default {
       this.selectedMentor = slug
 
       const list = document.getElementById('mentors-list')
+      const img = document.getElementById(`mentor-${selectedIndex}`).children[2]
+      const link = document.getElementById(`mentor-${selectedIndex}`)
+        .children[3]
 
       const base = 47
       const forward = selectedIndex * base
+      const forwardImage = forward + base
+      const forwardLink = forward + base * 3
       const backward = (this.selectedMentorIndex - selectedIndex) * base
 
       if (selectedIndex > this.selectedMentorIndex) {
         list.style.transform = `translateY(-${forward}px)`
+        img.style.transform = `translateY(+${forwardImage}px)`
+        link.style.transform = `translateY(+${forwardLink}px)`
       } else {
         list.style.transform = `translateY(-${
           this.selectedMentorIndex * base - backward
@@ -493,23 +500,21 @@ export default {
       @apply border-none;
     }
 
-    @media (min-width: 1024px) {
+    img {
+      top: 0;
+    }
+
+    a {
+      top: 0;
+    }
+
+    &:first-child {
       img {
-        top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(47px);
       }
 
-      &:nth-child(-n + 10) {
-        img {
-          top: 0;
-          transform: none;
-        }
-      }
-
-      &:last-child {
-        img {
-          top: 0;
-        }
+      a {
+        transform: translateY(141px);
       }
     }
   }
