@@ -104,6 +104,15 @@ export default {
         infinite: false,
         arrows: false,
         variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
       },
     }
   },
