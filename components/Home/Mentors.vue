@@ -134,6 +134,7 @@
                 </transition>
 
                 <a
+                  :href="`${mentor.link}`"
                   class="transition-all duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
