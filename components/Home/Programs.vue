@@ -24,7 +24,7 @@
         <transition name="slide-fade">
           <div
             v-if="!$data[`showMenu${item.value}`]"
-            class="w-full h-full transition-all flex-1 duration-500 ease-linear flex flex-wrap justify-between"
+            class="w-full h-full flex-1 flex flex-wrap justify-between"
           >
             <div>
               <h4 class="font-medium text-xl text-white lg:text-2xl lg:mb-4">
@@ -50,10 +50,10 @@
             </div>
           </div>
         </transition>
-        <transition name="slide-fade">
+        <transition name="slide-open">
           <div
             v-if="$data[`showMenu${item.value}`]"
-            class="w-full h-full transition-all absolute flex-1 top-0 left-0 duration-500 ease-linear flex flex-wrap justify-between p-6"
+            class="w-full h-full absolute flex-1 top-0 left-0 flex flex-wrap justify-between p-6"
           >
             <div>
               <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
@@ -73,7 +73,7 @@
               </ul>
             </div>
             <div
-              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-black cursor-pointer mt-auto"
+              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-black cursor-pointer mt-auto delay-btn"
               @click.prevent="($event) => toggle(item.value)"
             >
               <p class="w-[17px] h-[2px] bg-black"></p>
@@ -141,6 +141,10 @@ export default {
 .slide-leave-active {
   transition-duration: 0.5s;
   transition-timing-function: linear;
+}
+
+.slide-enter-active .daley-btn {
+  transition-delay: 5000ms;
 }
 
 .slide-enter-to,

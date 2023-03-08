@@ -55,7 +55,7 @@
 
     <span
       v-if="error"
-      class="font-semibold text-sm text-xs font-poppins text-red-500 pt-4"
+      class="font-semibold lg:text-sm text-xs font-poppins text-red-500 pt-4"
       >Preenchimento obrigatório</span
     >
   </div>
