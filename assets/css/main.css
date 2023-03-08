@@ -303,3 +303,10 @@ input :focus {
     }
   }
 }
+
+@media (max-width: 768px) {
+  [data-aos] {
+    transition: none !important;
+    opacity: 1 !important;
+  }
+}
