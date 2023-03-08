@@ -96,16 +96,22 @@
           </n-link>
 
           <div class="flex items-center gap-4">
-            <nuxt-link :to="localePath('/')" title="Linkedin">
+            <a
+              href="https://www.linkedin.com/company/oxygeaventures/"
+              target="_blank"
+            >
               <svg-icon name="linkedin-white" class="w-6 h-6 relative" />
-            </nuxt-link>
-            <nuxt-link :to="localePath('/')" title="Instagram">
+            </a>
+            <a href="https://www.instagram.com/oxygeaventures/" target="_blank">
               <svg-icon name="instagram-white" class="w-6 h-6 relative" />
-            </nuxt-link>
+            </a>
 
-            <nuxt-link :to="localePath('/')" title="Youtube">
+            <a
+              href="https://www.youtube.com/@oxygeaventures2916"
+              target="_blank"
+            >
               <svg-icon name="youtube-white" class="w-6 h-6 relative" />
-            </nuxt-link>
+            </a>
           </div>
         </nav>
       </div>

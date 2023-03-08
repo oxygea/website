@@ -115,24 +115,33 @@
 
           <div class="lg:hidden ml-2">
             <div class="flex">
-              <nuxt-link :to="localePath('/')" title="Linkedin">
+              <a
+                href="https://www.linkedin.com/company/oxygeaventures/"
+                target="_blank"
+              >
                 <svg-icon
                   name="linkedin"
                   class="w-6 h-6 relative text-yellow mr-4"
                 />
-              </nuxt-link>
-              <nuxt-link :to="localePath('/')" title="Instagram">
+              </a>
+              <a
+                href="https://www.instagram.com/oxygeaventures/"
+                target="_blank"
+              >
                 <svg-icon
                   name="instagram"
                   class="w-6 h-6 relative text-yellow mr-4"
                 />
-              </nuxt-link>
-              <nuxt-link :to="localePath('/')" title="Youtube">
+              </a>
+              <a
+                href="https://www.youtube.com/@oxygeaventures2916"
+                target="_blank"
+              >
                 <svg-icon
                   name="youtube"
                   class="w-6 h-6 relative text-yellow mr-4"
                 />
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>

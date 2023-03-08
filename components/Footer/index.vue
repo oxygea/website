@@ -68,22 +68,25 @@
           {{ $t('footer.oxygea') }}
         </div>
         <div class="flex gap-5 items-center">
-          <nuxt-link :to="localePath('/')" title="Linkedin">
+          <a
+            href="https://www.linkedin.com/company/oxygeaventures/"
+            target="_blank"
+          >
             <svg-icon
               name="linkedin"
               class="w-[23px] h-[23px] cursor-pointer"
             />
-          </nuxt-link>
-          <nuxt-link :to="localePath('/')" title="Instagram">
+          </a>
+          <a href="https://www.instagram.com/oxygeaventures/" target="_blank">
             <svg-icon name="instagram" class="w-6 h-6 cursor-pointer" />
-          </nuxt-link>
+          </a>
 
-          <nuxt-link :to="localePath('/')" title="Youtube">
+          <a href="https://www.youtube.com/@oxygeaventures2916" target="_blank">
             <svg-icon
               name="youtube"
               class="w-[30px] h-[21px] -ml-1 cursor-pointer"
             />
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>

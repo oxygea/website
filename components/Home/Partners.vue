@@ -18,7 +18,7 @@
     <div class="container !pr-0">
       <VueSlickCarousel
         v-bind="slickOptions"
-        class="flex items-center lg:pl-[180px]"
+        class="flex items-center lg:pl-[108px]"
       >
         <NuxtLink to="https://www.acecortex.com.br/">
           <nuxt-img
@@ -62,31 +62,50 @@
             class="max-w-[110px] h-[26px] mr-10 lg:mr-[120px]"
           />
         </NuxtLink>
-        <nuxt-img
-          preload
-          :src="`partners/04.png`"
-          format="webp"
-          fit="fill"
-          quality="100"
-          loading="lazy"
-          sizes="100px sm:100vw lg:300px"
-          :alt="`Imagem partners 4`"
-          :title="`Partners 4`"
-          class="max-w-[41px] h-[48px] mr-10 lg:mr-[120px]"
-        />
+        <NuxtLink to="https://www.ibi-tech.com/">
+          <nuxt-img
+            preload
+            :src="`partners/04.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="100px sm:100vw lg:300px"
+            :alt="`Imagem partners 4`"
+            :title="`Partners 4`"
+            class="max-w-[41px] h-[48px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
 
-        <nuxt-img
-          preload
-          :src="`partners/05.png`"
-          format="webp"
-          fit="fill"
-          quality="100"
-          loading="lazy"
-          sizes="100px sm:100vw lg:300px"
-          :alt="`Imagem partners 5`"
-          :title="`Partners 5`"
-          class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
-        />
+        <NuxtLink to="https://www.plugandplaytechcenter.com/">
+          <nuxt-img
+            preload
+            :src="`partners/05.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="100px sm:100vw lg:300px"
+            :alt="`Imagem partners 5`"
+            :title="`Partners 5`"
+            class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
+
+        <NuxtLink to="https://abstartups.com.br/">
+          <nuxt-img
+            preload
+            :src="`partners/06.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="100px sm:100vw lg:300px"
+            :alt="`Imagem partners 6`"
+            :title="`Partners 6`"
+            class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
+          />
+        </NuxtLink>
       </VueSlickCarousel>
     </div>
   </section>
