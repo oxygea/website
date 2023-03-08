@@ -6,7 +6,9 @@
 
     <VueSlickCarousel
       v-bind="slickOptions"
+      ref="carouselPrograms"
       class="mt-10 pl-5 flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+      @beforeChange="onSlideChange"
     >
       <div
         v-for="(item, index) of programs"
@@ -32,11 +34,20 @@
                 {{ $t(`programs.card${item.value}.desc`) }}
               </p>
             </div>
-            <svg-icon
-              name="circle"
-              class="w-10 h-10 cursor-pointer mt-auto"
-              @click.prevent="($event) => toggle(item.value)"
-            />
+            <div
+              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-white cursor-pointer mt-auto"
+              @click.prevent="toggle(item.value), setSlider(item.value)"
+            >
+              <p class="w-[17px] h-[2px] bg-white"></p>
+              <p
+                :class="[
+                  {
+                    hidden: $data[`showMenu${item.value}`],
+                  },
+                ]"
+                class="absolute w-[2px] h-[17px] bg-white"
+              ></p>
+            </div>
           </div>
         </transition>
         <transition name="slide-fade">
@@ -61,11 +72,12 @@
                 </li>
               </ul>
             </div>
-            <svg-icon
-              name="buttonCircle"
-              class="w-10 h-10 mt-auto cursor-pointer"
+            <div
+              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-black cursor-pointer mt-auto"
               @click.prevent="($event) => toggle(item.value)"
-            />
+            >
+              <p class="w-[17px] h-[2px] bg-black"></p>
+            </div>
           </div>
         </transition>
       </div>
@@ -101,6 +113,15 @@ export default {
   methods: {
     toggle(item) {
       this[`showMenu${item}`] = !this[`showMenu${item}`]
+    },
+    setSlider(value) {
+      const isMobile = window.innerWidth < 1024
+      if (isMobile) {
+        this.$refs.carouselPrograms.goTo(value - 1)
+      }
+    },
+    onSlideChange(event) {
+      this[`showMenu${event + 1}`] = false
     },
   },
 }
