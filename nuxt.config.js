@@ -1,7 +1,4 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -56,11 +53,14 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
-    '@nuxt/image',
     '@nuxtjs/svg-sprite',
+    '@nuxt/image',
   ],
 
+  modules: ['@nuxtjs/i18n'],
+
   image: {
+    provider: 'static',
     dir: 'assets/img',
     screens: {
       xs: 320,
@@ -83,9 +83,6 @@ export default {
   svgSprite: {
     input: '~/assets/svg/',
   },
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/i18n'],
 
   i18n: {
     locales: [
