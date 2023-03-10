@@ -55,6 +55,11 @@ export default {
           property: 'og:description',
           content: 'Lorem ipsum dolor sit amet, consectetur',
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '../assets/img/oxygea.png',
+        },
       ],
     }
   },

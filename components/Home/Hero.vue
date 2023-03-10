@@ -1,5 +1,3 @@
-<!-- TODO: add animation -->
-
 <template>
   <section
     class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
@@ -7,7 +5,7 @@
     <transition name="slide-fade">
       <nuxt-img
         preload
-        :src="`hero/bg-${sliderPageIndex}.png`"
+        :src="require(`~/assets/img/hero/bg-${sliderPageIndex}.png`)"
         format="webp"
         fit="fill"
         quality="100"
@@ -19,7 +17,7 @@
     <transition name="slide-fade">
       <nuxt-img
         preload
-        :src="`hero/bg-mobile-${sliderPageIndex}.png`"
+        :src="require(`~/assets/img/hero/bg-mobile-${sliderPageIndex}.png`)"
         format="webp"
         fit="fill"
         quality="100"
@@ -101,7 +99,7 @@ export default {
         pauseOnHover: false,
         pauseOnFocus: false,
       },
-      sliderPageIndex: 1,
+      sliderPageIndex: 0,
       itens: [
         {
           value: 1,
@@ -112,6 +110,9 @@ export default {
         { value: 4, hash: 'mentors' },
       ],
     }
+  },
+  mounted() {
+    this.sliderPageIndex = 1
   },
   methods: {
     onBeforeChange(event) {

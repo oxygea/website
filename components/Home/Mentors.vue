@@ -117,7 +117,7 @@
                 <transition>
                   <nuxt-img
                     preload
-                    :src="`mentors/${mentor.image}`"
+                    :src="require(`~/assets/img/mentors/${mentor.image}`)"
                     format="webp"
                     fit="fill"
                     quality="100"

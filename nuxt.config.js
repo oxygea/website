@@ -12,6 +12,11 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/assets/img/oxygea.png',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -101,6 +106,17 @@ export default {
     ],
     langDir: 'locales/',
     defaultLocale: 'pt',
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      },
+    },
+    static: {
+      maxAge: 60 * 60 * 24 * 365 * 1000,
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
