@@ -310,3 +310,7 @@ input :focus {
     opacity: 1 !important;
   }
 }
+
+.grayscale {
+  filter: grayscale(1);
+}

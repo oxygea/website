@@ -11,13 +11,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-url', property: 'og:url', content: '' },
+      { hid: 'og:title', property: 'og:title', content: 'Oxygea' },
       { hid: 'description', name: 'description', content: '' },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/assets/img/oxygea.png',
+        content: 'https://files.fm/thumb_show.php?i=7ecyfm3jp',
       },
-      { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

@@ -50,15 +50,13 @@ export default {
       title: 'Oxygea',
       meta: [
         { hid: 'og-type', property: 'og:type', content: 'website' },
-        {
-          hid: 'og-desc',
-          property: 'og:description',
-          content: 'Lorem ipsum dolor sit amet, consectetur',
-        },
+        { hid: 'og-url', property: 'og:url', content: '' },
+        { hid: 'og:title', property: 'og:title', content: 'Oxygea' },
+        { hid: 'description', name: 'description', content: '' },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '../assets/img/oxygea.png',
+          content: 'https://files.fm/thumb_show.php?i=7ecyfm3jp',
         },
       ],
     }
