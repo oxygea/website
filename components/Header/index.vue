@@ -1,6 +1,7 @@
 <template>
   <header
-    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4"
+    :class="{ navbarhidden: !showNavbar }"
+    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4 navbar"
   >
     <div class="container flex flex-row justify-between items-center h-[64px]">
       <n-link :to="localePath('/')" title="Oxygea">
@@ -159,19 +160,15 @@ export default {
     onScroll() {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
-
-      if (currentScrollPosition < 0 && window.pageYOffset > 105) {
+      if (currentScrollPosition < 0) {
         return
       }
-      if (currentScrollPosition > 100) {
-        this.notTop = true
-      } else {
-        this.notTop = false
+      // Stop executing this function if the difference between
+      // current scroll position and last scroll position is less than some offset
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        return
       }
       this.showNavbar = currentScrollPosition < this.lastScrollPosition
-      if (this.showNavbar) {
-        this.showMenu = false
-      }
       this.lastScrollPosition = currentScrollPosition
     },
   },
@@ -200,5 +197,15 @@ export default {
 .slide-fade-leave-to {
   transform: translateX(100%);
   opacity: 0;
+}
+
+.navbar {
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
+}
+
+.navbarhidden {
+  box-shadow: none;
+  transform: translate3d(0, -100%, 0);
 }
 </style>
