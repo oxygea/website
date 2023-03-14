@@ -28,10 +28,10 @@
       />
 
       <div class="w-full md:max-w-[418px] relative z-10">
-        <h2 class="pb-5 font-normal text-[28px] lg:text-5xl" data-aos="fade">
-          {{ $t('oxygea.title') }}
-        </h2>
-        <p class="text-xs font-normal lg:text-base" data-aos="fade">
+        <p
+          class="text-xs font-normal lg:text-2xl lg:font-medium"
+          data-aos="fade"
+        >
           {{ $t('oxygea.desc') }}
         </p>
       </div>

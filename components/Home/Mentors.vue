@@ -135,7 +135,7 @@
 
                 <a
                   :href="`${mentor.link}`"
-                  class="transition-all absolute left-[65%] lg:left-[90%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+                  class="transition-all absolute left-[65%] lg:left-[85%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,

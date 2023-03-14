@@ -58,7 +58,7 @@
             <div>
               <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
               <ul
-                class="list-disc pt-4 text-xs font-normal leading-4 pl-[15px] flex flex-col gap-2"
+                class="list-disc pt-4 text-sm font-normal leading-4 pl-[15px] flex flex-col gap-2"
               >
                 <li
                   v-for="(benefit, benefitIndex) in item.benefits"

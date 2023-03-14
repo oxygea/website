@@ -5,7 +5,7 @@
         <div class="lg:max-w-screen-sm">
           <div class="pb-10">
             <svg-icon
-              name="logoDark2"
+              name="logoDark"
               class="w-[130px] h-[51px] lg:w-[200px] lg:h-[79px]"
             />
           </div>
@@ -44,14 +44,14 @@
           <p class="font-normal text-xs pt-6 lg:text-sm">
             {{ $t('footer.signit') }}
             <strong
-              class="cursor-pointer"
+              class="cursor-pointer underline"
               @click="$nuxt.$emit('openModalTerms')"
             >
               {{ $t('footer.terms') }}</strong
             >
             {{ $t('footer.terms2') }}
             <strong
-              class="cursor-pointer"
+              class="cursor-pointer underline"
               @click="$nuxt.$emit('openModalPrivacy')"
             >
               {{ $t('footer.privacy') }}</strong

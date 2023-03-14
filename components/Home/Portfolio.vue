@@ -45,9 +45,6 @@
             ]"
             @mouseenter="($event) => setSelected(item.value)"
           >
-            <h3 class="text-xs font-bold pb-2 lg:text-base">
-              {{ item.value }}
-            </h3>
             <p
               class="text-xs font-normal lg:text-sm lg:font-medium lg:max-w-[366px]"
             >

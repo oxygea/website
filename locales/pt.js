@@ -29,7 +29,6 @@ export default {
     },
   },
   oxygea: {
-    title: 'Qual o papel da Oxygea nessa história?',
     desc: 'Oxygea está aqui para acelerar e investir em novos negócios. Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
   },
   invest: {
@@ -81,37 +80,34 @@ export default {
     benefits: 'Benefícios',
     card1: {
       title: 'Incubação',
-      desc: 'Startups que validaram seu mercado, definiram a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
+      desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
       benefits: {
-        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado',
-        t2: 'Investimento de até BRL 700 mil para desenvolvimento do MVP',
-        t3: 'Acesso à rede de mentores altamente qualificados',
-        t4: 'Assessment do Modelo de Negócio e Solução',
-        t5: 'Suporte no Desenvolvimento de MVP e Produtos',
-        t6: 'Suporte Jurídico, Tecnológico e de Compliance',
+        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
+        t2: 'Investimento de até BRL 700 mil para desenvolvimento do MVP.',
+        t3: 'Assessment do Modelo de Negócio e Solução.',
+        t4: 'Suporte no Desenvolvimento de MVP e Produtos.',
+        t5: 'Suporte Jurídico, Tecnológico e de Compliance.',
       },
     },
     card2: {
       title: 'Aceleração',
-      desc: 'Startups que desenvolveram um produto e estão prontas para ir a mercado.',
+      desc: 'Startups que já estão com uma primeira versão do produto rodando e querem acelerar seu Product Market Fit.',
       benefits: {
-        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado',
-        t2: 'Investimento de BRL 250K no início do programa e até R$ 1,5 Milhão para Startups selecionadas',
-        t3: 'Acesso a rede de mentores altamente qualificados',
-        t4: 'Acesso ao Network de Parceiros',
-        t5: 'Suporte na Definição da Estratégia do Negócio',
-        t6: 'Suporte na Definição da Estratégia de Marketing',
+        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
+        t2: 'Investimento inicial para financiar o programa e até R$1,5 milhão para startups selecionadas.',
+        t3: 'Acesso ao Network de Parceiros.',
+        t4: 'Suporte na Definição da Estratégia do Negócio.',
+        t5: 'Suporte na Definição da Estratégia de Marketing.',
       },
     },
     card3: {
-      title: 'Investimento',
+      title: 'Investimento / CVC',
       desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento',
       benefits: {
-        t1: 'Acesso à rede de experts e advisors altamente qualificados',
-        t2: 'Acesso ao Network de Parceiros',
-        t3: 'Acesso aos canais de distribuição',
-        t4: 'Acesso a dados e informações de mercado',
-        t5: 'Acesso às capabilities e expertise para escalar negócios',
+        t1: 'Acesso ao Network de Parceiros.',
+        t2: 'Acesso aos canais de distribuição.',
+        t3: 'Acesso a dados e informações de mercado.',
+        t4: 'Acesso às capabilities e expertise para escalar negócios.',
       },
     },
     card4: {
@@ -119,7 +115,7 @@ export default {
       desc: 'Não importa o estágio de maturidade, todas as empresas do nosso portfolio sempre terão acesso às principais capabilities de desenvolvimento.',
       benefits: {
         t1: 'Mentoria de Experts',
-        t2: 'Acesso e conhecimento/base de dados',
+        t2: 'Acesso a bases de dados e informações qualificadas sobre a indústria.',
         t3: 'Acesso a laboratórios, centros de pesquisa e plantas piloto',
         t4: 'Espaço Físico e Serviços Compartilhados',
       },
@@ -171,6 +167,7 @@ export default {
   team: {
     title: 'Time Oxygea',
     desc: 'Estamos com você para cocriar novos caminhos para um futuro sustentável.',
+    part: 'FAÇA PARTE',
   },
   footer: {
     conect:

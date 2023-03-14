@@ -29,7 +29,6 @@ export default {
     },
   },
   oxygea: {
-    title: 'What is Oxygea’s role in all this?',
     desc: 'Oxygea is here to accelerate and invest in new business. We value ecosystems and we cooperate with local and global networks to provide the best to startups that will transform the future of the industry.',
   },
   invest: {
@@ -81,7 +80,7 @@ export default {
     benefits: 'Benefits',
     card1: {
       title: 'Incubation',
-      desc: 'Startups that validated their market, defined the first version of their product and are ready to set their MVP into motion.',
+      desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
       benefits: {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Investment up to BRL 700K for MVP development.',
@@ -93,10 +92,10 @@ export default {
     },
     card2: {
       title: 'Acceleration',
-      desc: 'Startups that developed a product and are ready for the market.',
+      desc: 'Startups that have already launched the first version of their product and want to accelerate their Product Market Fit.',
       benefits: {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
-        t2: 'Investment of BRL 250K at the start of the program and up to BRL 1.5 mi for selected Startups.',
+        t2: 'Initial investment to fund the program and up to R$1.5 million for eligible startups.',
         t3: 'Access to a network of highly qualified advisors.',
         t4: 'Access to Network of Partners.',
         t5: 'Support in Business Strategy Definition.',
@@ -107,11 +106,10 @@ export default {
       title: 'Investment / CVC',
       desc: 'Startups that already have a promising business and want to accelerate growth.',
       benefits: {
-        t1: 'Access to a network of highly qualified experts.',
-        t2: 'Access to Network of Partners.',
-        t3: 'Access to distribution channels.',
-        t4: 'Access to market data and information.',
-        t5: 'Access to capabilities and expertise to drive business.',
+        t1: 'Access to Network of Partners.',
+        t2: 'Access to distribution channels.',
+        t3: 'Access to market data and information.',
+        t4: 'Access to capabilities and expertise to drive business.',
       },
     },
     card4: {
@@ -119,9 +117,8 @@ export default {
       desc: 'Regardless of the maturity stage, all companies in our portfolio will always have access to key development capabilities.',
       benefits: {
         t1: 'Expert Advisory.',
-        t2: 'Access to knowledge/database.',
-        t3: 'Access to laboratories, research centers',
-        t4: 'pilot plants Physical Space and Shared Services.',
+        t2: 'Access to qualified database and information on industry.',
+        t3: 'Access to laboratories, research centers and pilot plants Physical Space and Shared Services.',
       },
     },
   },
@@ -172,6 +169,7 @@ export default {
   team: {
     title: 'Oxygea Team',
     desc: 'We are with you to cocreate new paths to a sustainable future.',
+    part: 'BE PART OF IT',
   },
   footer: {
     conect: 'We are with you to cocreate new paths to a sustainable future.',

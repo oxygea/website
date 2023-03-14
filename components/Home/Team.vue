@@ -42,13 +42,23 @@
             <p class="text-white font-bold text-xxs lg:text-xs">
               {{ item.job }}
             </p>
-            <a href="" target="_blank">
+            <a :href="`${item.linkedin}`" target="_blank">
               <svg-icon
                 name="linkedin2"
                 class="w-[18px] h-[18px] mt-4 opacity-0"
               />
             </a>
           </div>
+        </li>
+        <li
+          class="w-[164px] h-[164px] bg-[#141414] flex items-center justify-center"
+        >
+          <p
+            class="cursor-pointer rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300"
+            @click="$nuxt.$emit('openModalContact')"
+          >
+            {{ $t('team.part') }}
+          </p>
         </li>
       </ul>
 
@@ -76,7 +86,9 @@
             </p>
             <p class="text-white font-bold text-xs">{{ item.job }}</p>
           </div>
-          <svg-icon name="linkedin2" class="w-[18px] h-[18px]" />
+          <a :href="`${item.linkedin}`" target="_blank">
+            <svg-icon name="linkedin2" class="w-[18px] h-[18px]" />
+          </a>
         </div>
       </VueSlickCarousel>
     </section>

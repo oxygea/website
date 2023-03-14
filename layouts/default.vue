@@ -85,7 +85,7 @@ export default {
     this.$nuxt.$on('saveAcceptedCookies', () => this.saveAcceptedCookies())
   },
   mounted() {
-    const acceptedCookies = localStorage.getItem('acceptedCookies')
+    const acceptedCookies = localStorage.getItem('@oxygea/cookies')
     if (acceptedCookies !== null) {
       this.acceptedCookies = acceptedCookies !== 'true'
     } else {
@@ -112,7 +112,7 @@ export default {
       this.showModalCookies = true
     },
     saveAcceptedCookies() {
-      localStorage.setItem('acceptedCookies', true)
+      localStorage.setItem('@oxygea/cookies', true)
       this.acceptedCookies = false
     },
   },

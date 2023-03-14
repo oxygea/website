@@ -9,7 +9,7 @@
           <p class="font-medium text-[10px] lg:text-xs leading-[14px]">
             {{ $t('popups.cookies.p') }}
             <strong
-              class="cursor-pointer"
+              class="cursor-pointer underline font-bold"
               @click="$nuxt.$emit('openModalCookies')"
               >{{ $t('popups.cookies.strong') }}</strong
             >

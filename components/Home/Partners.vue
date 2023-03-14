@@ -20,7 +20,7 @@
         v-bind="slickOptions"
         class="flex items-center lg:pl-[108px]"
       >
-        <NuxtLink to="https://www.acecortex.com.br/">
+        <a target="_blank" href="https://www.acecortex.com.br/">
           <nuxt-img
             preload
             :src="`partners/01.png`"
@@ -33,8 +33,8 @@
             :title="`Partners 1`"
             class="max-w-[83px] h-[43px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
-        <NuxtLink to="https://cubo.network/">
+        </a>
+        <a target="_blank" href="https://cubo.network/">
           <nuxt-img
             preload
             :src="`partners/02.png`"
@@ -47,8 +47,8 @@
             :title="`Partners 2`"
             class="max-w-[83px] h-[28px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
-        <NuxtLink to="https://www.cazoololab.com.br/">
+        </a>
+        <a target="_blank" href="https://www.cazoololab.com.br/">
           <nuxt-img
             preload
             :src="`partners/03.png`"
@@ -61,8 +61,8 @@
             :title="`Partners 3`"
             class="max-w-[110px] h-[26px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
-        <NuxtLink to="https://www.ibi-tech.com/">
+        </a>
+        <a target="_blank" href="https://www.ibi-tech.com/">
           <nuxt-img
             preload
             :src="`partners/04.png`"
@@ -75,9 +75,9 @@
             :title="`Partners 4`"
             class="max-w-[41px] h-[48px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
+        </a>
 
-        <NuxtLink to="https://www.plugandplaytechcenter.com/">
+        <a target="_blank" href="https://www.plugandplaytechcenter.com/">
           <nuxt-img
             preload
             :src="`partners/05.png`"
@@ -90,9 +90,9 @@
             :title="`Partners 5`"
             class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
+        </a>
 
-        <NuxtLink to="https://abstartups.com.br/">
+        <a target="_blank" href="https://abstartups.com.br/">
           <nuxt-img
             preload
             :src="`partners/06.png`"
@@ -105,7 +105,7 @@
             :title="`Partners 6`"
             class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
           />
-        </NuxtLink>
+        </a>
       </VueSlickCarousel>
     </div>
   </section>
