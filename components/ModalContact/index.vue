@@ -21,16 +21,32 @@
           </p>
         </div>
         <form class="flex flex-wrap justify-end pb-5">
-          <input
-            type="text"
-            :placeholder="`${$t('modals.contact.plc1')}`"
-            class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[25px] text-black placeholder-black"
-          />
-          <input
-            type="email"
-            placeholder="E-mail"
-            class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[25px] my-6 text-black placeholder-black"
-          />
+          <label for="name" class="w-full relative">
+            <p
+              :class="{ active1: value1 }"
+              class="absolute bottom-[9px] font-medium"
+            >
+              {{ $t('modals.contact.plc1') }}
+            </p>
+            <input
+              v-model="value1"
+              type="text"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[10px] text-black placeholder-black"
+            />
+          </label>
+          <label for="email" class="w-full relative">
+            <p
+              :class="{ active2: value2 }"
+              class="absolute bottom-[33px] font-medium"
+            >
+              E-mail
+            </p>
+            <input
+              v-model="value2"
+              type="email"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[10px] my-6 text-black placeholder-black"
+            />
+          </label>
 
           <CustomSelect
             v-model="selectedOptionId"
@@ -119,6 +135,8 @@ export default {
       ],
       selectedOptionId: null,
       textLength: 0,
+      value1: '',
+      value2: '',
     }
   },
   watch: {
@@ -151,5 +169,19 @@ export default {
 .slide-fade-leave-to {
   transform: translateX(100%);
   opacity: 0;
+}
+
+.active1 {
+  top: -14px;
+  left: 0;
+  font-size: 14px;
+  transition: all 300ms linear;
+}
+
+.active2 {
+  top: 10px;
+  left: 0;
+  font-size: 14px;
+  transition: all 300ms linear;
 }
 </style>
