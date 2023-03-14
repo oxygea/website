@@ -2,21 +2,21 @@
   <transition name="slide-fade">
     <div
       v-if="show"
-      class="h-full bg-gray overflow-auto transition-all duration-500 fixed w-full flex flex-col z-50 lg:h-screen"
+      class="h-full bg-gray overflow-auto transition-all duration-500 fixed w-full right-0 max-w-[530px] flex flex-col z-50 lg:h-screen"
     >
-      <div class="container">
-        <div class="flex justify-end pt-4">
+      <div class="container relative !pt-16">
+        <div class="flex justify-end absolute right-4 top-4">
           <svg-icon
             name="close2"
             class="w-[32px] h-[32px] cursor-pointer"
             @click="$emit('close-modal')"
           />
         </div>
-        <div class="pt-4 pb-10">
+        <div class="pb-10">
           <h3 class="font-bold text-xl pb-2 lg:text-2xl">
             {{ $t('modals.contact.h3') }}
           </h3>
-          <p class="font-semibold text-xs lg:text-base font-poppins">
+          <p class="font-normal text-xs lg:text-base font-poppins">
             {{ $t('modals.contact.p') }}
           </p>
         </div>
@@ -24,12 +24,12 @@
           <input
             type="text"
             :placeholder="`${$t('modals.contact.plc1')}`"
-            class="w-full text-xs bg-transparent border-b font-poppins border-black font-semibold py-[25px] text-black placeholder-black"
+            class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[25px] text-black placeholder-black"
           />
           <input
             type="email"
             placeholder="E-mail"
-            class="w-full text-xs bg-transparent border-b font-poppins border-black font-semibold py-[25px] my-6 text-black placeholder-black"
+            class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-[25px] my-6 text-black placeholder-black"
           />
 
           <CustomSelect
@@ -41,13 +41,13 @@
 
           <label
             for="message"
-            class="w-full pb-4 text-xs block font-semibold font-poppins"
+            class="w-full pb-4 text-xs block font-medium font-poppins"
             >{{ $t('modals.contact.l1') }}</label
           >
 
           <textarea
             id="message"
-            class="w-full min-h-[132px] text-xs mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-semibold"
+            class="w-full min-h-[132px] text-sm mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-medium"
             :placeholder="`${$t('modals.contact.plc3')}`"
             maxlength="1000"
             :class="[
@@ -67,7 +67,7 @@
           >
             <p
               v-if="textLength > 900"
-              class="text-xs font-semibold font-poppins"
+              class="text-sm font-medium font-poppins"
               :class="[
                 {
                   'text-red-500': textLength > 900,
@@ -77,7 +77,7 @@
               {{ $t('modals.contact.l2') }}
             </p>
             <p
-              class="text-xs font-semibold font-poppins"
+              class="text-sm font-medium font-poppins"
               :class="[
                 {
                   'text-red-500': textLength > 900,
@@ -149,6 +149,7 @@ export default {
 
 .slide-fade-enter,
 .slide-fade-leave-to {
+  transform: translateX(100%);
   opacity: 0;
 }
 </style>

@@ -29,7 +29,7 @@
 
       <div class="w-full md:max-w-[418px] relative z-10">
         <p
-          class="text-xs font-normal lg:text-2xl lg:font-medium"
+          class="text-xs font-normal font-poppins lg:text-2xl lg:font-medium"
           data-aos="fade"
         >
           {{ $t('oxygea.desc') }}

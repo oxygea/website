@@ -1,12 +1,12 @@
 <template>
   <div class="pb-[34px] relative w-full">
-    <span class="w-full pb-4 block font-semibold text-xs font-poppins">{{
+    <span class="w-full pb-4 block font-medium text-sm font-poppins">{{
       label
     }}</span>
     <div class="relative inline-block text-left w-full bg-white">
       <button
         type="button"
-        class="w-full flex items-center font-poppins text-xs font-semibold justify-between text-black capitalize py-[16px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
+        class="w-full flex items-center font-poppins text-sm font-medium justify-between text-black capitalize py-[16px] px-4 border border-[#9D9D9D] appearance-none select-box rounded-none"
         :class="[
           {
             'border-red-500 text-red-500': error,
@@ -43,7 +43,7 @@
             v-for="option in options"
             :key="option.id"
             href="#"
-            class="block font-poppins text-xs font-semibold py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
+            class="block font-poppins text-sm font-medium py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
             @click="selectOption(option)"
           >
@@ -55,7 +55,7 @@
 
     <span
       v-if="error"
-      class="font-semibold lg:text-sm text-xs font-poppins text-red-500 pt-4"
+      class="font-medium lg:text-sm text-sm font-poppins text-red-500 pt-4"
       >Preenchimento obrigatório</span
     >
   </div>

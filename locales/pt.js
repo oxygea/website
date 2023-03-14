@@ -9,23 +9,23 @@ export default {
   hero: {
     card1: {
       title:
-        'Do start aos grandes investimentos, te acompanhamos em todas as etapas do desenvolvimento de negócios inovadores.',
-      cta: 'Nossos programas',
+        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria',
+      cta: 'Tese de investimento',
     },
     card2: {
       title:
-        'A conexão com o ecossistema faz a diferença. A gente acredita em fazer junto, local e globalmente.',
-      cta: 'Nossos parceiros',
+        'O programa de aceleração para startups que querem transformar a indústria.',
+      cta: 'Inscreva sua startup',
     },
     card3: {
       title:
-        'Investimos em startups para mudar o futuro da indústria, da tecnologia e da sustentabilidade.',
-      cta: 'Tese de investimento',
+        'Da aceleração aos investimentos em growth, te acompanhamos no desenvolvimento da sua startup.',
+      cta: 'Nossos programas',
     },
     card4: {
       title:
-        'Conectamos mentes brilhantes com sua startup para cocriar o futuro da indústria.',
-      cta: 'Nossos mentores',
+        'A conexão com o ecossistema faz a diferença. A gente acredita em fazer junto, local e globalmente.',
+      cta: 'Nossos parceiros',
     },
   },
   oxygea: {
@@ -35,34 +35,34 @@ export default {
     title: 'Onde investimos',
     card1: {
       title: 'Economia Circular',
-      info: 'Reciclagem química/mecânica/ por dissolução, produtos de plastic waste-based e new plastic replacements.',
-      info2: 'Logística reversa.',
+      info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção',
+      info2: 'Aumento da vida útil das aplicações do plástico',
+      info3: 'Redução de requisitos de plástico na produção, uso ou descarte',
     },
     card2: {
-      title: 'Fintech em Economia Circular & Mudanças Climáticas',
-      info: 'Aplicações de fintechs no mercado de carbono e plástico.',
-      info2: 'Marketplaces.',
+      title: 'Neutralidadede de Carbono',
+      info: 'Transição energética',
+      info2: 'Novos materiais de fontes renováveis',
+      info3: 'Mercado de carbono',
+      info4: 'Captura, armazenamento e utilização de CO2 para novos químicos',
     },
     card3: {
-      title: 'Neutralidade de Carbono',
-      info: 'Captura, armazenamento, utilização de carbono.',
-      info2: 'Outras tecnologias do mercado de carbono.',
+      title: 'Biotecnologia/Nanotecnologia e Novos Materiais',
+      info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais',
+      info2: 'Nanotecnologia aplicada à manufatura',
+      info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',
     },
     card4: {
-      title: 'Biotecnologia & Nanotecnologia',
-      info: 'Biotecnologia em químicos, plásticos e materiais.',
-      info2: 'Nanotecnologia em manufatura.',
+      title: 'Smart Factory & Futuro da Mobilidade',
+      info: 'Indústria 4.0: Analytics, automação etecnologias avançadas de manufatura',
+      info2:
+        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
     },
     card5: {
-      title: 'Indústria 4.0',
-      info: 'Inteligência artificial.',
-      info2: 'Machine Learning.',
-      info3: 'Computação quântica.',
-    },
-    card6: {
-      title: 'Bioquímicos avançados & materiais',
-      info: 'Polímeros biodegradáveis, monômeros bio-based.',
-      info2: 'Aplicações leves, embalagens monomaterial.',
+      title: 'Plástico como solução sustentável',
+      info: 'Biopolímeros',
+      info2: 'Aplicações do plástico com ganho de performance',
+      info3: 'Manufatura aditiva',
     },
   },
   numbers: {

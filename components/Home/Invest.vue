@@ -6,13 +6,13 @@
       </h2>
 
       <div
-        class="flex flex-wrap pt-10 gap-8 md:justify-between lg:ml-[110px] lg:pt-6"
+        class="flex flex-wrap pt-10 gap-8 md:gap-x-[130px] lg:ml-[110px] lg:pt-6"
         data-aos="fade"
       >
         <div
           v-for="(item, index) of itens"
           :key="`invest-${index}`"
-          class="md:w-[45%] lg:w-1/3 lg:max-w-[310px]"
+          class="md:w-[100%] lg:max-w-[310px]"
           :class="item.classNames"
         >
           <svg-icon :name="item.icon" class="w-8 h-8 lg:w-16 lg:h-16" />
@@ -48,42 +48,46 @@ export default {
           descriptions: [
             this.$t('invest.card1.info'),
             this.$t('invest.card1.info2'),
+            this.$t('invest.card1.info3'),
           ],
           titleClassNames: 'lg:max-w-[200px]',
           classNames: 'lg:order-1',
         },
         {
-          icon: 'fintech',
+          icon: 'carbonNeutrality',
           title: this.$t('invest.card2.title'),
           descriptions: [
             this.$t('invest.card2.info'),
             this.$t('invest.card2.info2'),
-          ],
-          titleClassNames: '',
-          classNames: 'lg:order-4',
-        },
-        {
-          icon: 'carbonNeutrality',
-          title: this.$t('invest.card3.title'),
-          descriptions: [
-            this.$t('invest.card3.info'),
-            this.$t('invest.card3.info2'),
+            this.$t('invest.card2.info3'),
+            this.$t('invest.card2.info4'),
           ],
           titleClassNames: 'lg:max-w-[180px]',
           classNames: 'lg:order-2',
         },
         {
           icon: 'biotechnology',
+          title: this.$t('invest.card3.title'),
+          descriptions: [
+            this.$t('invest.card3.info'),
+            this.$t('invest.card3.info2'),
+            this.$t('invest.card3.info3'),
+          ],
+          titleClassNames: '',
+          classNames: 'lg:order-3',
+        },
+        {
+          icon: 'industry',
           title: this.$t('invest.card4.title'),
           descriptions: [
             this.$t('invest.card4.info'),
             this.$t('invest.card4.info2'),
           ],
-          titleClassNames: '',
-          classNames: 'lg:order-5',
+          titleClassNames: 'lg:max-w-[150px]',
+          classNames: 'lg:order-4',
         },
         {
-          icon: 'industry',
+          icon: 'biochemicals',
           title: this.$t('invest.card5.title'),
           descriptions: [
             this.$t('invest.card5.info'),
@@ -91,17 +95,7 @@ export default {
             this.$t('invest.card5.info3'),
           ],
           titleClassNames: 'lg:max-w-[150px]',
-          classNames: 'lg:order-3',
-        },
-        {
-          icon: 'biochemicals',
-          title: this.$t('invest.card6.title'),
-          descriptions: [
-            this.$t('invest.card6.info'),
-            this.$t('invest.card6.info2'),
-          ],
-          titleClassNames: 'lg:max-w-[150px]',
-          classNames: 'lg:order-6',
+          classNames: 'lg:order-5',
         },
       ],
     }

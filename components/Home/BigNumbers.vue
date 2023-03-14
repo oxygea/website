@@ -8,9 +8,9 @@
         data-aos-delay="0"
         class="custom-border w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 xl:max-w-[310px] xl:h-[310px]"
       >
-        <p class="text-violet text-[28px] font-normal xl:text-5xl">U$150MM</p>
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">US$150MM</p>
         <p
-          class="text-violet text-[12px] max-w-[91px] font-normal leading-4 xl:text-base lg:max-w-[120px]"
+          class="text-violet text-[12px] max-w-[91px] font-normal leading-4 xl:text-base lg:max-w-[150px]"
         >
           {{ $t('numbers.capital') }}
         </p>
