@@ -7,7 +7,7 @@
     <VueSlickCarousel
       v-bind="slickOptions"
       ref="carouselPrograms"
-      class="mt-10 pl-5 flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+      class="mt-10 pl-5 flex items-center lg:!hidden lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
       @beforeChange="onSlideChange"
     >
       <div
@@ -82,6 +82,81 @@
         </transition>
       </div>
     </VueSlickCarousel>
+    <div
+      class="mt-10 pl-5 hidden lg:flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+    >
+      <div
+        v-for="(item, index) of programs"
+        :key="`program=${index}`"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-h-[492px] lg:max-w-[277px] lg:min-w-[277px]"
+        :class="[
+          {
+            '!bg-green': $data[`showMenu${item.value}`],
+            [item.heightClassName]: $data[`showMenu${item.value}`],
+          },
+        ]"
+      >
+        <transition name="slide-fade">
+          <div
+            v-if="!$data[`showMenu${item.value}`]"
+            class="w-full h-full flex-1 flex flex-wrap justify-between"
+          >
+            <div>
+              <h4 class="font-medium text-xl text-white lg:text-2xl lg:mb-4">
+                {{ $t(`programs.card${item.value}.title`) }}
+              </h4>
+              <p class="font-normal text-xs text-white leading-4 lg:text-sm">
+                {{ $t(`programs.card${item.value}.desc`) }}
+              </p>
+            </div>
+            <div
+              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-white cursor-pointer mt-auto"
+              @click.prevent="toggle(item.value), setSlider(item.value)"
+            >
+              <p class="w-[17px] h-[2px] bg-white"></p>
+              <p
+                :class="[
+                  {
+                    hidden: $data[`showMenu${item.value}`],
+                  },
+                ]"
+                class="absolute w-[2px] h-[17px] bg-white"
+              ></p>
+            </div>
+          </div>
+        </transition>
+        <transition name="slide-open">
+          <div
+            v-if="$data[`showMenu${item.value}`]"
+            class="w-full h-full absolute flex-1 top-0 left-0 flex flex-wrap justify-between p-6"
+          >
+            <div>
+              <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
+              <ul
+                class="list-disc pt-4 text-sm font-normal leading-4 pl-[15px] flex flex-col gap-2"
+              >
+                <li
+                  v-for="(benefit, benefitIndex) in item.benefits"
+                  :key="benefitIndex"
+                >
+                  {{
+                    $t(
+                      `programs.card${item.value}.benefits.t${benefitIndex + 1}`
+                    )
+                  }}
+                </li>
+              </ul>
+            </div>
+            <div
+              class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-black cursor-pointer mt-auto delay-btn"
+              @click.prevent="($event) => toggle(item.value)"
+            >
+              <p class="w-[17px] h-[2px] bg-black"></p>
+            </div>
+          </div>
+        </transition>
+      </div>
+    </div>
   </section>
 </template>
 <script>
