@@ -1,12 +1,31 @@
 <template>
   <header
-    :class="{ navbarhidden: !showNavbar }"
+    :class="[
+      {
+        '!bg-white': !menuDark,
+      },
+    ]"
     class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4 navbar"
   >
     <div class="container flex flex-row justify-between items-center h-[64px]">
-      <n-link :to="localePath('/')" title="Oxygea">
+      <n-link
+        :class="{ hidden: !menuDark }"
+        :to="localePath('/')"
+        title="Oxygea"
+      >
         <svg-icon
           name="logo"
+          class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
+        />
+      </n-link>
+
+      <n-link
+        :class="{ hidden: menuDark }"
+        :to="localePath('/')"
+        title="Oxygea"
+      >
+        <svg-icon
+          name="logoDark"
           class="w-[80px] h-[32px] lg:w-[141px] lg:h-[56px]"
         />
       </n-link>
@@ -20,7 +39,10 @@
 
       <!-- menu desktop-->
       <div class="h-full lg:flex justify-center items-center hidden">
-        <nav class="text-white flex flex-row gap-8 pt-4">
+        <nav
+          class="text-white flex flex-row gap-8 pt-4"
+          :class="{ menuWhite: !menuDark }"
+        >
           <AnchorMenu
             :url="
               localeLocation({
@@ -96,7 +118,7 @@
             <span class="relative z-[2]"> EN </span>
           </n-link>
 
-          <div class="flex items-center gap-4">
+          <div :class="{ hidden: !menuDark }" class="flex items-center gap-4">
             <a
               href="https://www.linkedin.com/company/oxygeaventures/"
               target="_blank"
@@ -112,6 +134,25 @@
               target="_blank"
             >
               <svg-icon name="youtube-white" class="w-6 h-6 relative" />
+            </a>
+          </div>
+
+          <div :class="{ hidden: menuDark }" class="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/company/oxygeaventures/"
+              target="_blank"
+            >
+              <svg-icon name="linkedin" class="w-6 h-6 relative" />
+            </a>
+            <a href="https://www.instagram.com/oxygeaventures/" target="_blank">
+              <svg-icon name="instagram" class="w-6 h-6 relative" />
+            </a>
+
+            <a
+              href="https://www.youtube.com/@oxygeaventures2916"
+              target="_blank"
+            >
+              <svg-icon name="youtube" class="w-6 h-6 relative" />
             </a>
           </div>
         </nav>
@@ -134,6 +175,7 @@ export default {
       lastScrollPosition: 0,
       showMenu: false,
       language: 'pt',
+      menuDark: true,
     }
   },
 
@@ -158,18 +200,16 @@ export default {
       this.language = language
     },
     onScroll() {
+      const isMobile = window.innerWidth < 1024
+
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
-      if (currentScrollPosition < 0) {
-        return
+
+      if (currentScrollPosition > 1200 && !isMobile) {
+        this.menuDark = false
+      } else {
+        this.menuDark = true
       }
-      // Stop executing this function if the difference between
-      // current scroll position and last scroll position is less than some offset
-      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
-        return
-      }
-      this.showNavbar = currentScrollPosition < this.lastScrollPosition
-      this.lastScrollPosition = currentScrollPosition
     },
   },
 }

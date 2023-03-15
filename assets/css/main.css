@@ -313,3 +313,15 @@ input :focus {
 .grayscale {
   filter: grayscale(1);
 }
+
+.menuWhite {
+  color: black;
+
+  a {
+    color: black;
+  }
+
+  p {
+    color: black;
+  }
+}

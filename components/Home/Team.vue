@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <section id="about" class="bg-black py-10 lg:pt-20 lg:pb-[90px]">
+    <section class="bg-black py-10 lg:pt-20 lg:pb-[90px]">
       <h2
         class="pb-4 font-bold text-2xl text-white lg:text-[42px] lg:pb-6"
         data-aos="fade"

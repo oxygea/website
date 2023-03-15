@@ -2,6 +2,7 @@
 
 <template>
   <section
+    id="ecosystem"
     class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto 2xl:px-[70px]"
   >
     <nuxt-img
