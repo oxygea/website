@@ -22,7 +22,7 @@
           >
             {{ item.title }}
           </h3>
-          <p class="text-xs font-normal leading-4 lg:text-base">
+          <p class="text-xs font-normal font-poppins leading-4 lg:text-base">
             <span
               v-for="(description, descriptionIndex) of item.descriptions"
               :key="`invest-description-${descriptionIndex}`"
@@ -83,7 +83,7 @@ export default {
             this.$t('invest.card4.info'),
             this.$t('invest.card4.info2'),
           ],
-          titleClassNames: 'lg:max-w-[150px]',
+          titleClassNames: '',
           classNames: 'lg:order-4',
         },
         {
@@ -94,7 +94,7 @@ export default {
             this.$t('invest.card5.info2'),
             this.$t('invest.card5.info3'),
           ],
-          titleClassNames: 'lg:max-w-[150px]',
+          titleClassNames: '',
           classNames: 'lg:order-5',
         },
       ],

@@ -5,7 +5,7 @@
       class="bottom-0 !py-5 bg-white transition-all duration-500 fixed w-full z-40"
     >
       <div class="container flex justify-between lg:items-center">
-        <div class="w-full max-w-[171px] lg:max-w-none">
+        <div class="w-full max-w-[171px] sm:max-w-none">
           <p class="font-medium text-[10px] lg:text-xs leading-[14px]">
             {{ $t('popups.cookies.p') }}
             <strong

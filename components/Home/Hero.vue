@@ -12,6 +12,11 @@
         loading="lazy"
         aria-hidden
         class="hidden md:block absolute right-0"
+        :class="[
+          {
+            'left-0 top-[51px]': sliderPageIndex === 2,
+          },
+        ]"
       />
     </transition>
     <transition name="slide-fade">
@@ -24,6 +29,11 @@
         loading="lazy"
         aria-hidden
         class="absolute right-0 md:hidden"
+        :class="[
+          {
+            'top-[64px]': sliderPageIndex === 2,
+          },
+        ]"
       />
     </transition>
 
@@ -37,10 +47,24 @@
         <div
           v-for="(item, index) of itens"
           :key="index"
-          class="w-full !flex flex-col relative"
+          class="w-full !flex flex-col relative lg:ml-2"
+          :class="[
+            {
+              'mt-[102px] lg:mt-0': item.value === 1,
+              'max-w-[500px] mr-[150px] !ml-auto mt-[164px] lg:mt-0':
+                item.value === 2,
+              ' mt-[117px] lg:mt-0': item.value === 3,
+              ' mt-[118px] lg:mt-0': item.value === 4,
+            },
+          ]"
         >
           <p
-            class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-[48px] lg:leading-[56px]"
+            :class="[
+              {
+                '!max-w-[500px]': item.value === 2,
+              },
+            ]"
+            class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
           >
             {{ $t(`hero.card${item.value}.title`) }}
           </p>
@@ -59,7 +83,7 @@
       </VueSlickCarousel>
 
       <div
-        class="w-[197px] flex items-center gap-4 ml-auto pt-20 pb-5 lg:pb-20 lg:w-[250px]"
+        class="w-[197px] flex items-center gap-4 ml-auto pt-4 lg:pt-20 pb-5 lg:pb-20 lg:w-[250px]"
       >
         <p class="text-white font-bold text-base">0{{ sliderPageIndex }}</p>
         <hr class="text-white w-full" />
@@ -93,8 +117,8 @@ export default {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         infinite: true,
         pauseOnHover: false,
         pauseOnFocus: false,

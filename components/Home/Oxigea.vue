@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#EDEDEF]">
+  <section id="future" class="bg-[#EDEDEF]">
     <div
       class="container !py-10 relative overflow-hidden md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px]"
     >

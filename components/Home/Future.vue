@@ -1,5 +1,5 @@
 <template>
-  <section id="future">
+  <section>
     <div
       class="video-hover relative cursor-pointer container !px-0"
       @click="$nuxt.$emit('openModalVideo')"

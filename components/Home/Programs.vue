@@ -1,5 +1,5 @@
 <template>
-  <section id="ecosystem" class="bg-white pt-10 pb-5 lg:py-20" data-aos="fade">
+  <section id="ecosystem" class="bg-white pt-10 pb-5 lg:py-20">
     <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
       {{ $t('programs.title') }}
     </h2>
@@ -84,6 +84,7 @@
     </VueSlickCarousel>
     <div
       class="mt-10 pl-5 hidden lg:flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+      data-aos="fade"
     >
       <div
         v-for="(item, index) of programs"

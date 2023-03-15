@@ -33,11 +33,11 @@
           />
         </div>
 
-        <div class="flex flex-wrap gap-4 lg:gap-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
           <div
             v-for="(item, index) of itens"
             :key="index"
-            class="w-full md:max-w-[380px] bg-green px-6 py-6 lg:max-w-[430px] lg:bg-white transition-colors duration-300 ease-linear"
+            class="w-full bg-green px-6 py-6 lg:bg-white transition-colors duration-300 ease-linear"
             :class="[
               {
                 'lg:bg-green': item.value === selected,

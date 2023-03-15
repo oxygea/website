@@ -47,7 +47,7 @@ export default {
       info4: 'Captura, armazenamento e utilização de CO2 para novos químicos',
     },
     card3: {
-      title: 'Biotecnologia/Nanotecnologia e Novos Materiais',
+      title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
       info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais',
       info2: 'Nanotecnologia aplicada à manufatura',
       info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',

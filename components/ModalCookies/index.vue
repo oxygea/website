@@ -4,7 +4,7 @@
       v-if="show"
       class="h-full bg-gray overflow-auto transition-all duration-500 fixed w-full flex flex-col z-50 lg:h-screen"
     >
-      <div class="container">
+      <div class="w-full lg:max-w-[860px] m-auto">
         <div class="flex justify-end pt-4">
           <svg-icon
             name="close2"

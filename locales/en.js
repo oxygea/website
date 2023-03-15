@@ -3,7 +3,7 @@ export default {
     future: 'Future is collective',
     acceleration: 'Acceleration and Investment',
     ecosystem: 'Ecosystem and Support',
-    about: 'Ecosystem and Support',
+    about: 'About',
     contact: 'Contact',
   },
   hero: {
