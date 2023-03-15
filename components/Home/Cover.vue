@@ -15,7 +15,21 @@
       sizes="320px sm:320px md:300px lg:300px xl:720px"
       :alt="`Imagem cover`"
       :title="`Cover`"
-      class="w-full h-auto grayscale"
+      class="w-full h-auto grayscale 2xl:hidden"
+      data-aos="fade"
+    />
+
+    <nuxt-img
+      preload
+      :src="`cover2.png`"
+      format="webp"
+      fit="fill"
+      quality="100"
+      loading="lazy"
+      sizes="320px sm:320px md:300px lg:300px xl:720px"
+      :alt="`Imagem cover`"
+      :title="`Cover`"
+      class="w-full min-w-[50%] h-auto grayscale hidden 2xl:block"
       data-aos="fade"
     />
 
