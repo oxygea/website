@@ -3,7 +3,7 @@
 <template>
   <section
     id="ecosystem"
-    class="bg-black md:flex items-center lg:max-w-[1440px] lg:mx-auto 2xl:px-[70px]"
+    class="bg-black md:flex items-center lg:max-w-[1440px] 2xl:max-w-none lg:mx-auto"
   >
     <nuxt-img
       preload
