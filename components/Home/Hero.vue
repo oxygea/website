@@ -1,6 +1,5 @@
 <template>
   <section
-    data-section="hero"
     class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">

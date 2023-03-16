@@ -279,15 +279,7 @@ export default {
   color: rgb(130 130 235);
 }
 
-[data-theme='mentors'] [data-link='mentors'] {
-  color: rgb(130 130 235);
-}
-
 [data-theme='acceleration'] [data-link='acceleration'] {
-  color: rgb(130 130 235);
-}
-
-[data-theme='partners'] [data-link='partners'] {
   color: rgb(130 130 235);
 }
 

@@ -2,11 +2,7 @@
 <!-- TODO: add filter -->
 
 <template>
-  <section
-    id="mentors"
-    data-section="mentors"
-    class="bg-white py-10 lg:py-20 mentors-section"
-  >
+  <section class="bg-white py-10 lg:py-20 mentors-section">
     <div class="container">
       <h2 class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6">
         {{ $t('mentors.title') }}

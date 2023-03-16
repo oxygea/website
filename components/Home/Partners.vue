@@ -1,9 +1,5 @@
 <template>
-  <section
-    id="partners"
-    data-section="partners"
-    class="bg-[#EDEDEF] py-10 lg:py-20"
-  >
+  <section data-section="ecosystem" class="bg-[#EDEDEF] py-10 lg:py-20">
     <div class="container">
       <h2
         class="pb-4 font-bold text-2xl lg:text-[42px] lg:pb-6"
