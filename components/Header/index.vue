@@ -1,11 +1,12 @@
 <template>
   <header
+    data-header
     :class="[
       {
         '!bg-white': !menuDark,
       },
     ]"
-    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4 navbar"
+    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4"
   >
     <div class="container flex flex-row justify-between items-center h-[64px]">
       <n-link
@@ -44,6 +45,7 @@
           :class="{ menuWhite: !menuDark }"
         >
           <AnchorMenu
+            data-link="future"
             :url="
               localeLocation({
                 name: 'index',
@@ -56,6 +58,7 @@
             {{ $t('menu.future') }}
           </AnchorMenu>
           <AnchorMenu
+            data-link="acceleration"
             :url="
               localeLocation({
                 name: 'index',
@@ -68,6 +71,7 @@
             {{ $t('menu.acceleration') }}
           </AnchorMenu>
           <AnchorMenu
+            data-link="ecosystem"
             :url="
               localeLocation({
                 name: 'index',
@@ -80,6 +84,7 @@
             {{ $t('menu.ecosystem') }}
           </AnchorMenu>
           <AnchorMenu
+            data-link="about"
             :url="
               localeLocation({
                 name: 'index',
@@ -189,6 +194,32 @@ export default {
 
   mounted() {
     window.addEventListener('scroll', this.onScroll)
+
+    const header = document.querySelector('[data-header]')
+    const sections = [...document.querySelectorAll('[data-section]')]
+
+    const options = {
+      rootMargin: `-${header.offsetHeight - 1}px 0px -${
+        header.offsetHeight - 1
+      }px 0px`,
+      threshold: 0.6,
+    }
+
+    const onIntersect = (entries) => {
+      const visibleSections = entries.filter((entry) => entry.isIntersecting)
+      if (visibleSections.length > 0) {
+        const theme = visibleSections[0].target.dataset.section
+        header.setAttribute('data-theme', theme)
+      } else {
+        header.removeAttribute('data-theme')
+      }
+    }
+
+    const observer = new IntersectionObserver(onIntersect, options)
+
+    sections.forEach((section) => {
+      observer.observe(section)
+    })
   },
 
   beforeDestroy() {
@@ -239,13 +270,27 @@ export default {
   opacity: 0;
 }
 
-.navbar {
-  transform: translate3d(0, 0, 0);
-  transition: 0.1s all ease-out;
+[data-theme='ecosystem'] [data-link='ecosystem'] {
+  color: rgb(130 130 235);
 }
 
-.navbarhidden {
-  box-shadow: none;
-  transform: translate3d(0, -100%, 0);
+[data-theme='future'] [data-link='future'] {
+  color: rgb(130 130 235);
+}
+
+[data-theme='mentors'] [data-link='mentors'] {
+  color: rgb(130 130 235);
+}
+
+[data-theme='acceleration'] [data-link='acceleration'] {
+  color: rgb(130 130 235);
+}
+
+[data-theme='partners'] [data-link='partners'] {
+  color: rgb(130 130 235);
+}
+
+[data-theme='about'] [data-link='about'] {
+  color: rgb(130 130 235);
 }
 </style>

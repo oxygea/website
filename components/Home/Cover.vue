@@ -3,6 +3,7 @@
 <template>
   <section
     id="ecosystem"
+    data-section="ecosystem"
     class="bg-black md:flex items-center lg:max-w-[1440px] 2xl:max-w-none lg:mx-auto"
   >
     <nuxt-img

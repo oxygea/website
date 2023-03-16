@@ -1,5 +1,5 @@
 <template>
-  <main ref="main">
+  <main>
     <Hero />
     <Future />
     <Oxigea />
