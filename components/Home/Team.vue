@@ -9,7 +9,7 @@
       </h2>
       <p
         data-aos="fade"
-        class="font-normal text-xs leading-4 pb-10 text-white lg:max-w-[530px] lg:ml-[110px] lg:text-base"
+        class="font-normal text-xs font-poppins leading-4 pb-10 text-white lg:max-w-[530px] lg:ml-[110px] lg:text-base"
       >
         {{ $t('team.desc') }}
       </p>

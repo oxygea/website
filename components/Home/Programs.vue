@@ -30,7 +30,9 @@
               <h4 class="font-medium text-xl text-white lg:text-2xl lg:mb-4">
                 {{ $t(`programs.card${item.value}.title`) }}
               </h4>
-              <p class="font-normal text-xs text-white leading-4 lg:text-sm">
+              <p
+                class="font-normal text-xs text-white leading-4 lg:text-sm font-poppins"
+              >
                 {{ $t(`programs.card${item.value}.desc`) }}
               </p>
             </div>
@@ -58,7 +60,7 @@
             <div>
               <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
               <ul
-                class="list-disc pt-4 text-sm font-normal leading-4 pl-[15px] flex flex-col gap-2"
+                class="list-disc pt-4 text-sm font-normal font-poppins leading-4 pl-[15px] flex flex-col gap-2"
               >
                 <li
                   v-for="(benefit, benefitIndex) in item.benefits"
