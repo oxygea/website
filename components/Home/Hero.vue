@@ -145,6 +145,11 @@ export default {
       line.classList.remove('animation-line')
 
       this.sliderPageIndex = event === 3 ? 1 : event + 2
+
+      this.$refs.carousel.pause()
+      setTimeout(() => {
+        this.$refs.carousel.play()
+      }, 0)
     },
     onSlideChange(event) {
       const line = document.querySelector('#line')
