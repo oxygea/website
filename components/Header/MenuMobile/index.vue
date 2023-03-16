@@ -84,7 +84,7 @@
             </AnchorMenu>
 
             <p
-              class="text-base font-bold -tracking-[2%] h-[50px] flex justify-center items-center"
+              class="text-base font-bold font-poppins -tracking-[2%] h-[50px] flex justify-center items-center"
               @click="$nuxt.$emit('openModalContact')"
             >
               {{ $t('menu.contact') }}

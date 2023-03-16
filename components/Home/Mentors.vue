@@ -8,7 +8,7 @@
         {{ $t('mentors.title') }}
       </h2>
       <p
-        class="font-normal font-poppins text-xs leading-4 pb-10 lg:text-base lg:ml-[110px] lg:max-w-[530px]"
+        class="font-normal font-poppins text-xs pb-10 lg:text-base lg:ml-[110px] lg:max-w-[530px] !leading-6"
       >
         {{ $t('mentors.desc') }}
       </p>
@@ -18,7 +18,9 @@
     </div>
 
     <div class="hidden lg:flex container items-center !pb-10">
-      <p class="font-bold text-base ml-[110px] w-full mr-6 min-w-max">
+      <p
+        class="font-bold text-base ml-[110px] w-full mr-6 min-w-max font-poppins"
+      >
         {{ $t('mentors.filter.title') }}
       </p>
 
@@ -26,7 +28,7 @@
         <div
           v-for="(item, index) of filters"
           :key="index"
-          class="border-solid border border-black py-2 px-4 text-base font-bold min-w-max max-w-max rounded-[100px] mr-2 cursor-pointer"
+          class="border-solid border font-poppins border-black py-2 px-4 text-base font-bold min-w-max max-w-max rounded-[100px] mr-2 cursor-pointer"
           :class="[
             {
               'bg-black': selectedFilter === item,
@@ -45,7 +47,7 @@
         <div
           v-for="(item, index) of filters"
           :key="index"
-          class="border-solid border border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px] mr-2"
+          class="border-solid border font-poppins border-black py-2 px-4 text-xs font-bold min-w-max max-w-max rounded-[100px] mr-2"
           :class="[
             {
               'bg-black': selectedFilter === item,
@@ -89,7 +91,7 @@
                 ]"
               >
                 <p
-                  class="transition-all duration-300 font-medium text-xs lg:min-w-[200px] lg:text-base lg:font-normal"
+                  class="transition-all duration-300 font-medium text-xs font-poppins lg:min-w-[200px] lg:text-base lg:font-normal"
                   :class="[
                     {
                       'text-[#9D9D9D]': mentor.slug !== selectedMentor,
@@ -103,7 +105,7 @@
                 </p>
 
                 <p
-                  class="transition-all duration-300 hidden text-base lg:block"
+                  class="transition-all duration-300 hidden text-base lg:block font-poppins"
                   :class="[
                     {
                       'text-[#9D9D9D]': mentor.slug !== selectedMentor,
@@ -123,7 +125,7 @@
                     quality="100"
                     loading="lazy"
                     sizes="100px sm:100vw lg:300px"
-                    class="w-16 h-16 absolute left-[40%] lg:left-[60%] -translate-x-[70%] lg:w-[180px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
+                    class="w-16 h-16 absolute left-[40%] lg:left-[60%] -translate-x-[70%] lg:w-[220px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
                     :class="[
                       {
                         'opacity-100': mentor.slug === selectedMentor,
@@ -135,7 +137,8 @@
 
                 <a
                   :href="`${mentor.link}`"
-                  class="transition-all absolute left-[65%] lg:left-[85%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+                  target="_blank"
+                  class="transition-all absolute left-[65%] lg:left-[87%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,

@@ -1,12 +1,12 @@
 <template>
   <div id="about" data-section="about" class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20">
     <section class="container">
-      <h2 class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-4" data-aos="fade">
+      <h2 class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6" data-aos="fade">
         {{ $t('portfolio.title') }}
       </h2>
 
       <p
-        class="font-normal font-poppins text-xs leading-4 pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base"
+        class="font-normal font-poppins text-xs pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base !leading-6"
       >
         {{ $t('portfolio.desc') }}
       </p>
@@ -46,7 +46,7 @@
             @mouseenter="($event) => setSelected(item.value)"
           >
             <p
-              class="text-xs font-normal lg:text-sm lg:font-medium lg:max-w-[366px]"
+              class="text-xs font-normal lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[18px]"
             >
               {{ $t(`portfolio.${item.value}`) }}
             </p>

@@ -36,12 +36,12 @@
 
     <div class="container !py-10 lg:ml-[50px]" data-aos="fade">
       <p
-        class="font-normal text-[28px] leading-8 pb-6 text-white lg:max-w-[400px] lg:text-5xl"
+        class="font-normal text-white text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect') }}
       </p>
       <p
-        class="font-bold text-xl text-white leading-6 lg:text-2xl lg:max-w-[418px] lg:font-medium"
+        class="font-bold text-xl text-white lg:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-7"
       >
         {{ $t('cover.innovation') }}
       </p>

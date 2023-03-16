@@ -76,7 +76,7 @@
                 params: { offset: -80 },
               })
             "
-            class="text-violet font-bold text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
+            class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
             >{{ $t(`hero.card${item.value}.cta`) }}</nuxt-link
           >
         </div>

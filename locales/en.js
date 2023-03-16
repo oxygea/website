@@ -167,7 +167,7 @@ export default {
     address1: 'We are located at Cubo by Itaú',
     address2: ' Alameda Vicente Pinzon 54, 11º andar.',
     address3: 'Vila Olímpia, SP. CEP 04547-130',
-    singup: 'We are located at Cubo by Itaú',
+    singup: 'Subscribe and get the latest on our ecosystem.',
     signupPlaceholder: 'Enter your e-mail',
     signit: 'By subscribing to our newsletter you agree with the',
     terms: 'Terms and Conditions',

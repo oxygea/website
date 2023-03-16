@@ -22,7 +22,7 @@
           >
             {{ item.title }}
           </h3>
-          <p class="text-xs font-normal font-poppins leading-4 lg:text-base">
+          <p class="text-xs font-normal font-poppins !leading-6 lg:text-base">
             <span
               v-for="(description, descriptionIndex) of item.descriptions"
               :key="`invest-description-${descriptionIndex}`"

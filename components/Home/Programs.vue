@@ -13,7 +13,7 @@
       <div
         v-for="(item, index) of programs"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-h-[492px] lg:max-w-[277px] lg:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],
@@ -91,7 +91,7 @@
       <div
         v-for="(item, index) of programs"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[492px] lg:max-h-[492px] lg:max-w-[277px] lg:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],
@@ -108,7 +108,9 @@
               <h4 class="font-medium text-xl text-white lg:text-2xl lg:mb-4">
                 {{ $t(`programs.card${item.value}.title`) }}
               </h4>
-              <p class="font-normal text-xs text-white leading-4 lg:text-sm">
+              <p
+                class="font-medium font-poppins text-xs text-white lg:text-sm !leading-[18px]"
+              >
                 {{ $t(`programs.card${item.value}.desc`) }}
               </p>
             </div>
@@ -134,9 +136,11 @@
             class="w-full h-full absolute flex-1 top-0 left-0 flex flex-wrap justify-between p-6"
           >
             <div>
-              <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
+              <h4 class="font-medium text-xl lg:text-2xl">
+                {{ $t('programs.benefits') }}
+              </h4>
               <ul
-                class="list-disc pt-4 text-sm font-normal leading-4 pl-[15px] flex flex-col gap-2"
+                class="list-disc pt-4 text-sm font-medium font-poppins !leading-[18px] pl-[15px] flex flex-col gap-3"
               >
                 <li
                   v-for="(benefit, benefitIndex) in item.benefits"

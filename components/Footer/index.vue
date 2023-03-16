@@ -13,7 +13,7 @@
           <h3 class="font-medium text-xl tracking-tight lg:text-2xl">
             {{ $t('footer.conect') }}
           </h3>
-          <p class="pt-4 pb-10 font-normal text-xs lg:text-base">
+          <p class="pt-4 pb-10 font-normal font-poppins text-xs lg:text-base">
             {{ $t('footer.address1') }}
             <span class="block mt-2 lg:mt-4"
               >{{ $t('footer.address2') }}
@@ -31,7 +31,7 @@
           </p>
           <label
             for="email"
-            class="flex w-ful justify-between items-center pt-10 pb-4 lg:border-b-[1px] lg:border-black"
+            class="flex w-ful justify-between font-poppins items-center pt-10 pb-4 border-b-[1px] border-black"
           >
             <input
               type="email"
@@ -41,7 +41,7 @@
             />
             <svg-icon name="arrowRight" class="w-4 h-4 cursor-pointer" />
           </label>
-          <p class="font-normal text-xs pt-6 lg:text-sm">
+          <p class="font-normal text-xs font-poppins pt-6 lg:text-sm">
             {{ $t('footer.signit') }}
             <strong
               class="cursor-pointer underline"
@@ -64,7 +64,7 @@
       <div
         class="flex justify-between items-center pt-14 lg:border-t-[1px] border-black"
       >
-        <div class="font-normal text-xs lg:text-base">
+        <div class="font-normal font-poppins text-xs lg:text-base">
           {{ $t('footer.oxygea') }}
         </div>
         <div class="flex gap-5 items-center">

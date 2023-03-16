@@ -10,7 +10,7 @@
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">US$150MM</p>
         <p
-          class="text-violet text-[12px] max-w-[91px] font-normal leading-4 xl:text-base lg:max-w-[150px]"
+          class="text-violet text-[12px] max-w-[91px] font-normal font-poppins leading-4 xl:text-base lg:max-w-[150px] lg:!leading-6"
         >
           {{ $t('numbers.capital') }}
         </p>
@@ -23,7 +23,7 @@
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">4</p>
         <p
-          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base lg:max-w-[110px]"
+          class="text-violet text-[12px] font-poppins font-normal leading-4 max-w-[128px] xl:text-base lg:max-w-[110px] lg:!leading-6"
         >
           {{ $t('numbers.companies') }}
         </p>
@@ -36,7 +36,7 @@
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
         <p
-          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base lg:max-w-[220px]"
+          class="text-violet text-[12px] font-poppins font-normal leading-4 max-w-[128px] xl:text-base lg:max-w-[220px] lg:!leading-6"
         >
           {{ $t('numbers.search') }}
         </p>
@@ -49,7 +49,7 @@
       >
         <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
         <p
-          class="text-violet text-[12px] font-normal leading-4 max-w-[128px] xl:text-base"
+          class="text-violet text-[12px] font-poppins font-normal leading-4 max-w-[128px] xl:text-base lg:!leading-6"
         >
           {{ $t('numbers.plants') }}
         </p>

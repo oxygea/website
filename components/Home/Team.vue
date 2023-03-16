@@ -36,10 +36,12 @@
               :title="item.name"
               class="w-[164px] h-[164px]"
             />
-            <p class="text-white font-normal text-xs lg:text-base pt-4 pb-1">
+            <p
+              class="text-white font-normal text-xs lg:text-base pt-4 pb-1 font-poppins"
+            >
               {{ item.name }}
             </p>
-            <p class="text-white font-bold text-xxs lg:text-xs">
+            <p class="text-white font-bold text-xxs lg:text-xs font-poppins">
               {{ item.job }}
             </p>
             <a :href="`${item.linkedin}`" target="_blank">
@@ -54,7 +56,7 @@
           class="w-[164px] h-[164px] bg-[#141414] flex items-center justify-center"
         >
           <p
-            class="cursor-pointer rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300"
+            class="cursor-pointer rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
             @click="$nuxt.$emit('openModalContact')"
           >
             {{ $t('team.part') }}
