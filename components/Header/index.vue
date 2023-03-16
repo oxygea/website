@@ -230,6 +230,7 @@ export default {
     onSelectLanguage(language) {
       this.language = language
     },
+
     onScroll() {
       const isMobile = window.innerWidth < 1024
 
