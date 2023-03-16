@@ -86,7 +86,6 @@ export default {
         t3: 'Access to a network of highly qualified advisors.',
         t4: 'Business Model Assessment and Solution.',
         t5: 'Support in MVP and Product Development.',
-        t6: 'Legal, Technological and Compliance Support',
       },
     },
     card2: {
@@ -98,7 +97,6 @@ export default {
         t3: 'Access to a network of highly qualified advisors.',
         t4: 'Access to Network of Partners.',
         t5: 'Support in Business Strategy Definition.',
-        t6: 'Support in Marketing Strategy Definition.',
       },
     },
     card3: {

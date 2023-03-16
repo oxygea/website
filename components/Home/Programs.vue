@@ -60,7 +60,7 @@
             <div>
               <h4 class="font-medium text-xl">{{ $t('programs.benefits') }}</h4>
               <ul
-                class="list-disc pt-4 text-sm font-normal font-poppins leading-4 pl-[15px] flex flex-col gap-2"
+                class="max-w-[152px] lg:w-full list-disc pt-4 text-xs lg:text-sm font-normal font-poppins leading-4 pl-[15px] flex flex-col gap-2"
               >
                 <li
                   v-for="(benefit, benefitIndex) in item.benefits"
@@ -180,9 +180,9 @@ export default {
       showMenu3: false,
       showMenu4: false,
       programs: [
-        { value: 1, benefits: 6, heightClassName: 'min-h-[524px]' },
-        { value: 2, benefits: 6, heightClassName: 'min-h-[524px]' },
-        { value: 3, benefits: 5, heightClassName: 'min-h-[404px]' },
+        { value: 1, benefits: 5, heightClassName: 'min-h-[524px]' },
+        { value: 2, benefits: 5, heightClassName: 'min-h-[524px]' },
+        { value: 3, benefits: 4, heightClassName: 'min-h-[404px]' },
         { value: 4, benefits: 4, heightClassName: 'min-h-[380px]' },
       ],
     }
