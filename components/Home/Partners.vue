@@ -17,10 +17,61 @@
 
     <div class="container !pr-0">
       <VueSlickCarousel
-        v-bind="slickOptions"
-        class="flex items-center lg:pl-[108px]"
+        v-bind="slickOptions1"
+        class="flex items-center mb-10 lg:pl-[65px]"
       >
-        <a target="_blank" href="https://www.acecortex.com.br/">
+        <a
+          href="https://abstartups.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="abstartups" class="w-[171px] h-[26px]" />
+        </a>
+        <a
+          href="https://www.abvcap.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="abvcap" class="w-[77px] h-[32px]" />
+        </a>
+        <a
+          href="https://www.acecortex.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="acecortex" class="w-[93px] h-[48px]" />
+        </a>
+        <a
+          href="https://www.cazoololab.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="cazolo" class="w-[110px] h-[26px]" />
+        </a>
+        <a
+          href="https://cubo.network/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="cubo" class="w-[83px] h-[28px]" />
+        </a>
+      </VueSlickCarousel>
+      <VueSlickCarousel
+        v-bind="slickOptions2"
+        class="flex items-center justify-center lg:pl-[160px]"
+      >
+        <a
+          href="https://distrito.me/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="distrito" class="w-[98px] h-[26px]" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.ibi-tech.com/"
+          class="!flex justify-center items-center"
+        >
           <nuxt-img
             preload
             :src="`partners/01.png`"
@@ -31,10 +82,14 @@
             sizes="83px sm:166px lg:300px"
             :alt="`Imagem partners 1`"
             :title="`Partners 1`"
-            class="max-w-[83px] h-[43px] mr-10 lg:mr-[120px]"
+            class="max-w-[41px] h-[48px] m-auto"
           />
         </a>
-        <a target="_blank" href="https://cubo.network/">
+        <a
+          target="_blank"
+          href="https://www.plugandplaytechcenter.com/"
+          class="!flex justify-center items-center"
+        >
           <nuxt-img
             preload
             :src="`partners/02.png`"
@@ -42,13 +97,17 @@
             fit="fill"
             quality="100"
             loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem partners 2`"
-            :title="`Partners 2`"
-            class="max-w-[83px] h-[28px] mr-10 lg:mr-[120px]"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[110px] h-[21px] m-auto"
           />
         </a>
-        <a target="_blank" href="https://www.cazoololab.com.br/">
+        <a
+          target="_blank"
+          href="https://www.touchdownvc.com/"
+          class="!flex justify-center items-center"
+        >
           <nuxt-img
             preload
             :src="`partners/03.png`"
@@ -56,56 +115,15 @@
             fit="fill"
             quality="100"
             loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem partners 3`"
-            :title="`Partners 3`"
-            class="max-w-[110px] h-[26px] mr-10 lg:mr-[120px]"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[132px] h-[28px] m-auto"
           />
         </a>
-        <a target="_blank" href="https://www.ibi-tech.com/">
-          <nuxt-img
-            preload
-            :src="`partners/04.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem partners 4`"
-            :title="`Partners 4`"
-            class="max-w-[41px] h-[48px] mr-10 lg:mr-[120px]"
-          />
-        </a>
-
-        <a target="_blank" href="https://www.plugandplaytechcenter.com/">
-          <nuxt-img
-            preload
-            :src="`partners/05.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem partners 5`"
-            :title="`Partners 5`"
-            class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
-          />
-        </a>
-
-        <a target="_blank" href="https://abstartups.com.br/">
-          <nuxt-img
-            preload
-            :src="`partners/06.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="100px sm:100vw lg:300px"
-            :alt="`Imagem partners 6`"
-            :title="`Partners 6`"
-            class="max-w-[110px] h-[21px] mr-10 lg:mr-[120px]"
-          />
-        </a>
+        <!-- <svg-icon name="ib" class="w-[41px] h-[48px]" />
+        <svg-icon name="plugendplay" class="w-[110px] h-[21px]" />
+        <svg-icon name="touchdown" class="w-[132px] h-[28px]" /> -->
       </VueSlickCarousel>
     </div>
   </section>
@@ -116,13 +134,30 @@ export default {
 
   data() {
     return {
-      slickOptions: {
+      slickOptions1: {
         dots: false,
-        slidesToShow: 2.65,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         infinite: false,
         arrows: false,
-        variableWidth: true,
+        variableWidth: false,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      },
+      slickOptions2: {
+        dots: false,
+        slidesToShow: 4.7,
+        slidesToScroll: 4.7,
+        infinite: false,
+        arrows: false,
+        variableWidth: false,
         responsive: [
           {
             breakpoint: 480,
