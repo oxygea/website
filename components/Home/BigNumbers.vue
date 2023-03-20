@@ -6,7 +6,7 @@
       <div
         data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000"
+        data-aos-duration="1400"
         data-aos-delay="800"
         class="custom-border w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 xl:max-w-[310px] xl:h-[310px]"
       >
@@ -36,7 +36,7 @@
       <div
         data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
-        data-aos-delay="600"
+        data-aos-delay="1000"
         data-aos-duration="800"
         class="custom-border relative -top-10 w-full max-w-[180px] h-[180px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-5 xl:max-w-[310px] xl:h-[310px]"
       >
@@ -51,7 +51,7 @@
       <div
         data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
-        data-aos-delay="400"
+        data-aos-delay="600"
         data-aos-duration="800"
         class="custom-border custom-border--gray relative -top-[60px] w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-7 xl:max-w-[213px] xl:h-[213px]"
       >

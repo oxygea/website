@@ -1,5 +1,3 @@
-<!-- FIXME: adjust spaces -->
-
 <template>
   <section
     id="ecosystem"

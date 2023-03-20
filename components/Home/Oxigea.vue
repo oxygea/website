@@ -1,7 +1,7 @@
 <template>
   <section id="acceleration" data-section="acceleration" class="bg-[#EDEDEF]">
     <div
-      class="container !py-10 relative overflow-hidden md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px]"
+      class="container !py-10 relative overflow-hidden md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px] md:justify-end"
     >
       <nuxt-img
         preload
@@ -16,6 +16,7 @@
       />
 
       <nuxt-img
+        data-img
         preload
         :src="`home/bg-desktop.png`"
         format="webp"
@@ -23,11 +24,11 @@
         quality="100"
         loading="lazy"
         aria-hidden
-        class="hidden md:block md:w-[300px] lg:w-full lg:max-w-[640px]"
+        class="hidden md:block md:w-[300px] lg:w-full lg:max-w-[640px] absolute -left-[460px]"
         data-aos="fade"
       />
 
-      <div class="w-full md:max-w-[418px] relative z-10">
+      <div class="w-full md:max-w-[418px] relative z-10 md:py-[178px]">
         <p
           class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
           data-aos="fade-up"
@@ -107,5 +108,23 @@
 <script>
 export default {
   name: 'HomeOxigea',
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      const imagem = document.querySelector('[data-img]')
+      const posicaoVertical = imagem.offsetTop
+      const fatorParalaxe = 0.5
+      const deslocamento = (window.scrollY + posicaoVertical) * fatorParalaxe
+
+      if (deslocamento < 500) {
+        imagem.style.transform = `translateX(${deslocamento}px)`
+      }
+    },
+  },
 }
 </script>
