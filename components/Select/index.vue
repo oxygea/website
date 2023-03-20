@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-[34px] relative w-full">
+  <div class="pb-[25px] relative w-full z-10">
     <span class="w-full pb-4 block font-medium text-sm font-poppins">{{
       label
     }}</span>

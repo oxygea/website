@@ -1,6 +1,6 @@
 export default {
   menu: {
-    future: 'O futuro é coletivo',
+    future: 'O Futuro é Coletivo',
     acceleration: 'Aceleração e Investimento',
     ecosystem: 'Ecossistema e Colaboração',
     about: 'Somos Oxygea',
@@ -54,12 +54,12 @@ export default {
     },
     card4: {
       title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: Analytics, automação etecnologias avançadas de manufatura',
+      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
       info2:
         'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
     },
     card5: {
-      title: 'Plástico como solução sustentável',
+      title: 'Plástico como Solução Sustentável',
       info: 'Biopolímeros',
       info2: 'Aplicações do plástico com ganho de performance',
       info3: 'Manufatura aditiva',

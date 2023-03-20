@@ -41,7 +41,9 @@
             >
               {{ item.name }}
             </p>
-            <p class="text-white font-bold text-xxs lg:text-xs font-poppins">
+            <p
+              class="text-white font-bold text-xxs lg:text-xs font-poppins max-w-[148px]"
+            >
               {{ item.job }}
             </p>
             <a :href="`${item.linkedin}`" target="_blank">

@@ -52,7 +52,12 @@ export default {
         { hid: 'og-type', property: 'og:type', content: 'website' },
         { hid: 'og-url', property: 'og:url', content: '' },
         { hid: 'og:title', property: 'og:title', content: 'Oxygea' },
-        { hid: 'description', name: 'description', content: '' },
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Somos um Corporate Venture Capital, um hub de aceleração e Venture Building com foco em sustentabilidade e transformação digital na indústria.',
+        },
         {
           hid: 'og:image',
           property: 'og:image',

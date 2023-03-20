@@ -325,3 +325,10 @@ input :focus {
     color: black;
   }
 }
+
+.partners {
+  .slick-track {
+    align-items: center;
+    display: flex !important;
+  }
+}

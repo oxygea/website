@@ -92,6 +92,7 @@ export default {
           descriptions: [
             this.$t('invest.card5.info'),
             this.$t('invest.card5.info2'),
+            this.$t('invest.card5.info3'),
           ],
           titleClassNames: '',
           classNames: 'lg:order-5',

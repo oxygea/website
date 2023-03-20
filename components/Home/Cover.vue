@@ -34,7 +34,11 @@
       data-aos="fade"
     />
 
-    <div class="container !py-10 lg:ml-[50px]" data-aos="fade">
+    <div
+      class="container !py-10 lg:ml-[50px]"
+      data-aos="fade"
+      data-aos-duration="1000"
+    >
       <p
         class="font-normal text-white text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >

@@ -31,6 +31,7 @@
         <p
           class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
           data-aos="fade"
+          data-aos-duration="1000"
         >
           {{ $t('oxygea.desc') }}
         </p>

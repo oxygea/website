@@ -41,7 +41,7 @@
       <!-- menu desktop-->
       <div class="h-full lg:flex justify-center items-center hidden">
         <nav
-          class="text-white flex flex-row gap-8 pt-4"
+          class="text-white flex flex-row gap-8"
           :class="{ menuWhite: !menuDark }"
         >
           <AnchorMenu

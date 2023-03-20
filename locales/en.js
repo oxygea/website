@@ -53,15 +53,16 @@ export default {
       info3: 'Digital technologies for accelerating R&D developments',
     },
     card4: {
+      title: 'Smart Factory & Future Mobility',
+      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
+      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
+      info3: 'Additive manufacturing',
+    },
+    card5: {
       title: 'Plastic as sustainable solution',
       info: 'Biopolymers',
       info2: 'Plastic applications with performance gain',
       info3: 'Additive manufacturing',
-    },
-    card5: {
-      title: 'Smart Factory & Future Mobility',
-      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
-      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
     },
   },
   numbers: {

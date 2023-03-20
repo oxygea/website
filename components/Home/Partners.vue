@@ -18,7 +18,7 @@
     <div class="container !pr-0">
       <VueSlickCarousel
         v-bind="slickOptions1"
-        class="flex items-center mb-10 lg:pl-[65px]"
+        class="mb-10 lg:pl-[65px] partners"
       >
         <a
           href="https://abstartups.com.br/"
@@ -58,7 +58,7 @@
       </VueSlickCarousel>
       <VueSlickCarousel
         v-bind="slickOptions2"
-        class="flex items-center justify-center lg:pl-[160px]"
+        class="flex items-center justify-center lg:pl-[160px] partners"
       >
         <a
           href="https://distrito.me/"
