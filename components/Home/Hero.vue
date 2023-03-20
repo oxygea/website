@@ -71,7 +71,9 @@
           <p
             v-if="item.value === 2"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-            @click="$nuxt.$emit('openModalContact')"
+            @click="
+              $nuxt.$emit('openModalContact'), $nuxt.$emit('setValueModal')
+            "
           >
             {{ $t(`hero.card${item.value}.cta`) }}
           </p>
@@ -125,8 +127,8 @@ export default {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         infinite: true,
         pauseOnHover: false,
         pauseOnFocus: false,

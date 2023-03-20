@@ -1,7 +1,11 @@
 <template>
   <div>
     <MenuMobile :show="showMenu" @close-modal="showMenu = !showMenu" />
-    <ModalContact :show="showModal" @close-modal="showModal = !showModal" />
+    <ModalContact
+      :select="valueModal"
+      :show="showModal"
+      @close-modal="showModal = !showModal"
+    />
     <ModalVideo
       :show="showModalVideo"
       @close-modal="showModalVideo = !showModalVideo"
@@ -57,6 +61,7 @@ export default {
       showModalTerms: false,
       showModalCookies: false,
       acceptedCookies: false,
+      valueModal: false,
     }
   },
   head() {
@@ -83,6 +88,7 @@ export default {
     this.$nuxt.$on('openModalTerms', () => this.openModalTerms())
     this.$nuxt.$on('openModalCookies', () => this.openModalCookies())
     this.$nuxt.$on('saveAcceptedCookies', () => this.saveAcceptedCookies())
+    this.$nuxt.$on('setValueModal', () => this.setValueModal())
   },
   mounted() {
     const acceptedCookies = localStorage.getItem('@oxygea/cookies')
@@ -114,6 +120,9 @@ export default {
     saveAcceptedCookies() {
       localStorage.setItem('@oxygea/cookies', true)
       this.acceptedCookies = false
+    },
+    setValueModal() {
+      this.valueModal = { id: 4, name: 'Faça parte do time Oxygea' }
     },
   },
 }
