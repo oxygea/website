@@ -36,7 +36,7 @@
 
     <div
       class="container !py-10 lg:ml-[50px]"
-      data-aos="fade"
+      data-aos="fade-up"
       data-aos-duration="1000"
     >
       <p

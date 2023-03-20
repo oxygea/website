@@ -135,11 +135,11 @@ export default {
       itens: [
         {
           value: 1,
-          hash: 'ecosystem',
+          hash: 'investment',
         },
         { value: 2, hash: 'partners' },
-        { value: 3, hash: 'acceleration' },
-        { value: 4, hash: 'mentors' },
+        { value: 3, hash: 'programs' },
+        { value: 4, hash: 'partners' },
       ],
     }
   },

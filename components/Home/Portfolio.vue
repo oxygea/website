@@ -46,7 +46,7 @@
             @mouseenter="($event) => setSelected(item.value)"
           >
             <p
-              class="text-xs font-normal lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[18px]"
+              class="text-xs font-normal font-poppins lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[18px]"
             >
               {{ $t(`portfolio.${item.value}`) }}
             </p>

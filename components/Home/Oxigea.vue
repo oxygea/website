@@ -30,7 +30,7 @@
       <div class="w-full md:max-w-[418px] relative z-10">
         <p
           class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
-          data-aos="fade"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           {{ $t('oxygea.desc') }}
