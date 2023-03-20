@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black hero w-full section-hero relative container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
+    class="bg-black hero w-full section-hero container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">
       <nuxt-img
@@ -125,8 +125,8 @@ export default {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         infinite: true,
         pauseOnHover: false,
         pauseOnFocus: false,
