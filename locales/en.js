@@ -1,4 +1,8 @@
 export default {
+  head: {
+    description:
+      'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in industry.',
+  },
   menu: {
     future: 'Future is collective',
     acceleration: 'Acceleration and Investment',

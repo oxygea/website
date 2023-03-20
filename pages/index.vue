@@ -55,8 +55,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Somos um Corporate Venture Capital, um hub de aceleração e Venture Building com foco em sustentabilidade e transformação digital na indústria.',
+          content: this.$t('head.description'),
         },
         {
           hid: 'og:image',

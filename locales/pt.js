@@ -1,4 +1,8 @@
 export default {
+  head: {
+    description:
+      'Somos um Corporate Venture Capital, um hub de aceleração e Venture Building com foco em sustentabilidade e transformação digital na indústria.',
+  },
   menu: {
     future: 'O Futuro é Coletivo',
     acceleration: 'Aceleração e Investimento',
