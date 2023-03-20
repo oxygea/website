@@ -33,7 +33,13 @@ export default {
     },
   },
   oxygea: {
-    desc: 'Oxygea está aqui para acelerar e investir em novos negócios. Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
+    desc1: 'Oxygea está aqui para acelerar e',
+    desc2: 'investir em novos negócios',
+    desc3: 'Valorizamos o ecossistema',
+    desc4: 'articulamos com redes globais e',
+    desc5: 'locais para proporcionar o melhor',
+    desc6: 'às startups que vão transformar',
+    desc7: 'o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
@@ -76,7 +82,9 @@ export default {
     plants: 'plantas piloto',
   },
   startup: {
-    title: 'Entre nossos programas, um deles é pra você.',
+    title1: 'Entre nossos',
+    title2: 'programas, um',
+    title3: 'é pra você.',
     desc: 'Conheça e faça parte.',
   },
   programs: {
@@ -126,8 +134,11 @@ export default {
     },
   },
   cover: {
-    connect:
-      'Nos conectamos com parceiros de referência global e mentores especializados -',
+    connect1: 'Nos conectamos',
+    connect2: 'com parceiros de',
+    connect3: 'referência global',
+    connect4: 'e mentores',
+    connect5: 'especializados -',
     innovation: 'gente que acorda e dorme pensando inovação, como você.',
   },
   partners: {

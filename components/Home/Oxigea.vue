@@ -31,10 +31,75 @@
         <p
           class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-delay="100"
         >
-          {{ $t('oxygea.desc') }}
+          {{ $t('oxygea.desc1') }}
         </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos-delay="100"
+          data-aos="fade-up"
+        >
+          {{ $t('oxygea.desc2') }}
+        </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {{ $t('oxygea.desc3') }}
+        </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {{ $t('oxygea.desc4') }}
+        </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {{ $t('oxygea.desc5') }}
+        </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {{ $t('oxygea.desc6') }}
+        </p>
+        <p
+          class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          {{ $t('oxygea.desc7') }}
+        </p>
+        <div v-if="$i18n.locale !== 'pt'">
+          <p
+            class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            {{ $t('oxygea.desc8') }}
+          </p>
+          <p
+            class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            {{ $t('oxygea.desc9') }}
+          </p>
+          <p
+            class="text-xs font-medium lg:text-2xl !leading-7 !-tracking-[0.03em]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            {{ $t('oxygea.desc10') }}
+          </p>
+        </div>
       </div>
     </div>
   </section>

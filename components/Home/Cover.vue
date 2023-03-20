@@ -34,17 +34,39 @@
       data-aos="fade"
     />
 
-    <div
-      class="container !py-10 lg:ml-[50px]"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
+    <div class="container !py-10 lg:ml-[50px]">
       <p
-        class="font-normal text-white text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        data-aos="fade-up"
+        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
-        {{ $t('cover.connect') }}
+        {{ $t('cover.connect1') }}
       </p>
       <p
+        data-aos="fade-up"
+        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+      >
+        {{ $t('cover.connect2') }}
+      </p>
+      <p
+        data-aos="fade-up"
+        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+      >
+        {{ $t('cover.connect3') }}
+      </p>
+      <p
+        data-aos="fade-up"
+        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+      >
+        {{ $t('cover.connect4') }}
+      </p>
+      <p
+        data-aos="fade-up"
+        class="font-normal text-white text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+      >
+        {{ $t('cover.connect5') }}
+      </p>
+      <p
+        data-aos="fade-up"
         class="font-bold text-xl text-white lg:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-7"
       >
         {{ $t('cover.innovation') }}

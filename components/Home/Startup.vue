@@ -33,17 +33,30 @@
         data-aos="fade"
       />
 
-      <div
-        class="container !py-10 lg:ml-[50px]"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div class="container !py-10 lg:ml-[50px]">
         <p
+          data-aos="fade-up"
+          class="font-normal text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px]"
+        >
+          {{ $t('startup.title1') }}
+        </p>
+        <p
+          data-aos="fade-up"
+          class="font-normal text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px]"
+        >
+          {{ $t('startup.title2') }}
+        </p>
+        <p
+          data-aos="fade-up"
           class="font-normal text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px]"
         >
-          {{ $t('startup.title') }}
+          {{ $t('startup.title3') }}
         </p>
-        <p class="font-bold text-xl lg:text-2xl lg:max-w-[418px]">
+
+        <p
+          data-aos="fade-up"
+          class="font-bold text-xl lg:text-2xl lg:max-w-[418px]"
+        >
           {{ $t('startup.desc') }}
         </p>
       </div>
