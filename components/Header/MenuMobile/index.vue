@@ -133,7 +133,7 @@
                   class="w-6 h-6 relative text-yellow mr-4"
                 />
               </a>
-              <a
+              <!-- <a
                 href="https://www.youtube.com/@oxygeaventures2916"
                 target="_blank"
               >
@@ -141,7 +141,7 @@
                   name="youtube"
                   class="w-6 h-6 relative text-yellow mr-4"
                 />
-              </a>
+              </a> -->
             </div>
           </div>
         </div>

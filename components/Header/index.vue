@@ -134,12 +134,12 @@
               <svg-icon name="instagram-white" class="w-6 h-6 relative" />
             </a>
 
-            <a
+            <!-- <a
               href="https://www.youtube.com/@oxygeaventures2916"
               target="_blank"
             >
               <svg-icon name="youtube-white" class="w-6 h-6 relative" />
-            </a>
+            </a> -->
           </div>
 
           <div :class="{ hidden: menuDark }" class="flex items-center gap-4">
@@ -153,12 +153,12 @@
               <svg-icon name="instagram" class="w-6 h-6 relative" />
             </a>
 
-            <a
+            <!-- <a
               href="https://www.youtube.com/@oxygeaventures2916"
               target="_blank"
             >
               <svg-icon name="youtube" class="w-6 h-6 relative" />
-            </a>
+            </a> -->
           </div>
         </nav>
       </div>

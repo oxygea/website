@@ -81,12 +81,12 @@
             <svg-icon name="instagram" class="w-6 h-6 cursor-pointer" />
           </a>
 
-          <a href="https://www.youtube.com/@oxygeaventures2916" target="_blank">
+          <!-- <a href="https://www.youtube.com/@oxygeaventures2916" target="_blank">
             <svg-icon
               name="youtube"
               class="w-[30px] h-[21px] -ml-1 cursor-pointer"
             />
-          </a>
+          </a> -->
         </div>
       </div>
     </div>

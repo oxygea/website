@@ -91,7 +91,7 @@ export default {
     title: 'Programas',
     benefits: 'Benefícios',
     card1: {
-      title: 'Incubação',
+      title: 'Incubação / VB',
       desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
       benefits: {
         t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
@@ -114,7 +114,7 @@ export default {
     },
     card3: {
       title: 'Investimento / CVC',
-      desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento',
+      desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento.',
       benefits: {
         t1: 'Acesso ao Network de Parceiros.',
         t2: 'Acesso aos canais de distribuição.',
@@ -126,10 +126,10 @@ export default {
       title: 'Suporte In House',
       desc: 'Não importa o estágio de maturidade, todas as empresas do nosso portfolio sempre terão acesso às principais capabilities de desenvolvimento.',
       benefits: {
-        t1: 'Mentoria de Experts',
+        t1: 'Mentoria de Experts.',
         t2: 'Acesso a bases de dados e informações qualificadas sobre a indústria.',
-        t3: 'Acesso a laboratórios, centros de pesquisa e plantas piloto',
-        t4: 'Espaço Físico e Serviços Compartilhados',
+        t3: 'Acesso a laboratórios, centros de pesquisa e plantas piloto.',
+        t4: 'Espaço Físico e Serviços Compartilhados.',
       },
     },
   },
@@ -166,7 +166,7 @@ export default {
     title: 'Portfolio de empresas',
     desc: '4 novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
     XTELLAR:
-      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/ bio - polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
+      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/biopolímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
     LOADSHARK:
       'Sistema de gerenciamento de frete, com funcionalidade de leilão reverso para embarcadores.',
     BABEL:

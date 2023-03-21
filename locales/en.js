@@ -4,7 +4,7 @@ export default {
       'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in industry.',
   },
   menu: {
-    future: 'Future is collective',
+    future: 'Future is Collective',
     acceleration: 'Acceleration and Investment',
     ecosystem: 'Ecosystem and Support',
     about: 'About',
@@ -94,14 +94,14 @@ export default {
     title: 'Programas',
     benefits: 'Benefits',
     card1: {
-      title: 'Incubation',
+      title: 'Incubation / VB',
       desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
       benefits: {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Investment up to BRL 700K for MVP development.',
-        t3: 'Access to a network of highly qualified advisors.',
-        t4: 'Business Model Assessment and Solution.',
-        t5: 'Support in MVP and Product Development.',
+        t3: 'Business Model Assessment and Solution.',
+        t4: 'Support in MVP and Product Development.',
+        t5: 'Legal, Technological and Compliance Support.',
       },
     },
     card2: {
@@ -149,7 +149,7 @@ export default {
     desc: 'Do it together principle boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
   },
   mentors: {
-    title: 'Advisores',
+    title: 'Advisors',
     desc: 'Experts renowned in various fields of expertise work with us. Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
     filter: {
       title: 'FILTER BY',
@@ -161,7 +161,7 @@ export default {
       FinanceAndStrategy: 'Finance and Strategy',
       SustainableDevelopment: 'Sustainable Development',
       ResearchAndDevelopment: 'Research and Development',
-      HumanResources: 'Human Resources',
+      HumanResources: 'People',
       more: 'KNOW MORE',
     },
   },
@@ -169,7 +169,7 @@ export default {
     title: 'Portfolio of companies',
     desc: '4 new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
     XTELLAR:
-      'Production and sale of for 3D printer filament, using conventional/ biopolymer technology and PC technology of Braskem, to provide sustainable and efficient solutions.',
+      'Production and sale of for 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
     BABEL:
@@ -184,8 +184,8 @@ export default {
   footer: {
     conect: 'We are with you to cocreate new paths to a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
-    address2: ' Alameda Vicente Pinzon 54, 11º andar.',
-    address3: 'Vila Olímpia, SP. CEP 04547-130',
+    address2: 'Alameda Vicente Pinzon, 54,11th floor.',
+    address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
     singup: 'Subscribe and get the latest on our ecosystem.',
     signupPlaceholder: 'Enter your e-mail',
     signit: 'By subscribing to our newsletter you agree with the',
