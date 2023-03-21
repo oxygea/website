@@ -1,7 +1,11 @@
 <template>
-  <section id="acceleration" data-section="acceleration" class="bg-[#EDEDEF]">
+  <section
+    id="acceleration"
+    data-section="acceleration"
+    class="bg-[#EDEDEF] overflow-clip"
+  >
     <div
-      class="container !py-10 relative overflow-hidden md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px] md:justify-end"
+      class="container !py-10 relative md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px] md:justify-end"
     >
       <nuxt-img
         preload
