@@ -33,13 +33,11 @@ export default {
     },
   },
   oxygea: {
-    desc1: 'Oxygea está aqui para acelerar e',
-    desc2: 'investir em novos negócios',
-    desc3: 'Valorizamos o ecossistema',
-    desc4: 'articulamos com redes globais e',
-    desc5: 'locais para proporcionar o melhor',
-    desc6: 'às startups que vão transformar',
-    desc7: 'o futuro da indústria.',
+    desc1: 'Oxygea está aqui para acelerar e investir em novos negócios.',
+    desc2:
+      'Investimos em pessoas e seus negócios, que impulsionarão a inovação sustentável e a transformação digital.',
+    desc3:
+      'Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
