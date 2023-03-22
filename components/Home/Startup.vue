@@ -48,12 +48,38 @@
         </p>
         <p
           data-aos="fade-up"
-          class="font-normal text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px]"
+          class="font-normal text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px]"
+          :class="{ 'pb-6': $i18n.locale === 'pt' }"
         >
           {{ $t('startup.title3') }}
         </p>
 
         <p
+          v-if="$i18n.locale !== 'pt'"
+          data-aos="fade-up"
+          class="font-normal text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px]"
+        >
+          {{ $t('startup.title4') }}
+        </p>
+
+        <p
+          v-if="$i18n.locale !== 'pt'"
+          data-aos="fade-up"
+          class="font-normal text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px]"
+        >
+          {{ $t('startup.title5') }}
+        </p>
+
+        <p
+          v-if="$i18n.locale !== 'pt'"
+          data-aos="fade-up"
+          class="font-normal text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px]"
+        >
+          {{ $t('startup.title6') }}
+        </p>
+
+        <p
+          v-if="$i18n.locale === 'pt'"
           data-aos="fade-up"
           class="font-bold text-xl lg:text-2xl lg:max-w-[418px]"
         >

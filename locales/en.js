@@ -13,7 +13,7 @@ export default {
   hero: {
     card1: {
       title:
-        'We invest in and accelerate startups dedicated to sustainability and technology to transform the industry`s future.',
+        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of industry.',
       cta: 'Investment Thesis',
     },
     card2: {
@@ -23,20 +23,19 @@ export default {
     },
     card3: {
       title:
-        'From acceleration to growth investments, we are with you in every step of your startup development.',
+        'From acceleration to growth investments, we are with you in every step of your startup journey.',
       cta: 'Our programs',
     },
     card4: {
       title:
-        'To be connected with the ecosystem makes a difference. We believe we can do it together, locally and globally.',
+        'To be connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
       cta: 'Our partners',
     },
   },
   oxygea: {
-    desc1: 'Oxygea is here to accelerate and invest in new business.',
+    desc1:
+      'Oxygea is here to accelerate and invest in people and their business that will drive sustainable innovation and digital transformation.',
     desc2:
-      'We invest in people and their business that will drive sustainable innovation and digital transformation.',
-    desc3:
       'We value ecosystems and we cooperate with local and global networks to provide the best to startups that will transform the future of the industry.',
   },
   invest: {
@@ -44,8 +43,8 @@ export default {
     card1: {
       title: 'Circular Economy',
       info: 'Technologies intended for returning plastic waste to production chain',
-      info2: 'Longer useful life of plastic applications',
-      info3: 'Reduced need of production, use or disposal',
+      info2: 'Extend useful lifecycle of plastic applications',
+      info3: 'A reduction in the need for production, use, or disposal',
     },
     card2: {
       title: 'Carbon Neutrality',
@@ -80,10 +79,12 @@ export default {
     plants: 'pilot plants',
   },
   startup: {
-    title1: 'We have the perfect',
-    title2: 'acceleration program',
-    title3: 'for you.',
-    desc: 'See our programs and join in.',
+    title1: 'Discover our',
+    title2: 'programs and',
+    title3: 'figure the one',
+    title4: 'that best fits the',
+    title5: 'stage of your',
+    title6: 'startup.',
   },
   programs: {
     title: 'Programas',
@@ -132,8 +133,8 @@ export default {
     },
   },
   cover: {
-    connect1: 'We connect',
-    connect2: 'with global',
+    connect1: 'We are connected',
+    connect2: 'to global',
     connect3: 'reference partners',
     connect4: 'and specialized',
     connect5: 'advisors - ',
@@ -142,11 +143,11 @@ export default {
   },
   partners: {
     title: 'Partners',
-    desc: 'Do it together principle boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
+    desc: 'Doing things together boosts results.. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
   },
   mentors: {
-    title: 'Advisors',
-    desc: 'Experts renowned in various fields of expertise work with us. Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
+    title: 'Mentors',
+    desc: 'Experts renowned in various fields ofexpertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
     filter: {
       title: 'FILTER BY',
       all: 'All',
@@ -163,7 +164,7 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: '4 new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
+    desc: '4 new ventures emerge as a legacy from Braskem"s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
     XTELLAR:
       'Production and sale of for 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
     LOADSHARK:
@@ -178,7 +179,8 @@ export default {
     part: 'BE PART OF IT',
   },
   footer: {
-    conect: 'We are with you to cocreate new paths to a sustainable future.',
+    conect:
+      'Connected to the startup ecosystem to accelerate and invest in a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
     address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
@@ -650,7 +652,7 @@ export default {
     },
     contact: {
       h3: 'Get in contact',
-      p: 'We want to hear you! Talk to us.',
+      p: 'We want to hear from you! Talk to us.',
       l1: 'Message',
       l2: 'Text is too long',
       l3: 'characters',
