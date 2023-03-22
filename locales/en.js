@@ -55,21 +55,21 @@ export default {
       info4: 'CO2 capture, storage and utilization for new chemicals.',
     },
     card3: {
-      title: 'Biotechnology/Nanotechnology and New Materials',
+      title: 'Biotechnology/ Nanotechnology and New Materials',
       info: 'New biological and biochemical routes for chemical, plastics and materials production',
       info2: 'Nanotechnology applied to manufacturing',
       info3: 'Digital technologies for accelerating R&D developments',
     },
     card4: {
-      title: 'Smart Factory & Future Mobility',
-      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
-      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
-      info3: 'Additive manufacturing',
-    },
-    card5: {
       title: 'Plastic as sustainable solution',
       info: 'Biopolymers',
       info2: 'Plastic applications with performance gain',
+      info3: 'Additive manufacturing',
+    },
+    card5: {
+      title: 'Smart Factory & Future Mobility',
+      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
+      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
       info3: 'Additive manufacturing',
     },
   },
@@ -88,6 +88,7 @@ export default {
   programs: {
     title: 'Programas',
     benefits: 'Benefits',
+    cta: 'ENROLL YOUR STARTUP',
     card1: {
       title: 'Incubation / VB',
       desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
@@ -125,7 +126,7 @@ export default {
       desc: 'Regardless of the maturity stage, all companies in our portfolio will always have access to key development capabilities.',
       benefits: {
         t1: 'Expert Advisory.',
-        t2: 'Access to qualified database and information on industry.',
+        t2: 'Information on the market and qualified industry databases.',
         t3: 'Access to laboratories, research centers and pilot plants Physical Space and Shared Services.',
       },
     },
@@ -179,7 +180,7 @@ export default {
   footer: {
     conect: 'We are with you to cocreate new paths to a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
-    address2: 'Alameda Vicente Pinzon, 54,11th floor.',
+    address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
     singup: 'Subscribe and get the latest on our ecosystem.',
     signupPlaceholder: 'Enter your e-mail',
@@ -652,7 +653,7 @@ export default {
       p: 'We want to hear you! Talk to us.',
       l1: 'Message',
       l2: 'Text is too long',
-      l3: 'caracters',
+      l3: 'characters',
       btn: 'Send message',
       plc1: 'Name',
       plc2: 'Select an area',

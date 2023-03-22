@@ -61,16 +61,16 @@ export default {
       info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',
     },
     card4: {
-      title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
-      info2:
-        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
-    },
-    card5: {
       title: 'Plástico como Solução Sustentável',
       info: 'Biopolímeros',
       info2: 'Aplicações do plástico com ganho de performance',
       info3: 'Manufatura aditiva',
+    },
+    card5: {
+      title: 'Smart Factory & Futuro da Mobilidade',
+      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
+      info2:
+        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
     },
   },
   numbers: {
@@ -88,6 +88,7 @@ export default {
   programs: {
     title: 'Programas',
     benefits: 'Benefícios',
+    cta: 'INSCREVA SUA STARTUP',
     card1: {
       title: 'Incubação / VB',
       desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',

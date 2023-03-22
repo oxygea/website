@@ -62,7 +62,7 @@
       </VueSlickCarousel>
       <VueSlickCarousel
         v-bind="slickOptions2"
-        class="flex items-center justify-center lg:pl-[160px] partners"
+        class="flex items-center lg:pl-[30px] justify-center partners"
       >
         <a
           href="https://distrito.me/"
@@ -87,6 +87,24 @@
             :alt="`Imagem partners 1`"
             :title="`Partners 1`"
             class="max-w-[41px] h-[48px] m-auto"
+          />
+        </a>
+        <a
+          target="_blank"
+          href="https://onono.com.br/"
+          class="!flex justify-center items-center"
+        >
+          <nuxt-img
+            preload
+            :src="`partners/04.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[97px] h-[46px] m-auto"
           />
         </a>
         <a
@@ -125,9 +143,6 @@
             class="max-w-[132px] h-[28px] m-auto"
           />
         </a>
-        <!-- <svg-icon name="ib" class="w-[41px] h-[48px]" />
-        <svg-icon name="plugendplay" class="w-[110px] h-[21px]" />
-        <svg-icon name="touchdown" class="w-[132px] h-[28px]" /> -->
       </VueSlickCarousel>
     </div>
   </section>
@@ -157,8 +172,8 @@ export default {
       },
       slickOptions2: {
         dots: false,
-        slidesToShow: 4.7,
-        slidesToScroll: 4.7,
+        slidesToShow: 5.1,
+        slidesToScroll: 5.1,
         infinite: false,
         arrows: false,
         variableWidth: false,

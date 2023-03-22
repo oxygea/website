@@ -11,7 +11,7 @@
       @beforeChange="onSlideChange"
     >
       <div
-        v-for="(item, index) of programs"
+        v-for="(item, index) of $i18n.locale === 'pt' ? programsPT : programsEN"
         :key="`program=${index}`"
         class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
@@ -34,6 +34,13 @@
                 class="font-normal text-xs text-white leading-4 lg:text-sm font-poppins"
               >
                 {{ $t(`programs.card${item.value}.desc`) }}
+              </p>
+              <p
+                v-if="item.value === 2"
+                class="max-w-max cursor-pointer mt-6 rounded-[100px] font-medium text-xxs bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+                @click="$nuxt.$emit('openModalContact')"
+              >
+                {{ $t('programs.cta') }}
               </p>
             </div>
             <div
@@ -89,7 +96,7 @@
       data-aos="fade"
     >
       <div
-        v-for="(item, index) of programs"
+        v-for="(item, index) of $i18n.locale === 'pt' ? programsPT : programsEN"
         :key="`program=${index}`"
         class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
@@ -112,6 +119,13 @@
                 class="font-medium font-poppins text-xs text-white lg:text-sm !leading-[18px]"
               >
                 {{ $t(`programs.card${item.value}.desc`) }}
+              </p>
+              <p
+                v-if="item.value === 2"
+                class="max-w-max cursor-pointer mt-6 rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+                @click="$nuxt.$emit('openModalContact')"
+              >
+                {{ $t('programs.cta') }}
               </p>
             </div>
             <div
@@ -183,11 +197,17 @@ export default {
       showMenu2: false,
       showMenu3: false,
       showMenu4: false,
-      programs: [
+      programsPT: [
         { value: 1, benefits: 5, heightClassName: 'min-h-[524px]' },
         { value: 2, benefits: 5, heightClassName: 'min-h-[524px]' },
         { value: 3, benefits: 4, heightClassName: 'min-h-[404px]' },
         { value: 4, benefits: 4, heightClassName: 'min-h-[380px]' },
+      ],
+      programsEN: [
+        { value: 1, benefits: 5, heightClassName: 'min-h-[524px]' },
+        { value: 2, benefits: 5, heightClassName: 'min-h-[524px]' },
+        { value: 3, benefits: 4, heightClassName: 'min-h-[404px]' },
+        { value: 4, benefits: 3, heightClassName: 'min-h-[380px]' },
       ],
     }
   },

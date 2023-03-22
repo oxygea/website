@@ -59,7 +59,7 @@
             v-model="selectedOptionId"
             :label="`${$t('modals.contact.lb1')}`"
             :placeholder="`${$t('modals.contact.plc2')}`"
-            :options="options"
+            :options="$i18n.locale === 'pt' ? optionsPT : optionsEN"
           />
 
           <div
@@ -193,11 +193,17 @@ export default {
   },
   data() {
     return {
-      options: [
+      optionsPT: [
         { id: 1, name: 'Startup' },
         { id: 2, name: 'Investor' },
         { id: 3, name: 'Partner' },
         { id: 4, name: 'Faça parte do time Oxygea' },
+      ],
+      optionsEN: [
+        { id: 1, name: 'Startup' },
+        { id: 2, name: 'Investor' },
+        { id: 3, name: 'Partner' },
+        { id: 4, name: 'Join the Oxygea team' },
       ],
       selectedFile: null,
       selectedOptionId: null,
