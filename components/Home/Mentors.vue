@@ -289,13 +289,6 @@ export default {
           link: 'https://www.linkedin.com/in/guilherme-baeta/',
         },
         {
-          slug: 'jorge-soto',
-          name: 'Jorge Soto',
-          image: 'Jorge-Soto.png',
-          vertical: 'SustainableDevelopment',
-          link: 'https://www.linkedin.com/in/jorge-soto-94160b1/',
-        },
-        {
           slug: 'celso-procknor',
           name: 'Celso Procknor',
           image: 'Celso-Procknor.png',
@@ -430,10 +423,14 @@ export default {
 
       const current = document.getElementById(`mentor-${nextIndex}`)
 
-      if (current) {
+      if (current && this.selectedFilter === 'all') {
         const nextSlug = this.mentors[nextIndex].slug
         this.setSelectedMentor(nextSlug, nextIndex)
+        return
       }
+
+      const nextSlug = this.filteredMentors[nextIndex].slug
+      this.setSelectedMentor(nextSlug, nextIndex)
     },
     selectedFilter() {
       this.selectedMentorIndex = 0
