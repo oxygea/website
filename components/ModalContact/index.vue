@@ -27,97 +27,102 @@
           </p>
         </div>
         <form class="flex flex-wrap justify-end pb-5">
-          <label for="name" class="w-full relative">
+          <label for="name" class="w-full relative mb-6">
             <p
-              :class="{ active1: value1 }"
+              :class="{ active: value1 }"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc1') }}
             </p>
             <input
               v-model="value1"
+              name="name"
               type="text"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>
 
-          <label for="email" class="w-full relative">
+          <label for="lastname" class="w-full relative mb-6">
             <p
-              :class="{ active2: value2 }"
-              class="absolute bottom-[45px] font-medium text-base font-poppins"
+              :class="{ active: value2 }"
+              class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
-              E-mail
+              {{ $t('modals.contact.plc2') }}
             </p>
             <input
               v-model="value2"
+              name="lastname"
+              type="text"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
+            />
+          </label>
+
+          <label for="email" class="w-full relative mb-6">
+            <p
+              :class="{ active: value3 }"
+              class="absolute bottom-[21px] font-medium text-base font-poppins"
+            >
+              {{ $t('modals.contact.plc3') }}
+            </p>
+            <input
+              v-model="value3"
+              name="email"
               type="email"
-              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 my-6 text-black placeholder-black"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
+            />
+          </label>
+
+          <label for="site" class="w-full relative mb-6">
+            <p
+              :class="{ active: value4 }"
+              class="absolute bottom-[21px] font-medium text-base font-poppins"
+            >
+              {{ $t('modals.contact.plc4') }}
+            </p>
+            <input
+              v-model="value4"
+              name="site"
+              type="url"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
+            />
+          </label>
+
+          <label for="linkedIn" class="w-full relative mb-6">
+            <p
+              :class="{ active: value5 }"
+              class="absolute bottom-[21px] font-medium text-base font-poppins"
+            >
+              {{ $t('modals.contact.plc5') }}
+            </p>
+            <input
+              v-model="value5"
+              name="linkedIn"
+              type="text"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
+            />
+          </label>
+
+          <label for="phone" class="w-full relative mb-6">
+            <p
+              :class="{ active: value6 }"
+              class="absolute bottom-[21px] font-medium text-base font-poppins"
+            >
+              {{ $t('modals.contact.plc6') }}
+            </p>
+            <input
+              v-model="value6"
+              name="phone"
+              type="tel"
+              class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>
 
           <CustomSelect
             v-model="selectedOptionId"
             :label="`${$t('modals.contact.lb1')}`"
-            :placeholder="`${$t('modals.contact.plc2')}`"
+            :placeholder="`${$t('modals.contact.plc7')}`"
             :options="$i18n.locale === 'pt' ? optionsPT : optionsEN"
           />
-
-          <div
-            v-if="selectedOptionId === 4"
-            class="w-full h-[127px]"
-            :class="[
-              {
-                '!h-[90px]': selectedFile,
-              },
-            ]"
-          >
-            <div class="w-full">
-              <p class="font-medium text-base font-poppins pb-4">
-                Envie seu CV
-              </p>
-              <div
-                class="h-[93px] w-full border border-dashed border-black relative cursor-pointer"
-                :class="[
-                  {
-                    '!h-[50px]': selectedFile,
-                  },
-                ]"
-              >
-                <div
-                  v-if="!selectedFile"
-                  class="absolute top-[25px] right-[90px] text-center"
-                >
-                  <p class="text-sm font-poppins font-medium">
-                    Selecione um PDF para enviar
-                  </p>
-                  <p class="text-sm font-poppins font-medium">
-                    Tamanho máximo 10 MB
-                  </p>
-                </div>
-
-                <div
-                  v-if="selectedFile"
-                  class="absolute left-[16px] top-[15px]"
-                >
-                  <p class="text-sm font-poppins font-medium">
-                    {{ selectedFile.name }}
-                  </p>
-                </div>
-
-                <input
-                  type="file"
-                  class="w-full opacity-0 h-[93px]"
-                  accept="application/pdf"
-                  :class="[
-                    {
-                      '!h-[50px]': selectedFile,
-                    },
-                  ]"
-                  @change="onFileSelected"
-                />
-              </div>
-            </div>
-          </div>
 
           <label
             for="message"
@@ -128,7 +133,7 @@
           <textarea
             id="message"
             class="w-full min-h-[132px] text-sm mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-medium"
-            :placeholder="`${$t('modals.contact.plc3')}`"
+            :placeholder="`${$t('modals.contact.plc8')}`"
             maxlength="1000"
             :class="[
               {
@@ -198,18 +203,23 @@ export default {
         { id: 2, name: 'Investor' },
         { id: 3, name: 'Partner' },
         { id: 4, name: 'Faça parte do time Oxygea' },
+        { id: 5, name: 'Empresas' },
       ],
       optionsEN: [
         { id: 1, name: 'Startup' },
         { id: 2, name: 'Investor' },
         { id: 3, name: 'Partner' },
         { id: 4, name: 'Join the Oxygea team' },
+        { id: 5, name: 'Corporates' },
       ],
-      selectedFile: null,
       selectedOptionId: null,
       textLength: 0,
       value1: '',
       value2: '',
+      value3: '',
+      value4: '',
+      value5: '',
+      value6: '',
     }
   },
   watch: {
@@ -225,13 +235,6 @@ export default {
   methods: {
     onChange(event) {
       this.textLength = event.target.textLength
-    },
-    onFileSelected(event) {
-      const file = event.target.files[0]
-
-      if (file) {
-        this.selectedFile = file
-      }
     },
   },
 }
@@ -264,16 +267,8 @@ export default {
   transform: translateX(100%);
 }
 
-.active1 {
-  top: -14px;
-  left: 0;
-  font-size: 14px;
-  transition: all 300ms linear;
-}
-
-.active2 {
-  top: 10px;
-  left: 0;
+.active {
+  transform: translateY(-30px);
   font-size: 14px;
   transition: all 300ms linear;
 }

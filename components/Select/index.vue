@@ -39,16 +39,16 @@
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <button
+          <span
             v-for="option in options"
             :key="option.id"
             href="#"
-            class="block font-poppins text-sm font-medium py-[15px] px-4 text-black hover:bg-gray-100 hover:text-gray-900"
+            class="block cursor-pointer font-poppins text-sm font-medium py-[15px] px-4 text-black hover:bg-slate-100 hover:text-slate-900"
             role="menuitem"
             @click="selectOption(option)"
           >
             {{ option.name }}
-          </button>
+          </span>
         </div>
       </div>
     </div>
