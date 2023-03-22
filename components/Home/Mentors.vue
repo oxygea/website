@@ -64,7 +64,7 @@
     <div class="container">
       <div class="lg:ml-[110px] lg:flex lg:gap-4">
         <vue-slider
-          v-if="filteredMentors.length > 1"
+          v-if="filteredMentors.length > 5"
           v-model="sliderValue"
           :adsorb="true"
           width="2px"
@@ -76,7 +76,10 @@
           v-bind="options.desktopSlider"
         ></vue-slider>
 
-        <div class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1 relative">
+        <div
+          class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1 relative"
+          :class="{ 'grid items-center': filteredMentors.length < 6 }"
+        >
           <div id="mentors-list" class="transition-all relative duration-300">
             <transition-group name="list">
               <div
@@ -100,6 +103,9 @@
                       'text-sm': mentor.slug === selectedMentor,
                     },
                   ]"
+                  @click.prevent="
+                    ;(selectedMentorIndex = index), (sliderValue = index)
+                  "
                 >
                   {{ mentor.name }}
                 </p>
@@ -130,6 +136,9 @@
                       {
                         'opacity-100': mentor.slug === selectedMentor,
                         'delay-300': mentor.slug === selectedMentor,
+                        '!-top-[200%]': filteredMentors.length === 1,
+                        '!-top-[80%]': filteredMentors.length === 2,
+                        '!-top-[16%]': filteredMentors.length === 4,
                       },
                     ]"
                   />
@@ -157,7 +166,7 @@
         </div>
 
         <vue-slider
-          v-if="filteredMentors.length > 1"
+          v-if="filteredMentors.length > 5"
           v-model="sliderValue"
           :adsorb="true"
           height="2px"
@@ -288,13 +297,13 @@ export default {
           vertical: 'Innovation',
           link: 'https://www.linkedin.com/in/guilherme-baeta/',
         },
-        {
-          slug: 'jorge-soto',
-          name: 'Jorge Soto',
-          image: 'Jorge-Soto.png',
-          vertical: 'SustainableDevelopment',
-          link: 'https://www.linkedin.com/in/jorge-soto-94160b1/',
-        },
+        // {
+        //   slug: 'jorge-soto',
+        //   name: 'Jorge Soto',
+        //   image: 'Jorge-Soto.png',
+        //   vertical: 'SustainableDevelopment',
+        //   link: 'https://www.linkedin.com/in/jorge-soto-94160b1/',
+        // },
         {
           slug: 'celso-procknor',
           name: 'Celso Procknor',
@@ -418,22 +427,31 @@ export default {
       const nextIndex = this.sliderValue
       const isMobile = window.innerWidth < 1024
 
-      if (nextIndex === this.sliderMaxValue) {
-        document.querySelector('.vue-slider-dot').style[
-          isMobile ? 'width' : 'height'
-        ] = '85px'
-      } else {
-        document.querySelector('.vue-slider-dot').style[
-          isMobile ? 'width' : 'height'
-        ] = '14px'
+      if (
+        this.filteredMentors.length > 5 &&
+        document.querySelector('.vue-slider-dot')
+      ) {
+        if (nextIndex === this.sliderMaxValue) {
+          document.querySelector('.vue-slider-dot').style[
+            isMobile ? 'width' : 'height'
+          ] = '85px'
+        } else {
+          document.querySelector('.vue-slider-dot').style[
+            isMobile ? 'width' : 'height'
+          ] = '14px'
+        }
       }
 
       const current = document.getElementById(`mentor-${nextIndex}`)
 
-      if (current) {
+      if (current && this.selectedFilter === 'all') {
         const nextSlug = this.mentors[nextIndex].slug
         this.setSelectedMentor(nextSlug, nextIndex)
+        return
       }
+
+      const nextSlug = this.filteredMentors[nextIndex].slug
+      this.setSelectedMentor(nextSlug, nextIndex)
     },
     selectedFilter() {
       this.selectedMentorIndex = 0
@@ -479,7 +497,11 @@ export default {
         forwardLink = forward + base * 3.3
       }
 
-      if (selectedIndex > this.selectedMentorIndex) {
+      if (this.filteredMentors.length <= 5) {
+        list.style.transform = `translateY(0)`
+        img.style.transform = `translateY(${base}px)`
+        link.style.transform = `translateY(106px)`
+      } else if (selectedIndex > this.selectedMentorIndex) {
         list.style.transform = `translateY(-${forward}px)`
         img.style.transform = `translateY(+${forwardImage}px)`
         link.style.transform = `translateY(+${forwardLink}px)`

@@ -98,6 +98,15 @@
         <p class="text-white font-bold text-base">0{{ sliderPageIndex }}</p>
         <hr class="text-white w-full" />
         <button
+          class="next-slide rotate-180 flex items-center justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
+          @click="prevSlide"
+        >
+          <svg-icon
+            name="arrow-right"
+            class="w-[9px] h-[13px] cursor-pointer text-white fill-current"
+          />
+        </button>
+        <button
           class="next-slide flex items-center justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
           @click="nextSlide"
         >
@@ -134,6 +143,7 @@ export default {
         pauseOnFocus: false,
       },
       sliderPageIndex: 0,
+      sliderPageIndexBTN: true,
       itens: [
         {
           value: 1,
@@ -147,25 +157,37 @@ export default {
   },
   mounted() {
     this.sliderPageIndex = 1
+    this.sliderPageIndexBTN = true
   },
   methods: {
-    onBeforeChange(event) {
+    onBeforeChange(event, next) {
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
 
-      this.sliderPageIndex = event === 3 ? 1 : event + 2
+      if (this.sliderPageIndexBTN) {
+        this.sliderPageIndex = event + 1 === 4 ? 1 : event + 2
+      } else {
+        this.sliderPageIndex = event === 0 ? 4 : event
+      }
+
+      this.sliderPageIndexBTN = true
 
       this.$refs.carousel.pause()
       setTimeout(() => {
         this.$refs.carousel.play()
       }, 0)
     },
-    onSlideChange(event) {
+    onSlideChange() {
       const line = document.querySelector('#line')
       line.classList.add('animation-line')
     },
     nextSlide() {
+      this.sliderPageIndexBTN = true
       this.$refs.carousel.next()
+    },
+    prevSlide() {
+      this.sliderPageIndexBTN = false
+      this.$refs.carousel.prev()
     },
   },
 }
