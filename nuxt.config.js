@@ -68,6 +68,7 @@ export default {
     { src: '~/plugins/vue-slick-carousel.js' },
     { src: '~/plugins/vue-slider-component.js' },
     { src: '~/plugins/aos.js', mode: 'client' },
+    { src: '~/plugins/vue-lottie.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

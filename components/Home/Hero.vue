@@ -3,37 +3,42 @@
     class="bg-black hero w-full section-hero container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">
-      <nuxt-img
-        preload
-        :src="require(`~/assets/img/hero/bg-${sliderPageIndex}.png`)"
-        format="webp"
-        fit="fill"
-        quality="100"
-        loading="lazy"
-        aria-hidden
-        class="hidden md:block absolute right-0"
-        :class="[
-          {
-            'left-0 top-[51px]': sliderPageIndex === 2,
-          },
-        ]"
+      <VueLottie
+        v-if="sliderPageIndex === 1"
+        :width="500"
+        :options="lottieOptions1"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
       />
     </transition>
     <transition name="slide-fade">
       <nuxt-img
+        v-if="sliderPageIndex === 2"
         preload
-        :src="require(`~/assets/img/hero/bg-mobile-${sliderPageIndex}.png`)"
+        :src="require(`~/assets/img/hero/bg-2.png`)"
         format="webp"
         fit="fill"
         quality="100"
         loading="lazy"
         aria-hidden
-        class="absolute right-0 md:hidden"
-        :class="[
-          {
-            'top-[64px]': sliderPageIndex === 2,
-          },
-        ]"
+        class="absolute left-0 top-[51px]"
+      />
+    </transition>
+
+    <transition name="slide-fade">
+      <VueLottie
+        v-if="sliderPageIndex === 3"
+        :width="500"
+        :options="lottieOptions2"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
+      />
+    </transition>
+
+    <transition name="slide-fade">
+      <VueLottie
+        v-if="sliderPageIndex === 4"
+        :width="500"
+        :options="lottieOptions3"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
       />
     </transition>
 
@@ -128,10 +133,29 @@
   </section>
 </template>
 <script>
+import Grafismo1 from './../../assets/json/animations/grafismo_01.json'
+import Grafismo2 from './../../assets/json/animations/grafismo_03.json'
+import Grafismo3 from './../../assets/json/animations/grafismo_04.json'
+
 export default {
   name: 'HomeHero',
   data() {
     return {
+      lottieOptions1: {
+        animationData: Grafismo1,
+        renderer: 'html',
+        loop: false,
+      },
+      lottieOptions2: {
+        animationData: Grafismo2,
+        renderer: 'html',
+        loop: false,
+      },
+      lottieOptions3: {
+        animationData: Grafismo3,
+        renderer: 'html',
+        loop: false,
+      },
       slickOptions: {
         dots: false,
         slidesToShow: 1,
