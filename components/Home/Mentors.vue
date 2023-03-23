@@ -149,6 +149,8 @@
                   {
                     'opacity-100': mentor.slug === selectedMentor,
                     'color-[#9D9D9D]': mentor.slug !== selectedMentor,
+                    '!translate-y-[20px]': filteredMentors.length === 1,
+                    '!translate-y-[100px]': filteredMentors.length === 4,
                   },
                 ]"
               >
@@ -243,8 +245,8 @@ export default {
         'all',
         'Innovation',
         'Business',
-        'ChemistryAndPlastic',
-        'Investments',
+        // 'ChemistryAndPlastic',
+        // 'Investments',
         'FinanceAndStrategy',
         'SustainableDevelopment',
         'ResearchAndDevelopment',
@@ -490,7 +492,7 @@ export default {
       if (this.filteredMentors.length <= 5) {
         list.style.transform = `translateY(0)`
         img.style.transform = `translateY(${base}px)`
-        link.style.transform = `translateY(106px)`
+        link.style.transform = `translateY(140px)`
       } else if (selectedIndex > this.selectedMentorIndex) {
         list.style.transform = `translateY(-${forward}px)`
         img.style.transform = `translateY(+${forwardImage}px)`

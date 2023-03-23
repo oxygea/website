@@ -29,7 +29,7 @@
         v-if="sliderPageIndex === 3"
         :width="500"
         :options="lottieOptions2"
-        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
+        class="pointer-events-none top-[80px] lg:top-[250px] !h-auto absolute right-0"
       />
     </transition>
 
@@ -38,7 +38,7 @@
         v-if="sliderPageIndex === 4"
         :width="500"
         :options="lottieOptions3"
-        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
+        class="pointer-events-none top-[80px] lg:top-[180px] !h-auto absolute right-0"
       />
     </transition>
 
