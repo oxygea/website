@@ -1,6 +1,3 @@
-<!-- TODO: add animations -->
-<!-- TODO: add filter -->
-
 <template>
   <section class="bg-white py-10 lg:py-20 mentors-section">
     <div class="container">
@@ -273,14 +270,14 @@ export default {
           slug: 'edison-terra',
           name: 'Edison Terra',
           image: 'Edison-Terra.png',
-          vertical: 'ChemistryAndPlastic',
+          vertical: 'Business',
           link: 'https://www.linkedin.com/in/edison-terra/',
         },
         {
           slug: 'daniel-sales',
           name: 'Daniel Sales',
           image: 'Daniel-Sales.png',
-          vertical: 'Investments',
+          vertical: 'Business',
           link: 'https://www.linkedin.com/in/petrodan68/',
         },
         {
@@ -297,13 +294,13 @@ export default {
           vertical: 'Innovation',
           link: 'https://www.linkedin.com/in/guilherme-baeta/',
         },
-        // {
-        //   slug: 'jorge-soto',
-        //   name: 'Jorge Soto',
-        //   image: 'Jorge-Soto.png',
-        //   vertical: 'SustainableDevelopment',
-        //   link: 'https://www.linkedin.com/in/jorge-soto-94160b1/',
-        // },
+        {
+          slug: 'jorge-soto',
+          name: 'Jorge Soto',
+          image: 'Jorge-Soto.png',
+          vertical: 'SustainableDevelopment',
+          link: 'https://www.linkedin.com/in/jorge-soto-94160b1/',
+        },
         {
           slug: 'celso-procknor',
           name: 'Celso Procknor',
@@ -406,7 +403,7 @@ export default {
           slug: 'isabel-figueiredo',
           name: 'Isabel Figueiredo',
           image: 'Isabel-Figueiredo.png',
-          vertical: 'ChemistryAndPlastic',
+          vertical: 'Business',
           link: 'https://www.linkedin.com/in/isabel-figueiredo-a0a586a0/',
         },
       ],

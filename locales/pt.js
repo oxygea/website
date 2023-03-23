@@ -56,7 +56,7 @@ export default {
     card3: {
       title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
       info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais',
-      info2: 'Nanotecnologia aplicada à manufatura',
+      info2: 'Materiais Avançados',
       info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',
     },
     card4: {
@@ -163,6 +163,16 @@ export default {
   portfolio: {
     title: 'Portfolio de empresas',
     desc: '4 novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
+    img: {
+      title1: 'Soluções sustentáveis para a indústria',
+      title2: 'Sistemas de gerenciamento de frete',
+      title3: 'Machine learning ',
+      title4: 'Sustentabilidade para startups',
+      alt1: 'Pessoas conversando sobre inovação na indústria',
+      alt2: 'Caminhões em pátio de transportadora',
+      alt3: 'Máquinas inteligentes na produção de plástico',
+      alt4: 'Mão com ícones que representam sustentabilidade',
+    },
     XTELLAR:
       'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/biopolímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
     LOADSHARK:

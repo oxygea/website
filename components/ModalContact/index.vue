@@ -209,7 +209,7 @@ export default {
         { id: 1, name: 'Startup' },
         { id: 2, name: 'Investor' },
         { id: 3, name: 'Partner' },
-        { id: 4, name: 'Join the Oxygea team' },
+        { id: 4, name: 'Join us' },
         { id: 5, name: 'Corporates' },
       ],
       selectedOptionId: null,

@@ -22,8 +22,8 @@
             fit="fill"
             quality="100"
             loading="lazy"
-            :alt="`Imagem cover`"
-            :title="`Cover`"
+            :alt="$t(`portfolio.img.alt${index + 1}`)"
+            :title="$t(`portfolio.img.title${index + 1}`)"
             class="w-full h-full grayscale absolute left-0 transition-opacity duration-300 eas opacity-0"
             :class="[
               {

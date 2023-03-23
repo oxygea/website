@@ -1,7 +1,7 @@
 export default {
   head: {
     description:
-      'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in industry.',
+      'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in the industry.',
   },
   menu: {
     future: 'Future is Collective',
@@ -13,12 +13,12 @@ export default {
   hero: {
     card1: {
       title:
-        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of industry.',
+        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
       cta: 'Investment Thesis',
     },
     card2: {
       title:
-        'The acceleration program for startups that want to transform the industry.',
+        'The acceleration program is for startups that want to transform the industry.',
       cta: 'Enroll your startup',
     },
     card3: {
@@ -28,7 +28,7 @@ export default {
     },
     card4: {
       title:
-        'To be connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
+        'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally',
       cta: 'Our partners',
     },
   },
@@ -36,14 +36,14 @@ export default {
     desc1:
       'Oxygea is here to accelerate and invest in people and their business that will drive sustainable innovation and digital transformation.',
     desc2:
-      'We value ecosystems and we cooperate with local and global networks to provide the best to startups that will transform the future of the industry.',
+      'We value ecosystems and we cooperate with local and global networks to provide only the best to startups that will transform the future of the industry.',
   },
   invest: {
     title: 'Where do we invest?',
     card1: {
       title: 'Circular Economy',
-      info: 'Technologies intended for returning plastic waste to production chain',
-      info2: 'Extend useful lifecycle of plastic applications',
+      info: 'Technologies intended for reintegrating plastic waste to production chain',
+      info2: 'Extend the useful lifecycle of plastic applications',
       info3: 'A reduction in the need for production, use, or disposal',
     },
     card2: {
@@ -55,8 +55,8 @@ export default {
     },
     card3: {
       title: 'Biotechnology/ Nanotechnology and New Materials',
-      info: 'New biological and biochemical routes for chemical, plastics and materials production',
-      info2: 'Nanotechnology applied to manufacturing',
+      info: 'New biological and biochemical routes to produce chemicals, plastics and materials',
+      info2: 'Advanced Materials',
       info3: 'Digital technologies for accelerating R&D developments',
     },
     card4: {
@@ -81,7 +81,7 @@ export default {
   startup: {
     title1: 'Discover our',
     title2: 'programs and',
-    title3: 'figure the one',
+    title3: 'find the one',
     title4: 'that best fits the',
     title5: 'stage of your',
     title6: 'startup.',
@@ -108,15 +108,15 @@ export default {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Initial investment to fund the program and up to R$1.5 million for eligible startups.',
         t3: 'Access to a network of highly qualified advisors.',
-        t4: 'Access to Network of Partners.',
+        t4: 'Access to a Network of Partners.',
         t5: 'Support in Business Strategy Definition.',
       },
     },
     card3: {
       title: 'Investment / CVC',
-      desc: 'Startups that already have a promising business and want to accelerate growth.',
+      desc: 'Startups that already have a promising business and want to accelerate their growth.',
       benefits: {
-        t1: 'Access to Network of Partners.',
+        t1: 'Access to a Network of Partners.',
         t2: 'Access to distribution channels.',
         t3: 'Access to market data and information.',
         t4: 'Access to capabilities and expertise to drive business.',
@@ -137,9 +137,9 @@ export default {
     connect2: 'to global',
     connect3: 'reference partners',
     connect4: 'and specialized',
-    connect5: 'advisors - ',
+    connect5: 'advisors -',
     innovation:
-      'people that go to bed and wake up thinking innovation, just like you.',
+      'people that go to bed and wake up thinking of innovation, just like you.',
   },
   partners: {
     title: 'Partners',
@@ -165,8 +165,18 @@ export default {
   portfolio: {
     title: 'Portfolio of companies',
     desc: '4 new ventures emerge as a legacy from Braskem"s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
+    img: {
+      title1: 'Sustainable solutions for the industry',
+      title2: 'Freight management systems',
+      title3: 'Machine learning ',
+      title4: 'Sustainability for startups',
+      alt1: 'People discussing about innovation in the industry',
+      alt2: 'Trucks in a carrier yard',
+      alt3: 'Intelligent machines in plastic production',
+      alt4: 'Hand with icons representing sustainability',
+    },
     XTELLAR:
-      'Production and sale of for 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
+      'Production and sale of 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
     BABEL:
@@ -175,8 +185,8 @@ export default {
   },
   team: {
     title: 'Oxygea Team',
-    desc: 'We are with you to cocreate new paths to a sustainable future.',
-    part: 'BE PART OF IT',
+    desc: 'We are with you to co-create new paths to a sustainable future.',
+    part: 'Join us',
   },
   footer: {
     conect:

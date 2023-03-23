@@ -1,5 +1,3 @@
-<!-- FIXME: adjust spaces -->
-
 <template>
   <section class="bg-[#EDEDEF]">
     <div
@@ -13,8 +11,16 @@
         quality="100"
         loading="lazy"
         sizes="320px sm:320px md:300px lg:300px xl:720px"
-        :alt="`Imagem startup`"
-        :title="`Startup`"
+        :alt="
+          $i18n.locale === 'pt'
+            ? 'Pessoas em reunião sobre startups'
+            : 'People in a meeting about startups'
+        "
+        :title="
+          $i18n.locale === 'pt'
+            ? 'Programas para startups '
+            : 'Programs for startups'
+        "
         class="w-full h-auto grayscale 2xl:hidden"
         data-aos="fade"
       />
@@ -27,8 +33,16 @@
         quality="100"
         loading="lazy"
         sizes="320px sm:320px md:300px lg:300px xl:720px"
-        :alt="`Imagem startup`"
-        :title="`Startup`"
+        :alt="
+          $i18n.locale === 'pt'
+            ? 'Pessoas em reunião sobre startups'
+            : 'People in a meeting about startups'
+        "
+        :title="
+          $i18n.locale === 'pt'
+            ? 'Programas para startups '
+            : 'Programs for startups'
+        "
         class="w-full min-w-[50%] h-auto grayscale hidden 2xl:block"
         data-aos="fade"
       />
