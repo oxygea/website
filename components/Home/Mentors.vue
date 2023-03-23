@@ -75,7 +75,10 @@
 
         <div
           class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1 relative"
-          :class="{ 'grid items-center': filteredMentors.length < 6 }"
+          :class="[
+            { 'grid items-center': filteredMentors.length < 6 },
+            { 'ml-[30px]': filteredMentors.length < 6 },
+          ]"
         >
           <div id="mentors-list" class="transition-all relative duration-300">
             <!-- <transition-group name="list"> -->
