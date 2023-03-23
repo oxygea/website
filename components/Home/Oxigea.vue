@@ -19,21 +19,13 @@
         data-aos="fade"
       />
 
-      <div data-shape class="hidden md:block absolute left-0">
-        <svg-icon name="shape1" class="w-[151px] h-[532px]" />
-      </div>
-
-      <div data-shape class="hidden md:block absolute -left-[150px]">
-        <svg-icon name="shape2" class="w-[156px] h-[626px]" />
-      </div>
-
-      <div data-shape class="hidden md:block absolute -left-[322px]">
-        <svg-icon name="shape3" class="w-[146px] h-[610px]" />
-      </div>
-
-      <div data-shape class="hidden md:block absolute -left-[480px]">
-        <svg-icon name="shape4" class="w-[115px] h-[480px]" />
-      </div>
+      <VueLottie
+        data-lottie
+        :width="640"
+        :options="lottieOptions"
+        class="hidden md:block lottie -translate-x-[150px]"
+        @animCreated="handleAnimation($event)"
+      />
 
       <div class="w-full md:max-w-[418px] relative z-10 md:py-[100px]">
         <p
@@ -55,27 +47,46 @@
   </section>
 </template>
 <script>
+import Logo from './../../assets/json/animations/logo.json'
+
 export default {
   name: 'HomeOxigea',
-  mounted() {
-    window.addEventListener('scroll', this.onScroll)
+  data() {
+    return {
+      anim: null,
+      lottieOptions: {
+        animationData: Logo,
+        renderer: 'html',
+        autoplay: false,
+        loop: false,
+      },
+    }
   },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.onScroll)
+  mounted() {
+    const lottie = document.querySelector('[data-lottie]')
+
+    const options = {
+      rootMargin: '0px',
+      threshold: 0.6,
+    }
+
+    const onIntersect = (entries) => {
+      const visibleSection = entries.filter((entry) => entry.isIntersecting)
+      if (visibleSection.length > 0) {
+        this.play()
+      }
+    }
+
+    const observer = new IntersectionObserver(onIntersect, options)
+
+    observer.observe(lottie)
   },
   methods: {
-    onScroll() {
-      const shaps = [...document.querySelectorAll('[data-shape]')]
-
-      shaps.forEach((element) => {
-        const posicaoVertical = element.offsetTop
-        const fatorParalaxe = 0.5
-        const deslocamento = (window.scrollY + posicaoVertical) * fatorParalaxe
-
-        if (deslocamento < 500) {
-          element.style.transform = `translateX(${deslocamento}px)`
-        }
-      })
+    handleAnimation(anim) {
+      this.anim = anim
+    },
+    play() {
+      this.anim.play()
     },
   },
 }

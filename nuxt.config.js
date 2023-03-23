@@ -69,6 +69,7 @@ export default {
     { src: '~/plugins/vue-slider-component.js' },
     { src: '~/plugins/aos.js', mode: 'client' },
     { src: '~/plugins/vue-lottie.js', mode: 'client' },
+    { src: '~/plugins/vue-rellax.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -84,7 +85,11 @@ export default {
     '@nuxt/image',
   ],
 
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/gtm'],
+
+  gtm: {
+    id: 'GTM-KXTFPZC',
+  },
 
   image: {
     provider: 'static',
