@@ -186,7 +186,7 @@ export default {
   team: {
     title: 'Oxygea Team',
     desc: 'We are with you to co-create new paths to a sustainable future.',
-    part: 'Join us',
+    part: 'JOIN US',
   },
   footer: {
     conect:
