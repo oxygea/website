@@ -78,87 +78,87 @@
           :class="{ 'grid items-center': filteredMentors.length < 6 }"
         >
           <div id="mentors-list" class="transition-all relative duration-300">
-            <transition-group name="list">
-              <div
-                v-for="(mentor, index) of filteredMentors"
-                :id="`mentor-${index}`"
-                :key="index"
-                class="min-h-[57px] transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
+            <!-- <transition-group name="list"> -->
+            <div
+              v-for="(mentor, index) of filteredMentors"
+              :id="`mentor-${index}`"
+              :key="index"
+              class="min-h-[57px] transition-all duration-300 mentor flex justify-between w-full items-center py-4 lg:justify-start lg:gap-[10%] lg:!min-h-0"
+              :class="[
+                {
+                  '!min-h-[97px]': mentor.slug === selectedMentor,
+                },
+              ]"
+            >
+              <p
+                class="transition-all duration-300 font-medium text-xs font-poppins lg:min-w-[200px] lg:text-base lg:font-normal"
                 :class="[
                   {
-                    '!min-h-[97px]': mentor.slug === selectedMentor,
+                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                    'lg:!font-bold': mentor.slug === selectedMentor,
+                    'lg:text-lg': mentor.slug === selectedMentor,
+                    'text-sm': mentor.slug === selectedMentor,
+                  },
+                ]"
+                @click.prevent="
+                  ;(selectedMentorIndex = index), (sliderValue = index)
+                "
+              >
+                {{ mentor.name }}
+              </p>
+
+              <p
+                class="transition-all duration-300 hidden text-base lg:block font-poppins"
+                :class="[
+                  {
+                    'text-[#9D9D9D]': mentor.slug !== selectedMentor,
+                    'lg:text-lg': mentor.slug === selectedMentor,
                   },
                 ]"
               >
-                <p
-                  class="transition-all duration-300 font-medium text-xs font-poppins lg:min-w-[200px] lg:text-base lg:font-normal"
-                  :class="[
-                    {
-                      'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                      'lg:!font-bold': mentor.slug === selectedMentor,
-                      'lg:text-lg': mentor.slug === selectedMentor,
-                      'text-sm': mentor.slug === selectedMentor,
-                    },
-                  ]"
-                  @click.prevent="
-                    ;(selectedMentorIndex = index), (sliderValue = index)
-                  "
-                >
-                  {{ mentor.name }}
-                </p>
+                {{ $t(`mentors.filter.${mentor.vertical}`) }}
+              </p>
 
-                <p
-                  class="transition-all duration-300 hidden text-base lg:block font-poppins"
-                  :class="[
-                    {
-                      'text-[#9D9D9D]': mentor.slug !== selectedMentor,
-                      'lg:text-lg': mentor.slug === selectedMentor,
-                    },
-                  ]"
-                >
-                  {{ $t(`mentors.filter.${mentor.vertical}`) }}
-                </p>
-
-                <transition>
-                  <nuxt-img
-                    preload
-                    :src="require(`~/assets/img/mentors/${mentor.image}`)"
-                    format="webp"
-                    fit="fill"
-                    quality="100"
-                    loading="lazy"
-                    sizes="100px sm:100vw lg:300px"
-                    class="w-16 h-16 absolute left-[40%] lg:left-[60%] -translate-x-[70%] lg:w-[220px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
-                    :class="[
-                      {
-                        'opacity-100': mentor.slug === selectedMentor,
-                        'delay-300': mentor.slug === selectedMentor,
-                        '!-top-[200%]': filteredMentors.length === 1,
-                        '!-top-[80%]': filteredMentors.length === 2,
-                        '!-top-[16%]': filteredMentors.length === 4,
-                      },
-                    ]"
-                  />
-                </transition>
-
-                <a
-                  :href="`${mentor.link}`"
-                  target="_blank"
-                  class="transition-all absolute left-[65%] lg:left-[87%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+              <transition>
+                <nuxt-img
+                  preload
+                  :src="require(`~/assets/img/mentors/${mentor.image}`)"
+                  format="webp"
+                  fit="fill"
+                  quality="100"
+                  loading="lazy"
+                  sizes="100px sm:100vw lg:300px"
+                  class="w-16 h-16 absolute left-[40%] lg:left-[60%] -translate-x-[70%] lg:w-[220px] lg:h-[220px] lg:z-10 lg:right-[14%] lg:translate-x-0 transition-opacity duration-300 opacity-0"
                   :class="[
                     {
                       'opacity-100': mentor.slug === selectedMentor,
-                      'color-[#9D9D9D]': mentor.slug !== selectedMentor,
+                      'delay-300': mentor.slug === selectedMentor,
+                      '!-top-[200%]': filteredMentors.length === 1,
+                      '!-top-[80%]': filteredMentors.length === 2,
+                      '!-top-[16%]': filteredMentors.length === 4,
                     },
                   ]"
-                >
-                  <span class="font-bold text-xs lg:text-sm">{{
-                    $t('mentors.filter.more')
-                  }}</span>
-                  <svg-icon name="arrowCircle" class="w-6 h-6" />
-                </a>
-              </div>
-            </transition-group>
+                />
+              </transition>
+
+              <a
+                :href="`${mentor.link}`"
+                target="_blank"
+                class="transition-all absolute left-[65%] lg:left-[87%] duration-300 opacity-0 flex items-center min-w-max gap-2 cursor-pointer lg:ml-auto"
+                :class="[
+                  {
+                    'opacity-100': mentor.slug === selectedMentor,
+                    'color-[#9D9D9D]': mentor.slug !== selectedMentor,
+                  },
+                ]"
+              >
+                <span class="font-bold text-xs lg:text-sm">{{
+                  $t('mentors.filter.more')
+                }}</span>
+                <svg-icon name="arrowCircle" class="w-6 h-6" />
+              </a>
+            </div>
+            <!-- </transition-group> -->
           </div>
         </div>
 
