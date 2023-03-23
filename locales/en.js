@@ -1,7 +1,7 @@
 export default {
   head: {
     description:
-      'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in industry.',
+      'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in the industry.',
   },
   menu: {
     future: 'Future is Collective',
@@ -13,44 +13,38 @@ export default {
   hero: {
     card1: {
       title:
-        'We invest in and accelerate startups dedicated to sustainability and technology to transform the industry`s future.',
+        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
       cta: 'Investment Thesis',
     },
     card2: {
       title:
-        'The acceleration program for startups that want to transform the industry.',
+        'The acceleration program is for startups that want to transform the industry.',
       cta: 'Enroll your startup',
     },
     card3: {
       title:
-        'From acceleration to growth investments, we are with you in every step of your startup development.',
+        'From acceleration to growth investments, we are with you in every step of your startup journey.',
       cta: 'Our programs',
     },
     card4: {
       title:
-        'To be connected with the ecosystem makes a difference. We believe we can do it together, locally and globally.',
+        'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally',
       cta: 'Our partners',
     },
   },
   oxygea: {
-    desc1: 'Oxygea is here to accelerate and',
-    desc2: 'invest in new business. We invest',
-    desc3: 'in people and their business that',
-    desc4: 'will drive sustainable innovation',
-    desc5: 'and digital transformation. We',
-    desc6: 'valuee ecosystems and we',
-    desc7: 'cooperate with local and global',
-    desc8: 'networks to provide the best to',
-    desc9: 'startups that will transform the',
-    desc10: 'future of the industry.',
+    desc1:
+      'Oxygea is here to accelerate and invest in people and their business that will drive sustainable innovation and digital transformation.',
+    desc2:
+      'We value ecosystems and we cooperate with local and global networks to provide only the best to startups that will transform the future of the industry.',
   },
   invest: {
     title: 'Where do we invest?',
     card1: {
       title: 'Circular Economy',
-      info: 'Technologies intended for returning plastic waste to production chain',
-      info2: 'Longer useful life of plastic applications',
-      info3: 'Reduced need of production, use or disposal',
+      info: 'Technologies intended for reintegrating plastic waste to production chain',
+      info2: 'Extend the useful lifecycle of plastic applications',
+      info3: 'A reduction in the need for production, use, or disposal',
     },
     card2: {
       title: 'Carbon Neutrality',
@@ -60,21 +54,21 @@ export default {
       info4: 'CO2 capture, storage and utilization for new chemicals.',
     },
     card3: {
-      title: 'Biotechnology/Nanotechnology and New Materials',
-      info: 'New biological and biochemical routes for chemical, plastics and materials production',
-      info2: 'Nanotechnology applied to manufacturing',
+      title: 'Biotechnology/ Nanotechnology and New Materials',
+      info: 'New biological and biochemical routes to produce chemicals, plastics and materials',
+      info2: 'Advanced Materials',
       info3: 'Digital technologies for accelerating R&D developments',
     },
     card4: {
-      title: 'Smart Factory & Future Mobility',
-      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
-      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
-      info3: 'Additive manufacturing',
-    },
-    card5: {
       title: 'Plastic as sustainable solution',
       info: 'Biopolymers',
       info2: 'Plastic applications with performance gain',
+      info3: 'Additive manufacturing',
+    },
+    card5: {
+      title: 'Smart Factory & Future Mobility',
+      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
+      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
       info3: 'Additive manufacturing',
     },
   },
@@ -85,14 +79,17 @@ export default {
     plants: 'pilot plants',
   },
   startup: {
-    title1: 'We have the perfect',
-    title2: 'acceleration program',
-    title3: 'for you.',
-    desc: 'See our programs and join in.',
+    title1: 'Discover our',
+    title2: 'programs and',
+    title3: 'find the one',
+    title4: 'that best fits the',
+    title5: 'stage of your',
+    title6: 'startup.',
   },
   programs: {
     title: 'Programas',
     benefits: 'Benefits',
+    cta: 'ENROLL YOUR STARTUP',
     card1: {
       title: 'Incubation / VB',
       desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
@@ -111,15 +108,15 @@ export default {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Initial investment to fund the program and up to R$1.5 million for eligible startups.',
         t3: 'Access to a network of highly qualified advisors.',
-        t4: 'Access to Network of Partners.',
+        t4: 'Access to a Network of Partners.',
         t5: 'Support in Business Strategy Definition.',
       },
     },
     card3: {
       title: 'Investment / CVC',
-      desc: 'Startups that already have a promising business and want to accelerate growth.',
+      desc: 'Startups that already have a promising business and want to accelerate their growth.',
       benefits: {
-        t1: 'Access to Network of Partners.',
+        t1: 'Access to a Network of Partners.',
         t2: 'Access to distribution channels.',
         t3: 'Access to market data and information.',
         t4: 'Access to capabilities and expertise to drive business.',
@@ -130,27 +127,27 @@ export default {
       desc: 'Regardless of the maturity stage, all companies in our portfolio will always have access to key development capabilities.',
       benefits: {
         t1: 'Expert Advisory.',
-        t2: 'Access to qualified database and information on industry.',
+        t2: 'Information on the market and qualified industry databases.',
         t3: 'Access to laboratories, research centers and pilot plants Physical Space and Shared Services.',
       },
     },
   },
   cover: {
-    connect1: 'We connect',
-    connect2: 'with global',
+    connect1: 'We are connected',
+    connect2: 'to global',
     connect3: 'reference partners',
     connect4: 'and specialized',
-    connect5: 'advisors - ',
+    connect5: 'advisors -',
     innovation:
-      'people that go to bed and wake up thinking innovation, just like you.',
+      'people that go to bed and wake up thinking of innovation, just like you.',
   },
   partners: {
     title: 'Partners',
-    desc: 'Do it together principle boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
+    desc: 'Doing things together boosts results.. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
   },
   mentors: {
-    title: 'Advisors',
-    desc: 'Experts renowned in various fields of expertise work with us. Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
+    title: 'Mentors',
+    desc: 'Experts renowned in various fields ofexpertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
     filter: {
       title: 'FILTER BY',
       all: 'All',
@@ -167,9 +164,19 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: '4 new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
+    desc: '4 new ventures emerge as a legacy from Braskem"s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
+    img: {
+      title1: 'Sustainable solutions for the industry',
+      title2: 'Freight management systems',
+      title3: 'Machine learning ',
+      title4: 'Sustainability for startups',
+      alt1: 'People discussing about innovation in the industry',
+      alt2: 'Trucks in a carrier yard',
+      alt3: 'Intelligent machines in plastic production',
+      alt4: 'Hand with icons representing sustainability',
+    },
     XTELLAR:
-      'Production and sale of for 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
+      'Production and sale of 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
     BABEL:
@@ -178,13 +185,14 @@ export default {
   },
   team: {
     title: 'Oxygea Team',
-    desc: 'We are with you to cocreate new paths to a sustainable future.',
-    part: 'BE PART OF IT',
+    desc: 'We are with you to co-create new paths to a sustainable future.',
+    part: 'Join us',
   },
   footer: {
-    conect: 'We are with you to cocreate new paths to a sustainable future.',
+    conect:
+      'Connected to the startup ecosystem to accelerate and invest in a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
-    address2: 'Alameda Vicente Pinzon, 54,11th floor.',
+    address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
     singup: 'Subscribe and get the latest on our ecosystem.',
     signupPlaceholder: 'Enter your e-mail',
@@ -654,14 +662,19 @@ export default {
     },
     contact: {
       h3: 'Get in contact',
-      p: 'We want to hear you! Talk to us.',
+      p: 'We want to hear from you! Talk to us.',
       l1: 'Message',
       l2: 'Text is too long',
-      l3: 'caracters',
+      l3: 'characters',
       btn: 'Send message',
-      plc1: 'Name',
-      plc2: 'Select an area',
-      plc3: 'How can we help you?',
+      plc1: 'Name*',
+      plc2: 'Last Name*',
+      plc3: 'E-mail*',
+      plc4: 'Website',
+      plc5: 'LinkedIn Profile',
+      plc6: 'Mobile/Whatsapp',
+      plc7: 'Select an area',
+      plc8: 'How can we help you?',
       lb1: 'Area of interest',
     },
   },

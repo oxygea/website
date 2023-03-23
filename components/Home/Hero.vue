@@ -3,37 +3,42 @@
     class="bg-black hero w-full section-hero container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">
-      <nuxt-img
-        preload
-        :src="require(`~/assets/img/hero/bg-${sliderPageIndex}.png`)"
-        format="webp"
-        fit="fill"
-        quality="100"
-        loading="lazy"
-        aria-hidden
-        class="hidden md:block absolute right-0"
-        :class="[
-          {
-            'left-0 top-[51px]': sliderPageIndex === 2,
-          },
-        ]"
+      <VueLottie
+        v-if="sliderPageIndex === 1"
+        :width="500"
+        :options="lottieOptions1"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
       />
     </transition>
     <transition name="slide-fade">
       <nuxt-img
+        v-if="sliderPageIndex === 2"
         preload
-        :src="require(`~/assets/img/hero/bg-mobile-${sliderPageIndex}.png`)"
+        :src="require(`~/assets/img/hero/bg-2.png`)"
         format="webp"
         fit="fill"
         quality="100"
         loading="lazy"
         aria-hidden
-        class="absolute right-0 md:hidden"
-        :class="[
-          {
-            'top-[64px]': sliderPageIndex === 2,
-          },
-        ]"
+        class="absolute left-0 top-[51px]"
+      />
+    </transition>
+
+    <transition name="slide-fade">
+      <VueLottie
+        v-if="sliderPageIndex === 3"
+        :width="500"
+        :options="lottieOptions2"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
+      />
+    </transition>
+
+    <transition name="slide-fade">
+      <VueLottie
+        v-if="sliderPageIndex === 4"
+        :width="500"
+        :options="lottieOptions3"
+        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
       />
     </transition>
 
@@ -98,6 +103,15 @@
         <p class="text-white font-bold text-base">0{{ sliderPageIndex }}</p>
         <hr class="text-white w-full" />
         <button
+          class="next-slide rotate-180 flex items-center justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
+          @click="prevSlide"
+        >
+          <svg-icon
+            name="arrow-right"
+            class="w-[9px] h-[13px] cursor-pointer text-white fill-current"
+          />
+        </button>
+        <button
           class="next-slide flex items-center justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
           @click="nextSlide"
         >
@@ -119,10 +133,29 @@
   </section>
 </template>
 <script>
+import Grafismo1 from './../../assets/json/animations/grafismo_01.json'
+import Grafismo2 from './../../assets/json/animations/grafismo_03.json'
+import Grafismo3 from './../../assets/json/animations/grafismo_04.json'
+
 export default {
   name: 'HomeHero',
   data() {
     return {
+      lottieOptions1: {
+        animationData: Grafismo1,
+        renderer: 'html',
+        loop: false,
+      },
+      lottieOptions2: {
+        animationData: Grafismo2,
+        renderer: 'html',
+        loop: false,
+      },
+      lottieOptions3: {
+        animationData: Grafismo3,
+        renderer: 'html',
+        loop: false,
+      },
       slickOptions: {
         dots: false,
         slidesToShow: 1,
@@ -134,6 +167,7 @@ export default {
         pauseOnFocus: false,
       },
       sliderPageIndex: 0,
+      sliderPageIndexBTN: true,
       itens: [
         {
           value: 1,
@@ -147,25 +181,37 @@ export default {
   },
   mounted() {
     this.sliderPageIndex = 1
+    this.sliderPageIndexBTN = true
   },
   methods: {
-    onBeforeChange(event) {
+    onBeforeChange(event, next) {
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
 
-      this.sliderPageIndex = event === 3 ? 1 : event + 2
+      if (this.sliderPageIndexBTN) {
+        this.sliderPageIndex = event + 1 === 4 ? 1 : event + 2
+      } else {
+        this.sliderPageIndex = event === 0 ? 4 : event
+      }
+
+      this.sliderPageIndexBTN = true
 
       this.$refs.carousel.pause()
       setTimeout(() => {
         this.$refs.carousel.play()
       }, 0)
     },
-    onSlideChange(event) {
+    onSlideChange() {
       const line = document.querySelector('#line')
       line.classList.add('animation-line')
     },
     nextSlide() {
+      this.sliderPageIndexBTN = true
       this.$refs.carousel.next()
+    },
+    prevSlide() {
+      this.sliderPageIndexBTN = false
+      this.$refs.carousel.prev()
     },
   },
 }

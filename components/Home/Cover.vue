@@ -12,8 +12,16 @@
       quality="100"
       loading="lazy"
       sizes="320px sm:320px md:300px lg:300px xl:720px"
-      :alt="`Imagem cover`"
-      :title="`Cover`"
+      :alt="
+        $i18n.locale === 'pt'
+          ? 'Pessoas conversando sobre programas de startups'
+          : 'People talking about startup programs'
+      "
+      :title="
+        $i18n.locale === 'pt'
+          ? 'Oxygea conecta pessoas e startups '
+          : 'Oxygea connects people and startups'
+      "
       class="w-full h-auto grayscale 2xl:hidden"
       data-aos="fade"
     />
@@ -26,8 +34,16 @@
       quality="100"
       loading="lazy"
       sizes="320px sm:320px md:300px lg:300px xl:720px"
-      :alt="`Imagem cover`"
-      :title="`Cover`"
+      :alt="
+        $i18n.locale === 'pt'
+          ? 'Pessoas conversando sobre programas de startups'
+          : 'People talking about startup programs'
+      "
+      :title="
+        $i18n.locale === 'pt'
+          ? 'Oxygea conecta pessoas e startups '
+          : 'Oxygea connects people and startups'
+      "
       class="w-full min-w-[50%] h-auto grayscale hidden 2xl:block"
       data-aos="fade"
     />

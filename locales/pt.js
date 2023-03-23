@@ -33,13 +33,10 @@ export default {
     },
   },
   oxygea: {
-    desc1: 'Oxygea está aqui para acelerar e',
-    desc2: 'investir em novos negócios',
-    desc3: 'Valorizamos o ecossistema',
-    desc4: 'articulamos com redes globais e',
-    desc5: 'locais para proporcionar o melhor',
-    desc6: 'às startups que vão transformar',
-    desc7: 'o futuro da indústria.',
+    desc1:
+      'Oxygea está aqui para acelerar e investir em pessoas e seus negócios,que impulsionarão a inovação sustentável e a transformação digital.',
+    desc2:
+      'Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
@@ -59,20 +56,20 @@ export default {
     card3: {
       title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
       info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais',
-      info2: 'Nanotecnologia aplicada à manufatura',
+      info2: 'Materiais Avançados',
       info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',
     },
     card4: {
-      title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
-      info2:
-        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
-    },
-    card5: {
       title: 'Plástico como Solução Sustentável',
       info: 'Biopolímeros',
       info2: 'Aplicações do plástico com ganho de performance',
       info3: 'Manufatura aditiva',
+    },
+    card5: {
+      title: 'Smart Factory & Futuro da Mobilidade',
+      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
+      info2:
+        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
     },
   },
   numbers: {
@@ -90,6 +87,7 @@ export default {
   programs: {
     title: 'Programas',
     benefits: 'Benefícios',
+    cta: 'INSCREVA SUA STARTUP',
     card1: {
       title: 'Incubação / VB',
       desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
@@ -165,6 +163,16 @@ export default {
   portfolio: {
     title: 'Portfolio de empresas',
     desc: '4 novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
+    img: {
+      title1: 'Soluções sustentáveis para a indústria',
+      title2: 'Sistemas de gerenciamento de frete',
+      title3: 'Machine learning ',
+      title4: 'Sustentabilidade para startups',
+      alt1: 'Pessoas conversando sobre inovação na indústria',
+      alt2: 'Caminhões em pátio de transportadora',
+      alt3: 'Máquinas inteligentes na produção de plástico',
+      alt4: 'Mão com ícones que representam sustentabilidade',
+    },
     XTELLAR:
       'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/biopolímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
     LOADSHARK:
@@ -658,9 +666,14 @@ export default {
       l2: 'Texto é muito longo',
       l3: 'caracteres',
       btn: 'Enviar mensagem',
-      plc1: 'Nome',
-      plc2: 'Selecione uma área',
-      plc3: 'Como podemos te ajudar?',
+      plc1: 'Nome*',
+      plc2: 'Sobrenome*',
+      plc3: 'E-mail*',
+      plc4: 'Site',
+      plc5: 'LinkedIn',
+      plc6: 'Telefone/Whatsapp',
+      plc7: 'Selecione uma área',
+      plc8: 'Como podemos te ajudar?',
       lb1: 'Área de interesse',
     },
   },

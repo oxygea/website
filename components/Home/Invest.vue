@@ -77,22 +77,22 @@ export default {
           classNames: 'lg:order-3',
         },
         {
-          icon: 'industry',
+          icon: 'biochemicals',
           title: this.$t('invest.card4.title'),
           descriptions: [
             this.$t('invest.card4.info'),
             this.$t('invest.card4.info2'),
+            this.$t('invest.card4.info3'),
           ],
           titleClassNames: '',
           classNames: 'lg:order-4',
         },
         {
-          icon: 'biochemicals',
+          icon: 'industry',
           title: this.$t('invest.card5.title'),
           descriptions: [
             this.$t('invest.card5.info'),
             this.$t('invest.card5.info2'),
-            this.$t('invest.card5.info3'),
           ],
           titleClassNames: '',
           classNames: 'lg:order-5',
