@@ -65,6 +65,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vuelidate.js' },
     { src: '~/plugins/vue-slick-carousel.js' },
     { src: '~/plugins/vue-slider-component.js' },
     { src: '~/plugins/aos.js', mode: 'client' },

@@ -26,61 +26,85 @@
             {{ $t('modals.contact.p') }}
           </p>
         </div>
-        <form class="flex flex-wrap justify-end pb-5">
+        <form
+          class="flex flex-wrap justify-end pb-5"
+          @submit.prevent="handleSubmit"
+        >
           <label for="name" class="w-full relative mb-6">
             <p
-              :class="{ active: value1 }"
+              :class="[
+                { active: form.name },
+                { 'text-red-600': $v.form.name.$error },
+              ]"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc1') }}
             </p>
             <input
-              v-model="value1"
+              v-model="form.name"
               name="name"
               type="text"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
+              :class="[
+                { 'border-red-600': $v.form.name.$error },
+                // { 'border-[#2DE6C8]': !$v.form.name.$invalid },
+              ]"
             />
           </label>
 
           <label for="lastname" class="w-full relative mb-6">
             <p
-              :class="{ active: value2 }"
+              :class="[
+                { active: form.lastname },
+                { 'text-red-600': $v.form.lastname.$error },
+              ]"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc2') }}
             </p>
             <input
-              v-model="value2"
+              v-model="form.lastname"
               name="lastname"
               type="text"
+              :class="[
+                { 'border-red-600': $v.form.lastname.$error },
+                // { 'border-[#2DE6C8]': !$v.form.lastname.$invalid },
+              ]"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>
 
           <label for="email" class="w-full relative mb-6">
             <p
-              :class="{ active: value3 }"
+              :class="[
+                { active: form.email },
+                { 'text-red-600': $v.form.email.$error },
+              ]"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc3') }}
             </p>
             <input
-              v-model="value3"
+              v-model="form.email"
               name="email"
               type="email"
+              :class="[
+                { 'border-red-600': $v.form.email.$error },
+                // { 'border-[#2DE6C8]': !$v.form.email.$invalid },
+              ]"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>
 
           <label for="site" class="w-full relative mb-6">
             <p
-              :class="{ active: value4 }"
+              :class="{ active: form.website }"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc4') }}
             </p>
             <input
-              v-model="value4"
+              v-model="form.website"
               name="site"
               type="url"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
@@ -89,13 +113,13 @@
 
           <label for="linkedIn" class="w-full relative mb-6">
             <p
-              :class="{ active: value5 }"
+              :class="{ active: form.linkedin }"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc5') }}
             </p>
             <input
-              v-model="value5"
+              v-model="form.linkedin"
               name="linkedIn"
               type="text"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
@@ -104,13 +128,13 @@
 
           <label for="phone" class="w-full relative mb-6">
             <p
-              :class="{ active: value6 }"
+              :class="{ active: form.whatsapp }"
               class="absolute bottom-[21px] font-medium text-base font-poppins"
             >
               {{ $t('modals.contact.plc6') }}
             </p>
             <input
-              v-model="value6"
+              v-model="form.whatsapp"
               name="phone"
               type="tel"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
@@ -186,7 +210,9 @@
 </template>
 
 <script>
+import { required, minLength, email } from 'vuelidate/lib/validators'
 import CustomSelect from '../../components/Select'
+
 export default {
   name: 'ModalContact',
   components: {
@@ -198,6 +224,15 @@ export default {
   },
   data() {
     return {
+      form: {
+        name: null,
+        lastname: null,
+        email: null,
+        website: null,
+        linkedin: null,
+        whatsapp: null,
+        message: null,
+      },
       optionsPT: [
         { id: 1, name: 'Startup' },
         { id: 2, name: 'Investor' },
@@ -214,13 +249,19 @@ export default {
       ],
       selectedOptionId: null,
       textLength: 0,
-      value1: '',
-      value2: '',
-      value3: '',
-      value4: '',
-      value5: '',
-      value6: '',
     }
+  },
+  validations: {
+    form: {
+      name: {
+        required,
+        minLength: minLength(4),
+      },
+      lastname: {
+        required,
+      },
+      email: { required, email },
+    },
   },
   watch: {
     show() {
@@ -235,6 +276,26 @@ export default {
   methods: {
     onChange(event) {
       this.textLength = event.target.textLength
+    },
+    handleSubmit() {
+      // eslint-disable-next-line no-console
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        this.submitStatus = 'ERROR'
+      } else {
+        this.submitStatus = 'PENDING'
+        // const rawData = {
+        //   Nome: this.form.name,
+        //   Lastname: this.form.lastname,
+        //   Email: this.form.email,
+        //   Website: this.form.website,
+        //   Linkedin: this.form.linkedin,
+        //   Whatsapp: this.form.whatsapp,
+        //   Mensagem: this.form.message,
+        // }
+        this.$nuxt.$loading.start()
+        // this.submitFormWorkUs(rawData)
+      }
     },
   },
 }
