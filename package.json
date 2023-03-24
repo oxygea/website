@@ -24,6 +24,7 @@
     "@nuxtjs/i18n": "^7.3.1",
     "@nuxtjs/svg-sprite": "^0.5.2",
     "core-js": "^3.25.3",
+    "eslint-plugin-unicorn": "^46.0.0",
     "nuxt": "^2.15.8",
     "vue": "^2.7.10",
     "vue-lottie": "^0.2.1",
