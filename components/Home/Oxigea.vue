@@ -5,7 +5,7 @@
     class="bg-[#EDEDEF] overflow-clip"
   >
     <div
-      class="container !py-10 relative md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px] md:justify-end"
+      class="container overflow-hidden !py-10 relative md:!py-0 md:flex md:items-center md:gap-20 lg:gap-[131px] md:justify-end"
     >
       <nuxt-img
         preload
@@ -21,13 +21,13 @@
 
       <VueLottie
         data-lottie
-        :width="640"
+        :width="1100"
         :options="lottieOptions"
-        class="hidden md:block lottie -translate-x-[150px]"
+        class="hidden md:block absolute -left-[228px] lottie -translate-x-[150px]"
         @animCreated="handleAnimation($event)"
       />
 
-      <div class="w-full md:max-w-[418px] relative z-10 md:py-[100px]">
+      <div class="w-full md:max-w-[418px] relative z-10 md:py-[116px]">
         <p
           class="text-xs font-medium lg:text-2xl !leading-7 pb-5 !-tracking-[0.03em]"
           data-aos="fade-up"
