@@ -5,12 +5,15 @@
     class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20"
   >
     <div class="container">
-      <h2 class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6" data-aos="fade">
+      <h2
+        class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6 -tracking-[0.03em]"
+        data-aos="fade"
+      >
         {{ $t('portfolio.title') }}
       </h2>
 
       <p
-        class="font-normal font-poppins text-xs pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base !leading-6"
+        class="font-normal font-poppins text-xs pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base !leading-4 lg:!leading-6"
       >
         {{ $t('portfolio.desc') }}
       </p>
@@ -50,7 +53,7 @@
             @mouseenter="($event) => setSelected(item.value)"
           >
             <p
-              class="text-xs font-normal font-poppins lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[18px]"
+              class="text-xs font-normal font-poppins lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[16px] lg:!leading-[18px]"
             >
               {{ $t(`portfolio.${item.value}`) }}
             </p>

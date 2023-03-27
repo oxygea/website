@@ -34,7 +34,7 @@ export default {
   },
   oxygea: {
     desc1:
-      'Oxygea está aqui para acelerar e investir em pessoas e seus negócios,que impulsionarão a inovação sustentável e a transformação digital.',
+      'Oxygea está aqui para acelerar e investir em pessoas e seus negócios, que impulsionarão a inovação sustentável e a transformação digital.',
     desc2:
       'Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
   },
@@ -174,7 +174,7 @@ export default {
       alt4: 'Mão com ícones que representam sustentabilidade',
     },
     XTELLAR:
-      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/biopolímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
+      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/ bio-polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
     LOADSHARK:
       'Sistema de gerenciamento de frete, com funcionalidade de leilão reverso para embarcadores.',
     BABEL:

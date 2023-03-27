@@ -164,7 +164,7 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: '4 new ventures emerge as a legacy from Braskem’s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
+    desc: '4 new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
     img: {
       title1: 'Sustainable solutions for the industry',
       title2: 'Freight management systems',
@@ -176,7 +176,7 @@ export default {
       alt4: 'Hand with icons representing sustainability',
     },
     XTELLAR:
-      'Production and sale of 3D printer filament, using conventional/biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
+      'Production and sale of 3D printer filament, using conventional/ biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
     BABEL:
