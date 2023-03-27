@@ -63,6 +63,7 @@ export default {
     { src: '~/plugins/aos.js', mode: 'client' },
     { src: '~/plugins/vue-lottie.js', mode: 'client' },
     { src: '~/plugins/vue-rellax.js', mode: 'client' },
+    { src: '~/plugins/vuelidate.js' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

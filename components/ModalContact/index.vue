@@ -47,7 +47,7 @@
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
               :class="[
                 { 'border-red-600': $v.form.name.$error },
-                // { 'border-[#2DE6C8]': !$v.form.name.$invalid },
+                { 'border-[#2DE6C8]': !$v.form.name.$invalid },
               ]"
             />
           </label>
@@ -68,7 +68,7 @@
               type="text"
               :class="[
                 { 'border-red-600': $v.form.lastname.$error },
-                // { 'border-[#2DE6C8]': !$v.form.lastname.$invalid },
+                { 'border-[#2DE6C8]': !$v.form.lastname.$invalid },
               ]"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
@@ -90,7 +90,7 @@
               type="email"
               :class="[
                 { 'border-red-600': $v.form.email.$error },
-                // { 'border-[#2DE6C8]': !$v.form.email.$invalid },
+                { 'border-[#2DE6C8]': !$v.form.email.$invalid },
               ]"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
