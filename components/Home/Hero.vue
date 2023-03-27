@@ -81,14 +81,23 @@
             :class="[
               {
                 '!max-w-[500px]': item.value === 2,
+                fade: true,
+                show: item.show,
               },
             ]"
             class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
           >
             {{ $t(`hero.card${item.value}.title`) }}
           </p>
+
           <p
             v-if="item.value === 2"
+            :class="[
+              {
+                fade: true,
+                show: item.show,
+              },
+            ]"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
             @click="
               $nuxt.$emit('openModalContact'), $nuxt.$emit('setValueModal')
@@ -96,6 +105,7 @@
           >
             {{ $t(`hero.card${item.value}.cta`) }}
           </p>
+
           <nuxt-link
             v-if="item.value !== 2"
             :to="
@@ -105,6 +115,12 @@
                 params: { offset: -80 },
               })
             "
+            :class="[
+              {
+                fade: true,
+                show: item.show,
+              },
+            ]"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
             >{{ $t(`hero.card${item.value}.cta`) }}</nuxt-link
           >
@@ -186,11 +202,13 @@ export default {
         {
           value: 1,
           hash: 'investment',
+          show: true,
         },
-        { value: 2, hash: 'partners' },
-        { value: 3, hash: 'programs' },
-        { value: 4, hash: 'partners' },
+        { value: 2, hash: 'partners', show: false },
+        { value: 3, hash: 'programs', show: false },
+        { value: 4, hash: 'partners', show: false },
       ],
+      fadeClass: 'fade',
     }
   },
   mounted() {
@@ -199,6 +217,11 @@ export default {
   },
   methods: {
     onBeforeChange(event, next) {
+      this.itens[event].show = false
+      setTimeout(() => {
+        this.itens[next].show = true
+      }, 500)
+
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
 
@@ -249,15 +272,24 @@ export default {
 }
 
 .slide-fade-enter-active {
-  transition: all 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 500ms cubic-bezier(1, 0.5, 0.8, 1);
+  transition: opacity 500ms cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter,
 .slide-fade-leave-to {
   opacity: 0;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
 }
 </style>
