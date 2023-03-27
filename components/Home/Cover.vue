@@ -51,37 +51,37 @@
     <div class="container !py-10 lg:ml-[50px]">
       <p
         data-aos="fade-up"
-        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        class="font-normal text-white text-[28px] leading-8 lg:leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect1') }}
       </p>
       <p
         data-aos="fade-up"
-        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        class="font-normal text-white text-[28px] leading-8 lg:leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect2') }}
       </p>
       <p
         data-aos="fade-up"
-        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        class="font-normal text-white text-[28px] leading-8 lg:leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect3') }}
       </p>
       <p
         data-aos="fade-up"
-        class="font-normal text-white text-[28px] leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        class="font-normal text-white text-[28px] leading-8 lg:leading-[56px] lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect4') }}
       </p>
       <p
         data-aos="fade-up"
-        class="font-normal text-white text-[28px] leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
+        class="font-normal text-white text-[28px] leading-8 lg:leading-[56px] pb-6 lg:max-w-[418px] lg:text-[48px] !-tracking-[0.03em]"
       >
         {{ $t('cover.connect5') }}
       </p>
       <p
         data-aos="fade-up"
-        class="font-bold text-xl text-white lg:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-7"
+        class="font-bold text-xl text-white lg:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
       >
         {{ $t('cover.innovation') }}
       </p>

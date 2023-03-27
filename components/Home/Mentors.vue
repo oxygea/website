@@ -5,7 +5,7 @@
         {{ $t('mentors.title') }}
       </h2>
       <p
-        class="font-normal font-poppins text-xs pb-10 lg:text-base lg:ml-[110px] lg:max-w-[530px] !leading-6"
+        class="font-normal font-poppins text-xs pb-10 lg:text-base lg:ml-[110px] lg:max-w-[530px] !leading-4 lg:!leading-6"
       >
         {{ $t('mentors.desc') }}
       </p>

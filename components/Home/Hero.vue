@@ -1,13 +1,13 @@
 <template>
   <section
-    class="bg-black hero w-full section-hero container flex flex-col justify-between overflow-hidden slick-next-hero !pt-20 lg:!pt-[180px]"
+    class="bg-black relative overflow-hidden hero w-full section-hero container flex flex-col justify-between slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">
       <VueLottie
         v-if="sliderPageIndex === 1"
         :width="500"
         :options="lottieOptions1"
-        class="pointer-events-none top-[80px] lg:top-[207px] !h-auto absolute right-0"
+        class="pointer-events-none -top-[38px] lg:top-[207px] !h-auto absolute right-0"
       />
     </transition>
     <transition name="slide-fade">
@@ -43,7 +43,7 @@
         v-if="sliderPageIndex === 3"
         :width="500"
         :options="lottieOptions2"
-        class="pointer-events-none top-[80px] lg:top-[250px] !h-auto absolute right-0"
+        class="pointer-events-none top-[58px] lg:top-[250px] !h-auto absolute right-0"
       />
     </transition>
 
@@ -52,7 +52,7 @@
         v-if="sliderPageIndex === 4"
         :width="500"
         :options="lottieOptions3"
-        class="pointer-events-none top-[80px] lg:top-[180px] !h-auto absolute right-0"
+        class="pointer-events-none top-[78px] lg:top-[180px] !h-auto absolute -right-[306px] lg:right-0"
       />
     </transition>
 
@@ -221,18 +221,14 @@ export default {
       setTimeout(() => {
         this.itens[next].show = true
       }, 500)
-
       const line = document.querySelector('#line')
       line.classList.remove('animation-line')
-
       if (this.sliderPageIndexBTN) {
         this.sliderPageIndex = event + 1 === 4 ? 1 : event + 2
       } else {
         this.sliderPageIndex = event === 0 ? 4 : event
       }
-
       this.sliderPageIndexBTN = true
-
       this.$refs.carousel.pause()
       setTimeout(() => {
         this.$refs.carousel.play()
