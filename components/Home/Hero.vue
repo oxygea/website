@@ -7,7 +7,7 @@
         v-if="sliderPageIndex === 1"
         :width="500"
         :options="lottieOptions1"
-        class="pointer-events-none top-[80px] lg:top-[100px] !h-auto absolute right-0"
+        class="pointer-events-none top-[80px] lg:top-[207px] !h-auto absolute right-0"
       />
     </transition>
     <transition name="slide-fade">

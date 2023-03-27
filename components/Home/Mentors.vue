@@ -77,11 +77,10 @@
           class="h-[324px] overflow-hidden lg:h-[284px] lg:flex-1 relative"
           :class="[
             { 'grid items-center': filteredMentors.length < 6 },
-            { 'ml-[30px]': filteredMentors.length < 6 },
+            { 'lg:ml-[30px]': filteredMentors.length < 6 },
           ]"
         >
           <div id="mentors-list" class="transition-all relative duration-300">
-            <!-- <transition-group name="list"> -->
             <div
               v-for="(mentor, index) of filteredMentors"
               :id="`mentor-${index}`"
@@ -163,7 +162,6 @@
                 <svg-icon name="arrowCircle" class="w-6 h-6" />
               </a>
             </div>
-            <!-- </transition-group> -->
           </div>
         </div>
 
@@ -485,10 +483,9 @@ export default {
       const forward = selectedIndex * base
       let forwardImage = forward + base
       let forwardLink = forward + base * 3
-      const backward = (this.selectedMentorIndex - selectedIndex) * base
 
       if (isMobile) {
-        forwardImage = forwardLink
+        forwardImage = forward + base * 3.3
         forwardLink = forward + base * 3.3
       }
 
@@ -496,14 +493,15 @@ export default {
         list.style.transform = `translateY(0)`
         img.style.transform = `translateY(${base}px)`
         link.style.transform = `translateY(140px)`
-      } else if (selectedIndex > this.selectedMentorIndex) {
+
+        if (isMobile) {
+          img.style.transform = `translateY(120px)`
+          link.style.transform = `translateY(140px)`
+        }
+      } else {
         list.style.transform = `translateY(-${forward}px)`
         img.style.transform = `translateY(+${forwardImage}px)`
         link.style.transform = `translateY(+${forwardLink}px)`
-      } else {
-        list.style.transform = `translateY(-${
-          this.selectedMentorIndex * base - backward
-        }px)`
       }
 
       this.selectedMentorIndex = selectedIndex

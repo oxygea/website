@@ -1,6 +1,10 @@
 <template>
-  <div id="about" data-section="about" class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20">
-    <section class="container">
+  <section
+    id="about"
+    data-section="about"
+    class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20"
+  >
+    <div class="container">
       <h2 class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6" data-aos="fade">
         {{ $t('portfolio.title') }}
       </h2>
@@ -53,8 +57,8 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script>
 export default {
