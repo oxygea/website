@@ -6,7 +6,7 @@ export default {
   head() {
     const i18nHead = this.$nuxtI18nHead
       ? this.$nuxtI18nHead({ addSeoAttributes: true })
-      : { htmlAttrs: [], meta: [], link: [] }
+      : ''
 
     return {
       title: 'oxygea',
@@ -65,12 +65,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/vuelidate.js' },
     { src: '~/plugins/vue-slick-carousel.js' },
     { src: '~/plugins/vue-slider-component.js' },
     { src: '~/plugins/aos.js', mode: 'client' },
     { src: '~/plugins/vue-lottie.js', mode: 'client' },
-    { src: '~/plugins/vue-rellax.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
