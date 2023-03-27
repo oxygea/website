@@ -86,11 +86,7 @@ export default {
     '@nuxt/image',
   ],
 
-  modules: ['@nuxtjs/i18n', '@nuxtjs/gtm'],
-
-  gtm: {
-    id: 'GTM-KXTFPZC',
-  },
+  modules: ['@nuxtjs/i18n'],
 
   image: {
     provider: 'static',
