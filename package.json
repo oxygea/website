@@ -20,7 +20,7 @@
     "*.{js,ts,vue,css,scss,sass,html,vue}": "yarn lintfix && yarn lint:prettier"
   },
   "dependencies": {
-    "@nuxtjs/gtm": "^2.3.2",
+    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/i18n": "^7.3.1",
     "@nuxtjs/svg-sprite": "^0.5.2",
     "core-js": "^3.25.3",
