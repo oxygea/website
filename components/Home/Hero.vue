@@ -20,7 +20,21 @@
         quality="100"
         loading="lazy"
         aria-hidden
-        class="absolute left-0 top-[51px]"
+        class="absolute hidden lg:block left-0 top-[51px]"
+      />
+    </transition>
+
+    <transition name="slide-fade">
+      <nuxt-img
+        v-if="sliderPageIndex === 2"
+        preload
+        :src="require(`~/assets/img/hero/bg-mobile-2.png`)"
+        format="webp"
+        fit="fill"
+        quality="100"
+        loading="lazy"
+        aria-hidden
+        class="absolute lg:hidden left-0 top-[51px] min-w-full"
       />
     </transition>
 
