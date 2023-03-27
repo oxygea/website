@@ -28,7 +28,7 @@ export default {
     },
     card4: {
       title:
-        'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally',
+        'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
       cta: 'Our partners',
     },
   },
@@ -51,7 +51,7 @@ export default {
       info: 'Energy transition',
       info2: 'New materials from renewable sources',
       info3: 'Carbon market',
-      info4: 'CO2 capture, storage and utilization for new chemicals.',
+      info4: 'CO2 capture, storage and utilization for new chemicals',
     },
     card3: {
       title: 'Biotechnology/ Nanotechnology and New Materials',
@@ -87,7 +87,7 @@ export default {
     title6: 'startup.',
   },
   programs: {
-    title: 'Programas',
+    title: 'Programs',
     benefits: 'Benefits',
     cta: 'ENROLL YOUR STARTUP',
     card1: {
@@ -114,7 +114,7 @@ export default {
     },
     card3: {
       title: 'Investment / CVC',
-      desc: 'Startups that already have a promising business and want to accelerate their growth.',
+      desc: 'Startups that already have a promising business and want to accelerate growth.',
       benefits: {
         t1: 'Access to a Network of Partners.',
         t2: 'Access to distribution channels.',
@@ -143,11 +143,11 @@ export default {
   },
   partners: {
     title: 'Partners',
-    desc: 'Doing things together boosts results.. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
+    desc: 'Doing things together boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
   },
   mentors: {
     title: 'Mentors',
-    desc: 'Experts renowned in various fields ofexpertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
+    desc: 'Experts renowned in various fields of expertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
     filter: {
       title: 'FILTER BY',
       all: 'All',
@@ -164,7 +164,7 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: '4 new ventures emerge as a legacy from Braskem"s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
+    desc: '4 new ventures emerge as a legacy from Braskem’s internal innovation programs. They now go a step further and develop their potential to impact the industry positively.',
     img: {
       title1: 'Sustainable solutions for the industry',
       title2: 'Freight management systems',

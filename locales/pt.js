@@ -13,7 +13,7 @@ export default {
   hero: {
     card1: {
       title:
-        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria',
+        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
       cta: 'Tese de investimento',
     },
     card2: {
