@@ -15,7 +15,7 @@
       </p>
     </div>
     <ul
-      class="flex-wrap hidden lg:flex lg:ml-[110px] gap-x-[40px] gap-y-[40px]"
+      class="flex-wrap hidden lg:flex gap-x-[40px] gap-y-[40px] max-w-[1440px] lg:m-auto lg:px-[70px]"
       data-aos="fade"
     >
       <li

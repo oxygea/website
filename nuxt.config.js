@@ -77,7 +77,14 @@ export default {
     '@nuxt/postcss8',
     '@nuxtjs/svg-sprite',
     '@nuxt/image',
+    'nuxt-gsap-module',
   ],
+
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+    },
+  },
 
   modules: ['@nuxtjs/i18n', '@nuxtjs/gtm'],
 

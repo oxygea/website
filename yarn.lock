@@ -5096,6 +5096,11 @@ grapheme-splitter@^1.0.4:
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
+gsap@^3.11.4:
+  version "3.11.5"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.5.tgz#97ef65091f43868be387803f9db277e8cd5bd041"
+  integrity sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==
+
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
@@ -7169,6 +7174,13 @@ num2fraction@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha512-Y1wZESM7VUThYY+4W+X4ySH2maqcA+p7UR+w8VWNWVAd6lwuXXWz/w/Cz43J/dI2I+PS6wD5N+bJUF+gjWvIqg==
+
+nuxt-gsap-module@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/nuxt-gsap-module/-/nuxt-gsap-module-1.7.3.tgz#f4c68c0ca245f21055f130fcef886532f8584e2f"
+  integrity sha512-zWYY+0GQJaD65DGH1IzHG2+Ntehr/uQGw5nOrmLpu1NSnmlW4envPtq5GmqYb3A+OD3ZshvD0igUerifeyUDQg==
+  dependencies:
+    gsap "^3.11.4"
 
 nuxt@^2.15.8:
   version "2.15.8"
@@ -9487,6 +9499,11 @@ split-string@^3.0.1, split-string@^3.0.2:
   integrity sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
   dependencies:
     extend-shallow "^3.0.0"
+
+split-text@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/split-text/-/split-text-1.0.0.tgz#6e4d91011f93689dd2743170dccf415e66c411b0"
+  integrity sha512-uUKOFGpdt4/rrrBSmLugVbGmHaD7Ex4FcqIEXQRwlnxnDN+pL21Rx2lTgA3CSM8JE6EZPL4ZeEJp1ntzBsnc6Q==
 
 sprintf-js@~1.0.2:
   version "1.0.3"
