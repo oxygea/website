@@ -14,12 +14,14 @@
       </p>
     </div>
 
-    <div class="hidden lg:flex container items-center !pb-10">
-      <p class="font-bold text-base ml-[110px] mr-6 min-w-max font-poppins">
+    <div class="hidden lg:block container !pb-10">
+      <p
+        class="font-bold text-base ml-[110px] pb-4 mr-6 min-w-max font-poppins"
+      >
         {{ $t('mentors.filter.title') }}
       </p>
 
-      <div class="flex flex-wrap gap-y-4 items-center w-full">
+      <div class="pl-[106px] flex flex-wrap gap-y-4 items-center w-full">
         <div
           v-for="(item, index) of filters"
           :key="index"
