@@ -1,15 +1,15 @@
 <template>
   <section class="py-10">
-    <div class="bg-black py-10 lg:pt-20 lg:pb-[90px] container">
+    <div class="bg-black py-10 lg:pt-20 lg:pb-[40px] container">
       <h2
-        class="pb-4 font-bold text-2xl text-white lg:text-[42px] lg:pb-6"
+        class="pb-4 font-bold text-2xl text-white lg:text-[42px] lg:pb-8"
         data-aos="fade"
       >
         {{ $t('team.title') }}
       </h2>
       <p
         data-aos="fade"
-        class="font-normal text-xs font-poppins leading-4 pb-10 text-white lg:max-w-[530px] lg:ml-[110px] lg:text-base"
+        class="font-normal text-xs font-poppins leading-4 text-white lg:max-w-[530px] lg:ml-[110px] lg:text-base"
       >
         {{ $t('team.desc') }}
       </p>
@@ -35,7 +35,7 @@
       </button>
     </div>
     <ul
-      class="flex-wrap hidden lg:flex gap-x-[40px] gap-y-[40px] max-w-[1440px] lg:m-auto lg:px-[70px]"
+      class="flex-wrap hidden lg:flex gap-x-[40px] gap-y-[40px] max-w-[1440px] lg:pb-10 lg:m-auto lg:pl-[182px] lg:pr-[70px]"
       data-aos="fade"
     >
       <li
