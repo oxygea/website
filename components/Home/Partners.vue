@@ -19,8 +19,33 @@
       </p>
     </div>
 
+    <div class="container w-full flex items-center justify-end !pb-4 lg:hidden">
+      <button
+        class="next-slide rotate-180 flex items-center mr-4 justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        @click="prevSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-black fill-current"
+        />
+      </button>
+      <button
+        class="next-slide flex items-center justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        @click="nextSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-black fill-current"
+        />
+      </button>
+    </div>
+
     <div class="container !pr-0 lg:hidden">
-      <VueSlickCarousel v-bind="slickOptions1" class="lg:pl-[65px] partners">
+      <VueSlickCarousel
+        ref="carouselPartners"
+        v-bind="slickOptions1"
+        class="lg:pl-[65px] partners"
+      >
         <a
           href="https://abstartups.com.br/"
           target="_blank"
@@ -62,6 +87,20 @@
           class="!flex justify-center items-center"
         >
           <svg-icon name="distrito" class="w-[98px] h-[26px]" />
+        </a>
+        <a target="_blank" href="" class="!flex justify-center items-center">
+          <nuxt-img
+            preload
+            :src="`partners/05.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem logo FIEMG`"
+            :title="`FIEMG`"
+            class="max-w-[100px] h-[28px] m-auto"
+          />
         </a>
         <a
           target="_blank"
@@ -178,17 +217,31 @@
         >
           <svg-icon name="cubo" class="w-[83px] h-[28px]" />
         </a>
-      </VueSlickCarousel>
-      <VueSlickCarousel
-        v-bind="slickOptions2"
-        class="flex items-center lg:pl-[30px] justify-center partners"
-      >
         <a
           href="https://distrito.me/"
           target="_blank"
           class="!flex justify-center items-center"
         >
           <svg-icon name="distrito" class="w-[98px] h-[26px]" />
+        </a>
+      </VueSlickCarousel>
+      <VueSlickCarousel
+        v-bind="slickOptions2"
+        class="flex items-center justify-center partners"
+      >
+        <a target="_blank" href="" class="!flex justify-center items-center">
+          <nuxt-img
+            preload
+            :src="`partners/05.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem logo FIEMG`"
+            :title="`FIEMG`"
+            class="max-w-[100px] h-[28px] m-auto"
+          />
         </a>
         <a
           target="_blank"
@@ -274,8 +327,8 @@ export default {
     return {
       slickOptions1: {
         dots: false,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         infinite: false,
         arrows: false,
         variableWidth: false,
@@ -291,8 +344,8 @@ export default {
       },
       slickOptions2: {
         dots: false,
-        slidesToShow: 5.1,
-        slidesToScroll: 5.1,
+        slidesToShow: 4.9,
+        slidesToScroll: 4.9,
         infinite: false,
         arrows: false,
         variableWidth: false,
@@ -307,6 +360,14 @@ export default {
         ],
       },
     }
+  },
+  methods: {
+    nextSlide() {
+      this.$refs.carouselPartners.next()
+    },
+    prevSlide() {
+      this.$refs.carouselPartners.prev()
+    },
   },
 }
 </script>

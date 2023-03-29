@@ -15,13 +15,11 @@
     </div>
 
     <div class="hidden lg:flex container items-center !pb-10">
-      <p
-        class="font-bold text-base ml-[110px] w-full mr-6 min-w-max font-poppins"
-      >
+      <p class="font-bold text-base ml-[110px] mr-6 min-w-max font-poppins">
         {{ $t('mentors.filter.title') }}
       </p>
 
-      <VueSlickCarousel v-bind="options.slick" class="flex items-center w-full">
+      <div class="flex flex-wrap gap-y-4 items-center w-full">
         <div
           v-for="(item, index) of filters"
           :key="index"
@@ -36,7 +34,7 @@
         >
           {{ $t(`mentors.filter.${item}`) }}
         </div>
-      </VueSlickCarousel>
+      </div>
     </div>
 
     <div class="container !pr-0 !pb-10 !pt-2 lg:hidden">

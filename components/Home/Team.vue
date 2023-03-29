@@ -14,6 +14,26 @@
         {{ $t('team.desc') }}
       </p>
     </div>
+    <div class="container w-full flex items-center justify-end !pb-4 lg:hidden">
+      <button
+        class="next-slide rotate-180 flex items-center mr-4 justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
+        @click="prevSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-white fill-current"
+        />
+      </button>
+      <button
+        class="next-slide flex items-center justify-center border-2 border-white rounded-full min-h-[32px] min-w-[32px]"
+        @click="nextSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-white fill-current"
+        />
+      </button>
+    </div>
     <ul
       class="flex-wrap hidden lg:flex gap-x-[40px] gap-y-[40px] max-w-[1440px] lg:m-auto lg:px-[70px]"
       data-aos="fade"
@@ -66,7 +86,11 @@
       </li>
     </ul>
 
-    <VueSlickCarousel v-bind="slickOptions" class="lg:!hidden">
+    <VueSlickCarousel
+      ref="carouselTeam"
+      v-bind="slickOptions"
+      class="lg:!hidden"
+    >
       <div
         v-for="(item, index) in teamData"
         :key="index"
@@ -124,6 +148,14 @@ export default {
         ],
       },
     }
+  },
+  methods: {
+    nextSlide() {
+      this.$refs.carouselTeam.next()
+    },
+    prevSlide() {
+      this.$refs.carouselTeam.prev()
+    },
   },
 }
 </script>

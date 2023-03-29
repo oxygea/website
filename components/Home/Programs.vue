@@ -1,8 +1,28 @@
 <template>
   <section id="programs" class="bg-white pt-10 pb-5 lg:py-20">
-    <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
-      {{ $t('programs.title') }}
-    </h2>
+    <div class="container w-full flex items-center justify-between lg:hidden">
+      <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
+        {{ $t('programs.title') }}
+      </h2>
+      <button
+        class="next-slide rotate-180 flex items-center mr-4 justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        @click="prevSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-black fill-current"
+        />
+      </button>
+      <button
+        class="next-slide flex items-center justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        @click="nextSlide"
+      >
+        <svg-icon
+          name="arrow-right"
+          class="w-[9px] h-[13px] cursor-pointer text-black fill-current"
+        />
+      </button>
+    </div>
 
     <VueSlickCarousel
       v-bind="slickOptions"
@@ -224,6 +244,12 @@ export default {
     },
     onSlideChange(event) {
       this[`showMenu${event + 1}`] = false
+    },
+    nextSlide() {
+      this.$refs.carouselPrograms.next()
+    },
+    prevSlide() {
+      this.$refs.carouselPrograms.prev()
     },
   },
 }
