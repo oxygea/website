@@ -30,15 +30,11 @@
       <div class="w-full md:max-w-[418px] relative z-10 md:py-[116px]">
         <p
           class="text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 pb-5 !-tracking-[0.03em]"
-          data-aos="fade-up"
-          data-aos-delay="100"
         >
           {{ $t('oxygea.desc1') }}
         </p>
         <p
           class="text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 pb-5 !-tracking-[0.03em]"
-          data-aos="fade-up"
-          data-aos-delay="100"
         >
           {{ $t('oxygea.desc2') }}
         </p>
