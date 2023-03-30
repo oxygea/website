@@ -118,6 +118,16 @@
           <svg-icon name="linkedin2" class="w-[18px] h-[18px]" />
         </a>
       </div>
+      <div
+        class="!w-[124px] h-[100px] bg-[#141414] !flex items-center justify-center ml-5"
+      >
+        <p
+          class="cursor-pointer rounded-[100px] font-medium text-[10px] bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+          @click="$nuxt.$emit('openModalContact')"
+        >
+          {{ $t('team.part') }}
+        </p>
+      </div>
     </VueSlickCarousel>
   </section>
 </template>

@@ -6,7 +6,7 @@
         '!bg-white': !menuDark,
       },
     ]"
-    class="header fixed left-0 top-0 w-full z-40 lg:flex items-center justify-between lg:px-4 xs:px-10 lg:py-4"
+    class="header fixed left-0 top-0 w-full z-40 menu-desktop items-center justify-between lg:px-4 xs:px-10 lg:py-4"
   >
     <div class="container flex flex-row justify-between items-center h-[64px]">
       <n-link
@@ -32,14 +32,14 @@
       </n-link>
 
       <span
-        class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center lg:hidden"
+        class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center svg-mobile"
         @click="$nuxt.$emit('openMenuMobile')"
       >
         <svg-icon name="hamburger" class="w-[18px] h-[16px]" />
       </span>
 
       <!-- menu desktop-->
-      <div class="h-full lg:flex justify-center items-center hidden">
+      <div class="h-full menu-desktop justify-center items-center hidden">
         <nav
           class="text-white flex flex-row gap-8"
           :class="{ menuWhite: !menuDark }"
@@ -285,5 +285,17 @@ export default {
 
 [data-theme='about'] [data-link='about'] {
   color: rgb(130 130 235);
+}
+
+.menu-desktop {
+  @media (min-width: 1090px) {
+    display: flex;
+  }
+}
+
+.svg-mobile {
+  @media (min-width: 1090px) {
+    display: none;
+  }
 }
 </style>

@@ -2,9 +2,11 @@
   <transition name="slide-fade">
     <div
       v-if="show"
-      class="h-full bg-white transition-all duration-500 fixed w-full z-50 lg:hidden"
+      class="h-full bg-white transition-all duration-500 fixed w-full z-50 menu-mobile"
     >
-      <div class="container flex justify-between items-center h-[64px]">
+      <div
+        class="container flex justify-between items-center h-[96px] lg:!px-[85px]"
+      >
         <n-link :to="localePath('/')" title="Oxygea">
           <svg-icon
             name="logoDark"
@@ -13,13 +15,15 @@
         </n-link>
 
         <span
-          class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center lg:hidden"
+          class="btn p-0 w-[32px] h-[32px] cursor-pointer flex z-[99] justify-center items-center menu-mobile"
           @click="$emit('close-modal')"
         >
           <svg-icon name="close" class="w-[32px] h-[32px] text-white" />
         </span>
       </div>
-      <nav class="h-full w-full lg:pt-0 bg-white lg:hidden container fadeIn">
+      <nav
+        class="h-full w-full lg:pt-0 bg-white menu-mobile container lg:!px-[85px] fadeIn"
+      >
         <div class="lg:mt-0 bg-white pt-[72px]">
           <div class="flex flex-col h-full items-start">
             <AnchorMenu
@@ -113,7 +117,7 @@
             </div>
           </div>
 
-          <div class="lg:hidden ml-2">
+          <div class="menu-mobile ml-2">
             <div class="flex">
               <a
                 href="https://www.linkedin.com/company/oxygeaventures/"
@@ -176,5 +180,11 @@ export default {
 .slide-fade-enter,
 .slide-fade-leave-to {
   opacity: 0;
+}
+
+.menu-mobile {
+  @media (min-width: 1090px) {
+    display: none;
+  }
 }
 </style>
