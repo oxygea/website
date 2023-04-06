@@ -4,7 +4,7 @@ export default {
       'Somos um Corporate Venture Capital, um hub de aceleração e Venture Building com foco em sustentabilidade e transformação digital na indústria.',
   },
   menu: {
-    future: 'O Futuro é Coletivo',
+    future: 'O Futuro é coletivo',
     acceleration: 'Aceleração e Investimento',
     ecosystem: 'Ecossistema e Colaboração',
     about: 'Somos Oxygea',
@@ -73,7 +73,7 @@ export default {
     },
   },
   numbers: {
-    capital: 'investimentos em inovação',
+    capital: 'investimento em inovação',
     companies: 'empresas no portfolio',
     search: 'centros de pesquisa, inovação e biotecnologia',
     plants: 'plantas piloto',
@@ -88,7 +88,7 @@ export default {
     title: 'Programas',
     benefits: 'Benefícios',
     cta: 'INSCREVA SUA STARTUP',
-    card1: {
+    card3: {
       title: 'Incubação / VB',
       desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
       benefits: {
@@ -110,7 +110,7 @@ export default {
         t5: 'Suporte na Definição da Estratégia de Marketing.',
       },
     },
-    card3: {
+    card1: {
       title: 'Investimento / CVC',
       desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento.',
       benefits: {

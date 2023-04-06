@@ -4,7 +4,7 @@ export default {
       'We are a Corporate Venture Capital, Acceleration and Venture Building hub focused on sustainability and digital transformation in the industry.',
   },
   menu: {
-    future: 'Future is Collective',
+    future: 'Future is collective',
     acceleration: 'Acceleration and Investment',
     ecosystem: 'Ecosystem and Support',
     about: 'About',
@@ -90,7 +90,7 @@ export default {
     title: 'Programs',
     benefits: 'Benefits',
     cta: 'ENROLL YOUR STARTUP',
-    card1: {
+    card3: {
       title: 'Incubation / VB',
       desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
       benefits: {
@@ -112,7 +112,7 @@ export default {
         t5: 'Support in Business Strategy Definition.',
       },
     },
-    card3: {
+    card1: {
       title: 'Investment / CVC',
       desc: 'Startups that already have a promising business and want to accelerate growth.',
       benefits: {

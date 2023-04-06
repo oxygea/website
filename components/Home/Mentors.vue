@@ -93,7 +93,7 @@
               ]"
             >
               <p
-                class="transition-all duration-300 font-medium text-xs font-poppins lg:min-w-[200px] lg:text-base lg:font-normal"
+                class="cursor-pointer transition-all duration-300 font-medium text-xs font-poppins lg:min-w-[200px] lg:text-base lg:font-normal lg:hover:underline"
                 :class="[
                   {
                     'text-[#9D9D9D]': mentor.slug !== selectedMentor,

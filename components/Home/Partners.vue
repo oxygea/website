@@ -229,7 +229,11 @@
         v-bind="slickOptions2"
         class="flex items-center justify-center partners"
       >
-        <a target="_blank" href="" class="!flex justify-center items-center">
+        <a
+          target="_blank"
+          href="https://fiemglab.com.br/"
+          class="!flex justify-center items-center"
+        >
           <nuxt-img
             preload
             :src="`partners/05.png`"
