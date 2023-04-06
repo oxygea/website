@@ -662,6 +662,8 @@ export default {
     },
     contact: {
       h3: 'Get in contact',
+      successTitle: 'Thank you',
+      successText: 'Your message has been succesfully sent.',
       p: 'We want to hear from you! Talk to us.',
       l1: 'Message',
       l2: 'Text is too long',

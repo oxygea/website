@@ -86,7 +86,7 @@ export default {
     },
   },
 
-  modules: ['@nuxtjs/i18n', '@nuxtjs/gtm'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/i18n', '@nuxtjs/gtm'],
 
   gtm: {
     id: 'GTM-KXTFPZC',

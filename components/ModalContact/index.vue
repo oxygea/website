@@ -18,7 +18,7 @@
             @click="$emit('close-modal')"
           />
         </div>
-        <div class="pb-10">
+        <div v-if="!success" class="pb-10">
           <h3 class="font-bold text-xl pb-2 lg:text-2xl">
             {{ $t('modals.contact.h3') }}
           </h3>
@@ -26,7 +26,16 @@
             {{ $t('modals.contact.p') }}
           </p>
         </div>
+        <div v-else class="pb-10">
+          <h3 class="font-bold text-xl pb-2 lg:text-2xl">
+            {{ $t('modals.contact.successTitle') }}
+          </h3>
+          <p class="font-normal text-xs lg:text-base font-poppins">
+            {{ $t('modals.contact.successText') }}
+          </p>
+        </div>
         <form
+          v-if="!success"
           class="flex flex-wrap justify-end pb-5"
           @submit.prevent="handleSubmit"
         >
@@ -133,10 +142,11 @@
             >
               {{ $t('modals.contact.plc6') }}
             </p>
-            <input
+            <TheMask
               v-model="form.whatsapp"
+              mask="(##) #####-####"
+              type="text"
               name="phone"
-              type="tel"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>
@@ -156,6 +166,7 @@
 
           <textarea
             id="message"
+            v-model="form.message"
             class="w-full min-h-[132px] text-sm mb-2 bg-white border font-poppins border-[#9D9D9D] p-4 text-black placeholder-black font-medium"
             :placeholder="`${$t('modals.contact.plc8')}`"
             maxlength="1000"
@@ -210,6 +221,7 @@
 </template>
 
 <script>
+import { TheMask } from 'vue-the-mask'
 import { required, minLength, email } from 'vuelidate/lib/validators'
 import CustomSelect from '../../components/Select'
 
@@ -217,6 +229,7 @@ export default {
   name: 'ModalContact',
   components: {
     CustomSelect,
+    TheMask,
   },
   props: {
     show: Boolean,
@@ -224,6 +237,7 @@ export default {
   },
   data() {
     return {
+      success: false,
       form: {
         name: null,
         lastname: null,
@@ -277,24 +291,45 @@ export default {
     onChange(event) {
       this.textLength = event.target.textLength
     },
-    handleSubmit() {
+    async handleSubmit() {
       // eslint-disable-next-line no-console
-      this.$v.$touch()
-      if (this.$v.$invalid) {
-        this.submitStatus = 'ERROR'
-      } else {
-        this.submitStatus = 'PENDING'
-        // const rawData = {
-        //   Nome: this.form.name,
-        //   Lastname: this.form.lastname,
-        //   Email: this.form.email,
-        //   Website: this.form.website,
-        //   Linkedin: this.form.linkedin,
-        //   Whatsapp: this.form.whatsapp,
-        //   Mensagem: this.form.message,
-        // }
-        this.$nuxt.$loading.start()
-        // this.submitFormWorkUs(rawData)
+      try {
+        this.$v.$touch()
+        const rawData = {
+          name: this.form.name,
+          lastname: this.form.lastname,
+          email: this.form.email,
+          website: this.form.website,
+          linkedin: this.form.linkedin,
+          whatsapp: this.form.whatsapp,
+          message: this.form.message,
+          subject: this.selectedOptionId,
+        }
+        await this.$axios.$post(
+          'https://hooks.zapier.com/hooks/catch/14969184/32inzps/',
+          JSON.stringify(rawData)
+        )
+
+        this.success = true
+
+        setTimeout(
+          () => {
+            this.form.name = null
+            this.form.lastname = null
+            this.form.email = null
+            this.form.website = null
+            this.form.linkedin = null
+            this.form.whatsapp = null
+            this.form.message = null
+            this.selectedOptionId = null
+            this.success = false
+            this.textLength = 0
+          },
+          10000,
+          this.$v.$reset()
+        )
+      } catch (e) {
+        alert('Ocorreu um erro, tente novamente mais tarde.')
       }
     },
   },

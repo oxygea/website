@@ -80,15 +80,11 @@ export default {
       type: Array,
       required: true,
     },
-    value: {
-      type: String,
-      required: true,
-    },
   },
   data() {
     return {
       isOpen: false,
-      selectedOption: this.value,
+      selectedOption: null,
     }
   },
   watch: {
@@ -97,15 +93,11 @@ export default {
         this.options.find((option) => option.id === newValue)?.name || ''
     },
   },
-  mounted() {
-    this.selectedOption =
-      this.options.find((option) => option.id === this.value)?.name || ''
-  },
   methods: {
     selectOption(option) {
       this.selectedOption = option.name
       this.isOpen = false
-      this.$emit('input', option.id)
+      this.$emit('input', this.selectedOption)
     },
   },
 }

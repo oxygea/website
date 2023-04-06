@@ -662,6 +662,8 @@ export default {
     contact: {
       h3: 'Entre em contato',
       p: 'Queremos te ouvir! Fale com a gente.',
+      successTitle: 'Obrigado',
+      successText: 'Sua mensagem foi enviada com sucesso.',
       l1: 'Mensagem',
       l2: 'Texto é muito longo',
       l3: 'caracteres',
