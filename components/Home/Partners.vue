@@ -180,7 +180,7 @@
     <div class="container !pr-0 hidden lg:block">
       <VueSlickCarousel
         v-bind="slickOptions1"
-        class="mb-10 lg:pl-[65px] partners"
+        class="mb-10 lg:pl-[95px] partners"
       >
         <a
           href="https://abstartups.com.br/"
@@ -227,7 +227,7 @@
       </VueSlickCarousel>
       <VueSlickCarousel
         v-bind="slickOptions2"
-        class="flex items-center justify-center partners"
+        class="flex items-center justify-center partners lg:pl-[35px]"
       >
         <a
           target="_blank"
@@ -348,8 +348,8 @@ export default {
       },
       slickOptions2: {
         dots: false,
-        slidesToShow: 4.9,
-        slidesToScroll: 4.9,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         infinite: false,
         arrows: false,
         variableWidth: false,

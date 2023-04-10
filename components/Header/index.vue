@@ -41,7 +41,7 @@
       <!-- menu desktop-->
       <div class="h-full menu-desktop justify-center items-center hidden">
         <nav
-          class="text-white flex flex-row gap-8"
+          class="text-white flex flex-row gap-8 menu-desktop--list"
           :class="{ menuWhite: !menuDark }"
         >
           <AnchorMenu
@@ -290,6 +290,7 @@ export default {
 .menu-desktop {
   @media (min-width: 1090px) {
     display: flex;
+    padding-left: 40px;
   }
 }
 

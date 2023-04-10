@@ -47,19 +47,19 @@
         data-aos="fade"
       />
 
-      <div class="container !py-10 lg:ml-[50px]">
+      <div class="container !py-10 xl:ml-[45px]">
         <p
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
+          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
         >
           {{ $t('startup.title1') }}
         </p>
         <p
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
+          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
         >
           {{ $t('startup.title2') }}
         </p>
         <p
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
+          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
           :class="{ 'pb-6': $i18n.locale === 'pt' }"
         >
           {{ $t('startup.title3') }}
@@ -88,7 +88,7 @@
 
         <p
           v-if="$i18n.locale === 'pt'"
-          class="font-bold text-xl lg:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
+          class="font-bold text-xl xl:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
         >
           {{ $t('startup.desc') }}
         </p>
