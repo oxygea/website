@@ -25,7 +25,7 @@
           </p>
         </div>
 
-        <div class="lg:max-w-[530px] lg:mt-[118px] lg:mb-9">
+        <div class="lg:max-w-[530px] lg:mt-[118px] lg:mb-9 hidden">
           <p class="font-normal text-xs lg:text-xl">
             {{ $t('footer.singup') }}
           </p>

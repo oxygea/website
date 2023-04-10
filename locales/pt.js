@@ -34,42 +34,44 @@ export default {
   },
   oxygea: {
     desc1:
-      'Oxygea está aqui para acelerar e investir em pessoas e seus negócios, que impulsionarão a inovação sustentável e a transformação digital.',
+      'Oxygea está aqui para investir em pessoas e acelerar seus negócios, que impulsionarão a sustentabilidade e a transformação digital.',
     desc2:
-      'Valorizamos o ecossistema e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
+      'Valorizamos o ecossistema de inovação e nos articulamos com redes globais e locais para proporcionar o melhor às startups que vão transformar o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
     card1: {
       title: 'Economia Circular',
-      info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção',
-      info2: 'Aumento da vida útil das aplicações do plástico',
-      info3: 'Redução de requisitos de plástico na produção, uso ou descarte',
+      info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção.',
+      info2: 'Aumento da vida útil das aplicações do plástico.',
+      info3: 'Redução de requisitos de plástico na produção, uso ou descarte.',
     },
     card2: {
       title: 'Neutralidadede de Carbono',
-      info: 'Transição energética',
-      info2: 'Novos materiais de fontes renováveis',
-      info3: 'Mercado de carbono',
-      info4: 'Captura, armazenamento e utilização de CO2 para novos químicos',
+      info: 'Transição energética.',
+      info2: 'Novos materiais de fontes renováveis.',
+      info3: 'Mercado de carbono.',
+      info4:
+        'Captura, armazenamento e utilização de CO<sub>2</sub> para novos químicos.',
     },
     card3: {
       title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
-      info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais',
-      info2: 'Materiais Avançados',
-      info3: 'Tecnologias digitais para aceleração dos desenvolvimentos de P&D',
+      info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais.',
+      info2: 'Materiais avançados.',
+      info3:
+        'Tecnologias digitais para aceleração dos desenvolvimentos de P&D.',
     },
     card4: {
       title: 'Plástico como Solução Sustentável',
-      info: 'Biopolímeros',
-      info2: 'Aplicações do plástico com ganho de performance',
-      info3: 'Manufatura aditiva',
+      info: 'Biopolímeros.',
+      info2: 'Aplicações do plástico com ganho de performance.',
+      info3: 'Manufatura aditiva (Impressões 3D).',
     },
     card5: {
       title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: Analytics, automação e tecnologias avançadas de manufatura',
+      info: 'Indústria 4.0: analytics, automação e tecnologias avançadas de manufatura.',
       info2:
-        'Logística 4.0: Eficiência logística e melhoria da rastreabilidade',
+        'Logística 4.0: eficiência logística e melhoria da rastreabilidade.',
     },
   },
   numbers: {
@@ -137,7 +139,7 @@ export default {
     connect3: 'referência global',
     connect4: 'e mentores',
     connect5: 'especializados -',
-    innovation: 'gente que acorda e dorme pensando inovação, como você.',
+    innovation: 'Gente que acorda e dorme pensando inovação, como você.',
   },
   partners: {
     title: 'Parceiros',
@@ -145,7 +147,7 @@ export default {
   },
   mentors: {
     title: 'Mentores',
-    desc: 'Especialistas reconhecidos em diversos campos do conhecimento colaboram com a gente. Referências da indústria, da ciência, da pesquisa, da inovação e da sustentabilidade, com a missão de oferecer a profundidade necessária para mudar o mercado.',
+    desc: 'Especialistas reconhecidos em diversos campos de atuação colaboram com a gente. Referências da indústria, da ciência, pesquisa, inovação e sustentabilidade, com a missão de oferecer a profundidade necessária para gerar valor para as startups.',
     filter: {
       title: 'FILTRAR POR',
       all: 'Todos',
@@ -162,7 +164,7 @@ export default {
   },
   portfolio: {
     title: 'Portfolio de empresas',
-    desc: '4 novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
+    desc: 'Quatro novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
     img: {
       title1: 'Soluções sustentáveis para a indústria',
       title2: 'Sistemas de gerenciamento de frete',
@@ -173,17 +175,21 @@ export default {
       alt3: 'Máquinas inteligentes na produção de plástico',
       alt4: 'Mão com ícones que representam sustentabilidade',
     },
+    titleXTELLAR: 'IMPRIMINDO O FUTURO',
     XTELLAR:
-      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional/ bio-polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
+      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional, bio-polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
+    titleLOADSHARK: 'EFICIÊNCIA E CONTROLE DE FRETE',
     LOADSHARK:
       'Sistema de gerenciamento de frete, com funcionalidade de leilão reverso para embarcadores.',
+    titleBABEL: 'REVOLUÇÃO 4.0 PARA A INDÚSTRIA PLÁSTICA',
     BABEL:
       'Otimização do processo de produção de transformadores da indústria de plásticos por meio de machine learning.',
+    titleZAYA: 'DEMOCRATIZANDO O CONHECIMENTO DE SUSTENTABILIDADE',
     ZAYA: 'Padrão de sustentabilidade para empresas e consumidores para comparar o impacto ambiental de diferentes produtos ao longo de seu ciclo de vida.',
   },
   team: {
     title: 'Time Oxygea',
-    desc: 'Estamos com você para cocriar novos caminhos para um futuro sustentável.',
+    desc: 'Estamos com você para cocriar novos caminhos para um futuro mais sustentável.',
     part: 'FAÇA PARTE',
   },
   footer: {

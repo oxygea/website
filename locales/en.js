@@ -34,42 +34,43 @@ export default {
   },
   oxygea: {
     desc1:
-      'Oxygea is here to accelerate and invest in people and their business that will drive sustainable innovation and digital transformation.',
+      'Oxygea is here to invest in people and accelerate their business that will drive sustainability and digital transformation.',
     desc2:
-      'We value ecosystems and we cooperate with local and global networks to provide only the best to startups that will transform the future of the industry.',
+      'We value the innovation ecosystem and we cooperate with local and global networks to provide only the best to startups that will transform the future of the industry.',
   },
   invest: {
     title: 'Where do we invest?',
     card1: {
       title: 'Circular Economy',
-      info: 'Technologies intended for reintegrating plastic waste to production chain',
-      info2: 'Extend the useful lifecycle of plastic applications',
-      info3: 'A reduction in the need for production, use, or disposal',
+      info: 'Technologies intended for reintegrating plastic waste to production chain.',
+      info2: 'Extend the useful lifecycle of plastic applications.',
+      info3: 'A reduction in the need for production, use, or disposal.',
     },
     card2: {
       title: 'Carbon Neutrality',
-      info: 'Energy transition',
-      info2: 'New materials from renewable sources',
-      info3: 'Carbon market',
-      info4: 'CO2 capture, storage and utilization for new chemicals',
+      info: 'Energy transition.',
+      info2: 'New materials from renewable sources.',
+      info3: 'Carbon market.',
+      info4:
+        'CO<sub>2</sub> capture, storage and utilization for new chemicals.',
     },
     card3: {
       title: 'Biotechnology/ Nanotechnology and New Materials',
-      info: 'New biological and biochemical routes to produce chemicals, plastics and materials',
-      info2: 'Advanced Materials',
-      info3: 'Digital technologies for accelerating R&D developments',
+      info: 'New biological and biochemical routes to produce chemicals, plastics and materials.',
+      info2: 'Advanced materials.',
+      info3: 'Digital technologies for accelerating R&D developments.',
     },
     card4: {
       title: 'Plastic as sustainable solution',
-      info: 'Biopolymers',
-      info2: 'Plastic applications with performance gain',
-      info3: 'Additive manufacturing',
+      info: 'Biopolymers.',
+      info2: 'Plastic applications with performance gain.',
+      info3: 'Additive manufacturing (3D printing).',
     },
     card5: {
       title: 'Smart Factory & Future Mobility',
-      info: 'Industry 4.0: Analytics, automation and advanced manufacturing technologies',
-      info2: 'Logistics 4.0: Logistics efficiency and improved traceability',
-      info3: 'Additive manufacturing',
+      info: 'Industry 4.0: analytics, automation and advanced manufacturing technologies.',
+      info2: 'Logistics 4.0: logistics efficiency and improved traceability.',
+      info3: 'Additive manufacturing.',
     },
   },
   numbers: {
@@ -139,7 +140,7 @@ export default {
     connect4: 'and specialized',
     connect5: 'advisors -',
     innovation:
-      'people that go to bed and wake up thinking of innovation, just like you.',
+      'People that go to bed and wake up thinking of innovation, just like you.',
   },
   partners: {
     title: 'Partners',
@@ -147,7 +148,7 @@ export default {
   },
   mentors: {
     title: 'Mentors',
-    desc: 'Experts renowned in various fields of expertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to change the market.',
+    desc: 'Experts renowned in various fields of expertise: Industry, science, research, innovation and sustainability references, their mission is to offer the necessary input to create value to startups.',
     filter: {
       title: 'FILTER BY',
       all: 'All',
@@ -164,7 +165,7 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: '4 new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
+    desc: 'Four new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
     img: {
       title1: 'Sustainable solutions for the industry',
       title2: 'Freight management systems',
@@ -175,17 +176,21 @@ export default {
       alt3: 'Intelligent machines in plastic production',
       alt4: 'Hand with icons representing sustainability',
     },
+    titleXTELLAR: 'PRINTING THE FUTURE',
     XTELLAR:
-      'Production and sale of 3D printer filament, using conventional/ biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
+      'Production and sale of 3D printer filament, using conventional, biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
+    titleLOADSHARK: 'FREIGHT EFFICIENCY AND CONTROL',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
+    titleBABEL: '4.0 REVOLUTION 4.0 FOR THE PLASTIC INDUSTRY',
     BABEL:
       'Optimization of the production process of plastic industry transformers through machine learning.',
+    titleZAYA: 'DEMOCRATIZING SUSTAINABILITY KNOWLEDGE',
     ZAYA: 'Sustainability standard for companies and consumers, to compare the environmental impact of different products throughout their life cycle.',
   },
   team: {
     title: 'Oxygea Team',
-    desc: 'We are with you to co-create new paths to a sustainable future.',
+    desc: 'We are with you to co-create new paths for a more sustainable future.',
     part: 'JOIN US',
   },
   footer: {

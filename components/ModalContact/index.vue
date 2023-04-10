@@ -115,7 +115,7 @@
             <input
               v-model="form.website"
               name="site"
-              type="url"
+              type="text"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
           </label>

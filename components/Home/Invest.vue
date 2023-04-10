@@ -6,13 +6,13 @@
       </h2>
 
       <div
-        class="flex flex-wrap pt-10 gap-8 md:gap-x-[130px] lg:ml-[110px] lg:pt-6"
+        class="flex flex-wrap pt-10 gap-y-8 gap-x-[60px] 2xl:gap-x-[130px] lg:ml-[110px] lg:pt-6"
         data-aos="fade"
       >
         <div
           v-for="(item, index) of itens"
           :key="`invest-${index}`"
-          class="md:w-[100%] lg:max-w-[310px]"
+          class="md:w-[100%] xl:max-w-[310px]"
           :class="item.classNames"
         >
           <svg-icon :name="item.icon" class="w-8 h-8 lg:w-16 lg:h-16" />
@@ -28,7 +28,7 @@
               :key="`invest-description-${descriptionIndex}`"
               :class="descriptionIndex !== 0 ? 'mt-4 block' : ''"
             >
-              {{ description }}
+              <span v-html="description"></span>
             </span>
           </p>
         </div>
