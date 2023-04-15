@@ -4,8 +4,8 @@ export default {
       'Somos um Corporate Venture Capital, um hub de aceleração e Venture Building com foco em sustentabilidade e transformação digital na indústria.',
   },
   menu: {
-    future: 'O Futuro é coletivo',
-    acceleration: 'Aceleração e Investimento',
+    future: 'O futuro é coletivo',
+    acceleration: 'Investimento e Aceleração',
     ecosystem: 'Ecossistema e Colaboração',
     about: 'Somos Oxygea',
     contact: 'Contato',
@@ -47,7 +47,7 @@ export default {
       info3: 'Redução de requisitos de plástico na produção, uso ou descarte.',
     },
     card2: {
-      title: 'Neutralidadede de Carbono',
+      title: 'Neutralidade de Carbono',
       info: 'Transição energética.',
       info2: 'Novos materiais de fontes renováveis.',
       info3: 'Mercado de carbono.',
@@ -138,7 +138,7 @@ export default {
     connect2: 'com parceiros de',
     connect3: 'referência global',
     connect4: 'e mentores',
-    connect5: 'especializados -',
+    connect5: 'especializados.',
     innovation: 'Gente que acorda e dorme pensando inovação, como você.',
   },
   partners: {
@@ -147,7 +147,7 @@ export default {
   },
   mentors: {
     title: 'Mentores',
-    desc: 'Especialistas reconhecidos em diversos campos de atuação colaboram com a gente. Referências da indústria, da ciência, pesquisa, inovação e sustentabilidade, com a missão de oferecer a profundidade necessária para gerar valor para as startups.',
+    desc: 'Especialistas reconhecidos em diversos campos de atuação colaboram com a gente. Referências da indústria, ciência, pesquisa, inovação e sustentabilidade, com a missão de oferecer a profundidade necessária para gerar valor para as startups.',
     filter: {
       title: 'FILTRAR POR',
       all: 'Todos',
@@ -194,7 +194,7 @@ export default {
   },
   footer: {
     conect:
-      'Conexão com o ecossistema de startups para acelerar e investir em um futuro sustentável.',
+      'Conexão com o ecossistema de startups para investir e acelerar em um futuro sustentável.',
     address1: 'Estamos localizados no Cubo by Itaú',
     address2: ' Alameda Vicente Pinzon 54, 11º andar.',
     address3: 'Vila Olímpia, SP. CEP 04547-130',

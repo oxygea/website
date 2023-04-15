@@ -5,7 +5,7 @@ export default {
   },
   menu: {
     future: 'Future is collective',
-    acceleration: 'Acceleration and Investment',
+    acceleration: 'Investment and Acceleration',
     ecosystem: 'Ecosystem and Support',
     about: 'About',
     contact: 'Contact',
@@ -138,7 +138,7 @@ export default {
     connect2: 'to global',
     connect3: 'reference partners',
     connect4: 'and specialized',
-    connect5: 'advisors -',
+    connect5: 'advisors.',
     innovation:
       'People that go to bed and wake up thinking of innovation, just like you.',
   },
@@ -182,7 +182,7 @@ export default {
     titleLOADSHARK: 'FREIGHT EFFICIENCY AND CONTROL',
     LOADSHARK:
       'Shipment management system, with reverse auction functionality for shippers.',
-    titleBABEL: '4.0 REVOLUTION 4.0 FOR THE PLASTIC INDUSTRY',
+    titleBABEL: '4.0 Revolution for the plastic industry',
     BABEL:
       'Optimization of the production process of plastic industry transformers through machine learning.',
     titleZAYA: 'DEMOCRATIZING SUSTAINABILITY KNOWLEDGE',
@@ -195,7 +195,7 @@ export default {
   },
   footer: {
     conect:
-      'Connected to the startup ecosystem to accelerate and invest in a sustainable future.',
+      'Connected to the startup ecosystem to invest in and accelerate a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
     address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',

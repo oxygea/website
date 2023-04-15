@@ -144,8 +144,13 @@
             </p>
             <TheMask
               v-model="form.whatsapp"
-              mask="(##) #####-####"
-              type="text"
+              :mask="[
+                '+## ## #####-####',
+                '+# ## #########',
+                '## #########',
+                '## ########',
+              ]"
+              type="tel"
               name="phone"
               class="w-full text-xs lg:text-base bg-transparent border-b font-poppins border-black font-normal py-5 text-black placeholder-black"
             />
