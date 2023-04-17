@@ -1,11 +1,11 @@
 <template>
   <section id="programs" class="bg-white pt-10 pb-5 lg:py-20">
-    <div class="container w-full flex items-center justify-between lg:hidden">
+    <div class="container w-full flex items-center justify-between">
       <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
         {{ $t('programs.title') }}
       </h2>
       <button
-        class="next-slide rotate-180 flex items-center mr-4 justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        class="md:hidden next-slide rotate-180 flex items-center mr-4 justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
         @click="prevSlide"
       >
         <svg-icon
@@ -14,7 +14,7 @@
         />
       </button>
       <button
-        class="next-slide flex items-center justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
+        class="md:hidden next-slide flex items-center justify-center border-2 border-black rounded-full min-h-[32px] min-w-[32px]"
         @click="nextSlide"
       >
         <svg-icon
@@ -27,7 +27,7 @@
     <VueSlickCarousel
       v-bind="slickOptions"
       ref="carouselPrograms"
-      class="mt-10 pl-5 flex items-center lg:!hidden lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+      class="mt-10 pl-5 flex items-center md:!hidden lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
       @beforeChange="onSlideChange"
     >
       <div
@@ -57,8 +57,7 @@
               </p>
               <p
                 v-if="item.value === 2"
-                class="max-w-max cursor-pointer mt-6 rounded-[100px] font-medium text-xxs bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
-                @click="$nuxt.$emit('openModalContact')"
+                class="text-white mt-4 font-poppins font-bold text-xs"
               >
                 {{ $t('programs.cta') }}
               </p>
@@ -112,13 +111,13 @@
       </div>
     </VueSlickCarousel>
     <div
-      class="mt-10 pl-5 hidden lg:flex items-center lg:max-w-[1440px] lg:mx-auto lg:pl-[180px]"
+      class="mt-10 pl-5 gap-6 hidden md:flex flex-wrap justify-center items-center lg:max-w-[1440px] lg:mx-auto"
       data-aos="fade"
     >
       <div
         v-for="(item, index) of $i18n.locale === 'pt' ? programsPT : programsEN"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear md:min-h-[322px] md:max-h-[322px] md:max-w-[428px] md:min-w-[428px] xl:min-h-[448px] xl:max-h-[448px] xl:max-w-[277px] xl:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],
@@ -142,8 +141,7 @@
               </p>
               <p
                 v-if="item.value === 2"
-                class="max-w-max cursor-pointer mt-6 rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
-                @click="$nuxt.$emit('openModalContact')"
+                class="text-white mt-4 font-poppins font-bold text-xs"
               >
                 {{ $t('programs.cta') }}
               </p>

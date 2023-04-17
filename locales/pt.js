@@ -40,6 +40,7 @@ export default {
   },
   invest: {
     title: 'Onde investimos',
+    cta: 'Inscreva sua startup',
     card1: {
       title: 'Economia Circular',
       info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção.',
@@ -89,7 +90,7 @@ export default {
   programs: {
     title: 'Programas',
     benefits: 'Benefícios',
-    cta: 'INSCREVA SUA STARTUP',
+    cta: 'INSCRIÇÕES ABERTAS EM MAIO/2023',
     card3: {
       title: 'Incubação / VB',
       desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',

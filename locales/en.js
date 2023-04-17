@@ -40,6 +40,7 @@ export default {
   },
   invest: {
     title: 'Where do we invest?',
+    cta: 'ENROLL YOUR STARTUP',
     card1: {
       title: 'Circular Economy',
       info: 'Technologies intended for reintegrating plastic waste to production chain.',
@@ -90,7 +91,7 @@ export default {
   programs: {
     title: 'Programs',
     benefits: 'Benefits',
-    cta: 'ENROLL YOUR STARTUP',
+    cta: 'REGISTRATION OPEN IN MAY/2023',
     card3: {
       title: 'Incubation / VB',
       desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
