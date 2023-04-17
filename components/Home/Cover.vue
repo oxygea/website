@@ -63,7 +63,7 @@
       <div class="relative">
         <p
           data-reveals
-          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[2] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-150 z-[2] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect2') }}
         </p>
@@ -74,7 +74,7 @@
       <div class="relative">
         <p
           data-reveals
-          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[4] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-200 z-[4] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect3') }}
         </p>
@@ -85,7 +85,7 @@
       <div class="relative">
         <p
           data-reveals
-          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[6] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-300 z-[6] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect4') }}
         </p>
@@ -96,7 +96,7 @@
       <div class="relative">
         <p
           data-reveals
-          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[8] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] pb-6 lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-500 z-[8] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] pb-6 lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect5') }}
         </p>
@@ -107,7 +107,7 @@
       <div class="relative">
         <p
           data-reveals
-          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[10] relative font-bold text-xl text-white xl:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-700 z-[10] relative font-bold text-xl text-white xl:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
         >
           {{ $t('cover.innovation') }}
         </p>
@@ -126,7 +126,7 @@ export default {
 
     const options = {
       rootMargin: '0px',
-      threshold: 0.9,
+      threshold: 0.1,
     }
 
     const onIntersect = (entries) => {
