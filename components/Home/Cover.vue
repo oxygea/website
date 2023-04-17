@@ -52,56 +52,66 @@
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect1') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black z-[1]"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[1]"
+        ></span>
       </div>
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear z-[2] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[2] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect2') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black z-[3]"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[3]"
+        ></span>
       </div>
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear z-[4] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[4] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect3') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black z-[5]"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[5]"
+        ></span>
       </div>
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear z-[6] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[6] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect4') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black z-[7]"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[7]"
+        ></span>
       </div>
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear z-[8] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] pb-6 lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[8] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] pb-6 lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect5') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black z-[9]"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[9]"
+        ></span>
       </div>
       <div class="relative">
         <p
           data-reveals
-          class="translate-y-[50px] transition-all duration-700 ease-linear z-[10] relative font-bold text-xl text-white xl:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
+          class="lg:translate-y-[50px] transition-all duration-700 ease-linear z-[10] relative font-bold text-xl text-white xl:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
         >
           {{ $t('cover.innovation') }}
         </p>
-        <span class="absolute w-full h-[56px] bg-black"></span>
+        <span class="absolute w-full h-[56px] hidden lg:block bg-black"></span>
       </div>
     </div>
   </section>
