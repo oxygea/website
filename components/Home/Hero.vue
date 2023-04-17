@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-black overflow-hidden hero w-full section-hero container flex flex-col justify-between slick-next-hero !pt-20 lg:!pt-[180px]"
+    class="bg-black relative overflow-hidden hero w-full section-hero container flex flex-col justify-between slick-next-hero !pt-20 lg:!pt-[180px]"
   >
     <transition name="slide-fade">
       <VueLottie
