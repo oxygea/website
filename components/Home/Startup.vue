@@ -48,50 +48,88 @@
       />
 
       <div class="container !py-10 xl:ml-[45px]">
-        <p
-          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
-        >
-          {{ $t('startup.title1') }}
-        </p>
-        <p
-          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
-        >
-          {{ $t('startup.title2') }}
-        </p>
-        <p
-          class="font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
-          :class="{ 'pb-6': $i18n.locale === 'pt' }"
-        >
-          {{ $t('startup.title3') }}
-        </p>
-
-        <p
-          v-if="$i18n.locale !== 'pt'"
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
-        >
-          {{ $t('startup.title4') }}
-        </p>
-
-        <p
-          v-if="$i18n.locale !== 'pt'"
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
-        >
-          {{ $t('startup.title5') }}
-        </p>
-
-        <p
-          v-if="$i18n.locale !== 'pt'"
-          class="font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] pb-6 lg:max-w-[418px] lg:text-[48px]"
-        >
-          {{ $t('startup.title6') }}
-        </p>
-
-        <p
-          v-if="$i18n.locale === 'pt'"
-          class="font-bold text-xl xl:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
-        >
-          {{ $t('startup.desc') }}
-        </p>
+        <div class="relative">
+          <p
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
+          >
+            {{ $t('startup.title1') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[1]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[2] font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
+          >
+            {{ $t('startup.title2') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[3]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[4] font-normal text-[28px] leading-8 xl:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] xl:text-[48px]"
+            :class="{ 'pb-6': $i18n.locale === 'pt' }"
+          >
+            {{ $t('startup.title3') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[5]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            v-if="$i18n.locale !== 'pt'"
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[6] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
+          >
+            {{ $t('startup.title4') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[7]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            v-if="$i18n.locale !== 'pt'"
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[8] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
+          >
+            {{ $t('startup.title5') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[9]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            v-if="$i18n.locale !== 'pt'"
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[10] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] pb-6 lg:max-w-[418px] lg:text-[48px]"
+          >
+            {{ $t('startup.title6') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[11]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
+            v-if="$i18n.locale === 'pt'"
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[12] font-bold text-xl xl:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
+          >
+            {{ $t('startup.desc') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[13]"
+          ></span>
+        </div>
       </div>
     </div>
   </section>
@@ -99,5 +137,28 @@
 <script>
 export default {
   name: 'HomeStartup',
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+
+    const reveals = [...document.querySelectorAll('[data-startup]')]
+
+    const options = {
+      rootMargin: '0px',
+      threshold: 0.1,
+    }
+
+    const onIntersect = (entries) => {
+      const visibleSection = entries.filter((entry) => entry.isIntersecting)
+      if (visibleSection.length > 0) {
+        reveals.forEach((reveal) => reveal.classList.add('!translate-y-0'))
+      }
+    }
+
+    const observer = new IntersectionObserver(onIntersect, options)
+
+    reveals.forEach((reveal) => {
+      observer.observe(reveal)
+    })
+  },
 }
 </script>

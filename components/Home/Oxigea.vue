@@ -28,16 +28,27 @@
       />
 
       <div class="w-full md:max-w-[418px] relative z-10 md:py-[116px]">
-        <p
-          class="text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 pb-5 !-tracking-[0.03em]"
+        <div
+          v-for="(item, index) of $t('oxygea')"
+          :key="index"
+          class="relative"
+          :class="[
+            {
+              'pb-5': index === 'desc4' && $i18n.locale === 'en',
+              'pb-5': index === 'desc5' && $i18n.locale === 'pt',
+            },
+          ]"
         >
-          {{ $t('oxygea.desc1') }}
-        </p>
-        <p
-          class="text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 pb-5 !-tracking-[0.03em]"
-        >
-          {{ $t('oxygea.desc2') }}
-        </p>
+          <p
+            data-oxygea
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 !-tracking-[0.03em]"
+          >
+            {{ item }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF]"
+          ></span>
+        </div>
       </div>
     </div>
   </section>
@@ -60,6 +71,7 @@ export default {
   },
   mounted() {
     const lottie = document.querySelector('[data-lottie]')
+    const reveals = [...document.querySelectorAll('[data-oxygea]')]
 
     const options = {
       rootMargin: '0px',
@@ -70,12 +82,17 @@ export default {
       const visibleSection = entries.filter((entry) => entry.isIntersecting)
       if (visibleSection.length > 0) {
         this.play()
+        reveals.forEach((reveal) => reveal.classList.add('!translate-y-0'))
       }
     }
 
     const observer = new IntersectionObserver(onIntersect, options)
 
     observer.observe(lottie)
+
+    reveals.forEach((reveal) => {
+      observer.observe(reveal)
+    })
   },
   methods: {
     handleAnimation(anim) {

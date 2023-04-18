@@ -33,10 +33,15 @@ export default {
     },
   },
   oxygea: {
-    desc1:
-      'Oxygea is here to invest in people and accelerate their business that will drive sustainability and digital transformation.',
-    desc2:
-      'We value the innovation ecosystem and we cooperate with local and global networks to provide only the best to startups that will transform the future of the industry.',
+    desc1: 'Oxygea is here to invest in people',
+    desc2: 'and accelerate their business that',
+    desc3: 'will drive sustainability and digital',
+    desc4: 'transformation.',
+    desc5: 'We value the innovation ecosystem',
+    desc6: 'and we cooperate with local and',
+    desc7: 'global networks to provide only the',
+    desc8: 'best to startups that will transform',
+    desc9: 'the future of the industry.',
   },
   invest: {
     title: 'Where do we invest?',

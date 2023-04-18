@@ -51,7 +51,7 @@
     <div class="container !py-10 xl:ml-[50px]">
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect1') }}
@@ -62,7 +62,7 @@
       </div>
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-150 z-[2] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect2') }}
@@ -73,7 +73,7 @@
       </div>
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-200 z-[4] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect3') }}
@@ -84,7 +84,7 @@
       </div>
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-300 z-[6] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect4') }}
@@ -95,7 +95,7 @@
       </div>
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-500 z-[8] relative font-normal text-white text-[28px] leading-8 xl:leading-[56px] pb-6 lg:max-w-[418px] xl:text-[48px] !-tracking-[0.03em]"
         >
           {{ $t('cover.connect5') }}
@@ -106,12 +106,14 @@
       </div>
       <div class="relative">
         <p
-          data-reveals
+          data-cover
           class="lg:translate-y-[50px] transition-all duration-700 ease-linear delay-700 z-[10] relative font-bold text-xl text-white xl:text-2xl lg:max-w-[418px] !-tracking-[0.03em] !leading-6"
         >
           {{ $t('cover.innovation') }}
         </p>
-        <span class="absolute w-full h-[56px] hidden lg:block bg-black"></span>
+        <span
+          class="absolute w-full h-[56px] hidden lg:block bg-black z-[11]"
+        ></span>
       </div>
     </div>
   </section>
@@ -122,7 +124,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.onScroll)
 
-    const reveals = [...document.querySelectorAll('[data-reveals]')]
+    const reveals = [...document.querySelectorAll('[data-cover]')]
 
     const options = {
       rootMargin: '0px',
