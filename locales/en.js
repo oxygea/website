@@ -18,7 +18,7 @@ export default {
     },
     card2: {
       title:
-        'The acceleration program is for startups that want to transform the industry.',
+        'The investment and acceleration program is for startups that want to transform the industry.',
       cta: 'Enroll your startup',
     },
     card3: {

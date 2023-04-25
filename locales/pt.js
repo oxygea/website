@@ -18,7 +18,7 @@ export default {
     },
     card2: {
       title:
-        'O programa de aceleração para startups que querem transformar a indústria.',
+        'O programa de aceleração e investimento para startups que querem transformar a indústria.',
       cta: 'Inscreva sua startup',
     },
     card3: {

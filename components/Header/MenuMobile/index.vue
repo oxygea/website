@@ -129,7 +129,7 @@
                 />
               </a>
               <a
-                href="https://www.instagram.com/oxygeaventures/"
+                href="https://www.instagram.com/oxygea.ventures/"
                 target="_blank"
               >
                 <svg-icon

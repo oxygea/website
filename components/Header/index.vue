@@ -130,7 +130,10 @@
             >
               <svg-icon name="linkedin-white" class="w-6 h-6 relative" />
             </a>
-            <a href="https://www.instagram.com/oxygeaventures/" target="_blank">
+            <a
+              href="https://www.instagram.com/oxygea.ventures/"
+              target="_blank"
+            >
               <svg-icon name="instagram-white" class="w-6 h-6 relative" />
             </a>
 
@@ -149,7 +152,10 @@
             >
               <svg-icon name="linkedin" class="w-6 h-6 relative" />
             </a>
-            <a href="https://www.instagram.com/oxygeaventures/" target="_blank">
+            <a
+              href="https://www.instagram.com/oxygea.ventures/"
+              target="_blank"
+            >
               <svg-icon name="instagram" class="w-6 h-6 relative" />
             </a>
 
