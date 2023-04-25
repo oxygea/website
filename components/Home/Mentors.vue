@@ -337,14 +337,14 @@ export default {
           name: 'Gus Hutras',
           image: 'Gus-Hutras.png',
           vertical: 'ResearchAndDevelopment',
-          link: 'https://www.linkedin.com/in/yuki-hamilton-onda-kabe-0339364a/',
+          link: 'https://www.linkedin.com/in/gus-hutras-286a4567/',
         },
         {
           slug: 'yuki-kabe',
           name: 'Yuki Kabe',
           image: 'Yuki-Kabe.png',
           vertical: 'SustainableDevelopment',
-          link: 'https://www.linkedin.com/in/gus-hutras-286a4567/',
+          link: 'https://www.linkedin.com/in/yuki-hamilton-onda-kabe-0339364a/',
         },
         {
           slug: 'dan-macEachran',
