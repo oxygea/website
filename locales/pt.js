@@ -98,15 +98,14 @@ export default {
     title: 'Programas',
     benefits: 'Benefícios',
     cta: 'INSCRIÇÕES ABERTAS EM MAIO/2023',
-    card3: {
-      title: 'Incubação / VB',
-      desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
+    card1: {
+      title: 'Investimento / CVC',
+      desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento.',
       benefits: {
-        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
-        t2: 'Investimento de até BRL 700 mil para desenvolvimento do MVP.',
-        t3: 'Assessment do Modelo de Negócio e Solução.',
-        t4: 'Suporte no Desenvolvimento de MVP e Produtos.',
-        t5: 'Suporte Jurídico, Tecnológico e de Compliance.',
+        t1: 'Acesso ao Network de Parceiros.',
+        t2: 'Acesso aos canais de distribuição.',
+        t3: 'Acesso a dados e informações de mercado.',
+        t4: 'Acesso às capabilities e expertise para escalar negócios.',
       },
     },
     card2: {
@@ -120,14 +119,15 @@ export default {
         t5: 'Suporte na Definição da Estratégia de Marketing.',
       },
     },
-    card1: {
-      title: 'Investimento / CVC',
-      desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento.',
+    card3: {
+      title: 'Incubação / VB',
+      desc: 'Startups que validaram seu mercado, já sabem como será a primeira versão do seu produto e estão prontas para tirar o MVP do papel.',
       benefits: {
-        t1: 'Acesso ao Network de Parceiros.',
-        t2: 'Acesso aos canais de distribuição.',
-        t3: 'Acesso a dados e informações de mercado.',
-        t4: 'Acesso às capabilities e expertise para escalar negócios.',
+        t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
+        t2: 'Investimento de até BRL 700 mil para desenvolvimento do MVP.',
+        t3: 'Assessment do Modelo de Negócio e Solução.',
+        t4: 'Suporte no Desenvolvimento de MVP e Produtos.',
+        t5: 'Suporte Jurídico, Tecnológico e de Compliance.',
       },
     },
     card4: {

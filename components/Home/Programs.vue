@@ -216,15 +216,15 @@ export default {
       showMenu3: false,
       showMenu4: false,
       programsPT: [
-        { value: 3, benefits: 5, heightClassName: 'min-h-[404px]' },
+        { value: 1, benefits: 4, heightClassName: 'min-h-[404px]' },
         { value: 2, benefits: 5, heightClassName: 'min-h-[524px]' },
-        { value: 1, benefits: 4, heightClassName: 'min-h-[524px]' },
+        { value: 3, benefits: 5, heightClassName: 'min-h-[524px]' },
         { value: 4, benefits: 3, heightClassName: 'min-h-[380px]' },
       ],
       programsEN: [
-        { value: 3, benefits: 5, heightClassName: 'min-h-[404px]' },
+        { value: 1, benefits: 4, heightClassName: 'min-h-[404px]' },
         { value: 2, benefits: 5, heightClassName: 'min-h-[524px]' },
-        { value: 1, benefits: 4, heightClassName: 'min-h-[524px]' },
+        { value: 3, benefits: 5, heightClassName: 'min-h-[524px]' },
         { value: 4, benefits: 3, heightClassName: 'min-h-[380px]' },
       ],
     }
