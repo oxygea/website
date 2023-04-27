@@ -97,15 +97,14 @@ export default {
     title: 'Programs',
     benefits: 'Benefits',
     cta: 'REGISTRATION OPEN IN MAY/2023',
-    card3: {
-      title: 'Incubation / VB',
-      desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
+    card1: {
+      title: 'Investment / CVC',
+      desc: 'Startups that already have a promising business and want to accelerate growth.',
       benefits: {
-        t1: 'Business risk assessment and proposal of customized improvement plan.',
-        t2: 'Investment up to BRL 700K for MVP development.',
-        t3: 'Business Model Assessment and Solution.',
-        t4: 'Support in MVP and Product Development.',
-        t5: 'Legal, Technological and Compliance Support.',
+        t1: 'Access to a Network of Partners.',
+        t2: 'Access to distribution channels.',
+        t3: 'Access to market data and information.',
+        t4: 'Access to capabilities and expertise to drive business.',
       },
     },
     card2: {
@@ -119,14 +118,15 @@ export default {
         t5: 'Support in Business Strategy Definition.',
       },
     },
-    card1: {
-      title: 'Investment / CVC',
-      desc: 'Startups that already have a promising business and want to accelerate growth.',
+    card3: {
+      title: 'Incubation / VB',
+      desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
       benefits: {
-        t1: 'Access to a Network of Partners.',
-        t2: 'Access to distribution channels.',
-        t3: 'Access to market data and information.',
-        t4: 'Access to capabilities and expertise to drive business.',
+        t1: 'Business risk assessment and proposal of customized improvement plan.',
+        t2: 'Investment up to BRL 700K for MVP development.',
+        t3: 'Business Model Assessment and Solution.',
+        t4: 'Support in MVP and Product Development.',
+        t5: 'Legal, Technological and Compliance Support.',
       },
     },
     card4: {
