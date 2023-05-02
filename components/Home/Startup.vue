@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#EDEDEF]">
+  <section class="bg-[#EDEDEF] overflow-hidden">
     <div
       class="md:flex items-center lg:max-w-[1440px] 2xl:max-w-none lg:mx-auto"
     >
