@@ -4,7 +4,7 @@
   >
     <transition name="slide-fade">
       <VueLottie
-        v-if="sliderPageIndex === 1"
+        v-if="sliderPageIndex === 2"
         :width="500"
         :options="lottieOptions1"
         class="pointer-events-none -top-[38px] lg:top-[207px] !h-auto absolute right-0"
@@ -12,7 +12,7 @@
     </transition>
     <transition name="slide-fade">
       <nuxt-img
-        v-if="sliderPageIndex === 2"
+        v-if="sliderPageIndex === 1"
         preload
         :src="require(`~/assets/img/hero/bg-2.png`)"
         format="webp"
@@ -26,7 +26,7 @@
 
     <transition name="slide-fade">
       <nuxt-img
-        v-if="sliderPageIndex === 2"
+        v-if="sliderPageIndex === 1"
         preload
         :src="require(`~/assets/img/hero/bg-mobile-2.png`)"
         format="webp"
@@ -69,9 +69,9 @@
           class="w-full !flex flex-col relative lg:ml-2"
           :class="[
             {
-              'mt-[102px] lg:mt-0': item.value === 1,
+              'mt-[102px] lg:mt-0': item.value === 2,
               'max-w-[500px] mr-[150px] !ml-auto mt-[164px] lg:mt-0':
-                item.value === 2,
+                item.value === 1,
               ' mt-[117px] lg:mt-0': item.value === 3,
               ' mt-[118px] lg:mt-0': item.value === 4,
             },
@@ -80,7 +80,7 @@
           <p
             :class="[
               {
-                '!max-w-[500px]': item.value === 2,
+                '!max-w-[500px]': item.value === 1,
                 fade: true,
                 show: item.show,
               },
@@ -91,7 +91,7 @@
           </p>
 
           <a
-            v-if="item.value === 2"
+            v-if="item.value === 1"
             href="https://labs.oxygea.com/"
             target="_Blank"
             title="Inscreva sua startup"
@@ -103,11 +103,11 @@
             ]"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
           >
-            {{ $t(`hero.card${item.value}.cta`) }} --
+            {{ $t(`hero.card${item.value}.cta`) }}
           </a>
 
           <nuxt-link
-            v-if="item.value !== 2"
+            v-if="item.value !== 1"
             :to="
               localeLocation({
                 name: 'index',

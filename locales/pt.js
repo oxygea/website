@@ -13,13 +13,13 @@ export default {
   hero: {
     card1: {
       title:
-        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
-      cta: 'Tese de investimento',
+        'O programa de aceleração e investimento para startups que querem transformar a indústria.',
+      cta: 'Inscreva sua startup',
     },
     card2: {
       title:
-        'O programa de aceleração e investimento para startups que querem transformar a indústria.',
-      cta: 'Inscreva sua startup',
+        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
+      cta: 'Tese de investimento',
     },
     card3: {
       title:
@@ -206,8 +206,9 @@ export default {
     address1: 'Estamos localizados no Cubo by Itaú',
     address2: ' Alameda Vicente Pinzon 54, 11º andar.',
     address3: 'Vila Olímpia, SP. CEP 04547-130',
-    singup:
-      'Inscreva-se e fique por dentro do que acontece em nosso ecossistema.',
+    singup: 'Queremos te ouvir!',
+    btnSign: 'Entre em contato',
+
     signupPlaceholder: 'Insira seu e-mail',
     signit: 'Ao assinar a newsletter, você concorda com os',
     terms: 'Termos e Condições de Uso',

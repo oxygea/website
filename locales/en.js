@@ -13,13 +13,13 @@ export default {
   hero: {
     card1: {
       title:
-        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
-      cta: 'Investment Thesis',
+        'The investment and acceleration program is for startups that want to transform the industry.',
+      cta: 'Enroll your startup',
     },
     card2: {
       title:
-        'The investment and acceleration program is for startups that want to transform the industry.',
-      cta: 'Enroll your startup',
+        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
+      cta: 'Investment Thesis',
     },
     card3: {
       title:
@@ -205,7 +205,8 @@ export default {
     address1: 'We are located at Cubo by Itaú',
     address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
-    singup: 'Subscribe and get the latest on our ecosystem.',
+    singup: 'We want to hear from you!',
+    btnSign: 'Contact us',
     signupPlaceholder: 'Enter your e-mail',
     signit: 'By subscribing to our newsletter you agree with the',
     terms: 'Terms and Conditions',

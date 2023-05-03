@@ -25,38 +25,13 @@
           </p>
         </div>
 
-        <div class="lg:max-w-[530px] lg:mt-[118px] lg:mb-9 hidden">
-          <p class="font-normal text-xs lg:text-xl">
-            {{ $t('footer.singup') }}
-          </p>
-          <label
-            for="email"
-            class="flex w-ful justify-between font-poppins items-center pt-10 pb-4 border-b-[1px] border-black"
+        <div class="lg:max-w-[530px] lg:w-full lg:mt-[118px] lg:mb-9">
+          <h4 class="text-xl font-bold mb-6">{{ $t('footer.singup') }}</h4>
+          <p
+            class="cursor-pointer lg:max-w-[169px] text-center rounded-[100px] uppercase font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+            @click="$nuxt.$emit('openModalContact')"
           >
-            <input
-              type="email"
-              name="email"
-              :placeholder="$t('footer.signupPlaceholder')"
-              class="font-medium text-xs text-black placeholder-black w-10/12 lg:text-base"
-            />
-            <svg-icon name="arrowRight" class="w-4 h-4 cursor-pointer" />
-          </label>
-          <p class="font-normal text-xs font-poppins pt-6 lg:text-sm">
-            {{ $t('footer.signit') }}
-            <strong
-              class="cursor-pointer underline"
-              @click="$nuxt.$emit('openModalTerms')"
-            >
-              {{ $t('footer.terms') }}</strong
-            >
-            {{ $t('footer.terms2') }}
-            <strong
-              class="cursor-pointer underline"
-              @click="$nuxt.$emit('openModalPrivacy')"
-            >
-              {{ $t('footer.privacy') }}</strong
-            >
-            {{ $t('footer.response') }}
+            {{ $t('footer.btnSign') }}
           </p>
         </div>
       </div>
