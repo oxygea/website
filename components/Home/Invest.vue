@@ -33,12 +33,14 @@
           </p>
         </div>
       </div>
-      <p
-        class="max-w-max cursor-pointer mt-5 lg:mt-[72px] rounded-[100px] font-medium text-xxs lg:text-xs bg-black text-white self-center px-8 py-4 font-poppins lg:ml-[108px]"
-        @click="$nuxt.$emit('openModalContact')"
+      <a
+        href="https://labs.oxygea.com/"
+        title="Inscreva sua startup"
+        target="_Blank"
+        class="max-w-max cursor-pointer block mt-5 lg:mt-[72px] rounded-[100px] font-medium text-xxs lg:text-xs bg-black text-white self-center px-8 py-4 font-poppins lg:ml-[108px]"
       >
         {{ $t('invest.cta') }}
-      </p>
+      </a>
     </div>
   </section>
 </template>

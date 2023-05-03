@@ -97,7 +97,7 @@ export default {
   programs: {
     title: 'Programas',
     benefits: 'Benefícios',
-    cta: 'INSCRIÇÕES ABERTAS EM MAIO/2023',
+    cta: 'INSCREVA SUA STARTUP',
     card1: {
       title: 'Investimento / CVC',
       desc: 'Startups que já têm um negócio promissor e querem acelerar seu crescimento.',

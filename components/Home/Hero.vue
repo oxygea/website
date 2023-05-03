@@ -90,8 +90,11 @@
             {{ $t(`hero.card${item.value}.title`) }}
           </p>
 
-          <p
+          <a
             v-if="item.value === 2"
+            href="https://labs.oxygea.com/"
+            target="_Blank"
+            title="Inscreva sua startup"
             :class="[
               {
                 fade: true,
@@ -99,12 +102,9 @@
               },
             ]"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-            @click="
-              $nuxt.$emit('openModalContact'), $nuxt.$emit('setValueModal')
-            "
           >
-            {{ $t(`hero.card${item.value}.cta`) }}
-          </p>
+            {{ $t(`hero.card${item.value}.cta`) }} --
+          </a>
 
           <nuxt-link
             v-if="item.value !== 2"

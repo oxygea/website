@@ -96,7 +96,7 @@ export default {
   programs: {
     title: 'Programs',
     benefits: 'Benefits',
-    cta: 'REGISTRATION OPEN IN MAY/2023',
+    cta: 'ENROLL YOUR STARTUP',
     card1: {
       title: 'Investment / CVC',
       desc: 'Startups that already have a promising business and want to accelerate growth.',

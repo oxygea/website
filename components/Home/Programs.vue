@@ -139,12 +139,21 @@
               >
                 {{ $t(`programs.card${item.value}.desc`) }}
               </p>
-              <p
+              <!-- <p
                 v-if="item.value === 2"
                 class="text-white mt-4 font-poppins font-bold text-xs"
               >
                 {{ $t('programs.cta') }}
-              </p>
+              </p> -->
+              <a
+                v-if="item.value === 2"
+                href="https://labs.oxygea.com/"
+                :title="$t('programs.cta')"
+                target="_Blank"
+                class="max-w-max cursor-pointer mt-6 block rounded-[100px] font-medium text-xxs bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+              >
+                {{ $t('programs.cta') }}
+              </a>
             </div>
             <div
               class="w-10 h-10 rounded-full flex justify-center items-center border-2 border-white cursor-pointer mt-auto"
