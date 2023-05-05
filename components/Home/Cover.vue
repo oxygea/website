@@ -134,7 +134,7 @@ export default {
     const onIntersect = (entries) => {
       const visibleSection = entries.filter((entry) => entry.isIntersecting)
       if (visibleSection.length > 0) {
-        reveals.forEach((reveal) => reveal.classList.add('!translate-y-0'))
+        reveals.forEach((reveal) => reveal.classList.add('!translate-y-[-3px]'))
       }
     }
 

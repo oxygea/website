@@ -150,7 +150,7 @@
                 href="https://labs.oxygea.com/"
                 :title="$t('programs.cta')"
                 target="_Blank"
-                class="max-w-max cursor-pointer mt-6 block rounded-[100px] font-medium text-xxs bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
+                class="max-w-max cursor-pointer mt-6 block rounded-[100px] font-medium text-sm bg-green text-black self-center px-4 py-2 hover:bg-[#18A790] transition-all duration-300 font-poppins"
               >
                 {{ $t('programs.cta') }}
               </a>
