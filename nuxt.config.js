@@ -163,17 +163,19 @@ export default {
       },
     },
     postcss: {
-      plugins: {
-        'postcss-import': {},
-        'tailwindcss/nesting': {},
-        tailwindcss: {
-          content: [
-            './src/components/**/*.{js,ts,vue}',
-            './src/layouts/**/*.{js,ts,vue}',
-            './src/pages/**/*.{js,ts,vue}',
-          ],
+      postcssOptions: {
+        plugins: {
+          'postcss-import': {},
+          'tailwindcss/nesting': {},
+          tailwindcss: {
+            content: [
+              './src/components/**/*.{js,ts,vue}',
+              './src/layouts/**/*.{js,ts,vue}',
+              './src/pages/**/*.{js,ts,vue}',
+            ],
+          },
+          autoprefixer: {},
         },
-        autoprefixer: {},
       },
     },
   },
