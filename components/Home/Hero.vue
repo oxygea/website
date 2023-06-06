@@ -7,7 +7,7 @@
         v-if="sliderPageIndex === 2"
         :width="500"
         :options="lottieOptions1"
-        class="pointer-events-none -top-[38px] lg:top-[207px] !h-auto absolute right-0"
+        class="pointer-events-none -top-[38px] lg:top-[262px] !h-auto absolute right-0"
       />
     </transition>
     <transition name="slide-fade">
@@ -20,7 +20,7 @@
         quality="100"
         loading="lazy"
         aria-hidden
-        class="absolute hidden lg:block left-0 top-[51px]"
+        class="absolute hidden lg:block left-0 top-[106px]"
       />
     </transition>
 
@@ -43,7 +43,7 @@
         v-if="sliderPageIndex === 3"
         :width="500"
         :options="lottieOptions2"
-        class="pointer-events-none top-[58px] lg:top-[250px] !h-auto absolute right-0"
+        class="pointer-events-none top-[58px] lg:top-[305px] !h-auto absolute right-0"
       />
     </transition>
 
@@ -52,7 +52,7 @@
         v-if="sliderPageIndex === 4"
         :width="500"
         :options="lottieOptions3"
-        class="pointer-events-none top-[78px] lg:top-[180px] !h-auto absolute -right-[306px] lg:right-0"
+        class="pointer-events-none top-[78px] lg:top-[235px] !h-auto absolute -right-[306px] lg:right-0"
       />
     </transition>
 
