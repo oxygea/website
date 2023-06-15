@@ -45,7 +45,7 @@ html,
 body {
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   mix-blend-mode: normal;
   box-sizing: border-box;
   background-color: black;
