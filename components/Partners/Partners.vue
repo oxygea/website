@@ -1,12 +1,12 @@
 <template>
   <section
-    class="h-[638px] md:h-[3000px] bg-gray flex justify-center"
+    class="h-[702px] md:h-[928px] bg-gray flex justify-center items-center xl:h-[3000px] xl:items-start"
     @scroll="handleScroll"
   >
     <div
-      class="w-[320px] flex flex-col items-center gap-[10px] mt-[104px] md:w-[1300px] md:h-[653px] md:sticky md:top-[160px] md:mb-[80px]"
+      class="flex flex-col items-center gap-[10px] mt-[104px] md:w-[1300px] md:h-[653px] md:sticky md:top-[160px] md:mb-[80px]"
     >
-      <div class="flex flex-col w-[280px] md:w-[640px] xl:gap-6 xl:self-start">
+      <div class="flex flex-col w-auto xl:w-[640px] xl:gap-6 xl:self-start">
         <h1 class="font-bold text-2xl md:text-5xl">Parceiros</h1>
         <p class="font-poppins text-xs md:text-base xl:ml-[110px]">
           O fazer junto potencializa resultados. Nos conectamos tanto com as
@@ -35,7 +35,7 @@
           :style="handleLine(item)"
         />
       </div>
-      <div class="mx-auto xl:hidden">
+      <div class="w-full xl:hidden">
         <Carousel />
       </div>
     </div>
@@ -131,17 +131,18 @@ export default {
 
       clearTimeout(timeoutId)
       timeoutId = setTimeout(() => {
+        const height = 5436
         const scrollPos = window.scrollY
 
-        if (scrollPos < 400) {
+        if (scrollPos < height + 400) {
           this.scene = 0
-        } else if (scrollPos > 400 && scrollPos < 800) {
+        } else if (scrollPos > height + 400 && scrollPos < height + 800) {
           this.scene = 1
-        } else if (scrollPos > 800 && scrollPos < 1200) {
+        } else if (scrollPos > height + 800 && scrollPos < height + 1200) {
           this.scene = 2
-        } else if (scrollPos > 1200 && scrollPos < 1600) {
+        } else if (scrollPos > height + 1200 && scrollPos < height + 1600) {
           this.scene = 3
-        } else if (scrollPos > 1600) {
+        } else if (scrollPos > height + 1600) {
           this.scene = 4
         }
       }, 150)
