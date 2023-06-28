@@ -1,12 +1,12 @@
 <template>
   <section
-    class="h-[702px] md:h-[928px] bg-gray flex justify-center items-center xl:h-[3000px] xl:items-start"
+    class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[3000px] xl:items-start"
     @scroll="handleScroll"
   >
     <div
-      class="flex flex-col items-center gap-[10px] mt-[104px] md:w-[1300px] md:h-[653px] md:sticky md:top-[160px] md:mb-[80px]"
+      class="flex flex-col items-center gap-[10px] md:w-[1300px] md:h-[653px] md:sticky md:top-[160px] md:mb-[80px]"
     >
-      <div class="flex flex-col w-auto xl:w-[640px] xl:gap-6 xl:self-start">
+      <div class="flex flex-col mx-5 xl:w-[640px] xl:gap-6 xl:self-start">
         <h1 class="font-bold text-2xl md:text-5xl">Parceiros</h1>
         <p class="font-poppins text-xs md:text-base xl:ml-[110px]">
           O fazer junto potencializa resultados. Nos conectamos tanto com as
