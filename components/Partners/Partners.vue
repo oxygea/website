@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[3000px] xl:items-start"
+    class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[2700px] xl:items-start"
     @scroll="handleScroll"
   >
     <div
@@ -134,18 +134,18 @@ export default {
         const height = 5436
         const scrollPos = window.scrollY
 
-        if (scrollPos < height + 400) {
+        if (scrollPos < height + 250) {
           this.scene = 0
-        } else if (scrollPos > height + 400 && scrollPos < height + 800) {
+        } else if (scrollPos > height + 250 && scrollPos < height + 500) {
           this.scene = 1
-        } else if (scrollPos > height + 800 && scrollPos < height + 1200) {
+        } else if (scrollPos > height + 500 && scrollPos < height + 750) {
           this.scene = 2
-        } else if (scrollPos > height + 1200 && scrollPos < height + 1600) {
+        } else if (scrollPos > height + 950 && scrollPos < height + 1200) {
           this.scene = 3
-        } else if (scrollPos > height + 1600) {
+        } else if (scrollPos > height + 1200) {
           this.scene = 4
         }
-      }, 150)
+      }, 75)
     },
   },
 }
