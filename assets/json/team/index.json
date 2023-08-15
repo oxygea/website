@@ -18,10 +18,28 @@
     "linkedin": "https://www.linkedin.com/in/bruno-wittmaack-1482297a/"
   },
   {
+    "img": "denis",
+    "name": "Denis Specht",
+    "job": "BACKOFFICE",
+    "linkedin": "https://www.linkedin.com/in/denisspecht/"
+  },
+  {
     "img": "FernandoUbiali",
     "name": "Fernando Ubiali",
     "job": "PORTFOLIO DEVELOPMENT",
     "linkedin": "https://www.linkedin.com/in/fernandoubiali/"
+  },
+  {
+    "img": "kaue",
+    "name": "Kauê Duarte",
+    "job": "PORTFOLIO DEVELOPMENT",
+    "linkedin": "https://www.linkedin.com/in/kau%C3%AA-duarte-884345184/"
+  },
+  {
+    "img": "ligia",
+    "name": "Lígia Queiroz",
+    "job": "PEOPLE",
+    "linkedin": "https://www.linkedin.com/in/l%C3%ADgia-queiroz-413abb17b/"
   },
   {
     "img": "erik",
@@ -64,6 +82,12 @@
     "name": "Sulamita Theodoro",
     "job": "MKT & ECOSYSTEM",
     "linkedin": "https://www.linkedin.com/in/sulamitatheodoro/"
+  },
+  {
+    "img": "tomas",
+    "name": "Tomás Arruda",
+    "job": "LEGAL SECONDMENT",
+    "linkedin": "https://www.linkedin.com/in/tomasarruda/"
   },
   {
     "img": "VitorMoreira",
