@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[2700px] xl:items-start"
+    class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[4000px] xl:items-start py-40"
     @scroll="handleScroll"
   >
     <div
@@ -16,7 +16,7 @@
         </p>
       </div>
       <div
-        class="w-[1300px] relative hidden xl:flex"
+        class="w-[1300px] relative hidden xl:flex py-8"
         :style="{ height: containerHeight[scene] }"
       >
         <a
@@ -51,6 +51,7 @@ import {
   sceneTwo,
   sceneThree,
   sceneFour,
+  sceneFive,
 } from './NetworkAnimation/Scenes'
 
 import Carousel from './NetworkCarousel/Carousel.vue'
@@ -68,14 +69,16 @@ export default {
         2: sceneTwo,
         3: sceneThree,
         4: sceneFour,
+        5: sceneFive,
       },
       lines,
       containerHeight: {
-        0: '467.24px',
-        1: '470.24px',
-        2: '473.24px',
-        3: '473px',
-        4: '470px',
+        0: '553px',
+        1: '537.24px',
+        2: '542.24px',
+        3: '537.24px',
+        4: '537px',
+        5: '591px',
       },
       scene: 0,
     }
@@ -131,19 +134,41 @@ export default {
 
       clearTimeout(timeoutId)
       timeoutId = setTimeout(() => {
-        const height = 5436
+        const pageHeight = 5436 + 320
         const scrollPos = window.scrollY
 
-        if (scrollPos < height + 250) {
-          this.scene = 0
-        } else if (scrollPos > height + 250 && scrollPos < height + 500) {
-          this.scene = 1
-        } else if (scrollPos > height + 500 && scrollPos < height + 750) {
-          this.scene = 2
-        } else if (scrollPos > height + 950 && scrollPos < height + 1200) {
-          this.scene = 3
-        } else if (scrollPos > height + 1200) {
-          this.scene = 4
+        const scenesPositions = {
+          sceneZero: scrollPos < pageHeight + 250,
+          sceneOne:
+            scrollPos > pageHeight + 250 && scrollPos < pageHeight + 500,
+          sceneTwo:
+            scrollPos > pageHeight + 500 && scrollPos < pageHeight + 750,
+          sceneThree:
+            scrollPos > pageHeight + 950 && scrollPos < pageHeight + 1200,
+          sceneFour:
+            scrollPos > pageHeight + 1200 && scrollPos < pageHeight + 1450,
+          sceneFive: scrollPos > pageHeight + 1450,
+        }
+
+        switch (true) {
+          case scenesPositions.sceneZero:
+            this.scene = 0
+            break
+          case scenesPositions.sceneOne:
+            this.scene = 1
+            break
+          case scenesPositions.sceneTwo:
+            this.scene = 2
+            break
+          case scenesPositions.sceneThree:
+            this.scene = 3
+            break
+          case scenesPositions.sceneFour:
+            this.scene = 4
+            break
+          case scenesPositions.sceneFive:
+            this.scene = 5
+            break
         }
       }, 75)
     },

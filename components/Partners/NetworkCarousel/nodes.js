@@ -10,7 +10,7 @@ import {
   SM,
 } from '../constants'
 
-import abstartups from '~/assets/img/partners/12.svg'
+import abstartups from '~/assets/img/partners/12.png'
 import acecortex from '~/assets/img/partners/14.svg'
 import abvcap from '~/assets/img/partners/13.svg'
 import cazoolo from '~/assets/img/partners/15.svg'

@@ -1,9 +1,9 @@
 import { WHITE, GRAY, BORDER, GREEN_DARK, PURPLE_DARK } from '../../constants'
 
 import caldeira from '~/assets/img/partners/07.png'
-import onono from '~/assets/img/partners/04.png'
-import latitud from '~/assets/img/partners/09.png'
-import inventivos from '~/assets/img/partners/08.png'
+import hubsalvador from '~/assets/img/partners/20.svg'
+import fiemg from '~/assets/img/partners/05.png'
+import ib from '~/assets/img/partners/01.png'
 
 export const sceneThree = {
   'white-0': {
@@ -65,8 +65,20 @@ export const sceneThree = {
     left: 858,
     top: 309,
     size: 80,
-    background: `url(${onono}) no-repeat center, ${WHITE}`,
+    background: `url(${ib}) no-repeat center, ${WHITE}`,
     link: '#',
+  },
+  'white-10': {
+    left: 237,
+    top: 254,
+    size: 12,
+    background: WHITE,
+  },
+  'white-11': {
+    left: 1054.86,
+    top: 428.5,
+    size: 12,
+    background: WHITE,
   },
   'border-0': {
     left: 387,
@@ -86,7 +98,7 @@ export const sceneThree = {
     left: 628,
     top: 174,
     size: 80,
-    background: `url(${inventivos}) no-repeat center, ${GRAY}`,
+    background: `url(${fiemg}) no-repeat center, ${GRAY}`,
     border: BORDER,
     link: '#',
   },
@@ -94,7 +106,7 @@ export const sceneThree = {
     left: 315,
     top: 313,
     size: 80,
-    background: `url(${latitud}) no-repeat center, ${GRAY}`,
+    background: `url(${hubsalvador}) no-repeat center, ${GRAY}`,
     border: BORDER,
     link: '#',
   },
@@ -108,6 +120,20 @@ export const sceneThree = {
   'border-5': {
     left: 916,
     top: 262,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-6': {
+    left: 212.88,
+    top: 379.44,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-7': {
+    left: 884.88,
+    top: 513.24,
     size: 12,
     background: GRAY,
     border: BORDER,

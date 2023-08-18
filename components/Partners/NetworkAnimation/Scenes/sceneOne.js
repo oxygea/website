@@ -1,8 +1,9 @@
 import { WHITE, GRAY, BORDER, GREEN_DARK, PURPLE_DARK } from '../../constants'
-import abstartups from '~/assets/img/partners/12.svg'
+
+import abstartups from '~/assets/img/partners/12.png'
 import abvcap from '~/assets/img/partners/13.svg'
 import acecortex from '~/assets/img/partners/14.svg'
-import cazoolo from '~/assets/img/partners/15.svg'
+import ayaearth from '~/assets/img/partners/18.svg'
 
 export const sceneOne = {
   'white-0': {
@@ -22,7 +23,7 @@ export const sceneOne = {
     left: 485,
     top: 179,
     size: 80,
-    background: `url(${cazoolo}) no-repeat center, ${WHITE}`,
+    background: `url(${ayaearth}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-3': {
@@ -68,6 +69,18 @@ export const sceneOne = {
     size: 12,
     background: WHITE,
   },
+  'white-10': {
+    left: 211,
+    top: 254,
+    size: 12,
+    background: WHITE,
+  },
+  'white-11': {
+    left: 1028.86,
+    top: 428.5,
+    size: 12,
+    background: WHITE,
+  },
   'border-0': {
     left: 365,
     top: 117,
@@ -110,6 +123,20 @@ export const sceneOne = {
     size: 12,
     border: BORDER,
     background: GRAY,
+  },
+  'border-6': {
+    left: 186.88,
+    top: 379.44,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-7': {
+    left: 858.88,
+    top: 513.24,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
   },
   'small-0': {
     left: 300.55,

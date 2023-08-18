@@ -181,4 +181,54 @@ export const lines = {
     to: 'white-3',
     borderColor: BLACK,
   },
+  'white-0-to-white-10': {
+    from: 'white-0',
+    to: 'white-10',
+    borderColor: GRAY_HEAVY,
+  },
+  'white-10-to-white-1': {
+    from: 'white-10',
+    to: 'white-1',
+    borderColor: GRAY_HEAVY,
+  },
+  'white-10-to-border-6': {
+    from: 'white-10',
+    to: 'border-6',
+    borderColor: GRAY_HEAVY,
+  },
+  'border-6-to-white-1': {
+    from: 'border-6',
+    to: 'white-1',
+    borderColor: BLACK,
+  },
+  'border-6-to-border-3': {
+    from: 'border-6',
+    to: 'border-3',
+    borderColor: BLACK,
+  },
+  'border-4-to-border-7': {
+    from: 'border-4',
+    to: 'border-7',
+    borderColor: PURPLE,
+  },
+  'border-7-to-white-11': {
+    from: 'border-7',
+    to: 'white-11',
+    borderColor: BLACK,
+  },
+  'border-7-to-white-9': {
+    from: 'border-7',
+    to: 'white-9',
+    borderColor: GRAY_HEAVY,
+  },
+  'white-9-to-white-11': {
+    from: 'white-9',
+    to: 'white-11',
+    borderColor: GRAY_HEAVY,
+  },
+  'white-11-to-white-8': {
+    from: 'white-11',
+    to: 'white-8',
+    borderColor: GRAY_HEAVY,
+  },
 }

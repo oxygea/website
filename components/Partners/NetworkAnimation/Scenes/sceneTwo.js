@@ -2,8 +2,8 @@ import { WHITE, GRAY, BORDER, GREEN_DARK, PURPLE_DARK } from '../../constants'
 
 import cubo from '~/assets/img/partners/16.svg'
 import distrito from '~/assets/img/partners/17.svg'
-import fiemg from '~/assets/img/partners/05.png'
-import ib from '~/assets/img/partners/01.png'
+import cazoolo from '~/assets/img/partners/15.svg'
+import cesar from '~/assets/img/partners/19.png'
 
 export const sceneTwo = {
   'white-0': {
@@ -16,7 +16,7 @@ export const sceneTwo = {
     left: 288,
     top: 247,
     size: 80,
-    background: `url(${ib}) no-repeat center, ${WHITE}`,
+    background: `url(${cesar}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-2': {
@@ -29,7 +29,7 @@ export const sceneTwo = {
     left: 667,
     top: 108,
     size: 80,
-    background: `url(${fiemg}) no-repeat center, ${WHITE}`,
+    background: `url(${cubo}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-4': {
@@ -42,7 +42,7 @@ export const sceneTwo = {
     left: 859,
     top: 0,
     size: 80,
-    background: `url(${cubo}) no-repeat center, ${WHITE}`,
+    background: `url(${distrito}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-6': {
@@ -69,11 +69,23 @@ export const sceneTwo = {
     size: 12,
     background: WHITE,
   },
+  'white-10': {
+    left: 236.94,
+    top: 259,
+    size: 12,
+    background: WHITE,
+  },
+  'white-11': {
+    left: 1054.8,
+    top: 433.5,
+    size: 12,
+    background: WHITE,
+  },
   'border-0': {
     left: 319,
     top: 65,
     size: 80,
-    background: `url(${distrito}) no-repeat center, ${GRAY}`,
+    background: `url(${cazoolo}) no-repeat center, ${GRAY}`,
     border: BORDER,
     link: '#',
   },
@@ -108,6 +120,20 @@ export const sceneTwo = {
   'border-5': {
     left: 912.34,
     top: 323.38,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-6': {
+    left: 212.81,
+    top: 384.44,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-7': {
+    left: 884.81,
+    top: 518.24,
     size: 12,
     background: GRAY,
     border: BORDER,
