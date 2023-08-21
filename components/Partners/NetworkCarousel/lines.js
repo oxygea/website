@@ -1,5 +1,5 @@
 import { GRAY_DARK, GREEN, PURPLE, GRAY_MEDIUM } from '../constants'
-//  GRAY_LIGHT
+
 export const lines = {
   'gray-0-to-small-0': {
     from: 'gray-0',
