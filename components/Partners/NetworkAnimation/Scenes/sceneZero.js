@@ -61,6 +61,18 @@ export const sceneZero = {
     size: 12,
     background: WHITE,
   },
+  'white-10': {
+    left: 236,
+    top: 254,
+    size: 12,
+    background: WHITE,
+  },
+  'white-11': {
+    left: 1053.86,
+    top: 428.5,
+    size: 12,
+    background: WHITE,
+  },
   'border-0': {
     left: 386.69,
     top: 114.24,
@@ -99,6 +111,20 @@ export const sceneZero = {
   'border-5': {
     left: 912.34,
     top: 317.38,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-6': {
+    left: 211.88,
+    top: 379.44,
+    size: 12,
+    background: GRAY,
+    border: BORDER,
+  },
+  'border-7': {
+    left: 883.88,
+    top: 513.24,
     size: 12,
     background: GRAY,
     border: BORDER,

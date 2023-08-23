@@ -433,12 +433,12 @@ export const lines = {
   },
   'white-9-to-gray-border-18': {
     from: 'white-9',
-    to: 'gray-border-18',
+    to: 'medium-1',
     borderColor: GRAY_MEDIUM,
   },
-  'gray-14-to-gray-border-18': {
+  'gray-14-to-medium-1': {
     from: 'gray-14',
-    to: 'gray-border-18',
+    to: 'medium-1',
     borderColor: GRAY_DARK,
   },
   'gray-15-to-gray-16': {
@@ -446,8 +446,8 @@ export const lines = {
     borderColor: GRAY_DARK,
     to: 'gray-16',
   },
-  'gray-21-to-gray-15': {
-    from: 'gray-21',
+  'large-1-to-gray-15': {
+    from: 'large-1',
     to: 'gray-15',
     borderColor: GRAY_DARK,
   },
@@ -461,24 +461,19 @@ export const lines = {
     to: 'gray-border-19',
     borderColor: GRAY_DARK,
   },
-  'gray-16-to-gray-border-19': {
+  'gray-16-to-large-1': {
     from: 'gray-16',
-    to: 'gray-border-19',
+    to: 'large-1',
     borderColor: GREEN,
   },
-  'gray-17-to-gray-border-21': {
-    from: 'gray-17',
-    to: 'gray-border-21',
-    borderColor: GRAY_MEDIUM,
+  'gray-16-to-medium-2': {
+    from: 'gray-16',
+    to: 'medium-2',
+    borderColor: GRAY_DARK,
   },
   'gray-16-to-gray-border-21': {
     from: 'gray-16',
-    to: 'gray-border-21',
-    borderColor: GRAY_DARK,
-  },
-  'gray-16-to-gray-24': {
-    from: 'gray-16',
-    to: 'gray-24',
+    to: 'medium-6',
     borderColor: GRAY_MEDIUM,
   },
   'gray-border-21-to-gray-24': {
@@ -506,9 +501,9 @@ export const lines = {
     to: 'gray-22',
     borderColor: GRAY_DARK,
   },
-  'white-9-to-gray-21': {
+  'white-9-to-large-1': {
     from: 'white-9',
-    to: 'gray-21',
+    to: 'large-1',
     borderColor: GRAY_MEDIUM,
   },
   'gray-24-to-gray-border-20': {
@@ -566,9 +561,9 @@ export const lines = {
     to: 'gray-9',
     borderColor: GRAY_MEDIUM,
   },
-  'gray-border-16-to-gray-border-21': {
+  'gray-border-16-to-medium-2': {
     from: 'gray-border-16',
-    to: 'gray-border-21',
+    to: 'medium-2',
     borderColor: GRAY_MEDIUM,
   },
   'gray-7-to-gray-border-12': {
@@ -579,6 +574,116 @@ export const lines = {
   'gray-12-to-white-9': {
     from: 'gray-12',
     to: 'white-9',
+    borderColor: GRAY_MEDIUM,
+  },
+  'gray-border-15-to-gray-border-14': {
+    from: 'gray-border-15',
+    to: 'gray-border-14',
+    borderColor: GRAY_DARK,
+  },
+  'medium-2-to-medium-6': {
+    from: 'medium-2',
+    to: 'medium-6',
+    borderColor: GRAY_DARK,
+  },
+  'medium-1-to-medium-5': {
+    from: 'medium-1',
+    to: 'medium-5',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-medium-6': {
+    from: 'large-1',
+    to: 'medium-6',
+    borderColor: GRAY_MEDIUM,
+  },
+  'large-1-to-large-3': {
+    from: 'large-1',
+    to: 'large-3',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-medium-4': {
+    from: 'large-1',
+    to: 'medium-4',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-small-8': {
+    from: 'large-1',
+    to: 'small-8',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-large-2': {
+    from: 'large-1',
+    to: 'large-2',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-medium-1': {
+    from: 'large-1',
+    to: 'medium-1',
+    borderColor: GRAY_DARK,
+  },
+  'large-1-to-gray-21': {
+    from: 'large-1',
+    to: 'gray-21',
+    borderColor: GRAY_MEDIUM,
+  },
+  'small-8-to-medium-3': {
+    from: 'small-8',
+    to: 'medium-3',
+    borderColor: GRAY_DARK,
+  },
+  'medium-3-to-medium-4': {
+    from: 'medium-3',
+    to: 'medium-4',
+    borderColor: GRAY_DARK,
+  },
+  'medium-5-to-gray-border-18-2': {
+    from: 'medium-5',
+    to: 'gray-border-18-2',
+    borderColor: GRAY_MEDIUM,
+  },
+  'medium-3-to-gray-21': {
+    from: 'medium-3',
+    to: 'gray-21',
+    borderColor: GRAY_DARK,
+  },
+  'medium-4-to-gray-border-19': {
+    from: 'medium-4',
+    to: 'gray-border-19',
+    borderColor: GREEN,
+  },
+  'medium-6-to-gray-border-21-2': {
+    from: 'medium-6',
+    to: 'gray-border-21-2',
+    borderColor: GRAY_MEDIUM,
+  },
+  'medium-4-to-gray-border-21-2': {
+    from: 'medium-4',
+    to: 'gray-border-21-2',
+    borderColor: GRAY_DARK,
+  },
+  'medium-6-to-medium-4': {
+    from: 'medium-6',
+    to: 'medium-4',
+    borderColor: GRAY_DARK,
+  },
+  'medium-3-to-gray-border-19': {
+    from: 'medium-3',
+    to: 'gray-border-19',
+    borderColor: GRAY_DARK,
+  },
+  'medium-4-to-gray-24': {
+    from: 'medium-4',
+    to: 'gray-24',
+    borderColor: GRAY_MEDIUM,
+  },
+  'medium-1-to-gray-border-18-2': {
+    from: 'medium-1',
+    to: 'gray-border-18-2',
+    borderColor: GRAY_DARK,
+  },
+  'large-2-to-gray-21': {
+    from: 'large-2',
+    to: 'gray-21',
     borderColor: GRAY_MEDIUM,
   },
 }

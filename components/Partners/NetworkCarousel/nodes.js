@@ -10,7 +10,7 @@ import {
   SM,
 } from '../constants'
 
-import abstartups from '~/assets/img/partners/12.svg'
+import abstartups from '~/assets/img/partners/12.png'
 import acecortex from '~/assets/img/partners/14.svg'
 import abvcap from '~/assets/img/partners/13.svg'
 import cazoolo from '~/assets/img/partners/15.svg'
@@ -26,6 +26,10 @@ import tmf from '~/assets/img/partners/10.png'
 import plugandplay from '~/assets/img/partners/02.png'
 import weimpact from '~/assets/img/partners/11.png'
 import touchdown from '~/assets/img/partners/03.png'
+import ayaearth from '~/assets/img/partners/18.svg'
+import cesar from '~/assets/img/partners/19.png'
+import hubsalvador from '~/assets/img/partners/20.svg'
+import manaushub from '~/assets/img/partners/21.png'
 
 export const nodesFirst = {
   'gray-0': {
@@ -108,16 +112,17 @@ export const nodesSecond = {
     top: 0,
     left: 136 + 320,
     size: LG,
-    background: `url(${cazoolo}) no-repeat center, ${WHITE}`,
-    backgroundSize: '82.5px 19.5px',
+    background: `url(${ayaearth}) no-repeat center, ${WHITE}`,
+    backgroundSize: '71px 45px',
     link: '#',
   },
   'white-4': {
     top: 97,
     left: 20 + 320,
     size: LG,
-    background: `url(${cubo}) no-repeat center, ${WHITE}`,
-    backgroundSize: '62.25px 21px',
+    background: `url(${cazoolo}) no-repeat center, ${GRAY}`,
+    backgroundSize: '82.5px 19.5px',
+    border: '1px solid black',
     link: '#',
   },
   'gray-4': {
@@ -142,9 +147,8 @@ export const nodesSecond = {
     top: 174,
     left: 180 + 320,
     size: LG,
-    background: `url(${distrito}) no-repeat center, ${GRAY}`,
-    backgroundSize: '73.5px 19.5px',
-    border: '1px solid black',
+    background: `url(${cesar}) no-repeat center, ${WHITE}`,
+    backgroundSize: '82px 47px',
     link: '#',
   },
   'gray-border-3': {
@@ -200,24 +204,25 @@ export const nodesThird = {
     top: 0,
     left: 64 + 640,
     size: LG,
-    background: `url(${fiemglab}) no-repeat center, ${WHITE}`,
-    backgroundSize: '75.47px 21px',
+    background: `url(${cubo}) no-repeat center, ${WHITE}`,
+    backgroundSize: '83px 28px',
     link: '#',
   },
   'white-6': {
     top: 174,
     left: 20 + 640,
     size: LG,
-    background: `url(${caldeira}) no-repeat center, ${WHITE}`,
-    backgroundSize: '71.14px 34.01px',
+    background: `url(${fiemglab}) no-repeat center, ${GRAY}`,
+    backgroundSize: '75.46px 21px',
+    border: '1px solid black',
     link: '#',
   },
   'white-7': {
     top: 97,
     left: 180 + 640,
     size: LG,
-    background: `url(${ib}) no-repeat center, ${WHITE}`,
-    backgroundSize: '30.75px 36px',
+    background: `url(${distrito}) no-repeat center, ${WHITE}`,
+    backgroundSize: '73.5px 19.5px',
     link: '#',
   },
   'gray-7': {
@@ -280,8 +285,8 @@ export const nodesFourth = {
     top: 166,
     left: 180 + 960,
     size: LG,
-    background: `url(${onono}) no-repeat center, ${WHITE}`,
-    backgroundSize: '73.31px 34.5px',
+    background: `url(${caldeira}) no-repeat center, ${WHITE}`,
+    backgroundSize: '71.14px 34.01px',
     link: '#',
   },
   'gray-10': {
@@ -291,6 +296,12 @@ export const nodesFourth = {
     background: GRAY_LIGHT,
   },
   'gray-11': {
+    top: 128.11,
+    left: 299.67 + 960,
+    size: MD,
+    background: GRAY_LIGHT,
+  },
+  'gray-11-2': {
     top: 128.11,
     left: 299.67 + 960,
     size: MD,
@@ -312,8 +323,17 @@ export const nodesFourth = {
     top: 0,
     left: 136 + 960,
     size: LG,
-    background: `url(${inventivos}) no-repeat center, ${GRAY}`,
-    backgroundSize: '67.5px 23.25px',
+    background: `url(${hubsalvador}) no-repeat center, ${GRAY}`,
+    backgroundSize: '68px 45px',
+    border: '1px solid black',
+    link: '#',
+  },
+  'gray-border-11-2': {
+    top: 0,
+    left: 136 + 960,
+    size: LG,
+    background: `url(${hubsalvador}) no-repeat center, ${GRAY}`,
+    backgroundSize: '68px 45px',
     border: '1px solid black',
     link: '#',
   },
@@ -321,8 +341,8 @@ export const nodesFourth = {
     top: 89,
     left: 20 + 960,
     size: LG,
-    background: `url(${latitude}) no-repeat center, ${GRAY}`,
-    backgroundSize: '93.97px 13.72px',
+    background: `url(${ib}) no-repeat center, ${GRAY}`,
+    backgroundSize: '30.75px 36px',
     border: '1px solid black',
     link: '#',
   },
@@ -333,7 +353,21 @@ export const nodesFourth = {
     background: GRAY,
     border: `1px solid ${GRAY_DARK}`,
   },
+  'gray-border-13-2': {
+    top: 149.76,
+    left: 140.34 + 960,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
   'gray-border-22': {
+    top: 299.67,
+    left: 143.56 + 960,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+  'gray-border-22-2': {
     top: 299.67,
     left: 143.56 + 960,
     size: MD,
@@ -360,8 +394,8 @@ export const nodesFifth = {
     top: 0,
     left: 64 + 1280,
     size: LG,
-    background: `url(${plugandplay}) no-repeat center, ${WHITE}`,
-    backgroundSize: '82.5px 15.75px',
+    background: `url(${inventivos}) no-repeat center, ${WHITE}`,
+    backgroundSize: '67.5px 23.3px',
     link: '#',
   },
   'gray-14': {
@@ -389,17 +423,27 @@ export const nodesFifth = {
     background: GRAY_LIGHT,
   },
   'gray-19': {
-    top: 231.83,
-    left: 20.13 + 1280,
-    size: MD,
-    background: GRAY_LIGHT,
+    top: 174,
+    left: 20 + 1280,
+    size: LG,
+    background: `url(${manaushub}) no-repeat center, ${GRAY}`,
+    backgroundSize: '89px 40px',
+    border: '1px solid black',
+    link: '#',
   },
   'gray-border-14': {
-    top: 136,
-    left: 136 + 1280,
+    top: 213.29,
+    left: 216.78 + 1280,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+  'gray-border-17-new': {
+    top: 97,
+    left: 180 + 1280,
     size: LG,
-    background: `url(${tmf}) no-repeat center, ${GRAY}`,
-    backgroundSize: '36px 36px',
+    background: `url(${latitude}) no-repeat center, ${GRAY}`,
+    backgroundSize: '93.97px 13.72px',
     border: '1px solid black',
     link: '#',
   },
@@ -421,7 +465,7 @@ export const nodesFifth = {
 export const nodesSixth = {
   'white-10': {
     top: 0,
-    left: 136 + 1600,
+    left: 136 + 1920,
     size: LG,
     background: `url(${touchdown}) no-repeat center, ${WHITE}`,
     backgroundSize: '98.77px 21px',
@@ -429,37 +473,37 @@ export const nodesSixth = {
   },
   'gray-20': {
     top: 44.29,
-    left: 284.24 + 1600,
+    left: 284.24 + 1920,
     size: MD,
     background: GRAY_LIGHT,
   },
   'gray-21': {
     top: 83.02,
-    left: 51.36 + 1600,
+    left: 51.36 + 1920,
     size: MD,
     background: GRAY_LIGHT,
   },
   'gray-22': {
     top: 130.11,
-    left: 209.67 + 1600,
+    left: 209.67 + 1920,
     size: MD,
     background: GRAY_LIGHT,
   },
   'gray-23': {
     top: 188.72,
-    left: 264.83 + 1600,
+    left: 264.83 + 1920,
     size: MD,
     background: GRAY_LIGHT,
   },
   'gray-24': {
     top: 262.08,
-    left: 167.8 + 1600,
+    left: 167.8 + 1920,
     size: MD,
     background: GRAY_LIGHT,
   },
   'gray-border-17': {
     top: 136,
-    left: 64 + 1600,
+    left: 64 + 1920,
     size: LG,
     background: `url(${weimpact}) no-repeat center, ${GRAY}`,
     backgroundSize: '90.75px 28.69px',
@@ -468,31 +512,116 @@ export const nodesSixth = {
   },
   'gray-border-18': {
     top: 41.74,
-    left: 47.76 + 1600,
+    left: 47.76 + 1920,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+  'gray-border-18-2': {
+    top: 41.74,
+    left: 47.76 + 1920,
     size: MD,
     background: GRAY,
     border: `1px solid ${GRAY_DARK}`,
   },
   'gray-border-19': {
     top: 149.76,
-    left: 50.34 + 1600,
+    left: 50.34 + 1920,
     size: MD,
     background: GRAY,
     border: `1px solid ${GRAY_DARK}`,
   },
   'gray-border-20': {
     top: 215.29,
-    left: 166.78 + 1600,
+    left: 166.78 + 1920,
     size: MD,
     background: GRAY,
     border: `1px solid ${GRAY_DARK}`,
   },
   'gray-border-21': {
     top: 299.87,
-    left: 53.56 + 1600,
+    left: 53.56 + 1920,
     size: MD,
     background: GRAY,
     border: `1px solid ${GRAY_DARK}`,
+  },
+  'gray-border-21-2': {
+    top: 299.87,
+    left: 53.56 + 1920,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+}
+export const nodesSeventh = {
+  'large-1': {
+    top: 87,
+    left: 20 + 1600,
+    size: LG,
+    background: `url(${plugandplay}) no-repeat center, ${WHITE}`,
+    backgroundSize: '98.77px 21px',
+    link: '#',
+  },
+  'large-2': {
+    top: 2,
+    left: 136 + 1600,
+    size: LG,
+    background: `url(${onono}) no-repeat center, ${WHITE}`,
+    backgroundSize: '73px 34px',
+    link: '#',
+  },
+  'large-3': {
+    top: 164,
+    left: 180 + 1600,
+    size: LG,
+    background: `url(${tmf}) no-repeat center, ${GRAY}`,
+    backgroundSize: '36px 36px',
+    border: '1px solid black',
+    link: '#',
+  },
+  'medium-1': {
+    top: 39.74,
+    left: 77.73 + 1600,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+  'medium-2': {
+    top: 297.87,
+    left: 83.56 + 1600,
+    size: MD,
+    background: GRAY,
+    border: `1px solid ${GRAY_DARK}`,
+  },
+  'medium-3': {
+    top: 126.11,
+    left: 239.67 + 1600,
+    size: MD,
+    background: WHITE,
+  },
+  'medium-4': {
+    top: 186.72,
+    left: 294.83 + 1600,
+    size: MD,
+    background: WHITE,
+  },
+  'medium-5': {
+    top: 0,
+    left: 216.18 + 1600,
+    size: MD,
+    background: WHITE,
+  },
+  'medium-6': {
+    top: 261.08,
+    left: 197.8 + 1600,
+    size: MD,
+    background: WHITE,
+  },
+  'small-8': {
+    top: 139.11,
+    left: 171.68 + 1600,
+    size: SM,
+    background: GREEN,
   },
 }
 
@@ -502,5 +631,6 @@ export const nodes = {
   ...nodesThird,
   ...nodesFourth,
   ...nodesFifth,
+  ...nodesSeventh,
   ...nodesSixth,
 }
