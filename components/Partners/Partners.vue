@@ -46,7 +46,6 @@
 import { calcDeg, calcDiag } from './calc'
 import { lines } from './NetworkAnimation/Lines'
 import {
-  sceneZero,
   sceneOne,
   sceneTwo,
   sceneThree,
@@ -64,21 +63,19 @@ export default {
   data() {
     return {
       positionNodes: {
-        0: sceneZero,
-        1: sceneOne,
-        2: sceneTwo,
-        3: sceneThree,
-        4: sceneFour,
-        5: sceneFive,
+        0: sceneOne,
+        1: sceneTwo,
+        2: sceneThree,
+        3: sceneFour,
+        4: sceneFive,
       },
       lines,
       containerHeight: {
-        0: '553px',
-        1: '537.24px',
-        2: '542.24px',
-        3: '537.24px',
-        4: '537px',
-        5: '591px',
+        0: '537.24px',
+        1: '542.24px',
+        2: '537.24px',
+        3: '537px',
+        4: '591px',
       },
       scene: 0,
     }
@@ -146,8 +143,7 @@ export default {
           sceneThree:
             scrollPos > pageHeight + 950 && scrollPos < pageHeight + 1200,
           sceneFour:
-            scrollPos > pageHeight + 1200 && scrollPos < pageHeight + 1450,
-          sceneFive: scrollPos > pageHeight + 1450,
+            scrollPos > pageHeight + 1450,
         }
 
         switch (true) {
@@ -165,9 +161,6 @@ export default {
             break
           case scenesPositions.sceneFour:
             this.scene = 4
-            break
-          case scenesPositions.sceneFive:
-            this.scene = 5
             break
         }
       }, 75)
