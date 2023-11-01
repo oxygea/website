@@ -35,7 +35,7 @@
                 })
               "
               :title="$t('menu.future')"
-              class="text-black"
+              class="!text-black"
             >
               <p @click="$emit('close-modal')">
                 {{ $t('menu.future') }}
@@ -50,7 +50,7 @@
                 })
               "
               :title="$t('menu.acceleration')"
-              class="text-black"
+              class="!text-black"
             >
               <p @click="$emit('close-modal')">
                 {{ $t('menu.acceleration') }}
@@ -65,7 +65,7 @@
                 })
               "
               :title="$t('menu.ecosystem')"
-              class="text-black"
+              class="!text-black"
             >
               <p @click="$emit('close-modal')">
                 {{ $t('menu.ecosystem') }}
@@ -80,7 +80,7 @@
                 })
               "
               :title="$t('menu.about')"
-              class="text-black"
+              class="!text-black"
             >
               <p @click="$emit('close-modal')">
                 {{ $t('menu.about') }}

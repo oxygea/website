@@ -12,21 +12,24 @@ export default {
   },
   hero: {
     card1: {
+      cta: 'Know more',
+    },
+    card2: {
       title:
         'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
       cta: 'Investment Thesis',
     },
-    card2: {
+    card3: {
       title:
         'The investment and acceleration program is for startups that want to transform the industry.',
       cta: 'Enroll your startup',
     },
-    card3: {
+    card4: {
       title:
         'From acceleration to growth investments, we are with you in every step of your startup journey.',
       cta: 'Our programs',
     },
-    card4: {
+    card5: {
       title:
         'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
       cta: 'Our partners',
