@@ -81,6 +81,12 @@ export const sceneOne = {
     size: 12,
     background: WHITE,
   },
+  'white-12': {
+    left: 564,
+    top: 423,
+    size: 12,
+    background: WHITE,
+  },
   'border-0': {
     left: 365,
     top: 117,

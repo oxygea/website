@@ -73,6 +73,12 @@ export const sceneZero = {
     size: 12,
     background: WHITE,
   },
+  'white-12': {
+    left: 564,
+    top: 423,
+    size: 12,
+    background: WHITE,
+  },
   'border-0': {
     left: 386.69,
     top: 114.24,

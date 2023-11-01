@@ -1,6 +1,6 @@
 import { WHITE, GRAY, BORDER, GREEN_DARK, PURPLE_DARK } from '../../constants'
 
-import caldeira from '~/assets/img/partners/07.png'
+import endeavor from '~/assets/img/partners/22.png'
 import hubsalvador from '~/assets/img/partners/20.svg'
 import fiemg from '~/assets/img/partners/05.png'
 import ib from '~/assets/img/partners/01.png'
@@ -52,7 +52,7 @@ export const sceneThree = {
     left: 875,
     top: 66,
     size: 80,
-    background: `url(${caldeira}) no-repeat center, ${WHITE}`,
+    background: `url(${endeavor}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-8': {
@@ -77,6 +77,12 @@ export const sceneThree = {
   'white-11': {
     left: 1054.86,
     top: 428.5,
+    size: 12,
+    background: WHITE,
+  },
+  'white-12': {
+    left: 564,
+    top: 423,
     size: 12,
     background: WHITE,
   },
