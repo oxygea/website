@@ -231,4 +231,14 @@ export const lines = {
     to: 'white-8',
     borderColor: GRAY_HEAVY,
   },
+  'border-3-to-white-12': {
+    from: 'border-3',
+    to: 'white-12',
+    borderColor: GRAY_HEAVY,
+  },
+  'border-4-to-white-12': {
+    from: 'border-4',
+    to: 'white-12',
+    borderColor: GRAY_HEAVY,
+  },
 }

@@ -4,6 +4,7 @@ import plugandplay from '~/assets/img/partners/02.png'
 import touchdown from '~/assets/img/partners/03.png'
 import tmf from '~/assets/img/partners/10.png'
 import weimpact from '~/assets/img/partners/11.png'
+import onono from '~/assets/img/partners/04.png'
 
 export const sceneFive = {
   'white-0': {
@@ -78,6 +79,13 @@ export const sceneFive = {
     top: 349,
     size: 80,
     background: `url(${weimpact}) no-repeat center, ${WHITE}`,
+    link: '#',
+  },
+  'white-12': {
+    left: 564,
+    top: 423,
+    size: 80,
+    background: `url(${onono}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'border-0': {

@@ -3,13 +3,23 @@
     <div class="flex gap-4 self-end mr-5">
       <button
         class="w-8 h-8 flex justify-center items-center border-2 border-solid rounded-full rotate-180 disabled:border-[#BEBEBF]"
-        @mousedown="prevClickScrollX"
+        :class="[
+          {
+            'opacity-20 pointer-events-none': carrossel.actions.prevNotClick,
+          },
+        ]"
+        @mousedown="prevClickScrollX('prev')"
       >
         <svg-icon class="w-2 h-3 text-black" name="arrow-right" />
       </button>
       <button
         class="w-8 h-8 flex justify-center items-center border-2 border-solid rounded-full disabled:border-[#BEBEBF]"
-        @click="nextClickScrollX"
+        :class="[
+          {
+            'opacity-20 pointer-events-none': carrossel.actions.nextNotClick,
+          },
+        ]"
+        @click="nextClickScrollX('next')"
       >
         <svg-icon class="w-2 h-3 text-black" name="arrow-right" />
       </button>
@@ -47,14 +57,51 @@ export default {
     return {
       lines,
       nodes,
+      carrossel: {
+        actions: {
+          prevNotClick: true,
+          nextNotClick: false,
+        },
+        position: 1,
+        length: 7,
+      },
     }
   },
   methods: {
     prevClickScrollX() {
       this.$refs.scrollX.scrollLeft -= 320
+      if (this.carrossel.position > 1 && this.$refs.scrollX.scrollLeft > 0) {
+        this.carrossel.actions.prevNotClick = false
+        this.carrossel.actions.nextNotClick = false
+        this.carrossel.position--
+      }
+
+      if (this.carrossel.position === 1)
+        this.carrossel.actions.prevNotClick = true
     },
     nextClickScrollX() {
       this.$refs.scrollX.scrollLeft += 320
+      if (this.carrossel.position < this.carrossel.length) {
+        this.carrossel.actions.prevNotClick = false
+        this.carrossel.actions.nextNotClick = false
+        this.carrossel.position++
+      }
+
+      if (this.carrossel.position === this.carrossel.length)
+        this.carrossel.actions.nextNotClick = true
+    },
+    navigation(type) {
+      switch (type) {
+        case 'next':
+          this.next()
+          break
+        case 'prev':
+          this.prev()
+          break
+        default:
+          // eslint-disable-next-line no-console
+          console.log(`Sorry, action not found.`)
+      }
     },
     handleLine({ from, to, borderColor }) {
       let x1 = 0

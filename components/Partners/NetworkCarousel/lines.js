@@ -21,6 +21,11 @@ export const lines = {
     to: 'gray-border-1',
     borderColor: GRAY_DARK,
   },
+  'gray-1-to-gray-0-2': {
+    from: 'gray-1',
+    to: 'gray-0-2',
+    borderColor: GRAY_DARK,
+  },
   'gray-1-to-gray-border-0': {
     from: 'gray-1',
     to: 'gray-border-0',
@@ -554,6 +559,16 @@ export const lines = {
   'white-10-to-gray-20': {
     from: 'white-10',
     to: 'gray-20',
+    borderColor: GRAY_DARK,
+  },
+  'gray-border-18-2-to-gray-25': {
+    from: 'gray-border-18-2',
+    to: 'gray-25',
+    borderColor: GRAY_DARK,
+  },
+  'gray-20-to-gray-25': {
+    from: 'gray-20',
+    to: 'gray-25',
     borderColor: GRAY_DARK,
   },
   'gray-border-2-to-gray-9': {

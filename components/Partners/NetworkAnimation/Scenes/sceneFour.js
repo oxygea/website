@@ -1,6 +1,6 @@
 import { WHITE, GRAY, BORDER, GREEN_DARK, PURPLE_DARK } from '../../constants'
 
-import onono from '~/assets/img/partners/04.png'
+import caldeira from '~/assets/img/partners/07.png'
 import latitud from '~/assets/img/partners/09.png'
 import manaustech from '~/assets/img/partners/21.png'
 import inventivos from '~/assets/img/partners/08.png'
@@ -59,7 +59,7 @@ export const sceneFour = {
     left: 951.05,
     top: 195,
     size: 80,
-    background: `url(${onono}) no-repeat center, ${WHITE}`,
+    background: `url(${caldeira}) no-repeat center, ${WHITE}`,
     link: '#',
   },
   'white-9': {
@@ -77,6 +77,12 @@ export const sceneFour = {
   'white-11': {
     left: 991,
     top: 428,
+    size: 12,
+    background: WHITE,
+  },
+  'white-12': {
+    left: 564,
+    top: 423,
     size: 12,
     background: WHITE,
   },
