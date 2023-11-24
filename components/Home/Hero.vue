@@ -2,8 +2,6 @@
   <section
     class="bg-black relative overflow-hidden hero w-full section-hero container flex flex-col justify-between slick-next-hero !pt-20 lg:!pt-[180px]"
   >
-
-    <!-- Background 02 -->
     <transition name="slide-fade">
       <VueLottie
         v-if="sliderPageIndex === 1"
@@ -12,13 +10,11 @@
         class="pointer-events-none -top-[38px] lg:top-[260px] !h-auto absolute right-0"
       />
     </transition>
-
-    <!-- Background 02 -->
     <transition name="slide-fade">
-      <img
+      <nuxt-img
         v-if="sliderPageIndex === 2"
         preload
-        src="~/assets/img/hero/bg-2.png"
+        :src="require(`~/assets/img/hero/bg-2.png`)"
         format="webp"
         fit="fill"
         quality="100"
@@ -26,20 +22,22 @@
         aria-hidden
         class="absolute hidden lg:block left-0 top-[106px]"
       />
-      <img
-        v-if="sliderPageIndex === 2"
+    </transition>
+
+    <transition name="slide-fade">
+      <nuxt-img
+        v-if="sliderPageIndex === 1"
         preload
-        src="~/assets/img/hero/bg-mobile-2.png"
+        :src="require(`~/assets/img/hero/bg-mobile-2.png`)"
         format="webp"
         fit="fill"
         quality="100"
         loading="lazy"
         aria-hidden
-        class="absolute block lg:hidden left-0 top-[51px] min-w-full"
+        class="absolute lg:hidden left-0 top-[51px] min-w-full"
       />
     </transition>
 
-    <!-- Background 03 -->
     <transition name="slide-fade">
       <VueLottie
         v-if="sliderPageIndex === 3"
@@ -49,7 +47,6 @@
       />
     </transition>
 
-    <!-- Background 04 -->
     <transition name="slide-fade">
       <VueLottie
         v-if="sliderPageIndex === 4"
@@ -69,72 +66,69 @@
         <div
           v-for="(item, index) of itens"
           :key="index"
-          class="w-full !flex min-h-[330px] lg:min-h-[556px] flex-col relative lg:ml-2"
+          class="w-full !flex flex-col relative lg:ml-2"
           :class="[
             {
-              'mt-[42px] lg:mt-0': item.value === 1,
-              'max-w-[500px] mr-[150px] !ml-auto mt-[124px] lg:mt-0':
+              'mt-[102px] lg:mt-0': item.value === 1,
+              'max-w-[500px] mr-[150px] !ml-auto mt-[164px] lg:mt-0':
                 item.value === 2,
-              ' mt-[76px] lg:mt-0': item.value === 3,
-              ' mt-[77px] lg:mt-0': item.value === 4,
+              ' mt-[117px] lg:mt-0': item.value === 3,
+              ' mt-[118px] lg:mt-0': item.value === 4,
             },
           ]"
         >
+          <p
+            :class="[
+              {
+                '!max-w-[500px]': item.value === 2,
+                fade: true,
+                show: item.show,
+              },
+            ]"
+            class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
+          >
+            {{ $t(`hero.card${item.value}.title`) }}
+          </p>
 
-          <div class="contents">
-            <p
-              :class="[
-                {
-                  '!max-w-[500px]': item.value === 1 || item.value === 3,
-                  fade: true,
-                  show: item.show,
-                },
-              ]"
-              class="text-white max-w-[297px] pb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
-            >
-              {{ $t(`hero.card${item.value}.title`) }}
-            </p>
+          <a
+            v-if="item.value === 2"
+            target="_Blank"
+            title="Inscreva sua startup"
+            :class="[
+              {
+                fade: true,
+                show: item.show,
+              },
+            ]"
+            class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
+            @click="$nuxt.$emit('openModalContact')"
+          >
+            {{ $t(`hero.card${item.value}.cta`) }}
+          </a>
 
-            <a
-              v-if="item.value === 2"
-              target="_Blank"
-              title="Inscreva sua startup"
-              :class="[
-                {
-                  fade: true,
-                  show: item.show,
-                },
-              ]"
-              class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-              @click="$nuxt.$emit('openModalContact')"
-            >
-              {{ $t(`hero.card${item.value}.cta`) }}
-            </a>
-
-            <nuxt-link
-              v-if="item.value !== 2"
-              :to="
-                localeLocation({
-                  name: 'index',
-                  hash: `#${item.hash}`,
-                  params: { offset: -80 },
-                })
-              "
-              :class="[
-                {
-                  fade: true,
-                  show: item.show,
-                },
-              ]"
-              class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-              >{{ $t(`hero.card${item.value}.cta`) }}</nuxt-link
-            >
-          </div>
+          <nuxt-link
+            v-if="item.value !== 2"
+            :to="
+              localeLocation({
+                name: 'index',
+                hash: `#${item.hash}`,
+                params: { offset: -80 },
+              })
+            "
+            :class="[
+              {
+                fade: true,
+                show: item.show,
+              },
+            ]"
+            class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
+            >{{ $t(`hero.card${item.value}.cta`) }}</nuxt-link
+          >
         </div>
       </VueSlickCarousel>
 
       <div
-        class="absolute bottom-0 right-0 w-[197px] flex items-center gap-4 ml-auto pt-4 lg:pt-20 pb-5 lg:pb-20 lg:w-[250px]"
+        class="w-[197px] flex items-center gap-4 ml-auto pt-4 lg:pt-20 pb-5 lg:pb-20 lg:w-[250px]"
       >
         <p class="text-white font-bold text-base">0{{ sliderPageIndex }}</p>
         <hr class="text-white w-full" />
@@ -271,14 +265,6 @@ export default {
       @apply text-violet;
     }
   }
-}
-
-.imagecarrosselfirst {
-  height: calc(100% - 96px);
-}
-
-.imagecarrosselfirstmobile {
-  height: calc(100% - 64px);
 }
 
 .slide-fade-enter-active {
