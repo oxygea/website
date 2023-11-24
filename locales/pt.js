@@ -12,24 +12,21 @@ export default {
   },
   hero: {
     card1: {
-      cta: 'Saiba mais',
-    },
-    card2: {
       title:
         'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
       cta: 'Tese de investimento',
     },
-    card3: {
+    card2: {
       title:
         'O programa de aceleração e investimento para startups que querem transformar a indústria.',
       cta: 'Inscreva sua startup',
     },
-    card4: {
+    card3: {
       title:
         'Da aceleração aos investimentos em growth, te acompanhamos no desenvolvimento da sua startup.',
       cta: 'Nossos programas',
     },
-    card5: {
+    card4: {
       title:
         'A conexão com o ecossistema faz a diferença. A gente acredita em fazer junto, local e globalmente.',
       cta: 'Nossos parceiros',
