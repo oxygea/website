@@ -7,12 +7,11 @@
       class="flex flex-col items-center gap-[10px] md:w-[1300px] md:h-[653px] md:sticky md:top-[160px] md:mb-[80px]"
     >
       <div class="flex flex-col mx-5 xl:w-[640px] xl:gap-6 xl:self-start">
-        <h1 class="font-bold text-2xl md:text-5xl">Parceiros</h1>
+        <h1 class="font-bold text-2xl md:text-5xl">
+          {{ $t('partners.title') }}
+        </h1>
         <p class="font-poppins text-xs md:text-base xl:ml-[110px]">
-          O fazer junto potencializa resultados. Nos conectamos tanto com as
-          instituições locais, quanto com as mundialmente renomadas. São
-          conexões que compartilham expertise e proporcionam o que as startups
-          mais precisam.
+          {{ $t('partners.desc') }}
         </p>
       </div>
       <div
@@ -142,8 +141,7 @@ export default {
             scrollPos > pageHeight + 500 && scrollPos < pageHeight + 750,
           sceneThree:
             scrollPos > pageHeight + 950 && scrollPos < pageHeight + 1200,
-          sceneFour:
-            scrollPos > pageHeight + 1450,
+          sceneFour: scrollPos > pageHeight + 1450,
         }
 
         switch (true) {
