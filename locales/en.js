@@ -150,7 +150,7 @@ export default {
   },
   partners: {
     title: 'Partners',
-    desc: 'Doing things together boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
+    desc: 'Do it together principle boosts results. We interact with both local and globally renowned institutions. Such networks share expertise and provide what startups need the most.',
   },
   mentors: {
     title: 'Mentors',
