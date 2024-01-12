@@ -9,7 +9,6 @@
     <Programs />
     <Cover />
     <Partners />
-    <Mentors />
     <Portfolio />
     <Team />
   </main>
@@ -41,7 +40,6 @@ export default {
     Programs,
     Cover,
     Partners,
-    //Mentors,
     Portfolio,
     Team,
   },
