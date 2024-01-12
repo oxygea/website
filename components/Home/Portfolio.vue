@@ -2,7 +2,7 @@
   <section
     id="about"
     data-section="about"
-    class="bg-[#EDEDEF] pt-10 pb-5 lg:py-20"
+    class="bg-white pt-10 pb-5 lg:py-20"
   >
     <div class="container">
       <h2

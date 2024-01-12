@@ -41,7 +41,7 @@ export default {
     Programs,
     Cover,
     Partners,
-    Mentors,
+    //Mentors,
     Portfolio,
     Team,
   },
