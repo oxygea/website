@@ -199,7 +199,7 @@ export default {
       sliderPageIndex: 0,
       sliderPageIndexBTN: true,
       itens: [
-        { value: 1, hash: 'partners', show: true },
+        { value: 1, hash: 'investment', show: true },
         {
           value: 2,
           hash: 'investment',
