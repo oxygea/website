@@ -1,5 +1,6 @@
 <template>
   <section
+    id="partners"
     class="h-[638px] md:h-[766px] bg-gray flex justify-center items-center xl:h-[4000px] xl:items-start py-40"
     @scroll="handleScroll"
   >
