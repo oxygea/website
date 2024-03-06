@@ -20,10 +20,7 @@
           :key="'list' + i"
           class="bg-white !w-[310px] p-6 font-poppins"
         >
-          <img
-            :src="'/img/portfolio/' + p.img"
-            class="max-h-[50px] mb-6 max-w-[175px]"
-          />
+          <img :src="'/img/portfolio/' + p.img" class="max-h-[50px] mb-6" />
           <h4 class="text-base text-black mb-2 font-bold uppercase">
             {{ p.title }}
           </h4>
@@ -55,10 +52,7 @@
           :key="'list' + i"
           class="bg-white !w-[310px] p-6 font-poppins"
         >
-          <img
-            :src="'/img/portfolio/' + p2.img"
-            class="max-h-[50px] mb-6 max-w-[175px]"
-          />
+          <img :src="'/img/portfolio/' + p2.img" class="max-h-[50px] mb-6" />
           <h4 class="text-base text-black mb-2 font-bold uppercase">
             {{ p2.title }}
           </h4>

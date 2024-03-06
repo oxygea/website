@@ -719,5 +719,6 @@ export default {
     desc: 'Do not miss the updates on Oxygea and see what the media is talking about our topics of interest. Stay within the trends, opportunities and challenges of the market.',
     highlight: 'Highlight',
     other: 'Other news',
+    read: 'read the article',
   },
 }

@@ -721,5 +721,6 @@ export default {
     desc: 'Não perca as atualizações sobre Oxygea e veja o que a mídia está falando sobre os nossos temas de interesse. Fique por dentro das tendências, oportunidades e desafios do mercado.',
     highlight: 'Matéria em destaque',
     other: 'Outras matérias',
+    read: 'LEIA A MATÉRIA',
   },
 }
