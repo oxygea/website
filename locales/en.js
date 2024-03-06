@@ -9,6 +9,7 @@ export default {
     ecosystem: 'Ecosystem and Support',
     about: 'About',
     contact: 'Contact',
+    inthenews: 'In the news',
   },
   hero: {
     card1: {
@@ -171,28 +172,49 @@ export default {
   },
   portfolio: {
     title: 'Portfolio of companies',
-    desc: 'Four new ventures with legacy in innovation have joined Braskem. They now go a step further and develop their potential to impact the industry positively.',
-    img: {
-      title1: 'Sustainable solutions for the industry',
-      title2: 'Freight management systems',
-      title3: 'Machine learning ',
-      title4: 'Sustainability for startups',
-      alt1: 'People discussing about innovation in the industry',
-      alt2: 'Trucks in a carrier yard',
-      alt3: 'Intelligent machines in plastic production',
-      alt4: 'Hand with icons representing sustainability',
-    },
-    titleXTELLAR: 'PRINTING THE FUTURE',
-    XTELLAR:
-      'Production and sale of 3D printer filament, using conventional, biopolymer technology and PCR technology of Braskem, to provide sustainable and efficient solutions.',
-    titleLOADSHARK: 'FREIGHT EFFICIENCY AND CONTROL',
-    LOADSHARK:
-      'Shipment management system, with reverse auction functionality for shippers.',
-    titleBABEL: '4.0 Revolution for the plastic industry',
-    BABEL:
-      'Optimization of the production process of plastic industry transformers through machine learning.',
-    titleZAYA: 'DEMOCRATIZING SUSTAINABILITY KNOWLEDGE',
-    ZAYA: 'Sustainability standard for companies and consumers, to compare the environmental impact of different products throughout their life cycle.',
+    subtitle: 'Portfolio',
+    about: 'KNOW',
+    listCompanies: [
+      {
+        title: 'EMBEDDO',
+        desc: 'Powering the next generation of digital transformation in the industry.',
+        img: 'embeddo',
+        link: 'https://www.embeddo.io/',
+      },
+      {
+        title: 'GROWPACK',
+        desc: 'We create biomaterials that connect plants to people.',
+        img: 'growpack',
+        link: 'https://www.growpack.bio/',
+      },
+      {
+        title: 'LOGSHARE',
+        desc: 'We integrate logistics networks among shippers.',
+        img: 'logshare',
+        link: 'https://www.logshare.com.br/',
+      },
+    ],
+    subtitle2: 'Venture Building',
+    listCompanies2: [
+      {
+        title: 'BALQ',
+        desc: 'Accelerate results through knowledge and data intelligence.',
+        img: 'balq',
+        link: 'https://balqtech.com/',
+      },
+      {
+        title: 'PACEY',
+        desc: 'Pacey brings cost efficiency to shippers and more business opportunities to carriers.',
+        img: 'pacey',
+        link: 'https://www.pacey.com.br/',
+      },
+      {
+        title: 'ZAYA',
+        desc: 'Zaya is here to simplify and democratize environmental impact calculation.',
+        img: 'zaya',
+        link: 'https://www.zaya.eco/',
+      },
+    ],
   },
   team: {
     title: 'Oxygea Team',
@@ -691,5 +713,11 @@ export default {
       plc8: 'How can we help you?',
       lb1: 'Area of interest',
     },
+  },
+  news: {
+    title: 'In the news',
+    desc: 'Do not miss the updates on Oxygea and see what the media is talking about our topics of interest. Stay within the trends, opportunities and challenges of the market.',
+    highlight: 'Highlight',
+    other: 'Other news',
   },
 }

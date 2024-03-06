@@ -96,6 +96,21 @@
           >
             {{ $t('menu.about') }}
           </AnchorMenu>
+
+          <AnchorMenu
+            data-link="inthenews"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#inthenews',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.inthenews')"
+          >
+            {{ $t('menu.inthenews') }}
+          </AnchorMenu>
+
           <p
             class="text-white font-poppins relative h-[50px] flex justify-center items-center text-xs lg:text-sm font-medium transition-colors hover:text-violet cursor-pointer"
             @click="$nuxt.$emit('openModalContact')"

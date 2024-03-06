@@ -1,66 +1,82 @@
 <template>
-  <section
-    id="about"
-    data-section="about"
-    class="bg-white pt-10 pb-5 lg:py-20"
-  >
-    <div class="container">
+  <section id="about" data-section="about" class="bg-gray py-10 lg:py-20">
+    <div class="container !pr-0 lg:!pr-5">
       <h2
         class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6 -tracking-[0.03em]"
         data-aos="fade"
       >
         {{ $t('portfolio.title') }}
       </h2>
-
-      <p
-        class="font-normal font-poppins text-xs pb-10 lg:max-w-[530px] lg:ml-[110px] lg:text-base !leading-4 lg:!leading-6"
+      <h3 class="text-xl lg:text-2xl font-bold mb-6">
+        {{ $t('portfolio.subtitle') }}
+      </h3>
+      <VueSlickCarousel
+        ref="carouselportfolio"
+        v-bind="slickOptionsPorfolio"
+        class="carouselportfolio ml-5 lg:ml-0"
       >
-        {{ $t('portfolio.desc') }}
-      </p>
-
-      <div class="flex gap-5" @mouseleave="($event) => setSelected('XTELLAR')">
-        <div class="hidden w-full max-w-[420px] h-[460px] relative lg:block">
-          <nuxt-img
-            v-for="(item, index) of itens"
-            :key="`portfolio-image-${index}`"
-            preload
-            :src="`portfolio/${item.value.toLowerCase()}.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            :alt="$t(`portfolio.img.alt${index + 1}`)"
-            :title="$t(`portfolio.img.title${index + 1}`)"
-            class="w-full h-full grayscale absolute left-0 transition-opacity duration-300 eas opacity-0"
-            :class="[
-              {
-                'opacity-100': item.value === selected,
-              },
-            ]"
+        <div
+          v-for="(p, i) in $t('portfolio.listCompanies')"
+          :key="'list' + i"
+          class="bg-white !w-[310px] p-6 font-poppins"
+        >
+          <img
+            :src="'/img/portfolio/' + p.img"
+            class="max-h-[50px] mb-6 max-w-[175px]"
           />
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
-          <div
-            v-for="(item, index) of itens"
-            :key="index"
-            class="w-full bg-green px-6 py-6 transition-colors duration-300 ease-linear"
-            :class="item.value === selected ? 'lg:bg-green' : 'lg:bg-white'"
-            @mouseenter="($event) => setSelected(item.value)"
+          <h4 class="text-base text-black mb-2 font-bold uppercase">
+            {{ p.title }}
+          </h4>
+          <p class="text-sm mb-9 min-h-[60px]">{{ p.desc }}</p>
+          <a
+            :href="p.link"
+            target="_Blank"
+            :title="'Conheça ' + p.title"
+            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[122px] transition-all duration-500 ease-in-out"
           >
-            <h2
-              class="text-base font-bold uppercase text-black mb-2 font-poppins max-w-xs"
+            <span
+              class="text-sm uppercase invisible pl-4 opacity-0 transition-all duration-150 delay-300 lg:group-hover:opacity-100 lg:group-hover:visible"
+              >{{ $t('portfolio.about') }}</span
             >
-              {{ $t(`portfolio.title${item.value}`) }}
-            </h2>
-            <p
-              class="text-xs font-normal font-poppins lg:text-sm lg:font-medium lg:max-w-[366px] !leading-[16px] lg:!leading-[18px]"
-            >
-              {{ $t(`portfolio.${item.value}`) }}
-            </p>
-          </div>
+            <b class="absolute right-[12px] text-sm font-normal">+</b>
+          </a>
         </div>
-      </div>
+      </VueSlickCarousel>
+      <h3 class="text-xl lg:text-2xl font-bold mb-6 mt-10">
+        {{ $t('portfolio.subtitle2') }}
+      </h3>
+      <VueSlickCarousel
+        ref="carouselportfolio2"
+        v-bind="slickOptionsPorfolio2"
+        class="carouselportfolio2 ml-5 lg:ml-0"
+      >
+        <div
+          v-for="(p2, i) in $t('portfolio.listCompanies2')"
+          :key="'list' + i"
+          class="bg-white !w-[310px] p-6 font-poppins"
+        >
+          <img
+            :src="'/img/portfolio/' + p2.img"
+            class="max-h-[50px] mb-6 max-w-[175px]"
+          />
+          <h4 class="text-base text-black mb-2 font-bold uppercase">
+            {{ p2.title }}
+          </h4>
+          <p class="text-sm mb-9 min-h-[60px]">{{ p2.desc }}</p>
+          <a
+            :href="p2.link"
+            target="_Blank"
+            :title="'Conheça ' + p2.title"
+            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[122px] transition-all duration-500 ease-in-out"
+          >
+            <span
+              class="text-sm uppercase invisible pl-4 opacity-0 transition-all duration-150 delay-300 lg:group-hover:opacity-100 lg:group-hover:visible"
+              >{{ $t('portfolio.about') }}</span
+            >
+            <b class="absolute right-[12px] text-sm font-normal">+</b>
+          </a>
+        </div>
+      </VueSlickCarousel>
     </div>
   </section>
 </template>
@@ -69,19 +85,62 @@ export default {
   name: 'HomePortfolio',
   data: function () {
     return {
-      selected: 'XTELLAR',
-      itens: [
-        { value: 'XTELLAR' },
-        { value: 'LOADSHARK' },
-        { value: 'BABEL' },
-        { value: 'ZAYA' },
-      ],
+      slickOptionsPorfolio: {
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        arrows: false,
+        variableWidth: false,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: true,
+            },
+          },
+        ],
+      },
+
+      slickOptionsPorfolio2: {
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        arrows: false,
+        variableWidth: false,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: true,
+            },
+          },
+        ],
+      },
     }
-  },
-  methods: {
-    setSelected(value) {
-      this.selected = value
-    },
   },
 }
 </script>
+
+<style lang="postcss">
+.carouselportfolio,
+.carouselportfolio2 {
+  .slick-track {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .slick-slide {
+    margin-left: 20px;
+  }
+
+  .slick-list {
+    margin-left: -20px;
+  }
+}
+</style>

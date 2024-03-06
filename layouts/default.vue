@@ -104,6 +104,9 @@ export default {
     },
     openModalContact() {
       this.showModal = true
+      if (!this.hubSpotScriptLoaded) {
+        this.loadHubSpotScript()
+      }
     },
     openModalVideo() {
       this.showModalVideo = true
@@ -123,6 +126,23 @@ export default {
     },
     setValueModal() {
       this.valueModal = { id: 4, name: 'Faça parte do time Oxygea' }
+    },
+    loadHubSpotScript() {
+      const script = document.createElement('script')
+      script.src = '//js.hsforms.net/forms/embed/v2.js'
+      script.async = true
+      script.defer = true
+      document.body.appendChild(script)
+
+      script.onload = () => {
+        this.hubSpotScriptLoaded = true
+        window.hbspt.forms.create({
+          region: 'na1',
+          portalId: '24004954',
+          formId: 'ee688d51-6636-42f0-bddc-db48b379abc0',
+          target: '#hubspotForm', // notice we target the div id
+        })
+      }
     },
   },
 }

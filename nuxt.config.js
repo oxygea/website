@@ -12,6 +12,9 @@ export default {
       {
         src: 'https://platform.illow.io/banner.js?siteId=7812e876-c218-4bf2-800b-a70e36e43ef4',
       },
+      {
+        src: '//js.hsforms.net/forms/embed/v2.js',
+      },
     ],
     meta: [
       { charset: 'utf-8' },

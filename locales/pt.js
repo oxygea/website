@@ -9,6 +9,7 @@ export default {
     ecosystem: 'Ecossistema e Colaboração',
     about: 'Somos Oxygea',
     contact: 'Contato',
+    inthenews: 'Imprensa',
   },
   hero: {
     card1: {
@@ -171,29 +172,50 @@ export default {
     },
   },
   portfolio: {
-    title: 'Portfolio de empresas',
-    desc: 'Quatro novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
-    img: {
-      title1: 'Soluções sustentáveis para a indústria',
-      title2: 'Sistemas de gerenciamento de frete',
-      title3: 'Machine learning ',
-      title4: 'Sustentabilidade para startups',
-      alt1: 'Pessoas conversando sobre inovação na indústria',
-      alt2: 'Caminhões em pátio de transportadora',
-      alt3: 'Máquinas inteligentes na produção de plástico',
-      alt4: 'Mão com ícones que representam sustentabilidade',
-    },
-    titleXTELLAR: 'IMPRIMINDO O FUTURO',
-    XTELLAR:
-      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional, bio-polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
-    titleLOADSHARK: 'EFICIÊNCIA E CONTROLE DE FRETE',
-    LOADSHARK:
-      'Sistema de gerenciamento de frete, com funcionalidade de leilão reverso para embarcadores.',
-    titleBABEL: 'REVOLUÇÃO 4.0 PARA A INDÚSTRIA PLÁSTICA',
-    BABEL:
-      'Otimização do processo de produção de transformadores da indústria de plásticos por meio de machine learning.',
-    titleZAYA: 'DEMOCRATIZANDO O CONHECIMENTO DE SUSTENTABILIDADE',
-    ZAYA: 'Padrão de sustentabilidade para empresas e consumidores para comparar o impacto ambiental de diferentes produtos ao longo de seu ciclo de vida.',
+    title: 'Portfolio of companies',
+    subtitle: 'Portfolio',
+    about: 'CONHEÇA',
+    listCompanies: [
+      {
+        title: 'EMBEDDO',
+        desc: 'Impulsionando a próxima geração da transformação digital na indústria',
+        img: 'embeddo.png',
+        link: 'https://www.embeddo.io/',
+      },
+      {
+        title: 'GROWPACK',
+        desc: 'Criamos biomateriais que conectam plantas a pessoas.',
+        img: 'growpack.png',
+        link: 'https://www.growpack.bio/',
+      },
+      {
+        title: 'LOGSHARE',
+        desc: 'Integramos malhas logísticas entre embarcadores',
+        img: 'logshare.png',
+        link: 'https://www.logshare.com.br/',
+      },
+    ],
+    subtitle2: 'Venture Building',
+    listCompanies2: [
+      {
+        title: 'BALQ',
+        desc: 'Acelere resultados por meio do conhecimento e da inteligência de dados.',
+        img: 'balq.png',
+        link: 'https://balqtech.com/',
+      },
+      {
+        title: 'PACEY',
+        desc: 'Zaya veio para simplificar e democratizar o cálculo de impacto ambiental.',
+        img: 'pacey.png',
+        link: 'https://www.pacey.com.br/',
+      },
+      {
+        title: 'ZAYA',
+        desc: 'Pacey traz eficiência de custos para embarcador e mais negócios para transportadoras.',
+        img: 'zaya.png',
+        link: 'https://www.zaya.eco/',
+      },
+    ],
   },
   team: {
     title: 'Time Oxygea',
@@ -693,5 +715,11 @@ export default {
       plc8: 'Como podemos te ajudar?',
       lb1: 'Área de interesse',
     },
+  },
+  news: {
+    title: 'Imprensa',
+    desc: 'Não perca as atualizações sobre Oxygea e veja o que a mídia está falando sobre os nossos temas de interesse. Fique por dentro das tendências, oportunidades e desafios do mercado.',
+    highlight: 'Matéria em destaque',
+    other: 'Outras matérias',
   },
 }
