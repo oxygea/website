@@ -205,13 +205,13 @@ export default {
       },
       {
         title: 'PACEY',
-        desc: 'Zaya veio para simplificar e democratizar o cálculo de impacto ambiental.',
+        desc: 'Pacey traz eficiência de custos para embarcador e mais negócios para transportadoras.',
         img: 'pacey.png',
         link: 'https://www.pacey.com.br/',
       },
       {
         title: 'ZAYA',
-        desc: 'Pacey traz eficiência de custos para embarcador e mais negócios para transportadoras.',
+        desc: 'Zaya veio para simplificar e democratizar o cálculo de impacto ambiental.',
         img: 'zaya.png',
         link: 'https://www.zaya.eco/',
       },
