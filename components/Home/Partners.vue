@@ -61,12 +61,37 @@
           <svg-icon name="abvcap" class="w-[77px] h-[32px]" />
         </a>
         <a
+          href="https://atitudeinovacao.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <nuxt-img
+            preload
+            :src="`partners/atitude.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[124px] h-[35px] m-auto"
+          />
+        </a>
+        <a
+          href="https://www.atlantico.com.br/embrapii/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="atlantico" class="w-[91px] h-[21px]" />
+        </a>
+        <!-- <a
           href="https://www.acecortex.com.br/"
           target="_blank"
           class="!flex justify-center items-center"
         >
           <svg-icon name="acecortex" class="w-[93px] h-[48px]" />
-        </a>
+        </a> -->
         <a
           href="https://www.cetrel.com.br/"
           target="_blank"
@@ -170,6 +195,13 @@
           class="!flex justify-center items-center"
         >
           <svg-icon name="manaus" class="w-[110px] h-[48px]" />
+        </a>
+        <a
+          href="https://www.senaicimatec.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="senai" class="w-[100px] h-[35px]" />
         </a>
         <a
           target="_blank"
@@ -230,7 +262,7 @@
     </div>
 
     <div class="container !pr-0 hidden lg:block partners">
-      <div class="grid grid-cols-8 mb-10 lg:pl-[64px]">
+      <div class="grid grid-cols-8 mb-10">
         <a
           href="https://abstartups.com.br/"
           target="_blank"
@@ -246,12 +278,37 @@
           <svg-icon name="abvcap" class="w-[77px] h-[32px]" />
         </a>
         <a
+          href="https://atitudeinovacao.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <nuxt-img
+            preload
+            :src="`partners/atitude.png`"
+            format="webp"
+            fit="fill"
+            quality="100"
+            loading="lazy"
+            sizes="83px sm:166px lg:300px"
+            :alt="`Imagem partners 1`"
+            :title="`Partners 1`"
+            class="max-w-[124px] h-[35px] m-auto"
+          />
+        </a>
+        <a
+          href="https://www.atlantico.com.br/embrapii/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="atlantico" class="w-[91px] h-[21px]" />
+        </a>
+        <!-- <a
           href="https://www.acecortex.com.br/"
           target="_blank"
           class="!flex justify-center items-center"
         >
           <svg-icon name="acecortex" class="w-[93px] h-[48px]" />
-        </a>
+        </a> -->
         <a
           href="https://www.cetrel.com.br/"
           target="_blank"
@@ -292,7 +349,8 @@
             class="max-w-[41px] h-[48px] m-auto"
           />
         </a>
-
+      </div>
+      <div class="grid grid-cols-8 items-center justify-center mt-6 mb-10">
         <a
           target="_blank"
           href="https://institutocaldeira.org.br/"
@@ -311,10 +369,6 @@
             class="max-w-[94px] h-[45px] m-auto"
           />
         </a>
-      </div>
-      <div
-        class="grid grid-cols-6 items-center justify-center lg:pl-[46px] mb-10"
-      >
         <a
           target="_blank"
           href="https://inventivos.co/"
@@ -358,6 +412,14 @@
           class="!flex justify-center items-center"
         >
           <svg-icon name="manaus" class="w-[110px] h-[48px]" />
+        </a>
+
+        <a
+          href="https://www.senaicimatec.com.br/"
+          target="_blank"
+          class="!flex justify-center items-center"
+        >
+          <svg-icon name="senai" class="w-[100px] h-[35px]" />
         </a>
 
         <a
