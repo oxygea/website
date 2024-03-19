@@ -6,10 +6,10 @@
       :show="showModal"
       @close-modal="showModal = !showModal"
     />
-    <ModalVideo
+    <!-- <ModalVideo
       :show="showModalVideo"
       @close-modal="showModalVideo = !showModalVideo"
-    />
+    /> -->
     <ModalPrivacy
       :show="showModalPrivacy"
       @close-modal="showModalPrivacy = !showModalPrivacy"
@@ -38,7 +38,7 @@ import ModalPrivacy from '../components/ModalPrivacy/index.vue'
 import ModalTerms from '../components/ModalTerms/index.vue'
 import ModalCookies from '../components/ModalCookies/index.vue'
 import PopupCookies from '../components/PopupCookies/index.vue'
-import ModalVideo from '../components/ModalVideo/index.vue'
+// import ModalVideo from '../components/ModalVideo/index.vue'
 import MenuMobile from '../components/Header/MenuMobile/index.vue'
 
 export default {
@@ -47,7 +47,7 @@ export default {
     ModalContact,
     ModalPrivacy,
     ModalTerms,
-    ModalVideo,
+    // ModalVideo,
     ModalCookies,
     PopupCookies,
     MenuMobile,
@@ -56,7 +56,7 @@ export default {
     return {
       showMenu: false,
       showModal: false,
-      showModalVideo: false,
+      // showModalVideo: false,
       showModalPrivacy: false,
       showModalTerms: false,
       showModalCookies: false,
@@ -83,7 +83,7 @@ export default {
   created() {
     this.$nuxt.$on('openMenuMobile', () => this.openMenuMobile())
     this.$nuxt.$on('openModalContact', () => this.openModalContact())
-    this.$nuxt.$on('openModalVideo', () => this.openModalVideo())
+    // this.$nuxt.$on('openModalVideo', () => this.openModalVideo())
     this.$nuxt.$on('openModalPrivacy', () => this.openModalPrivacy())
     this.$nuxt.$on('openModalTerms', () => this.openModalTerms())
     this.$nuxt.$on('openModalCookies', () => this.openModalCookies())
@@ -108,9 +108,9 @@ export default {
         this.loadHubSpotScript()
       }
     },
-    openModalVideo() {
-      this.showModalVideo = true
-    },
+    // openModalVideo() {
+    //   this.showModalVideo = true
+    // },
     openModalPrivacy() {
       this.showModalPrivacy = true
     },

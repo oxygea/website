@@ -44,7 +44,7 @@
           class="text-white flex flex-row gap-8 menu-desktop--list"
           :class="{ menuWhite: !menuDark }"
         >
-          <AnchorMenu
+          <!-- <AnchorMenu
             data-link="future"
             :url="
               localeLocation({
@@ -56,7 +56,7 @@
             :title="$t('menu.future')"
           >
             {{ $t('menu.future') }}
-          </AnchorMenu>
+          </AnchorMenu> -->
           <AnchorMenu
             data-link="acceleration"
             :url="

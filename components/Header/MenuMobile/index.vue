@@ -26,7 +26,7 @@
       >
         <div class="lg:mt-0 bg-white pt-[72px]">
           <div class="flex flex-col h-full items-start">
-            <AnchorMenu
+            <!-- <AnchorMenu
               :url="
                 localeLocation({
                   name: 'index',
@@ -40,7 +40,7 @@
               <p @click="$emit('close-modal')">
                 {{ $t('menu.future') }}
               </p>
-            </AnchorMenu>
+            </AnchorMenu> -->
             <AnchorMenu
               :url="
                 localeLocation({

@@ -32,15 +32,15 @@
           v-for="(item, index) of $t('oxygea')"
           :key="index"
           class="relative"
-          :class="[
-            {
-              'pb-5': index === 'desc4' && $i18n.locale === 'en',
-              'pb-5': index === 'desc5' && $i18n.locale === 'pt',
-            },
-          ]"
         >
           <p
             data-oxygea
+            :class="[
+              {
+                'mt-5': index === 'desc7' && $i18n.locale === 'en',
+                'pb-5': index === 'desc5' && $i18n.locale === 'pt',
+              },
+            ]"
             class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative text-xs font-normal lg:font-medium font-poppins lg:font-base lg:text-2xl lg:!leading-7 !-tracking-[0.03em]"
           >
             {{ item }}

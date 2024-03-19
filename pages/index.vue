@@ -1,7 +1,7 @@
 <template>
   <main>
     <Hero />
-    <Future />
+    <!-- <Future /> -->
     <Oxigea />
     <Invest />
     <BigNumbers />
@@ -27,14 +27,14 @@ import Startup from '../components/Home/Startup.vue'
 import Portfolio from '../components/Home/Portfolio.vue'
 import BigNumbers from '../components/Home/BigNumbers.vue'
 import Cover from '../components/Home/Cover.vue'
-import Future from '../components/Home/Future.vue'
+// import Future from '../components/Home/Future.vue'
 import News from '../components/Home/News.vue'
 
 export default {
   name: 'HomePage',
   components: {
     Hero,
-    Future,
+    // Future,
     Oxigea,
     Invest,
     BigNumbers,

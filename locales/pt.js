@@ -14,17 +14,17 @@ export default {
   hero: {
     card1: {
       title:
-        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
+        'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       cta: 'Tese de investimento',
     },
     card2: {
       title:
-        'O programa de aceleração e investimento para startups que querem transformar a indústria.',
+        'Uma jornada única, 100% dedicada a preparar as startups selecionadas para uma trilha de investimentos.',
       cta: 'Inscreva sua startup',
     },
     card3: {
       title:
-        'Da aceleração aos investimentos em growth, te acompanhamos no desenvolvimento da sua startup.',
+        'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
       cta: 'Nossos programas',
     },
     card4: {
@@ -34,7 +34,7 @@ export default {
     },
   },
   oxygea: {
-    desc1: 'Oxygea está aqui para investir em',
+    desc1: 'Oxygea foi criada para investir em',
     desc2: 'pessoas e acelerar seus negócios,',
     desc3: 'que impulsionarão a',
     desc4: 'sustentabilidade e a transformação',
@@ -42,9 +42,9 @@ export default {
     desc6: 'Valorizamos o ecossistema de',
     desc7: 'inovação e nos articulamos com',
     desc8: 'redes globais e locais para',
-    desc9: 'proporcionar o melhor às startups',
-    desc10: 'que vão transformar o futuro da',
-    desc11: 'indústria.',
+    desc9: 'proporcionar oportunidades às',
+    desc10: 'startups com potencial de',
+    desc11: 'transformar o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
@@ -87,7 +87,7 @@ export default {
     capital: 'investimento em inovação',
     companies: 'empresas no portfolio',
     search: 'centros de pesquisa, inovação e biotecnologia',
-    plants: 'plantas piloto',
+    plants: 'profissionais dedicados aos programas',
   },
   startup: {
     title1: 'Entre nossos',
@@ -110,8 +110,8 @@ export default {
       },
     },
     card2: {
-      title: 'Aceleração',
-      desc: 'Startups que já estão com uma primeira versão do produto rodando e querem acelerar seu Product Market Fit.',
+      title: 'Oxygea Labs',
+      desc: 'Criamos uma jornada totalmente centrada na necessidade das startups que já estão com uma primeira versão do produto rodando e querem acelerar seu Product Market Fit, com o objetivo de prepará-las para uma trilha de investimentos.',
       benefits: {
         t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
         t2: 'Investimento inicial para financiar o programa e até R$1,5 milhão para startups selecionadas.',
@@ -224,7 +224,7 @@ export default {
   },
   footer: {
     conect:
-      'Conexão com o ecossistema de startups para investir e acelerar em um futuro sustentável.',
+      'Conexão com o ecossistema de startups para investir em um futuro sustentável.',
     address1: 'Estamos localizados no Cubo by Itaú',
     address2: ' Alameda Vicente Pinzon 54, 11º andar.',
     address3: 'Vila Olímpia, SP. CEP 04547-130',

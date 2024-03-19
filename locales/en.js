@@ -14,35 +14,36 @@ export default {
   hero: {
     card1: {
       title:
-        'We invest in and accelerate startups dedicated to digital transformation and sustainability to impact the future of the industry.',
+        'We invest in startups dedicated to sustainability and digital transformation to drive the future of the industry.',
       cta: 'Investment Thesis',
     },
     card2: {
       title:
-        'The investment and acceleration program is for startups that want to transform the industry.',
+        'A unique journey, 100% dedicated to preparing the selected startups for an investment track.',
       cta: 'Enroll your startup',
     },
     card3: {
       title:
-        'From acceleration to growth investments, we are with you in every step of your startup journey.',
+        'We create programs to follow the development of your startup in different stages.',
       cta: 'Our programs',
     },
     card4: {
       title:
-        'Being connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
+        'To be connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
       cta: 'Our partners',
     },
   },
   oxygea: {
-    desc1: 'Oxygea is here to invest in people',
-    desc2: 'and accelerate their business that',
-    desc3: 'will drive sustainability and digital',
-    desc4: 'transformation.',
-    desc5: 'We value the innovation ecosystem',
-    desc6: 'and we cooperate with local and',
-    desc7: 'global networks to provide only the',
-    desc8: 'best to startups that will transform',
-    desc9: 'the future of the industry.',
+    desc1: 'Oxygea invests in startups focused ',
+    desc2: 'on digital transformation and',
+    desc3: 'sustainability, engaging with local',
+    desc4: 'and global networks to support.',
+    desc5: 'innovative companies',
+    desc6: 'revolutionizing the industry.',
+    desc7: 'We prioritize the innovation ',
+    desc8: 'ecosystem to provide companies',
+    desc9: 'with opportunities to revolutionize ',
+    desc10: "the industry's future.",
   },
   invest: {
     title: 'Where do we invest?',
@@ -84,7 +85,7 @@ export default {
     capital: 'investment in innovation',
     companies: 'companies in the portfolio',
     search: 'research, innovation and biotechnology centers',
-    plants: 'pilot plants',
+    plants: 'professionals dedicated to the programs',
   },
   startup: {
     title1: 'Discover our',
@@ -110,7 +111,7 @@ export default {
     },
     card2: {
       title: 'Acceleration',
-      desc: 'Startups that have already launched the first version of their product and want to accelerate their Product Market Fit.',
+      desc: "We have designed a program specifically tailored to the needs of startups who have already launched a product's first version and are looking to accelerate their Product Market Fit, in preparation for an investment track.",
       benefits: {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Initial investment to fund the program and up to R$1.5 million for eligible startups.',
@@ -121,7 +122,7 @@ export default {
     },
     card3: {
       title: 'Incubation / VB',
-      desc: 'Startups that validated their market, decided on the first version of their product and are ready to set their MVP into motion.',
+      desc: 'Startups that validated their market, decided on the first version of their product, and are ready to set their MVP into motion.',
       benefits: {
         t1: 'Business risk assessment and proposal of customized improvement plan.',
         t2: 'Investment up to BRL 700K for MVP development.',
@@ -131,7 +132,7 @@ export default {
       },
     },
     card4: {
-      title: 'In House Support',
+      title: 'In-House Value Creation',
       desc: 'Regardless of the maturity stage, all companies in our portfolio will always have access to key development capabilities.',
       benefits: {
         t1: 'Expert Advisory.',
@@ -222,8 +223,7 @@ export default {
     part: 'JOIN US',
   },
   footer: {
-    conect:
-      'Connected to the startup ecosystem to invest in and accelerate a sustainable future.',
+    conect: 'We are with you to co-create new paths to a sustainable future.',
     address1: 'We are located at Cubo by Itaú',
     address2: 'Alameda Vicente Pinzon, 54, 11th floor.',
     address3: 'Vila Olímpia, SP. Zip Code: 04547-130',
