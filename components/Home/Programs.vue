@@ -1,5 +1,5 @@
 <template>
-  <section id="programs" class="bg-white pt-10 pb-5 lg:py-20">
+  <section id="programs2" class="bg-white pt-10 pb-5 lg:py-20">
     <div class="container w-full flex items-center justify-between">
       <h2 class="pb-4 font-bold text-2xl container lg:text-5xl">
         {{ $t('programs.title') }}
@@ -33,7 +33,7 @@
       <div
         v-for="(item, index) of $i18n.locale === 'pt' ? programsPT : programsEN"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[378px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear mr-4 lg:mr-[27px] lg:min-h-[448px] lg:max-h-[448px] lg:max-w-[277px] lg:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],
@@ -117,7 +117,7 @@
       <div
         v-for="(item, index) of $i18n.locale === 'pt' ? programsPT : programsEN"
         :key="`program=${index}`"
-        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear md:min-h-[322px] md:max-h-[322px] md:max-w-[428px] md:min-w-[428px] xl:min-h-[448px] xl:max-h-[448px] xl:max-w-[277px] xl:min-w-[277px]"
+        class="w-full max-w-[200px] overflow-hidden min-w-[200px] relative h-full min-h-[378px] lg:min-h-[288px] bg-black !flex flex-col justify-between px-6 py-6 transition-all duration-500 ease-linear md:min-h-[322px] md:max-h-[322px] md:max-w-[428px] md:min-w-[428px] xl:min-h-[448px] xl:max-h-[448px] xl:max-w-[277px] xl:min-w-[277px]"
         :class="[
           {
             '!bg-green': $data[`showMenu${item.value}`],

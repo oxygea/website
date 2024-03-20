@@ -44,31 +44,44 @@
           class="text-white flex flex-row gap-8 menu-desktop--list"
           :class="{ menuWhite: !menuDark }"
         >
-          <!-- <AnchorMenu
-            data-link="future"
-            :url="
-              localeLocation({
-                name: 'index',
-                hash: '#future',
-                params: { offset: -80 },
-              })
-            "
-            :title="$t('menu.future')"
-          >
-            {{ $t('menu.future') }}
-          </AnchorMenu> -->
           <AnchorMenu
-            data-link="acceleration"
+            data-link="investment"
             :url="
               localeLocation({
                 name: 'index',
-                hash: '#acceleration',
+                hash: '#investment',
                 params: { offset: -80 },
               })
             "
-            :title="$t('menu.acceleration')"
+            :title="$t('menu.investment')"
           >
-            {{ $t('menu.acceleration') }}
+            {{ $t('menu.investment') }}
+          </AnchorMenu>
+          <AnchorMenu
+            data-link="programs"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#programs',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.programs')"
+          >
+            {{ $t('menu.programs') }}
+          </AnchorMenu>
+          <AnchorMenu
+            data-link="portfolio"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#portfolio',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.portfolio')"
+          >
+            {{ $t('menu.portfolio') }}
           </AnchorMenu>
           <AnchorMenu
             data-link="ecosystem"

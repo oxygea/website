@@ -12,7 +12,7 @@
         {{ $t('partners.title') }}
       </h2>
       <p
-        class="font-normal font-poppins text-xs pb-10 lg:max-w-[860px] lg:text-base !leading-4 lg:!leading-6"
+        class="font-normal font-poppins text-xs pb-10 lg:max-w-[530px] lg:text-base !leading-4 lg:!leading-6"
         data-aos="fade"
       >
         {{ $t('partners.desc') }}

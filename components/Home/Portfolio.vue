@@ -1,5 +1,9 @@
 <template>
-  <section id="about" data-section="about" class="bg-gray py-10 lg:py-20">
+  <section
+    id="portfolio"
+    data-section="portfolio"
+    class="bg-gray py-10 lg:py-20"
+  >
     <div class="container !pr-0 lg:!pr-5">
       <h2
         class="pb-4 font-bold text-2xl lg:text-5xl lg:pb-6 -tracking-[0.03em]"

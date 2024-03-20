@@ -33,7 +33,7 @@
           >
             <div class="flex">
               <span class="text-xs font-bold mr-2">ÉPOCA NEGÓCIOS</span>
-              <date class="text-xs">30/01/2024</date>
+              <span class="text-xs">30/01/2024</span>
             </div>
             <h2 class="mb-6 mt-2">
               Oxygea entrevista Solos: o que o CVC de uma petroquímica pode
@@ -93,7 +93,7 @@
             >
               <div class="flex">
                 <span class="text-xs font-bold mr-2">{{ n.author }}</span>
-                <date class="text-xs">{{ n.date }}</date>
+                <span class="text-xs">{{ n.date }}</span>
               </div>
               <h2 class="mt-2">{{ n.title }}</h2>
             </a>
@@ -110,7 +110,7 @@
             >
               <div class="flex">
                 <span class="text-xs font-bold mr-2">{{ n.author }}</span>
-                <date class="text-xs">{{ n.date }}</date>
+                <span class="text-xs">{{ n.date }}</span>
               </div>
               <h2 class="mt-2">{{ n.title }}</h2>
             </a>

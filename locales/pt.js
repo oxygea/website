@@ -5,8 +5,10 @@ export default {
   },
   menu: {
     future: 'O futuro é coletivo',
-    acceleration: 'Investimento e Aceleração',
-    ecosystem: 'Ecossistema e Colaboração',
+    investment: 'Tese de investimentos',
+    programs: 'Programas',
+    portfolio: 'Portfólio',
+    ecosystem: 'Ecossistema',
     about: 'Somos Oxygea',
     contact: 'Contato',
     inthenews: 'Imprensa',
@@ -51,36 +53,27 @@ export default {
     cta: 'Inscreva sua startup',
     card1: {
       title: 'Economia Circular',
-      info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção.',
-      info2: 'Aumento da vida útil das aplicações do plástico.',
-      info3: 'Redução de requisitos de plástico na produção, uso ou descarte.',
+      info: 'Reintegração dos resíduos na cadeia de produção (logística reversa, reciclagem, aplicações para resíduos)',
+      info2: 'Redução de requisitos de materiais na produção, uso ou descarte',
+      info3: 'Aumento da vida útil das aplicações',
+      info4: 'Rastreabilidade da cadeia de suprimentos',
+      info5: 'Plataformas digitais para economia compartilhada e circular',
     },
     card2: {
       title: 'Neutralidade de Carbono',
-      info: 'Transição energética.',
-      info2: 'Novos materiais de fontes renováveis.',
-      info3: 'Mercado de carbono.',
-      info4:
-        'Captura, armazenamento e utilização de CO<sub>2</sub> para novos químicos.',
+      info: 'Captura, armazenamento e conversão de CO2 para novos químicos.',
+      info2: 'Mercado de Carbono (rastreamento e pegada)',
+      info3: 'Transição energética',
     },
     card3: {
-      title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
-      info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais.',
-      info2: 'Materiais avançados.',
-      info3:
-        'Tecnologias digitais para aceleração dos desenvolvimentos de P&D.',
+      title: 'Fábricas Inteligentes e Futuro da Mobilidade',
+      info: 'Implementação de Indústria 4.0: IoT Industrial, Visão Computacional, IA/ML ',
+      info2: 'Logística 4.0 para eficiência e rastreabilidade melhorada',
     },
     card4: {
-      title: 'Plástico como Solução Sustentável',
-      info: 'Biopolímeros.',
-      info2: 'Aplicações do plástico com ganho de performance.',
-      info3: 'Manufatura aditiva (Impressões 3D).',
-    },
-    card5: {
-      title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: analytics, automação e tecnologias avançadas de manufatura.',
-      info2:
-        'Logística 4.0: eficiência logística e melhoria da rastreabilidade.',
+      title: 'Bioquímicos Avançados e Novos Materiais',
+      info: 'Inovação em rotas biológicas e bioquímicas para produção de químicos e materiais.',
+      info2: 'Tecnologias digitais para acelerar desenvolvimentos em P&D',
     },
   },
   numbers: {

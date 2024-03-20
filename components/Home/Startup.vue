@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#EDEDEF] overflow-hidden">
+  <section id="programs" class="bg-[#EDEDEF] overflow-hidden">
     <div
       class="md:flex items-center lg:max-w-[1440px] 2xl:max-w-none lg:mx-auto"
     >
@@ -110,7 +110,7 @@
           <p
             v-if="$i18n.locale !== 'pt'"
             data-startup
-            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[10] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] pb-6 lg:max-w-[418px] lg:text-[48px]"
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[10] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] lg:max-w-[418px] lg:text-[48px]"
           >
             {{ $t('startup.title6') }}
           </p>
@@ -120,14 +120,26 @@
         </div>
         <div class="relative">
           <p
+            v-if="$i18n.locale !== 'pt'"
+            data-startup
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[12] font-normal text-[28px] leading-8 lg:leading-[56px] -tracking-[0.03%] pb-6 lg:max-w-[418px] lg:text-[48px]"
+          >
+            {{ $t('startup.title7') }}
+          </p>
+          <span
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[13]"
+          ></span>
+        </div>
+        <div class="relative">
+          <p
             v-if="$i18n.locale === 'pt'"
             data-startup
-            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[12] font-bold text-xl xl:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
+            class="lg:translate-y-[50px] transition-all duration-700 ease-linear relative z-[14] font-bold text-xl xl:text-2xl -tracking-[0.03%] lg:max-w-[418px]"
           >
             {{ $t('startup.desc') }}
           </p>
           <span
-            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[13]"
+            class="absolute w-full h-[56px] hidden lg:block bg-[#EDEDEF] z-[15]"
           ></span>
         </div>
       </div>

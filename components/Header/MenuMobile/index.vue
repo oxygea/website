@@ -26,37 +26,50 @@
       >
         <div class="lg:mt-0 bg-white pt-[72px]">
           <div class="flex flex-col h-full items-start">
-            <!-- <AnchorMenu
-              :url="
-                localeLocation({
-                  name: 'index',
-                  hash: '#future',
-                  params: { offset: -64 },
-                })
-              "
-              :title="$t('menu.future')"
-              class="!text-black"
-            >
-              <p @click="$emit('close-modal')">
-                {{ $t('menu.future') }}
-              </p>
-            </AnchorMenu> -->
             <AnchorMenu
+              data-link="investment"
               :url="
                 localeLocation({
                   name: 'index',
-                  hash: '#acceleration',
+                  hash: '#investment',
                   params: { offset: -64 },
                 })
               "
-              :title="$t('menu.acceleration')"
               class="!text-black"
+              :title="$t('menu.investment')"
             >
-              <p @click="$emit('close-modal')">
-                {{ $t('menu.acceleration') }}
-              </p>
+              <p @click="$emit('close-modal')">{{ $t('menu.investment') }}</p>
             </AnchorMenu>
             <AnchorMenu
+              data-link="programs"
+              :url="
+                localeLocation({
+                  name: 'index',
+                  hash: '#programs',
+                  params: { offset: -64 },
+                })
+              "
+              class="!text-black"
+              :title="$t('menu.programs')"
+            >
+              <p @click="$emit('close-modal')">{{ $t('menu.programs') }}</p>
+            </AnchorMenu>
+            <AnchorMenu
+              data-link="portfolio"
+              :url="
+                localeLocation({
+                  name: 'index',
+                  hash: '#portfolio',
+                  params: { offset: -64 },
+                })
+              "
+              :title="$t('menu.portfolio')"
+              class="!text-black"
+            >
+              <p @click="$emit('close-modal')">{{ $t('menu.portfolio') }}</p>
+            </AnchorMenu>
+            <AnchorMenu
+              data-link="ecosystem"
               :url="
                 localeLocation({
                   name: 'index',
@@ -67,11 +80,10 @@
               :title="$t('menu.ecosystem')"
               class="!text-black"
             >
-              <p @click="$emit('close-modal')">
-                {{ $t('menu.ecosystem') }}
-              </p>
+              <p @click="$emit('close-modal')">{{ $t('menu.ecosystem') }}</p>
             </AnchorMenu>
             <AnchorMenu
+              data-link="about"
               :url="
                 localeLocation({
                   name: 'index',
@@ -82,11 +94,11 @@
               :title="$t('menu.about')"
               class="!text-black"
             >
-              <p @click="$emit('close-modal')">
-                {{ $t('menu.about') }}
-              </p>
+              <p @click="$emit('close-modal')">{{ $t('menu.about') }}</p>
             </AnchorMenu>
+
             <AnchorMenu
+              data-link="inthenews"
               :url="
                 localeLocation({
                   name: 'index',
@@ -99,6 +111,7 @@
             >
               <p @click="$emit('close-modal')">{{ $t('menu.inthenews') }}</p>
             </AnchorMenu>
+
             <p
               class="text-base font-bold font-poppins -tracking-[2%] h-[50px] flex justify-center items-center"
               @click="$nuxt.$emit('openModalContact')"

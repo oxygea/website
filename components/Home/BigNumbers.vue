@@ -23,7 +23,7 @@
         data-rellax-percentage="0.5"
         class="custom-background relative w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-3 xl:max-w-[213px] xl:h-[213px]"
       >
-        <p class="text-violet text-[28px] font-normal xl:text-5xl">4</p>
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">8</p>
         <p
           class="text-violet text-[12px] font-poppins font-normal leading-4 max-w-[128px] xl:text-base lg:max-w-[110px] lg:!leading-6"
         >
