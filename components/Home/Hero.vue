@@ -101,7 +101,7 @@
               },
             ]"
             class="text-violet font-bold font-poppins text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer transition-colors hover:bg-violet hover:text-black"
-            @click="$nuxt.$emit('openModalContact')"
+            href="https://labs.oxygea.com"
           >
             {{ $t(`hero.card${item.value}.cta`) }}
           </a>
