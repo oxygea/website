@@ -6,10 +6,10 @@
       :show="showModal"
       @close-modal="showModal = !showModal"
     />
-    <ModalVideo
+    <!-- <ModalVideo
       :show="showModalVideo"
       @close-modal="showModalVideo = !showModalVideo"
-    />
+    /> -->
     <ModalPrivacy
       :show="showModalPrivacy"
       @close-modal="showModalPrivacy = !showModalPrivacy"
@@ -38,7 +38,7 @@ import ModalPrivacy from '../components/ModalPrivacy/index.vue'
 import ModalTerms from '../components/ModalTerms/index.vue'
 import ModalCookies from '../components/ModalCookies/index.vue'
 import PopupCookies from '../components/PopupCookies/index.vue'
-import ModalVideo from '../components/ModalVideo/index.vue'
+// import ModalVideo from '../components/ModalVideo/index.vue'
 import MenuMobile from '../components/Header/MenuMobile/index.vue'
 
 export default {
@@ -47,7 +47,7 @@ export default {
     ModalContact,
     ModalPrivacy,
     ModalTerms,
-    ModalVideo,
+    // ModalVideo,
     ModalCookies,
     PopupCookies,
     MenuMobile,
@@ -56,7 +56,7 @@ export default {
     return {
       showMenu: false,
       showModal: false,
-      showModalVideo: false,
+      // showModalVideo: false,
       showModalPrivacy: false,
       showModalTerms: false,
       showModalCookies: false,
@@ -83,7 +83,7 @@ export default {
   created() {
     this.$nuxt.$on('openMenuMobile', () => this.openMenuMobile())
     this.$nuxt.$on('openModalContact', () => this.openModalContact())
-    this.$nuxt.$on('openModalVideo', () => this.openModalVideo())
+    // this.$nuxt.$on('openModalVideo', () => this.openModalVideo())
     this.$nuxt.$on('openModalPrivacy', () => this.openModalPrivacy())
     this.$nuxt.$on('openModalTerms', () => this.openModalTerms())
     this.$nuxt.$on('openModalCookies', () => this.openModalCookies())
@@ -104,10 +104,13 @@ export default {
     },
     openModalContact() {
       this.showModal = true
+      if (!this.hubSpotScriptLoaded) {
+        this.loadHubSpotScript()
+      }
     },
-    openModalVideo() {
-      this.showModalVideo = true
-    },
+    // openModalVideo() {
+    //   this.showModalVideo = true
+    // },
     openModalPrivacy() {
       this.showModalPrivacy = true
     },
@@ -123,6 +126,23 @@ export default {
     },
     setValueModal() {
       this.valueModal = { id: 4, name: 'Faça parte do time Oxygea' }
+    },
+    loadHubSpotScript() {
+      const script = document.createElement('script')
+      script.src = '//js.hsforms.net/forms/embed/v2.js'
+      script.async = true
+      script.defer = true
+      document.body.appendChild(script)
+
+      script.onload = () => {
+        this.hubSpotScriptLoaded = true
+        window.hbspt.forms.create({
+          region: 'na1',
+          portalId: '24004954',
+          formId: 'ee688d51-6636-42f0-bddc-db48b379abc0',
+          target: '#hubspotForm', // notice we target the div id
+        })
+      }
     },
   },
 }

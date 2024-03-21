@@ -1,38 +1,40 @@
 <template>
   <main>
     <Hero />
-    <Future />
+    <!-- <Future /> -->
     <Oxigea />
     <Invest />
     <BigNumbers />
     <Startup />
     <Programs />
+    <Portfolio />
     <Cover />
     <Partners />
-    <Portfolio />
     <Team />
+    <News />
   </main>
 </template>
 
 <script>
 import Hero from '../components/Home/Hero.vue'
 import Oxigea from '../components/Home/Oxigea.vue'
-import Mentors from '../components/Home/Mentors.vue'
+// import Mentors from '../components/Home/Mentors.vue'
 import Invest from '../components/Home/Invest.vue'
 import Team from '../components/Home/Team.vue'
 import Programs from '../components/Home/Programs.vue'
-import Partners from '../components/Partners/Partners.vue'
+import Partners from '../components/Home/Partners'
 import Startup from '../components/Home/Startup.vue'
 import Portfolio from '../components/Home/Portfolio.vue'
 import BigNumbers from '../components/Home/BigNumbers.vue'
 import Cover from '../components/Home/Cover.vue'
-import Future from '../components/Home/Future.vue'
+// import Future from '../components/Home/Future.vue'
+import News from '../components/Home/News.vue'
 
 export default {
   name: 'HomePage',
   components: {
     Hero,
-    Future,
+    // Future,
     Oxigea,
     Invest,
     BigNumbers,
@@ -42,6 +44,7 @@ export default {
     Partners,
     Portfolio,
     Team,
+    News,
   },
   head() {
     return {

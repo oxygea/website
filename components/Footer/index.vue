@@ -45,10 +45,11 @@
         <div class="flex gap-5 items-center">
           <a
             href="https://www.canalconfidencial.com.br/linhadeeticaoxygea"
-            target="_blank">
+            target="_blank"
+          >
             Linha de Ética
           </a>
-           
+
           <a
             href="https://www.linkedin.com/company/oxygeaventures/"
             target="_blank"

@@ -45,30 +45,43 @@
           :class="{ menuWhite: !menuDark }"
         >
           <AnchorMenu
-            data-link="future"
+            data-link="investment"
             :url="
               localeLocation({
                 name: 'index',
-                hash: '#future',
+                hash: '#investment',
                 params: { offset: -80 },
               })
             "
-            :title="$t('menu.future')"
+            :title="$t('menu.investment')"
           >
-            {{ $t('menu.future') }}
+            {{ $t('menu.investment') }}
           </AnchorMenu>
           <AnchorMenu
-            data-link="acceleration"
+            data-link="programs"
             :url="
               localeLocation({
                 name: 'index',
-                hash: '#acceleration',
+                hash: '#programs',
                 params: { offset: -80 },
               })
             "
-            :title="$t('menu.acceleration')"
+            :title="$t('menu.programs')"
           >
-            {{ $t('menu.acceleration') }}
+            {{ $t('menu.programs') }}
+          </AnchorMenu>
+          <AnchorMenu
+            data-link="portfolio"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#portfolio',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.portfolio')"
+          >
+            {{ $t('menu.portfolio') }}
           </AnchorMenu>
           <AnchorMenu
             data-link="ecosystem"
@@ -96,6 +109,21 @@
           >
             {{ $t('menu.about') }}
           </AnchorMenu>
+
+          <AnchorMenu
+            data-link="inthenews"
+            :url="
+              localeLocation({
+                name: 'index',
+                hash: '#inthenews',
+                params: { offset: -80 },
+              })
+            "
+            :title="$t('menu.inthenews')"
+          >
+            {{ $t('menu.inthenews') }}
+          </AnchorMenu>
+
           <p
             class="text-white font-poppins relative h-[50px] flex justify-center items-center text-xs lg:text-sm font-medium transition-colors hover:text-violet cursor-pointer"
             @click="$nuxt.$emit('openModalContact')"

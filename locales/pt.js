@@ -5,25 +5,28 @@ export default {
   },
   menu: {
     future: 'O futuro é coletivo',
-    acceleration: 'Investimento e Aceleração',
-    ecosystem: 'Ecossistema e Colaboração',
+    investment: 'Tese de investimentos',
+    programs: 'Programas',
+    portfolio: 'Portfólio',
+    ecosystem: 'Ecossistema',
     about: 'Somos Oxygea',
     contact: 'Contato',
+    inthenews: 'Imprensa',
   },
   hero: {
     card1: {
       title:
-        'Investimos e aceleramos startups dedicadas à sustentabilidade e tecnologia para transformar o futuro da indústria.',
+        'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       cta: 'Tese de investimento',
     },
     card2: {
       title:
-        'O programa de aceleração e investimento para startups que querem transformar a indústria.',
+        'Uma jornada única, 100% dedicada a preparar as startups selecionadas para uma trilha de investimentos.',
       cta: 'Inscreva sua startup',
     },
     card3: {
       title:
-        'Da aceleração aos investimentos em growth, te acompanhamos no desenvolvimento da sua startup.',
+        'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
       cta: 'Nossos programas',
     },
     card4: {
@@ -33,7 +36,7 @@ export default {
     },
   },
   oxygea: {
-    desc1: 'Oxygea está aqui para investir em',
+    desc1: 'Oxygea foi criada para investir em',
     desc2: 'pessoas e acelerar seus negócios,',
     desc3: 'que impulsionarão a',
     desc4: 'sustentabilidade e a transformação',
@@ -41,52 +44,43 @@ export default {
     desc6: 'Valorizamos o ecossistema de',
     desc7: 'inovação e nos articulamos com',
     desc8: 'redes globais e locais para',
-    desc9: 'proporcionar o melhor às startups',
-    desc10: 'que vão transformar o futuro da',
-    desc11: 'indústria.',
+    desc9: 'proporcionar oportunidades às',
+    desc10: 'startups com potencial de',
+    desc11: 'transformar o futuro da indústria.',
   },
   invest: {
     title: 'Onde investimos',
     cta: 'Inscreva sua startup',
     card1: {
       title: 'Economia Circular',
-      info: 'Tecnologias focadas na reintegração do resíduo plástico na cadeia de produção.',
-      info2: 'Aumento da vida útil das aplicações do plástico.',
-      info3: 'Redução de requisitos de plástico na produção, uso ou descarte.',
+      info: 'Reintegração dos resíduos na cadeia de produção (logística reversa, reciclagem, aplicações para resíduos)',
+      info2: 'Redução de requisitos de materiais na produção, uso ou descarte',
+      info3: 'Aumento da vida útil das aplicações',
+      info4: 'Rastreabilidade da cadeia de suprimentos',
+      info5: 'Plataformas digitais para economia compartilhada e circular',
     },
     card2: {
       title: 'Neutralidade de Carbono',
-      info: 'Transição energética.',
-      info2: 'Novos materiais de fontes renováveis.',
-      info3: 'Mercado de carbono.',
-      info4:
-        'Captura, armazenamento e utilização de CO<sub>2</sub> para novos químicos.',
+      info: 'Captura, armazenamento e conversão de CO2 para novos químicos.',
+      info2: 'Mercado de Carbono (rastreamento e pegada)',
+      info3: 'Transição energética',
     },
     card3: {
-      title: 'Biotecnologia/ Nanotecnologia e Novos Materiais',
-      info: 'Novas rotas biológicas e bioquímicas para produção de químicos, plásticos e materiais.',
-      info2: 'Materiais avançados.',
-      info3:
-        'Tecnologias digitais para aceleração dos desenvolvimentos de P&D.',
+      title: 'Fábricas Inteligentes e Futuro da Mobilidade',
+      info: 'Implementação de Indústria 4.0: IoT Industrial, Visão Computacional, IA/ML ',
+      info2: 'Logística 4.0 para eficiência e rastreabilidade melhorada',
     },
     card4: {
-      title: 'Plástico como Solução Sustentável',
-      info: 'Biopolímeros.',
-      info2: 'Aplicações do plástico com ganho de performance.',
-      info3: 'Manufatura aditiva (Impressões 3D).',
-    },
-    card5: {
-      title: 'Smart Factory & Futuro da Mobilidade',
-      info: 'Indústria 4.0: analytics, automação e tecnologias avançadas de manufatura.',
-      info2:
-        'Logística 4.0: eficiência logística e melhoria da rastreabilidade.',
+      title: 'Bioquímicos Avançados e Novos Materiais',
+      info: 'Inovação em rotas biológicas e bioquímicas para produção de químicos e materiais.',
+      info2: 'Tecnologias digitais para acelerar desenvolvimentos em P&D',
     },
   },
   numbers: {
     capital: 'investimento em inovação',
     companies: 'empresas no portfolio',
     search: 'centros de pesquisa, inovação e biotecnologia',
-    plants: 'plantas piloto',
+    plants: 'profissionais dedicados aos programas',
   },
   startup: {
     title1: 'Entre nossos',
@@ -109,8 +103,8 @@ export default {
       },
     },
     card2: {
-      title: 'Aceleração',
-      desc: 'Startups que já estão com uma primeira versão do produto rodando e querem acelerar seu Product Market Fit.',
+      title: 'Oxygea Labs',
+      desc: 'Criamos uma jornada totalmente centrada na necessidade das startups que já estão com uma primeira versão do produto rodando e querem acelerar seu Product Market Fit, com o objetivo de prepará-las para uma trilha de investimentos.',
       benefits: {
         t1: 'Assessment de riscos do negócio e proposição de plano de melhorias personalizado.',
         t2: 'Investimento inicial para financiar o programa e até R$1,5 milhão para startups selecionadas.',
@@ -171,29 +165,50 @@ export default {
     },
   },
   portfolio: {
-    title: 'Portfolio de empresas',
-    desc: 'Quatro novas ventures chegam como legado da inovação na Braskem. Agora, elas dão um passo adiante e desenvolvem seu potencial para impactar a indústria positivamente.',
-    img: {
-      title1: 'Soluções sustentáveis para a indústria',
-      title2: 'Sistemas de gerenciamento de frete',
-      title3: 'Machine learning ',
-      title4: 'Sustentabilidade para startups',
-      alt1: 'Pessoas conversando sobre inovação na indústria',
-      alt2: 'Caminhões em pátio de transportadora',
-      alt3: 'Máquinas inteligentes na produção de plástico',
-      alt4: 'Mão com ícones que representam sustentabilidade',
-    },
-    titleXTELLAR: 'IMPRIMINDO O FUTURO',
-    XTELLAR:
-      'Produção e venda de filamento para impressoras 3D, utilizando a tecnologia convencional, bio-polímero e tecnologia PCR da Braskem para fornecer soluções sustentáveis e eficientes.',
-    titleLOADSHARK: 'EFICIÊNCIA E CONTROLE DE FRETE',
-    LOADSHARK:
-      'Sistema de gerenciamento de frete, com funcionalidade de leilão reverso para embarcadores.',
-    titleBABEL: 'REVOLUÇÃO 4.0 PARA A INDÚSTRIA PLÁSTICA',
-    BABEL:
-      'Otimização do processo de produção de transformadores da indústria de plásticos por meio de machine learning.',
-    titleZAYA: 'DEMOCRATIZANDO O CONHECIMENTO DE SUSTENTABILIDADE',
-    ZAYA: 'Padrão de sustentabilidade para empresas e consumidores para comparar o impacto ambiental de diferentes produtos ao longo de seu ciclo de vida.',
+    title: 'Portfolio of companies',
+    subtitle: 'Portfolio',
+    about: 'CONHEÇA',
+    listCompanies: [
+      {
+        title: 'EMBEDDO',
+        desc: 'Impulsionando a próxima geração da transformação digital na indústria',
+        img: 'embeddo.png',
+        link: 'https://www.embeddo.io/',
+      },
+      {
+        title: 'GROWPACK',
+        desc: 'Criamos biomateriais que conectam plantas a pessoas.',
+        img: 'growpack.png',
+        link: 'https://www.growpack.bio/',
+      },
+      {
+        title: 'LOGSHARE',
+        desc: 'Integramos malhas logísticas entre embarcadores',
+        img: 'logshare.png',
+        link: 'https://www.logshare.com.br/',
+      },
+    ],
+    subtitle2: 'Venture Building',
+    listCompanies2: [
+      {
+        title: 'BALQ',
+        desc: 'Acelere resultados por meio do conhecimento e da inteligência de dados.',
+        img: 'balq.png',
+        link: 'https://balqtech.com/',
+      },
+      {
+        title: 'PACEY',
+        desc: 'Pacey traz eficiência de custos para embarcador e mais negócios para transportadoras.',
+        img: 'pacey.png',
+        link: 'https://www.pacey.com.br/',
+      },
+      {
+        title: 'ZAYA',
+        desc: 'Zaya veio para simplificar e democratizar o cálculo de impacto ambiental.',
+        img: 'zaya.png',
+        link: 'https://www.zaya.eco/',
+      },
+    ],
   },
   team: {
     title: 'Time Oxygea',
@@ -202,7 +217,7 @@ export default {
   },
   footer: {
     conect:
-      'Conexão com o ecossistema de startups para investir e acelerar em um futuro sustentável.',
+      'Conexão com o ecossistema de startups para investir em um futuro sustentável.',
     address1: 'Estamos localizados no Cubo by Itaú',
     address2: ' Alameda Vicente Pinzon 54, 11º andar.',
     address3: 'Vila Olímpia, SP. CEP 04547-130',
@@ -693,5 +708,12 @@ export default {
       plc8: 'Como podemos te ajudar?',
       lb1: 'Área de interesse',
     },
+  },
+  news: {
+    title: 'Imprensa',
+    desc: 'Não perca as atualizações sobre Oxygea e veja o que a mídia está falando sobre os nossos temas de interesse. Fique por dentro das tendências, oportunidades e desafios do mercado.',
+    highlight: 'Matéria em destaque',
+    other: 'Outras matérias',
+    read: 'LEIA A MATÉRIA',
   },
 }
