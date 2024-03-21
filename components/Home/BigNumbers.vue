@@ -51,7 +51,7 @@
         data-rellax-percentage="0.5"
         class="custom-border custom-border--gray relative w-full max-w-[140px] h-[140px] flex flex-col gap-2 items-center justify-center text-center lg:top-0 lg:-left-7 xl:max-w-[213px] xl:h-[213px]"
       >
-        <p class="text-violet text-[28px] font-normal xl:text-5xl">7</p>
+        <p class="text-violet text-[28px] font-normal xl:text-5xl">16</p>
         <p
           class="text-violet text-[12px] font-poppins font-normal leading-4 max-w-[128px] xl:text-base lg:!leading-6"
         >
