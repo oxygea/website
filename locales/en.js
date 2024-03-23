@@ -170,7 +170,7 @@ export default {
   portfolio: {
     title: 'Portfolio of companies',
     subtitle: 'Portfolio',
-    about: 'KNOW',
+    about: 'KNOW MORE',
     listCompanies: [
       {
         title: 'EMBEDDO',

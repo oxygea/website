@@ -86,7 +86,7 @@
             <a
               v-for="(n, is) in News.news"
               :key="'listNewsMob-' + is"
-              href="#"
+              :href="n.link"
               class="!w-[220px] flex flex-col font-poppins text-xs"
               :title="n.title"
               target="_Blank"
@@ -103,7 +103,7 @@
             <a
               v-for="(n, is) in displayedNews"
               :key="'listNews-' + is"
-              href="#"
+              :href="n.link"
               class="bg-transparent lg:hover:bg-white transition-all duration-500 w-full p-6 flex flex-col font-poppins text-base group"
               :title="n.title"
               target="_Blank"

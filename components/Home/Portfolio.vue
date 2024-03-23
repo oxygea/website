@@ -33,7 +33,7 @@
             :href="p.link"
             target="_Blank"
             :title="'Conheça ' + p.title"
-            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[122px] transition-all duration-500 ease-in-out"
+            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[135px] transition-all duration-500 ease-in-out"
           >
             <span
               class="text-sm uppercase invisible pl-4 opacity-0 transition-all duration-150 delay-300 lg:group-hover:opacity-100 lg:group-hover:visible"
@@ -65,7 +65,7 @@
             :href="p2.link"
             target="_Blank"
             :title="'Conheça ' + p2.title"
-            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[122px] transition-all duration-500 ease-in-out"
+            class="relative w-[34px] h-[34px] rounded-[100px] overflow-hidden bg-green flex items-center group lg:hover:w-[135px] transition-all duration-500 ease-in-out"
           >
             <span
               class="text-sm uppercase invisible pl-4 opacity-0 transition-all duration-150 delay-300 lg:group-hover:opacity-100 lg:group-hover:visible"
