@@ -1,12 +1,32 @@
 {
   "highlight": {
-    "title": "Oxygea entrevista Solos: o que o CVC de uma petroquímica pode aprender com uma startup de impacto da Bahia",
-    "author": "ÉPOCA NEGÓCIOS",
-    "image": "img-epoca.png",
-    "date": "30/01/2024",
-    "link": "https://epocanegocios.globo.com/startups/noticia/2024/01/oxygea-entrevista-solos-o-que-o-cvc-de-uma-petroquimica-pode-aprender-com-uma-startup-de-impacto-da-bahia.ghtml"
+    "title": "Fundo de US$ 150 milhões, Oxygea anuncia novo programa e vai destinar até R$2 milhões para startups",
+    "author": "EXAME",
+    "image": "logo-exame.webp",
+    "date": "25/03/2024",
+    "link": "https://exame.com/negocios/fundo-de-us-150-milhoes-oxygea-anuncia-novo-programa-e-vai-destinar-ate-2-milhoes-para-startups/"
   },
   "news": [
+    {
+      "title": "Para a Oxygea, acelerar também é aprender a captar",
+      "author": "startups.com.br",
+      "date": "25/03/2024",
+      "link": "https://startups.com.br/aceleracao/paa-a-oxygea-acelerar-tambem-e-aprender-a-captar/"
+    },
+
+    {
+      "title": "Oxygea anuncia aporte de R$ 4,5 milhões em três startups",
+      "author": "ÉPOCA NEGÓCIOS",
+      "date": "06/03/2024",
+      "link": "https://epocanegocios.globo.com/startups/noticia/2024/03/oxygea-anuncia-aporte-de-r-45-milhoes-em-tres-startups.ghtml"
+    },
+
+    {
+      "title": "De logística a plásticos com palha de milho, três startups recebem R$ 4,5 milhões para crescer",
+      "author": "EXAME",
+      "date": "06/03/2024",
+      "link": "https://exame.com/negocios/de-logogistica-a-plasticos-com-palha-de-milho-tres-startups-recebem-r-45-milhoes-para-crescer/"
+    },
     {
       "title": "Em 3 anos, 31% dos CVCs dos EUA sumiram. Um expert de Stanford elenca erros no contato com startups",
       "author": "EXAME",
