@@ -15,23 +15,26 @@ export default {
   },
   hero: {
     card1: {
-      title:
-        'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
-      cta: 'Tese de investimento',
+      title: 'Sua startup é única, <br/>nossa jornada também',
+      subtitle: 'Inscrições até 21 de abril',
+      cta: 'Inscreva sua startup',
     },
     card2: {
       title:
-        'Uma jornada única, 100% dedicada a preparar as startups selecionadas para uma trilha de investimentos.',
-      cta: 'Inscreva sua startup',
+        'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
+      subtitle: '',
+      cta: 'Tese de investimento',
     },
     card3: {
       title:
-        'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
+        'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
+      subtitle: '',
       cta: 'Nossos programas',
     },
     card4: {
       title:
-        'A conexão com o ecossistema faz a diferença. A gente acredita em fazer junto, local e globalmente.',
+        'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
+      subtitle: '',
       cta: 'Nossos parceiros',
     },
   },

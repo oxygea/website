@@ -15,23 +15,26 @@ export default {
   },
   hero: {
     card1: {
-      title:
-        'We invest in startups dedicated to sustainability and digital transformation to drive the future of the industry.',
-      cta: 'Investment Thesis',
+      title: 'Your startup is unique, <br/>our journey also',
+      subtitle: 'Enroll until April 21th',
+      cta: 'Enroll your startup',
     },
     card2: {
       title:
-        'A unique journey, 100% dedicated to preparing the selected startups for an investment track.',
-      cta: 'Enroll your startup',
+        'We invest in startups dedicated to sustainability and digital transformation to drive the future of the industry.',
+      subtitle: '',
+      cta: 'Investment Thesis',
     },
     card3: {
       title:
         'We create programs to follow the development of your startup in different stages.',
+      subtitle: '',
       cta: 'Our programs',
     },
     card4: {
       title:
         'To be connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
+      subtitle: '',
       cta: 'Our partners',
     },
   },
