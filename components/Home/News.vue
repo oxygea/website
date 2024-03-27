@@ -28,19 +28,20 @@
           <a
             :href="News.highlight.link"
             class="bg-white w-full p-6 flex flex-col font-poppins text-base group"
-            :title="$t('news.highlight')"
+            :title="News.highlight.title"
             target="_Blank"
           >
             <div class="flex">
-              <span class="text-xs font-bold mr-2">ÉPOCA NEGÓCIOS</span>
-              <span class="text-xs">30/01/2024</span>
+              <span class="text-xs font-bold mr-2">{{
+                News.highlight.author
+              }}</span>
+              <span class="text-xs">{{ News.highlight.date }}</span>
             </div>
             <h2 class="mb-6 mt-2">
-              Oxygea entrevista Solos: o que o CVC de uma petroquímica pode
-              aprender com uma startup de impacto da Bahia
+              {{ News.highlight.title }}
             </h2>
             <img
-              src="/img/news/img-epoca.png"
+              :src="'/img/news/' + News.highlight.image"
               class="w-full transition-all ease-in-out duration-300 grayscale group-hover:grayscale-0"
             />
             <span
