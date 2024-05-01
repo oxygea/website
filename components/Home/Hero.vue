@@ -55,14 +55,14 @@
                 src="@/assets/img/hero/layer-1.png"
                 class="max-w-[425px] w-full"
               />
-              <a
+              <!--<a
                 href="https://labs.oxygea.com/"
                 title="Inscreva sua startup"
                 target="_Blank"
                 class="max-w-max cursor-pointer block mt-6 rounded-[100px] font-bold text-xxs lg:text-base bg-white text-black self-start px-8 py-4 font-poppins"
               >
                 {{ $t('hero.card1.cta') }}
-              </a>
+              </a>-->
             </div>
           </div>
           <div class="hidden lg:flex lg:items-center lg:justify-end">
