@@ -18,12 +18,6 @@
     "linkedin": "https://www.linkedin.com/in/bruno-wittmaack-1482297a/"
   },
   {
-    "img": "denis",
-    "name": "Denis Specht",
-    "job": "BACKOFFICE",
-    "linkedin": "https://www.linkedin.com/in/denisspecht/"
-  },
-  {
     "img": "erik",
     "name": "Erik Furukawa",
     "job": "TECH",
@@ -36,12 +30,11 @@
     "linkedin": "https://www.linkedin.com/in/fernandoubiali/"
   },
   {
-    "img": "ligia",
-    "name": "Lígia Queiroz",
-    "job": "PEOPLE",
-    "linkedin": "https://www.linkedin.com/in/l%C3%ADgia-queiroz-413abb17b/"
+    "name": "Julia Campos",
+    "img": "JuliaCampos",
+    "job": "INVESTMENT",
+    "linkedin": "https://www.linkedin.com/in/julia-campos-97088718b/"
   },
-
   {
     "img": "LíviaHallak",
     "name": "Lívia Hallak",
@@ -53,6 +46,12 @@
     "name": "Marcus Fichman",
     "job": "BACKOFFICE",
     "linkedin": "https://www.linkedin.com/in/marcus-fichman/"
+  },
+  {
+    "name": "Mayana Nascimento",
+    "img": "MayanaNascimento",
+    "job": "PEOPLE",
+    "linkedin": "https://www.linkedin.com/in/mayanenascimento/"
   },
   {
     "img": "PauloEmediato",
@@ -77,6 +76,12 @@
     "name": "Sulamita Theodoro",
     "job": "MKT & ECOSYSTEM",
     "linkedin": "https://www.linkedin.com/in/sulamitatheodoro/"
+  },
+  {
+    "name": "Tamires Cavalcanti",
+    "img": "TamiresCavalcanti",
+    "job": "FINANCE",
+    "linkedin": "https://www.linkedin.com/in/tamirescavalcanticontroladoriaeplanejamentofinanceiro"
   },
   {
     "img": "tomas",
