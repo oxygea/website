@@ -2,7 +2,7 @@
   <transition name="slide-fade">
     <div
       v-if="show"
-      class="bottom-0 !py-5 bg-white transition-all duration-500 fixed w-full z-40"
+      class="bottom-0 !py-5 bg-white transition-all duration-500 fixed w-full z-[60]"
     >
       <div class="container flex justify-between lg:items-center">
         <div class="w-full max-w-[171px] sm:max-w-none">
