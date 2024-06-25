@@ -169,7 +169,7 @@ export default {
     listCompanies: [
       {
         title: 'EMBEDDO',
-        desc: 'Impulsionando a próxima geração da transformação digital na indústria',
+        desc: 'Impulsionando a próxima geração da transformação digital na indústria.',
         img: 'embeddo.png',
         link: 'https://www.embeddo.io/',
       },
@@ -181,9 +181,15 @@ export default {
       },
       {
         title: 'LOGSHARE',
-        desc: 'Integramos malhas logísticas entre embarcadores',
+        desc: 'Integramos malhas logísticas entre embarcadores.',
         img: 'logshare.png',
         link: 'https://www.logshare.com.br/',
+      },
+      {
+        title: 'CIRCULAR',
+        desc: 'Facilitando o processo de compra sustentável com dados e software.',
+        img: 'circular.png',
+        link: 'https://www.circular.co/',
       },
     ],
     subtitle2: 'Venture Building',

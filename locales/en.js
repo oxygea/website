@@ -188,6 +188,12 @@ export default {
         img: 'logshare.png',
         link: 'https://www.logshare.com.br/',
       },
+      {
+        title: 'CIRCULAR',
+        desc: 'Making sustainable sourcing easier with data and software.',
+        img: 'circular.png',
+        link: 'https://www.circular.co/',
+      },
     ],
     subtitle2: 'Venture Building',
     listCompanies2: [
