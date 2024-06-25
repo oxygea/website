@@ -44,43 +44,6 @@
     >
       <!-- SLIDER 1 -->
       <div
-        class="w-full h-[500px] lg:h-[640px] !flex justify-center items-center bg-hero-1"
-      >
-        <div
-          class="container grid grid-cols-1 lg:grid-cols-2 lg:gap-4 text-white justify-center"
-        >
-          <div>
-            <div class="pb-8" lg:pb-0>
-              <img
-                src="@/assets/img/hero/layer-1.png"
-                class="max-w-[425px] w-full"
-              />
-              <!--<a
-                href="https://labs.oxygea.com/"
-                title="Inscreva sua startup"
-                target="_Blank"
-                class="max-w-max cursor-pointer block mt-6 rounded-[100px] font-bold text-xxs lg:text-base bg-white text-black self-start px-8 py-4 font-poppins"
-              >
-                {{ $t('hero.card1.cta') }}
-              </a>-->
-            </div>
-          </div>
-          <div class="hidden lg:flex lg:items-center lg:justify-end">
-            <div>
-              <h2
-                class="text-5xl leading-[133%] text-white font-normal"
-                v-html="$t('hero.card1.title')"
-              ></h2>
-              <h3 class="text-xl mt-6 font-bold">
-                {{ $t('hero.card1.subtitle') }}
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SLIDER 2 LOTTIE 1 -->
-      <div
         class="bg-black w-full h-[500px] lg:h-[640px] !flex justify-center items-center"
       >
         <div
@@ -91,7 +54,7 @@
               <h2
                 class="text-white max-w-[297px] mb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
               >
-                {{ $t('hero.card2.title') }}
+                {{ $t('hero.investmentCard.title') }}
               </h2>
               <nuxt-link
                 :to="
@@ -104,7 +67,7 @@
                 title="Inscreva sua startup"
                 class="text-violet font-bold font-poppins mt-6 lg:mb-10 block text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer duration-300 transition-all hover:bg-violet hover:text-black nuxt-link-exact-active nuxt-link-active fade show"
               >
-                {{ $t('hero.card2.cta') }}
+                {{ $t('hero.investmentCard.cta') }}
               </nuxt-link>
             </div>
           </div>
@@ -113,7 +76,7 @@
           >
             <transition name="slide-fade">
               <VueLottie
-                v-if="currentSlide === 2"
+                v-if="currentSlide === 0"
                 :width="500"
                 :options="lottieOptions1"
                 class="pointer-events-none top-[40px] !h-auto absolute right-0"
@@ -123,7 +86,7 @@
         </div>
       </div>
 
-      <!-- SLIDER 3 -->
+      <!-- SLIDER 2 -->
       <div
         class="bg-black w-full h-[500px] lg:h-[640px] !flex justify-center items-center"
       >
@@ -135,7 +98,7 @@
               <h2
                 class="text-white max-w-[297px] mb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
               >
-                {{ $t('hero.card3.title') }}
+                {{ $t('hero.programsCard.title') }}
               </h2>
               <nuxt-link
                 :to="
@@ -148,7 +111,7 @@
                 title="Inscreva sua startup"
                 class="text-violet font-bold font-poppins mt-6 lg:mb-10 block text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer duration-300 transition-all hover:bg-violet hover:text-black nuxt-link-exact-active nuxt-link-active fade show"
               >
-                {{ $t('hero.card3.cta') }}
+                {{ $t('hero.programsCard.cta') }}
               </nuxt-link>
             </div>
           </div>
@@ -157,7 +120,7 @@
           >
             <transition name="slide-fade">
               <VueLottie
-                v-if="currentSlide === 3"
+                v-if="currentSlide === 1"
                 :width="500"
                 :options="lottieOptions2"
                 class="pointer-events-none top-[40px] !h-auto absolute right-0"
@@ -167,6 +130,7 @@
         </div>
       </div>
 
+      <!-- SLIDER 3-->
       <div
         class="bg-black w-full h-[500px] lg:h-[640px] !flex justify-center items-center"
       >
@@ -178,7 +142,7 @@
               <h2
                 class="text-white max-w-[297px] mb-6 font-normal text-[28px] leading-8 tracking-tight md:max-w-[450px] lg:max-w-[750px] lg:text-5xl lg:leading-[56px]"
               >
-                {{ $t('hero.card4.title') }}
+                {{ $t('hero.partnersCard.title') }}
               </h2>
               <nuxt-link
                 :to="
@@ -191,7 +155,7 @@
                 title="Inscreva sua startup"
                 class="text-violet font-bold font-poppins mt-6 lg:mb-10 block text-xs py-4 px-8 border-2 border-violet rounded-full max-w-max lg:text-base cursor-pointer duration-300 transition-all hover:bg-violet hover:text-black nuxt-link-exact-active nuxt-link-active fade show"
               >
-                {{ $t('hero.card4.cta') }}
+                {{ $t('hero.partnersCard.cta') }}
               </nuxt-link>
             </div>
           </div>
@@ -200,7 +164,7 @@
           >
             <transition name="slide-fade">
               <VueLottie
-                v-if="currentSlide === 4"
+                v-if="currentSlide === 2"
                 :width="500"
                 :options="lottieOptions3"
                 class="pointer-events-none top-[40px] !h-auto absolute right-0"
@@ -248,7 +212,7 @@ export default {
         pauseOnFocus: true,
       },
       currentSlide: 0,
-      sliderPageIndex: 0,
+      sliderPageIndex: 1,
       sliderPageIndexBTN: true,
     }
   },
@@ -258,8 +222,8 @@ export default {
   },
   methods: {
     handleSlideChange(index) {
-      this.currentSlide = index + 1
-      this.sliderPageIndex = this.currentSlide
+      this.currentSlide = index
+      this.sliderPageIndex = this.currentSlide + 1
     },
     nextSlide() {
       this.sliderPageIndexBTN = true

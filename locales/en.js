@@ -14,24 +14,19 @@ export default {
     inthenews: 'In the news',
   },
   hero: {
-    card1: {
-      title: 'Your startup is unique, <br/>our journey also',
-      subtitle: 'Enroll until April 21th',
-      cta: 'Enroll your startup',
-    },
-    card2: {
+    investmentCard: {
       title:
         'We invest in startups dedicated to sustainability and digital transformation to drive the future of the industry.',
       subtitle: '',
       cta: 'Investment Thesis',
     },
-    card3: {
+    programsCard: {
       title:
         'We create programs to follow the development of your startup in different stages.',
       subtitle: '',
       cta: 'Our programs',
     },
-    card4: {
+    partnersCard: {
       title:
         'To be connected with the ecosystem makes a difference. We believe in doing it together, both locally and globally.',
       subtitle: '',

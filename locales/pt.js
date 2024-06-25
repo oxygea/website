@@ -14,24 +14,19 @@ export default {
     inthenews: 'Imprensa',
   },
   hero: {
-    card1: {
-      title: 'Sua startup é única, <br/>nossa jornada também',
-      subtitle: 'Inscrições até 21 de abril',
-      cta: 'Inscreva sua startup',
-    },
-    card2: {
+    investmentCard: {
       title:
         'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       subtitle: '',
       cta: 'Tese de investimento',
     },
-    card3: {
+    programsCard: {
       title:
         'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
       subtitle: '',
       cta: 'Nossos programas',
     },
-    card4: {
+    partnersCard: {
       title:
         'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       subtitle: '',
