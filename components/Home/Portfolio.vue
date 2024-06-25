@@ -141,4 +141,27 @@ export default {
     margin-left: -20px;
   }
 }
+
+@media (min-width: 481px) {
+  .carouselportfolio,
+  .carouselportfolio2 {
+    .slick-track {
+      width: 100% !important;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-left: 20px;
+    }
+
+    .slick-slide {
+      width: 310px !important;
+      margin-left: 0;
+    }
+
+    .slick-current {
+      margin-left: -20px;
+    }
+  }
+}
 </style>

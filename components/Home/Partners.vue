@@ -47,488 +47,74 @@
         class="lg:pl-[65px] partners"
       >
         <a
-          href="https://abstartups.com.br/"
+          v-for="(partner, index) in partnersData"
+          :key="partner.name"
+          :href="partner.href"
           target="_blank"
           class="!flex justify-center items-center"
+          :class="{ 'pr-[70px]': index === 0, 'ml-[-20px]': index === 1 }"
         >
-          <svg-icon name="abstartups" class="w-[171px] h-[26px]" />
-        </a>
-        <a
-          href="https://www.abvcap.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="abvcap" class="w-[77px] h-[32px]" />
-        </a>
-        <a
-          href="https://atitudeinovacao.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/atitude.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[124px] h-[35px] m-auto"
+          <svg-icon
+            v-if="partner.svgName"
+            :name="partner.svgName"
+            :style="`width: ${partner.width}px; height: ${partner.height}px`"
           />
-        </a>
-        <a
-          href="https://www.atlantico.com.br/embrapii/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="atlantico" class="w-[91px] h-[21px]" />
-        </a>
-        <!-- <a
-          href="https://www.acecortex.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="acecortex" class="w-[93px] h-[48px]" />
-        </a> -->
-        <a
-          href="https://www.cetrel.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="cetrel" class="w-[122px] h-[32px]" />
-        </a>
-
-        <a
-          href="https://biomafoodhub.com/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="bioma" class="w-[104px] h-[37px]" />
-        </a>
-        <a
-          href="https://hubsalvador.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="hubsalvador" class="w-[79px] h-[52px]" />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.innovationbrazilisrael.com/"
-          class="!flex justify-center items-center"
-        >
           <nuxt-img
+            v-else
+            :src="partner.imageSource"
             preload
-            :src="`partners/01.png`"
             format="webp"
             fit="fill"
             quality="100"
             loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[41px] h-[48px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://institutocaldeira.org.br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/07.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners`"
-            :title="`Partners 1`"
-            class="max-w-[94px] h-[45px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://inventivos.co/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/08.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners`"
-            :title="`Partners 1`"
-            class="max-w-[90px] h-[31px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://fiemglab.com.br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/05.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem logo FIEMG`"
-            :title="`FIEMG`"
-            class="max-w-[100px] h-[28px] m-auto"
-          />
-        </a>
-        <a
-          href="https://www.manaustechhub.com/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="manaus" class="w-[110px] h-[48px]" />
-        </a>
-        <a
-          href="https://www.senaicimatec.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="senai" class="w-[100px] h-[35px]" />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.tmf-group.com/pt-br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/10.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[48px] h-[48px] m-auto"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.touchdownvc.com/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/03.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[132px] h-[28px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://www.weimpact.tech/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/11.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem logo FIEMG`"
-            :title="`FIEMG`"
-            class="max-w-[121px] h-[38px] m-auto"
+            :alt="`Partner ${partner.name}`"
+            :title="`Partner ${partner.name}`"
+            :style="`width: ${partner.width}px; height: ${partner.height}px`"
           />
         </a>
       </VueSlickCarousel>
     </div>
 
-    <div class="container !pr-0 hidden lg:block partners">
-      <div class="grid grid-cols-8 mb-10">
+    <div class="container hidden lg:block partners">
+      <div class="partners-desk-wrapper">
         <a
-          href="https://abstartups.com.br/"
+          v-for="partner in partnersData"
+          :key="partner.name"
+          :href="partner.href"
           target="_blank"
           class="!flex justify-center items-center"
         >
-          <svg-icon name="abstartups" class="w-[171px] h-[26px]" />
-        </a>
-        <a
-          href="https://www.abvcap.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="abvcap" class="w-[77px] h-[32px]" />
-        </a>
-        <a
-          href="https://atitudeinovacao.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/atitude.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[124px] h-[35px] m-auto"
+          <svg-icon
+            v-if="partner.svgName"
+            :name="partner.svgName"
+            :style="`width: ${partner.width}px; height: ${partner.height}px`"
           />
-        </a>
-        <a
-          href="https://www.atlantico.com.br/embrapii/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="atlantico" class="w-[91px] h-[21px]" />
-        </a>
-        <!-- <a
-          href="https://www.acecortex.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="acecortex" class="w-[93px] h-[48px]" />
-        </a> -->
-        <a
-          href="https://www.cetrel.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="cetrel" class="w-[122px] h-[32px]" />
-        </a>
-
-        <a
-          href="https://biomafoodhub.com/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="bioma" class="w-[104px] h-[37px]" />
-        </a>
-        <a
-          href="https://hubsalvador.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="hubsalvador" class="w-[79px] h-[52px]" />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.innovationbrazilisrael.com/"
-          class="!flex justify-center items-center"
-        >
           <nuxt-img
+            v-else
+            :src="partner.imageSource"
             preload
-            :src="`partners/01.png`"
             format="webp"
             fit="fill"
             quality="100"
             loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[41px] h-[48px] m-auto"
+            :alt="`Partner ${partner.name}`"
+            :title="`Partner ${partner.name}`"
+            :style="`width: ${partner.width}px; height: ${partner.height}px`"
           />
         </a>
       </div>
-      <div class="grid grid-cols-8 items-center justify-center mt-6 mb-10">
-        <a
-          target="_blank"
-          href="https://institutocaldeira.org.br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/07.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners`"
-            :title="`Partners 1`"
-            class="max-w-[94px] h-[45px] m-auto"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://inventivos.co/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/08.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners`"
-            :title="`Partners 1`"
-            class="max-w-[90px] h-[31px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://fiemglab.com.br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/05.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem logo FIEMG`"
-            :title="`FIEMG`"
-            class="max-w-[100px] h-[28px] m-auto"
-          />
-        </a>
-        <a
-          href="https://www.manaustechhub.com/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="manaus" class="w-[110px] h-[48px]" />
-        </a>
-
-        <a
-          href="https://www.senaicimatec.com.br/"
-          target="_blank"
-          class="!flex justify-center items-center"
-        >
-          <svg-icon name="senai" class="w-[100px] h-[35px]" />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://www.tmf-group.com/pt-br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/10.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[48px] h-[48px] m-auto"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.touchdownvc.com/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/03.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[132px] h-[28px] m-auto"
-          />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://www.weimpact.tech/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/11.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem logo FIEMG`"
-            :title="`FIEMG`"
-            class="max-w-[121px] h-[38px] m-auto"
-          />
-        </a>
-      </div>
-      <!-- <VueSlickCarousel
-        v-bind="slickOptions3"
-        class="flex items-center justify-center partners lg:pl-[20px]"
-      >
-        <a
-          target="_blank"
-          href="https://onono.com.br/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/04.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[97px] h-[46px] m-auto"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.plugandplaytechcenter.com/"
-          class="!flex justify-center items-center"
-        >
-          <nuxt-img
-            preload
-            :src="`partners/02.png`"
-            format="webp"
-            fit="fill"
-            quality="100"
-            loading="lazy"
-            sizes="83px sm:166px lg:300px"
-            :alt="`Imagem partners 1`"
-            :title="`Partners 1`"
-            class="max-w-[110px] h-[21px] m-auto"
-          />
-        </a>
-       
-      </VueSlickCarousel> -->
     </div>
   </section>
 </template>
 <script>
+import PartnersJSON from '../../assets/json/partners'
+
 export default {
   name: 'HomePartners',
 
   data() {
     return {
+      partnersData: PartnersJSON,
       slickOptions1: {
         dots: false,
         slidesToShow: 8,
@@ -594,6 +180,16 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.partners-desk-wrapper {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
 .slick-track {
   display: flex !important;
   align-items: center;

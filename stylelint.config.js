@@ -5,5 +5,6 @@ module.exports = {
   // https://stylelint.io/user-guide/configuration
   rules: {
     'media-feature-range-notation': 'prefix',
+    'declaration-block-no-redundant-longhand-properties': null,
   },
 }

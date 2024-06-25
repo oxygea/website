@@ -14,24 +14,19 @@ export default {
     inthenews: 'Imprensa',
   },
   hero: {
-    card1: {
-      title: 'Sua startup é única, <br/>nossa jornada também',
-      subtitle: 'Inscrições até 21 de abril',
-      cta: 'Inscreva sua startup',
-    },
-    card2: {
+    investmentCard: {
       title:
         'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       subtitle: '',
       cta: 'Tese de investimento',
     },
-    card3: {
+    programsCard: {
       title:
         'Criamos programas para te acompanhar no desenvolvimento da sua startup em diferentes momentos. ',
       subtitle: '',
       cta: 'Nossos programas',
     },
-    card4: {
+    partnersCard: {
       title:
         'Investimos em startups dedicadas à sustentabilidade e transformação digital para impulsionar o futuro da indústria',
       subtitle: '',
@@ -174,7 +169,7 @@ export default {
     listCompanies: [
       {
         title: 'EMBEDDO',
-        desc: 'Impulsionando a próxima geração da transformação digital na indústria',
+        desc: 'Impulsionando a próxima geração da transformação digital na indústria.',
         img: 'embeddo.png',
         link: 'https://www.embeddo.io/',
       },
@@ -186,9 +181,15 @@ export default {
       },
       {
         title: 'LOGSHARE',
-        desc: 'Integramos malhas logísticas entre embarcadores',
+        desc: 'Integramos malhas logísticas entre embarcadores.',
         img: 'logshare.png',
         link: 'https://www.logshare.com.br/',
+      },
+      {
+        title: 'CIRCULAR',
+        desc: 'Facilitando o processo de compra sustentável com dados e software.',
+        img: 'circular.png',
+        link: 'https://www.circular.co/',
       },
     ],
     subtitle2: 'Venture Building',
